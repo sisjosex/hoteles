@@ -2,17 +2,339 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitgnore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/hoteles.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jquery1.7.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/merges/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/platforms/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/plugins/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/merges/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/platforms/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/plugins/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/merges/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/platforms/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/plugins/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/1-inicio.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/2-GUEST-LIST-FICHA.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/2-GUEST-LIST-form.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/2-GUEST-LIST.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/3-CLUBS-ficha.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/3-CLUBS.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/4-LIFE-ficha.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/4-LIFE.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/5-PROMOS-ficha.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/5-PROMOS.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/6-MI-PERFIL-datos.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/mocks/6-MI-PERFIL.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/font_awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/angular.min.js.gzip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/ionicons/fonts/ionicons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/ionicons/fonts/ionicons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/ionicons/fonts/ionicons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/hooks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/hooks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/hooks/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/alert-dialog.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/alert-dialog.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/alert-dialog.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/alert-dialog.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/angular-animate.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/angular-csp.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular-touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular-touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular-touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/angular-touch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/angular.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/angular.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/angular.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/blue-basic-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/blue-basic-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/blue-basic-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/blue-basic-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/blue-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/blue-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/blue-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/blue-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/angular/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/button-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/button-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/button-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/button-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/checkbox.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/checkbox.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/checkbox.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/checkbox.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/dark-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/dark-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/dark-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/dark-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/default.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/default.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/default.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/default.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/dialog.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/dialog.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/dialog.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/dialog.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/font_awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/font_awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/global.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/global.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/global.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/global.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/index.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/index.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/index.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/index.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/css/ionicons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/css/ionicons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/css/ionicons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/ionicons/css/ionicons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/css/ionicons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/css/ionicons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/css/ionicons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/ionicons/css/ionicons.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/ionicons/fonts/ionicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/list.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/list.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/list.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/list.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/modal.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/modal.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/modal.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/modal.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/navigation-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/navigation-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/navigation-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/navigation-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/notification.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/notification.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/notification.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/notification.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-blue-basic-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-blue-basic-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-blue-basic-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-blue-basic-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-blue-basic-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-blue-basic-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/onsen-css-components-blue-basic-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/onsen-css-components-blue-basic-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-blue-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-blue-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-blue-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-blue-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-blue-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-blue-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/onsen-css-components-blue-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/onsen-css-components-blue-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-dark-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-dark-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-dark-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-dark-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-dark-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-dark-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/onsen-css-components-dark-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/onsen-css-components-dark-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/onsen-css-components-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/onsen-css-components-default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-purple-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-purple-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-purple-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-purple-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-purple-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-purple-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/onsen-css-components-purple-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/onsen-css-components-purple-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-sunshine-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-sunshine-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-sunshine-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-sunshine-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-sunshine-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-sunshine-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/onsen-css-components-sunshine-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/onsen-css-components-sunshine-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/onsen-css-components.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsenui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsenui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsenui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsenui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsenui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsenui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/css/onsenui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/onsenui.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/onsenui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/onsenui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/onsenui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/onsenui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/onsenui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/onsenui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/onsenui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/onsenui.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/onsenui_all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/onsenui_all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/onsenui_all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/onsenui_all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/onsenui_all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/onsenui_all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/onsenui_all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/js/onsenui_all.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/page.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/page.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/page.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/page.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/popover.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/popover.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/popover.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/popover.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/purple-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/purple-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/purple-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/purple-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/radio-button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/radio-button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/radio-button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/radio-button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/range.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/range.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/range.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/range.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/search-input.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/search-input.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/search-input.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/search-input.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/sunshine-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/sunshine-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/sunshine-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/sunshine-theme.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/switch.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/switch.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/switch.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/switch.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/tab-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/tab-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/tab-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/tab-bar.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/text-input.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/text-input.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/text-input.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/text-input.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/textarea.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/textarea.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/textarea.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/textarea.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/toolbar-button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/toolbar-button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/toolbar-button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/toolbar-button.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/util.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/util.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/util.styl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/onsen/stylus/components/util.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,38 +361,39 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="391">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state vertical-scroll-proportion="-3.2692308" vertical-offset="867" max-vertical-offset="2329">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="935">
-              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding />
-            </state>
+      <file leaf-file-name="2-GUEST-LIST.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_support/mocks/2-GUEST-LIST.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitgnore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitgnore">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="605">
-              <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.08306189" vertical-offset="0" max-vertical-offset="614">
+              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -89,18 +412,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/script.js" />
         <option value="$PROJECT_DIR$/jquery1.7.1.min.js" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/.gitgnore" />
+        <option value="$PROJECT_DIR$/styles/app.css" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1360" />
-    <option name="height" value="730" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1368" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -147,6 +474,150 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onsen" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onsen_master_detail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onsen_master_detail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="onsen_master_detail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hoteles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -154,6 +625,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../queplan/app" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\test\hoteles" />
+      <recent name="I:\test\hoteles\_support" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -170,15 +649,23 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="" />
@@ -189,25 +676,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1360" height="730" extended-state="0" />
+    <frame x="-4" y="-4" width="1368" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25987843" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -234,29 +721,48 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jquery1.7.1.min.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_support/mocks/2-GUEST-LIST.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="1343">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="391">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="391">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -264,14 +770,155 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="935">
           <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitgnore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="605">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="731">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="391">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="935">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitgnore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="731">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery1.7.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="592">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitgnore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027687296" vertical-offset="0" max-vertical-offset="614">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35993487" vertical-offset="255" max-vertical-offset="935">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/README.md">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_support/mocks/3-CLUBS.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_support/mocks/1-inicio.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_support/onsen_master_detail/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-37.923077" vertical-offset="0" max-vertical-offset="2244">
+          <caret line="58" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_support/onsen_tab_bar/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.76" vertical-offset="2162" max-vertical-offset="3910">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_support/mocks/2-GUEST-LIST.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="867" max-vertical-offset="2329">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#ons-page#0;n#ons-template#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_support/onsen_master_detail/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.056572378" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08306189" vertical-offset="0" max-vertical-offset="614">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
           <folding />
         </state>
       </provider>

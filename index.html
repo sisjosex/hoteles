@@ -1,18 +1,131 @@
 <!doctype html>
-<html>
+<html lang="en" ng-app="app">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-    <link href="style.css" type="text/css" rel="stylesheet"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <title>My App</title>
+
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="styles/app.css"/>
+    <link rel="stylesheet" href="styles/onsen-css-components-sunshine-theme.css">
+
+    <script src="jquery1.7.1.min.js"></script>
+    <script src="lib/onsen/js/angular/angular.js"></script>
+    <script src="lib/onsen/js/onsenui.js"></script>
+
+    <script src="cordova.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        ons.ready(function() {
+
+        });
+    </script>
+
+    <style>
+        .item {
+            padding: 10px;
+            line-height: 1;
+        }
+        .item-thum {
+            background-color: #ccc;
+            width: 50px;
+            height: 50px;
+            border-radius: 4px;
+        }
+        .item-title {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        .item-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.3;
+            margin: 4px 0 0 0;
+            padding: 0 30px 0 0;
+        }
+        .item-label {
+            font-size: 12px;
+            color: #999;
+            float: right;
+        }
+    </style>
 </head>
-<body>
-    <div id="slides">
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-    </div>
+
+<body ng-controller="AppController">
+
+<div ng-show="isShow">
+
+</div>
+
+<ons-navigator animation="slide" var="splash">
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">Title</div>
+        </ons-toolbar>
+
+        <p style="text-align: center">
+            <ons-button modifier="light" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'sp'});">Español</ons-button>
+            <ons-button modifier="light" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'en'});">English</ons-button>
+        </p>
+    </ons-page>
+</ons-navigator>
+
+<ons-template id="page.html">
+    <ons-page>
+
+        <p style="text-align: center">
+            <ons-button modifier="light" ng-click="app.navi.popPage('page.html');">Pop</ons-button>
+        </p>
+
+        <ons-tabbar>
+            <ons-tab page="guest.html" label="Page 1" icon="square" active="true"></ons-tab>
+            <ons-tab page="page2.html" label="Page 2" icon="square"></ons-tab>
+            <ons-tab page="page3.html" label="Page 3" icon="square"></ons-tab>
+            <ons-tab page="page4.html" label="Page 4" icon="square"></ons-tab>
+        </ons-tabbar>
+    </ons-page>
+</ons-template>
+
+<ons-template id="guest.html">
+        <ons-page var="guestPage">
+            <ons-toolbar>
+                <div class="center">Guest List</div>
+            </ons-toolbar>
+                <ons-carousel id="session_days" style="height:40px" overscrollable="" auto-scroll="" item-width="40px">
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                    <ons-carousel-item><ons-button>1</ons-button></ons-carousel-item>
+                </ons-carousel>
+        </ons-page>
+</ons-template>
+
+<ons-template id="session_list.html">
+    <ons-page>
+    </ons-page>
+</ons-template>
+
 </body>
 </html>
