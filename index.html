@@ -53,11 +53,11 @@
 
 <ons-template id="guest.html">
     <ons-page class="guestpage" ng-controller="GuestController" var="guestPage">
-        <ons-toolbar style="height:100px">
-            <div class="center">Guest List
-                <ons-carousel var="carouselSession" style="height:40px" overscrollable="" auto-scroll="" item-width="40px">
-                    <ons-carousel-item>
-                        <ons-button>1</ons-button>
+        <ons-toolbar style="height:84px">
+            <div class="center overlay header-title">Guest List
+                <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" style="height:40px" overscrollable="" auto-scroll="" item-width="40px">
+                    <ons-carousel-item ng-repeat="item in items">
+                        <div class="session_day">{{item.title}}</div>
                     </ons-carousel-item>
                 </ons-carousel>
             </div>

@@ -27,6 +27,25 @@ module.controller('GuestController', function($scope) {
     });
 });
 
+module.controller('GuestCarouselController', function($scope) {
+    ons.ready(function() {
+        $scope.items = [
+            {
+                title: 1
+            },
+            {
+                title: 2
+            },
+            {
+                title: 3
+            },
+            {
+                title: 4
+            }
+        ];
+    });
+});
+
 module.controller('GuestListController', function($scope) {
     ons.ready(function() {
 
