@@ -31,18 +31,55 @@ module.controller('GuestCarouselController', function($scope) {
     ons.ready(function() {
         $scope.items = [
             {
-                title: 1
+                day: 1,
+                month: 'NOV'
             },
             {
-                title: 2
+                day: 2,
+                month: 'NOV'
             },
             {
-                title: 3
+                day: 3,
+                month: 'NOV',
+                selected: 'selected'
             },
             {
-                title: 4
+                day: 4,
+                month: 'NOV'
+            },
+            {
+                day: 5,
+                month: 'NOV'
+            }
+            ,{
+                day: 6,
+                month: 'NOV'
+            },
+            {
+                day: 7,
+                month: 'NOV'
+            },
+            {
+                day: 8,
+                month: 'NOV'
+            },
+            {
+                day: 9,
+                month: 'NOV'
             }
         ];
+
+        $scope.filterSessionDay = function(index) {
+
+            var selectedItem = $scope.items[index];
+
+            for(var i in $scope.items) {
+
+                $scope.items[i].selected = '';
+            }
+
+            selectedItem.selected = 'selected';
+        };
     });
 });
 
