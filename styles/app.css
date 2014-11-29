@@ -1,7 +1,116 @@
-.left {
-	text-align: left;
+@font-face {
+    font-family: 'dubielplainregular';
+    src: url('dubiel-webfont.eot');
+    src: url('dubiel-webfont.eot?#iefix') format('embedded-opentype'),
+    url('dubiel-webfont.woff2') format('woff2'),
+    url('dubiel-webfont.woff') format('woff'),
+    url('dubiel-webfont.ttf') format('truetype'),
+    url('dubiel-webfont.svg#dubielplainregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-.ons-tab {
-    min-width: 50px;
+@font-face {
+    font-family: 'dubielitalic';
+    src: url('dubielitalic-webfont.eot');
+    src: url('dubielitalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('dubielitalic-webfont.woff2') format('woff2'),
+    url('dubielitalic-webfont.woff') format('woff'),
+    url('dubielitalic-webfont.ttf') format('truetype'),
+    url('dubielitalic-webfont.svg#dubielitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
+@font-face {
+    font-family: 'FuturaStd-Medium';
+    src: url('FuturaStd-Medium.eot');
+    src: url('FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
+    url('FuturaStd-Medium.ttf') format('truetype'),
+    url('FuturaStd-Medium.svg#dubielitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'FuturaStd-Medium';
+    font-size:1em;
+}
+
+.title-big {
+    font-family: 'dubielitalic';
+    color:#fa00c2;
+    font-size:2em;
+}
+
+.title-medium {
+    font-family: 'dubielplainregular';
+    font-size:1em;
+}
+
+.title-normal {
+    font-size:0.8em;
+}
+
+.guestpage .page__content {
+    top:101px;
+}
+
+.guest_list_item {
+    position:relative;
+    height:200px;
+}
+
+.guest_list_item .item-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 100% auto;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    color:#fff;
+}
+
+.guesto-list-verlay {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.button {
+    font-family: 'FuturaStd-Medium';
+    display: inline-block;
+    color: white;
+    border: 0.08em solid #fff;
+    -webkit-box-shadow: 0px 0px 0.5em #000;
+    box-shadow:  0px 0px 5px #000;
+    background:#262626;
+    min-width: 115px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.button.purple {
+    background: #fa00c2;
+}
+
+span.block {
+    display:block;
+}
+
+.guest-list-item-content {
+    padding-top:8px;
+    padding-bottom:8px;
+}
+
+.guest-list-item-content span {
+    line-height:15px;
+}
+
