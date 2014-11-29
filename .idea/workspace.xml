@@ -4,6 +4,7 @@
     <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/app.css" afterPath="$PROJECT_DIR$/styles/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +31,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.525641" vertical-offset="67" max-vertical-offset="1290">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state vertical-scroll-proportion="-2.602564" vertical-offset="652" max-vertical-offset="1290">
+              <caret line="57" column="53" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -45,8 +45,8 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6979866" vertical-offset="2584" max-vertical-offset="3495">
-              <caret line="200" column="43" selection-start-line="200" selection-start-column="43" selection-end-line="200" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.6895973" vertical-offset="1374" max-vertical-offset="3705">
+              <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -265,7 +265,6 @@
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -299,7 +298,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -333,7 +331,6 @@
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -353,7 +350,6 @@
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -473,11 +469,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.525641" vertical-offset="67" max-vertical-offset="1290">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        <state vertical-scroll-proportion="-2.602564" vertical-offset="652" max-vertical-offset="1290">
+          <caret line="57" column="53" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -486,8 +481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6979866" vertical-offset="2584" max-vertical-offset="3495">
-          <caret line="200" column="43" selection-start-line="200" selection-start-column="43" selection-end-line="200" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.6895973" vertical-offset="1374" max-vertical-offset="3705">
+          <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
           <folding />
         </state>
       </provider>

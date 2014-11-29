@@ -66,7 +66,7 @@
 }
 
 .splash .page__background {
-    background: url('../img/splash.jpg') center center no-repeat transparent;
+    background: url('../img/splash.jpg') center 0 no-repeat transparent;
     background-size: 100% auto;
 }
 
@@ -96,7 +96,7 @@
 }
 
 .guestpage .page__content {
-    top:86px;
+    top:87px;
 }
 
 .guest_list_item {
@@ -111,6 +111,20 @@
     bottom: 0;
     right: 0;
     background-size: 100% auto;
+}
+
+.guest_list_item {
+    border-top: 0.1em solid #58c25b;
+}
+
+.guest_list_item:first-child {
+    border-top: none;
+}
+
+
+.toolbar {
+    border-bottom:0.1em solid #fa00c2;
+    height:86px;
 }
 
 .session_day {
