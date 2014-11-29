@@ -65,6 +65,11 @@
     font-size:1em;
 }
 
+.splash .page__background {
+    background: url('../img/splash.jpg') center center no-repeat transparent;
+    background-size: 100% auto;
+}
+
 .header-title {
     font-family: 'dubielplainregular';
     font-size: 2em;
@@ -166,10 +171,45 @@
     padding: 0;
     font-weight: bold;
     height: 1.7em;
+    position:relative;
+    overflow:visible;
+}
+
+.icon {
+    width:2em;
+    height:2em;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    display: inline-block;
+}
+
+.button.icon {
+    padding-left: 1em;
+    height: 27px;
+    line-height: 24px;
+}
+
+.sp {
+    background-image: url('../img/sp.png');
+    position:absolute;
+    left:0;
+    top: -0.5em;
+}
+
+.en {
+    background-image: url('../img/en.png');
+    position:absolute;
+    left:0;
+    top: -0.5em;
 }
 
 .button.purple {
     background: #fa00c2;
+}
+
+.button.gray {
+    background:#313131;
 }
 
 span.block {

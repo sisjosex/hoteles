@@ -20,29 +20,20 @@
 <body ng-controller="AppController">
 
 <ons-navigator animation="slide" var="splash">
-    <ons-page ng-controller="LanguageController">
-        <ons-toolbar>
-            <div class="center">Title</div>
-        </ons-toolbar>
-
-        <p style="text-align: center">
-            <ons-button modifier="light"
-                        ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'sp'});">Español
-            </ons-button>
-            <ons-button modifier="light"
-                        ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'en'});">English
-            </ons-button>
-        </p>
+    <ons-page ng-controller="LanguageController" class="splash">
+        <div align="center" style="margin-top:39%">
+            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'sp'});">
+                <span class="icon sp"></span> espa&ntilde;ol
+            </div>
+            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'sp'});">
+                <span class="icon en"></span> english
+            </div>
+        </div>
     </ons-page>
 </ons-navigator>
 
 <ons-template id="page.html">
     <ons-page ng-controller="MainMenuController" var="mainPage">
-
-        <p style="text-align: center">
-            <ons-button modifier="light" ng-click="app.navi.popPage('page.html');">Pop</ons-button>
-        </p>
-
         <ons-tabbar>
             <ons-tab page="guest.html" label="Page 1" icon="square" active="true"></ons-tab>
         </ons-tabbar>
