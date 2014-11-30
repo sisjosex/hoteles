@@ -72,6 +72,7 @@
     margin:0;
     background: #989898;
     color:#fdfdfe;
+    text-align:center;
 }
 
 .title-big {
@@ -139,7 +140,7 @@
     font-family: 'FontAwesome';
     position: absolute;
     content: "\f0d8";
-    bottom: -6px;
+    bottom: -7px;
     left: 50%;
     margin-left: -8px;
     font-size: 0.5em;
@@ -294,4 +295,30 @@ span.block {
     background-repeat: no-repeat;
     background-size: 100% auto;
     height: 3em;
+}
+
+.carousel-paginator {
+    margin-top: -30px;
+    padding: 0;
+    list-style: none;
+    bottom: -8px;
+    position: relative;
+}
+
+.carousel-page {
+    width: 0.7em;
+    height: 0.7em;
+    background: #fff;
+    border-radius: 1em;
+    display: inline-block;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+
+.carousel-page.selected {
+    background: #fa00c2;
+}
+
+ons-carousel {
+    background: #000;
 }

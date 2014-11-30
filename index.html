@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
     <link rel="stylesheet" href="styles/app.css"/>
 
+    <script src="jquery1.7.1.min.js"></script>
 
     <script src="lib/onsen/js/angular/angular.js"></script>
+
     <script src="lib/onsen/js/onsenui.js"></script>
     <script src="js/app.js"></script>
 </head>
@@ -49,7 +51,7 @@
     <ons-page class="guestpage" ng-controller="GuestController" var="guestPage">
         <ons-toolbar class="toolbar">
             <div class="center header-title">Guest List
-                <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" style="height:41px" overscrollable="" auto-scroll="" item-width="60px">
+                <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="60px">
                     <ons-carousel-item class="session-item" ng-repeat="item in items">
                         <div class="session_day {{item.selected}}" ng-click="filterSessionDay($index);">{{item.day}}<span class="session_month">{{item.month}}</span></div>
                     </ons-carousel-item>
@@ -63,15 +65,17 @@
                 <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
                     <div class="item-bg" style="background-image: url('{{item.list_image}}')">
-                        <div class="guesto-list-verlay overlay">
-                            <div align="center" class="guest-list-item-content">
-                                <span class="title-big">{{item.title}}</span>
-                                <span class="title-medium">{{item.place}}</span>
-                                <span class="title-normal block">{{item.time}}</span>
 
-                                <div class="button purple" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
-                                <div class="button" ng-click="showGuestInfo('{{item.id}}')">+ INFO</div>
-                            </div>
+                    </div>
+
+                    <div class="guesto-list-verlay overlay">
+                        <div align="center" class="guest-list-item-content">
+                            <span class="title-big">{{item.title}}</span>
+                            <span class="title-medium">{{item.place}}</span>
+                            <span class="title-normal block">{{item.time}}</span>
+
+                            <div class="button purple" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
+                            <div class="button" ng-click="showGuestInfo('{{item.id}}')">+ INFO</div>
                         </div>
                     </div>
 
@@ -83,19 +87,32 @@
 </ons-template>
 
 <ons-template id="guest_list.html">
-    <ons-carousel ng-controller="GuestListCarouselController" style="height:10em;position:relative;" overscrollable="" auto-scroll="">
-        <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in items">
-        </ons-carousel-item>
-        <div class="guesto-list-verlay overlay">
-            <div align="center" class="guest-list-item-content">
-                <span class="title-big">{{title}}</span>
-                <span class="title-medium">{{subtitle}}</span>
+    <ons-page ng-controller="GuestListCarouselController">
+        <div style="position:relative;">
 
-                <div class="button" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
+            <ons-carousel var="guestListCarousel" style="height:12em;position:relative;" overscrollable="" auto-scroll="">
+                <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in pictures"></ons-carousel-item>
+            </ons-carousel>
+
+            <div class="guesto-list-verlay overlay" style="border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;">
+                <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator">
+                    <li class="carousel-page {{item.selected}}" ng-repeat="item in pictures">
+                    </li>
+                </ul>
+
+                <div align="center" class="guest-list-item-content">
+                    <span class="title-big">{{title}}</span>
+                    <span class="title-medium">{{subtitle}}</span>
+
+                    <div align="center">
+                        <div class="button" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
+                    </div>
+                </div>
             </div>
+
+            <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
         </div>
-        <div class="backButton" ng-click="guestNavigator.pushPage('guest_info.html');"></div>
-    </ons-carousel>
+    </ons-page>
 </ons-template>
 
 <ons-template id="guest_info.html">

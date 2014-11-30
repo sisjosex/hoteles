@@ -1,4 +1,4 @@
-var module = ons.bootstrap('myapp', ['onsen']);
+var module = ons.bootstrap();
 
 var applicationLanguage = 'sp';
 
@@ -23,12 +23,37 @@ module.controller('MainMenuController', function($scope) {
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
 
+        var height = window.innerHeight - (angular.element('ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
+
+        height = parseInt(height/2)-1;
+
+        $('body').append(
+            '<style type="text/css">'+
+                '.guest_list_item {\
+                position:relative;\
+                height:'+height+'px;\
+                }'+
+            '</style>'
+        );
+
+        $scope.getWindowDimensions = function () {
+            return { h: height };
+        };
+
+        $scope.$watch($scope.getWindowDimensions, function (newValue, oldValue) {
+
+            $('.guest_list_item').height(newValue.h);
+        }, true);
 
     });
 });
 
+var scopeGuestCarouselController;
 module.controller('GuestCarouselController', function($scope) {
     ons.ready(function() {
+
+        scopeGuestCarouselController = $scope;
+
         $scope.items = [
             {
                 day: 1,
@@ -83,6 +108,7 @@ module.controller('GuestCarouselController', function($scope) {
     });
 });
 
+
 module.controller('GuestListController', function($scope) {
     ons.ready(function() {
 
@@ -117,29 +143,29 @@ module.controller('GuestListController', function($scope) {
 
             var selectedItem = $scope.items[index];
 
-            $scope.guestNavigator.pushPage('guest_list.html');
+            splash.pushPage('guest_list.html');
         };
 
         $scope.showGuestInfo = function(index) {
 
             var selectedItem = $scope.items[index];
 
-            $scope.guestNavigator.pushPage('guest_info.html');
+            splash.pushPage('guest_info.html');
         };
 
     });
 });
 
-
 module.controller('GuestListCarouselController', function($scope) {
     ons.ready(function() {
 
-        $scope.items = [
+        $scope.pictures = [
             {
                 title: 'Funky Night',
                 place: 'en PANCHA CBN',
                 time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
+                list_image: 'img/list.png',
+                selected:'selected'
             },
             {
                 title: 'Funky Night',
@@ -164,5 +190,27 @@ module.controller('GuestListCarouselController', function($scope) {
         $scope.title = 'Funky Night';
         $scope.subtitle = 'en PANCHA CBN';
 
+        $scope.carouselPostChange = function() {
+
+            var selectedItem = $scope.pictures[guestListCarousel.getActiveCarouselItemIndex()];
+
+            for(var i in $scope.pictures) {
+
+                $scope.pictures[i].selected = '';
+            }
+
+            selectedItem.selected = 'selected';
+
+            $scope.$apply();
+        };
+
+        setTimeout(function(){
+
+            guestListCarousel.on('postchange', $scope.carouselPostChange);
+
+        }, 1000);
+
     });
+
+
 });
