@@ -161,5 +161,8 @@ module.controller('GuestListCarouselController', function($scope) {
             }
         ];
 
+        $scope.title = 'Funky Night';
+        $scope.subtitle = 'en PANCHA CBN';
+
     });
 });

@@ -83,19 +83,18 @@
 </ons-template>
 
 <ons-template id="guest_list.html">
-    <ons-carousel ng-controller="GuestListCarouselController" style="height:10em" overscrollable="" auto-scroll="">
+    <ons-carousel ng-controller="GuestListCarouselController" style="height:10em;position:relative;" overscrollable="" auto-scroll="">
         <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in items">
-            <div class="item-bg" >
-                <div class="guesto-list-verlay overlay">
-                    <div align="center" class="guest-list-item-content">
-                        <span class="title-big">{{item.title}}</span>
-                        <span class="title-medium">{{item.place}}</span>
-
-                        <div class="button" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
-                    </div>
-                </div>
-            </div>
         </ons-carousel-item>
+        <div class="guesto-list-verlay overlay">
+            <div align="center" class="guest-list-item-content">
+                <span class="title-big">{{title}}</span>
+                <span class="title-medium">{{subtitle}}</span>
+
+                <div class="button" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
+            </div>
+        </div>
+        <div class="backButton" ng-click="guestNavigator.pushPage('guest_info.html');"></div>
     </ons-carousel>
 </ons-template>
 

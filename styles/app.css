@@ -283,3 +283,15 @@ span.block {
 
 .icon-profile .fa-square:before { background-image: url('../img/profile.png'); }
 .active .icon-profile .fa-square:before { background-position: -33px 0; }
+
+.backButton {
+    position: absolute;
+    left: 0.5em;
+    top: 0.5em;
+    color: #fff;
+    background: url('../img/back.png') 0 0 no-repeat transparent;
+    width: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 3em;
+}
