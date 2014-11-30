@@ -1,10 +1,4 @@
-@font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.2.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -159,6 +153,13 @@
 
 .session-item {
     width:3em;
+    position:relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: 100% auto;
 }
 
 .overlay {
@@ -239,3 +240,46 @@ span.block {
     line-height:15px;
 }
 
+.tab-bar {
+    background:#fff;
+}
+
+:checked + .tab-bar__button {
+    color:#fa00c2;
+}
+
+.tab-bar__icon + .tab-bar__label {
+    font-family: 'FuturaStd-Medium';
+    font-size:0.6em;
+}
+
+.tabicon .fa-square:before {
+    background-image: url('../img/guest.png');
+    background-repeat: no-repeat;
+    content: '';
+    width: 32px;
+    height: 38px;
+    display: block;
+    background-position: 0 0;
+    background-size: 64px auto;
+    zoom: 0.8;
+}
+
+.active .fa-square:before {
+    background-position: -33px 0;
+}
+
+.icon-guest .fa-square:before { background-image: url('../img/guest.png'); }
+.active .icon-guest .fa-square:before { background-position: -33px 0; }
+
+.icon-clubs .fa-square:before { background-image: url('../img/clubs.png'); }
+.active .icon-clubs .fa-square:before { background-position: -33px 0; }
+
+.icon-life .fa-square:before { background-image: url('../img/life.png'); }
+.active .icon-life .fa-square:before { background-position: -33px 0; }
+
+.icon-promos .fa-square:before { background-image: url('../img/promos.png'); }
+.active .icon-promos .fa-square:before { background-position: -33px 0; }
+
+.icon-profile .fa-square:before { background-image: url('../img/profile.png'); }
+.active .icon-profile .fa-square:before { background-position: -33px 0; }

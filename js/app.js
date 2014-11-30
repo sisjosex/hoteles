@@ -113,11 +113,53 @@ module.controller('GuestListController', function($scope) {
             }
         ];
 
-        /*$scope.showDetail = function(index) {
-            var selectedItem = $data.items[index];
-            $data.selectedItem = selectedItem;
-            $scope.ons.navigator.pushPage('detail.html', {title : selectedItem.title});
-        };*/
+        $scope.showGuestList = function(index) {
+
+            var selectedItem = $scope.items[index];
+
+            $scope.guestNavigator.pushPage('guest_list.html');
+        };
+
+        $scope.showGuestInfo = function(index) {
+
+            var selectedItem = $scope.items[index];
+
+            $scope.guestNavigator.pushPage('guest_info.html');
+        };
+
+    });
+});
+
+
+module.controller('GuestListCarouselController', function($scope) {
+    ons.ready(function() {
+
+        $scope.items = [
+            {
+                title: 'Funky Night',
+                place: 'en PANCHA CBN',
+                time: 'martes 22:00 FREE hasta las 2:00h',
+                list_image: 'img/list.png'
+            },
+            {
+                title: 'Funky Night',
+                place: 'en PANCHA CBN',
+                time: 'martes 22:00 FREE hasta las 2:00h',
+                list_image: 'img/list.png'
+            },
+            {
+                title: 'Funky Night',
+                place: 'en PANCHA CBN',
+                time: 'martes 22:00 FREE hasta las 2:00h',
+                list_image: 'img/list.png'
+            },
+            {
+                title: 'Funky Night',
+                place: 'en PANCHA CBN',
+                time: 'martes 22:00 FREE hasta las 2:00h',
+                list_image: 'img/list.png'
+            }
+        ];
 
     });
 });
