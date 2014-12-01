@@ -6,7 +6,7 @@ module.controller('AppController', function($scope) { });
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
-
+        //navigator.getDeviceBackButtonHandler().enable();
     });
 });
 
