@@ -5,6 +5,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <title>My App</title>
 
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
@@ -73,7 +75,9 @@
                             <span class="title-big">{{item.title}}</span>
                             <span class="title-medium">{{item.place}}</span>
                             <span class="title-normal block">{{item.time}}</span>
+                        </div>
 
+                        <div align="center" class="buttons">
                             <div class="button purple" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
                             <div class="button" ng-click="showGuestInfo('{{item.id}}')">+ INFO</div>
                         </div>
@@ -87,31 +91,85 @@
 </ons-template>
 
 <ons-template id="guest_list.html">
-    <ons-page ng-controller="GuestListCarouselController">
-        <div style="position:relative;">
+    <ons-page ng-controller="GuestListCarouselController" class="guestlist">
+        <ons-toolbar class="toolbar" style="position:relative;background: none;border:none;">
+            <div class="left">
+                <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
+            </div>
+        </ons-toolbar>
 
-            <ons-carousel var="guestListCarousel" style="height:12em;position:relative;" overscrollable="" auto-scroll="">
-                <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in pictures"></ons-carousel-item>
-            </ons-carousel>
+        <ons-scroller style="height:100%">
+            <div>
+                <div style="position:relative;">
+                    <ons-carousel var="guestListCarousel" style="height:12em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
+                        <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in pictures"></ons-carousel-item>
+                    </ons-carousel>
 
-            <div class="guesto-list-verlay overlay" style="border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;">
-                <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator">
-                    <li class="carousel-page {{item.selected}}" ng-repeat="item in pictures">
-                    </li>
-                </ul>
+                    <div class="guesto-list-verlay overlay">
+                        <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator">
+                            <li class="carousel-page {{item.selected}}" ng-repeat="item in pictures">
+                            </li>
+                        </ul>
 
-                <div align="center" class="guest-list-item-content">
-                    <span class="title-big">{{title}}</span>
-                    <span class="title-medium">{{subtitle}}</span>
+                        <div align="center" class="guest-list-item-content">
+                            <span class="title-big">{{title}}</span>
+                            <span class="title-medium">{{subtitle}}</span>
 
-                    <div align="center">
-                        <div class="button" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
+                            <div align="center" class="buttons">
+                                <div class="button" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
-        </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+                <div>
+                    <span class="form-label">Email:</span>
+                </div>
+
+                <input type="text" class="text-input" />
+                <br/>
+                <input type="text" class="text-input" />
+            </div>
+        </ons-scroller>
     </ons-page>
 </ons-template>
 
