@@ -51,7 +51,7 @@
 <ons-template id="guest.html">
     <ons-navigator animation="slide" var="guestNavigator">
     <ons-page class="guestpage" ng-controller="GuestController" var="guestPage">
-        <ons-toolbar class="toolbar">
+        <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;">
             <div class="center header-title">Guest List
                 <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="60px">
                     <ons-carousel-item class="session-item" ng-repeat="item in items">
@@ -92,7 +92,7 @@
 
 <ons-template id="guest_list.html">
     <ons-page ng-controller="GuestListCarouselController" class="guestlist">
-        <ons-toolbar class="toolbar" style="position:relative;background: none;border:none;">
+        <ons-toolbar class="toolbar" style="position:relative;background: none;border:none;width:2em;">
             <div class="left">
                 <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
             </div>

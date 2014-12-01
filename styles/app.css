@@ -116,12 +116,6 @@
     border-top: none;
 }
 
-
-.toolbar {
-    border-bottom:0.1em solid #fa00c2;
-    height:86px;
-}
-
 .session_day {
     color: #878888;
     font-size: 1em;
