@@ -1,14 +1,14 @@
 {
-    "item": {
-        "tipo_menu": "festivo",
-        "para_la_fecha": "2014-11-29",
-        "dia": "Saturday",
-        "mes": "November",
-        "curdate": "2014-11-29",
-        "especialidades": "<p>Berberechos<\/p><p>Navajas a la Plancha<\/p><p>Boquerones Fritos<\/p><p>E. Canónigosy Foie<\/p><p>Níscalos en Salsa<\/p><p>Lenguado a la Plancha<\/p><p>Besugo a la Espalda<\/p><p>Cochinillo y Lechal Asado<\/p>\r\n",
-        "especialidades_compartir": " Berberechos\n Navajas a la Plancha\n Boquerones Fritos\n E. Canónigosy Foie\n Níscalos en Salsa\n Lenguado a la Plancha\n Besugo a la Espalda\n Cochinillo y Lechal Asado\n\r\n",
-        "dia_spanish": "Sábado",
-        "dia_numerico": "29",
-        "mes_spanish": "Noviembre"
-    }
+    "status": "success",
+    "list": [
+        {
+            "id": "1",
+            "title": "asd",
+            "description": "asd",
+            "images": [
+                "http:\/\/localhost\/hoteles\/hoteles-master\/admin\/helpers\/timthumb.php?width=400&height=400&src=http:\/\/localhost\/hoteles_admin\/hoteles\/hoteles-master\/admin\/uploads\/club\/interstellar_2014-3840x2160_0.jpg",
+                "http:\/\/localhost\/hoteles\/hoteles-master\/admin\/helpers\/timthumb.php?width=400&height=400&src=http:\/\/localhost\/hoteles_admin\/hoteles\/hoteles-master\/admin\/uploads\/club\/interstellar_2014-3840x2160_1.jpg"
+            ]
+        }
+    ]
 }
