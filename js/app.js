@@ -37,7 +37,8 @@ var labels = {
         confirm: 'CONFIRMAR',
         sessions: 'Sesiones:',
         open: 'Abierto:',
-        type: 'Tipo de cocina:'
+        type: 'Tipo de cocina:',
+        save: 'Guardar'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -72,14 +73,11 @@ var labels = {
         confirm: 'CONFIRM',
         sessions: 'Sessions:',
         open: 'Open:',
-        type: 'Type of kitchen:'
+        type: 'Type of kitchen:',
+        save: 'Save'
     }
 }
 
-
-function getLabels() {
-    return labels[applicationLanguage];
-}
 
 module.controller('AppController', function($scope) { });
 
@@ -109,26 +107,7 @@ module.controller('GuestCarouselController', function($scope) {
         moment.lang(applicationLanguage);
         console.log('lang: ' + applicationLanguage);
 
-        $scope.items = [];
-
-        var currentDay = parseInt( moment().format("D") );
-
-        //$scope.items.push({day: currentDay-3, month: moment().subtract(currentDay-3, 'days').format("MMM") });
-        $scope.items.push({day: moment().subtract('days', 2).format("D"), month: moment().subtract('days', 2).format("MMM"), date: moment().subtract('days', 2).format("L") });
-        $scope.items.push({day: moment().subtract('days', 1).format("D"), month: moment().subtract('days', 1).format("MMM"), date: moment().subtract('days', 1).format("L") });
-
-
-        for (i = 0; i <= 30; i ++) {
-            if(i == 0) {
-
-                $scope.items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), selected: 'selected', date: moment().add('days', i).format("L") });
-
-            } else {
-
-                $scope.items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), date: moment().add('days', i).format("L") });
-            }
-
-        }
+        $scope.items = generateCalendar();
 
 
         $scope.filterSessionDay = function(index) {
@@ -911,44 +890,63 @@ module.controller('ProfileListController', function($scope) {
 module.controller('ProfileDetailController', function($scope) {
     ons.ready(function() {
 
-        $scope.pictures = [
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png',
-                selected:'selected'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            }
-        ];
-
-        $scope.labels = getLabels();
+        $scope.label_edit = getLabel('edit');
 
         $scope.detail = {
-            name: 'Nombre:',
-            email: 'Email:',
-            phone: 'Telefono:'
+            name: '',
+            email: '',
+            phone: ''
+        };
+
+        $scope.detail_visible = 'visible';
+        $scope.form_visible = '';
+
+        $scope.actionForm = function() {
+
+            if($scope.detail_visible == 'visible') {
+
+                $scope.detail_visible = '';
+                $scope.form_visible = 'visible';
+
+                $scope.label_edit = getLabel('save');
+
+            } else {
+
+                $scope.detail_visible = 'visible';
+                $scope.form_visible = '';
+
+                $scope.label_edit = getLabel('edit');
+            }
         };
 
     });
-
-
 });
 
+
+
+
+function getLabels() {
+    return labels[applicationLanguage];
+}
+
+function getLabel(key) {
+    return labels[applicationLanguage][key];
+}
+
+function generateCalendar() {
+    var items = [];
+
+    var currentDay = parseInt( moment().format("D") );
+
+    items.push({day: moment().subtract('days', 2).format("D"), month: moment().subtract('days', 2).format("MMM"), date: moment().subtract('days', 2).format("L") });
+    items.push({day: moment().subtract('days', 1).format("D"), month: moment().subtract('days', 1).format("MMM"), date: moment().subtract('days', 1).format("L") });
+
+
+    for (i = 0; i <= 30; i ++) {
+        if(i == 0) {
+            items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), selected: 'selected', date: moment().add('days', i).format("L") });
+        } else {
+            items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), date: moment().add('days', i).format("L") });
+        }
+    }
+}

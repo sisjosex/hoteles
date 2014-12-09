@@ -65,9 +65,7 @@
             <ons-list ng-controller="GuestListController">
                 <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                    <div class="item-bg" style="background-image: url('{{item.list_image}}')">
-
-                    </div>
+                    <div class="item-bg" style="background-image: url('{{item.list_image}}')"></div>
 
                     <div class="guesto-list-verlay overlay">
                         <div align="center" class="guest-list-item-content">
@@ -540,20 +538,38 @@
                     <p class="title-big">{{labels.my_data}}</p>
 
                     <div class="card-content">
-                        <p>
-                            <label>{{labels.name}}</label>
-                            <span>{{detail.name}}</span>
-                        </p>
-                        <p>
-                            <label>{{labels.email}}</label>
-                            <span>{{detail.email}}</span>
-                        </p>
-                        <p>
-                            <label>{{labels.phone}}</label>
-                            <span>{{detail.phone}}</span>
-                        </p>
+                        <div class="user_data {{detail_visible}}">
+                            <p>
+                                <label>{{labels.name}}</label>
+                                <span>{{detail.name}}</span>
+                            </p>
+                            <p>
+                                <label>{{labels.email}}</label>
+                                <span>{{detail.email}}</span>
+                            </p>
+                            <p>
+                                <label>{{labels.phone}}</label>
+                                <span>{{detail.phone}}</span>
+                            </p>
+                        </div>
+
+                        <div class="user_data {{form_visible}}">
+                            <p>
+                                <label>{{labels.name}}</label>
+                                <input type="text" value="{{detail.name}}" required />
+                            </p>
+                            <p>
+                                <label>{{labels.email}}</label>
+                                <input type="email" value="{{detail.email}}" required />
+                            </p>
+                            <p>
+                                <label>{{labels.phone}}</label>
+                                <input type="phone" value="{{detail.phone}}" required />
+                            </p>
+                        </div>
                     </div>
-                    <div class="button" ng-click="showInfo('{{item.id}}')" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.edit}}</div>
+
+                    <div class="button" ng-click="actionForm" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{label_edit}}</div>
                 </div>
 
 
@@ -570,10 +586,10 @@
 
                 <div align="center">
                     <p class="title-big">{{labels.alerts}}</p>
-                    <div class="button gray" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'es'});">
+                    <div class="button gray" ng-click="">
                         Si
                     </div>
-                    <div class="button gray" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'en'});">
+                    <div class="button gray" ng-click="">
                         No
                     </div>
                 </div>

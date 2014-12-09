@@ -557,3 +557,11 @@ label.checkbox {
 .profile-sections .button {
     margin-top:0.5em;
 }
+
+.user_data {
+    display:none;
+}
+
+.visible {
+    display:block;
+}
