@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/moment-with-locales.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/moment.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/app.css" afterPath="$PROJECT_DIR$/styles/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +30,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25" vertical-offset="7920" max-vertical-offset="8910">
-              <caret line="538" column="40" selection-start-line="538" selection-start-column="24" selection-end-line="538" selection-end-column="40" />
+            <state vertical-scroll-proportion="-30.625" vertical-offset="7215" max-vertical-offset="8910">
+              <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -89,21 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85037404" vertical-offset="7613" max-vertical-offset="8460">
+            <state vertical-scroll-proportion="0.0" vertical-offset="7613" max-vertical-offset="8460">
               <caret line="553" column="18" selection-start-line="553" selection-start-column="18" selection-end-line="553" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12921" max-vertical-offset="13755">
-              <caret line="899" column="29" selection-start-line="899" selection-start-column="29" selection-end-line="899" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.7414449" vertical-offset="405" max-vertical-offset="14100">
+              <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -142,9 +138,9 @@
         <option value="$PROJECT_DIR$/../hoteles_admin/hoteles/config/constants.php" />
         <option value="$PROJECT_DIR$/lib/moment.min.js" />
         <option value="$PROJECT_DIR$/lib/moment-with-locales.min.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/app.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
@@ -1078,18 +1074,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/styles/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="12921" max-vertical-offset="13755">
-          <caret line="899" column="29" selection-start-line="899" selection-start-column="29" selection-end-line="899" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="7613" max-vertical-offset="8460">
+          <caret line="553" column="18" selection-start-line="553" selection-start-column="18" selection-end-line="553" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="7920" max-vertical-offset="8910">
-          <caret line="538" column="40" selection-start-line="538" selection-start-column="24" selection-end-line="538" selection-end-column="40" />
+        <state vertical-scroll-proportion="-30.625" vertical-offset="7215" max-vertical-offset="8910">
+          <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1142,10 +1138,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/app.css">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85037404" vertical-offset="7613" max-vertical-offset="8460">
-          <caret line="553" column="18" selection-start-line="553" selection-start-column="18" selection-end-line="553" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.7414449" vertical-offset="405" max-vertical-offset="14100">
+          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
           <folding />
         </state>
       </provider>

@@ -2,6 +2,71 @@ var module = ons.bootstrap();
 
 var applicationLanguage = 'es';
 
+
+var labels = {
+    'es': {
+        back_to_my_guest_list: 'VOLVER A MI GUEST LIST',
+        my_data: 'Mis Datos',
+        name: 'Nombre:',
+        email: 'Email:',
+        phone: 'Telefono:',
+        edit: 'EDITAR',
+        idiom: 'Idioma',
+        alerts: 'Alertas',
+        setup_my_data: 'CONFIGURAR MIS DATOS',
+        validate: 'VALIDAR POR EL RESPONSABLE DEL CLUB',
+        guest_list: 'GUEST LIST:',
+        club: 'Club:',
+        address: 'Dirección:',
+        hour: 'Horario:',
+        metro: 'Metro:',
+        ambient: 'Ambiente:',
+        accept_card: 'Acepta Tarjeta',
+        fill_form: 'rellena este pequeño formulario',
+        first_name: 'Nombre:',
+        last_name: 'Apellidos:',
+        persons: 'Nº de personas:',
+        conditions: 'aceptar condiciones',
+        confirm: 'CONFIRMAR',
+        sessions: 'Sesiones:',
+        open: 'Abierto:',
+        type: 'Tipo de cocina:'
+    },
+    'en': {
+        back_to_my_guest_list: 'BACK TO MY GUEST LIST',
+        my_data: 'My Info',
+        name: 'Name:',
+        email: 'Email:',
+        phone: 'Phone:',
+        edit: 'EDIT',
+        idiom: 'Idiom',
+        alerts: 'Alerts',
+        setup_my_data: 'SETUP MY INFO',
+        validate: 'VALIDATE BY CLUB RESPONSABLE',
+        guest_list: 'GUEST LIST:',
+        club: 'Club:',
+        address: 'Address:',
+        hour: 'Schedule:',
+        metro: 'Metro:',
+        ambient: 'Ambient:',
+        accept_card: 'Accept Card',
+        fill_form: 'fill this few form',
+        first_name: 'Name:',
+        last_name: 'Surename:',
+        persons: 'Nº of persons:',
+        conditions: 'accept conditions',
+        confirm: 'CONFIRM',
+        sessions: 'Sessions:',
+        open: 'Open:',
+        type: 'Type of kitchen:'
+    }
+}
+
+
+function getLabels() {
+    return labels[applicationLanguage];
+}
+
 module.controller('AppController', function($scope) { });
 
 module.controller('LanguageController', function($scope) {
@@ -173,15 +238,7 @@ module.controller('GuestListCardController', function($scope) {
             }
         ];
 
-        $scope.labels = {
-            guest_list: 'GUEST LIST:',
-            club: 'Club:',
-            address: 'Dirección:',
-            hour: 'Horario:',
-            metro: 'Metro:',
-            ambient: 'Ambiente:',
-            accept_card: 'Acepta Tarjeta'
-        };
+        $scope.labels = getLabels();
 
         $scope.detail = {
             guest_list: 'GUEST LIST:',
@@ -235,16 +292,7 @@ module.controller('GuestListCardController', function($scope) {
 module.controller('GuestListFormController', function($scope) {
     ons.ready(function() {
 
-        $scope.labels = {
-            fill_form: 'rellena este pequeño formulario',
-            first_name: 'Nombre:',
-            last_name: 'Apellidos:',
-            email: 'Email:',
-            phone: 'Teléfono:',
-            persons: 'Nº de personas:',
-            conditions: 'aceptar condiciones',
-            confirm: 'CONFIRMAR'
-        };
+        $scope.labels = getLabels();
 
         $scope.values = {
             persons: 1
@@ -380,14 +428,7 @@ module.controller('ClubInfoController', function($scope) {
             }
         ];
 
-        $scope.labels = {
-            sessions: 'Sesiones:',
-            address: 'Dirección:',
-            hour: 'Horario:',
-            metro: 'Metro:',
-            ambient: 'Ambiente:',
-            accept_card: 'Acepta Tarjeta'
-        };
+        $scope.labels = getLabels();
 
         $scope.detail = {
             sessions: 'Sesiones:',
@@ -549,15 +590,7 @@ module.controller('LifeInfoController', function($scope) {
             }
         ];
 
-        $scope.labels = {
-            open: 'Abierto:',
-            type: 'Tipo de cocina:',
-            address: 'Dirección:',
-            hour: 'Horario:',
-            metro: 'Metro:',
-            ambient: 'Ambiente:',
-            accept_card: 'Acepta Tarjeta'
-        };
+        $scope.labels = getLabels();
 
         $scope.detail = {
             open: 'Lunes, Martes, etc...',
@@ -727,15 +760,7 @@ module.controller('PromoInfoController', function($scope) {
             }
         ];
 
-        $scope.labels = {
-            open: 'Abierto:',
-            type: 'Tipo de cocina:',
-            address: 'Dirección:',
-            hour: 'Horario:',
-            metro: 'Metro:',
-            ambient: 'Ambiente:',
-            accept_card: 'Acepta Tarjeta'
-        };
+        $scope.labels = getLabels();
 
         $scope.detail = {
             open: 'Lunes, Martes, etc...',
@@ -806,6 +831,8 @@ module.controller('ProfileController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
+        $scope.labels = getLabels();
+
     });
 });
 
@@ -845,6 +872,8 @@ module.controller('ProfileListController', function($scope) {
                 list_image: 'img/list_promo.jpg'
             }
         ];
+
+        $scope.labels = getLabels();
 
         $scope.showDetail = function(index) {
 
@@ -890,15 +919,7 @@ module.controller('ProfileDetailController', function($scope) {
             }
         ];
 
-        $scope.labels = {
-            my_data: 'Mis Datos',
-            name: 'Nombre:',
-            email: 'Email:',
-            phone: 'Telefono:',
-            edit: 'EDITAR',
-            idiom: 'Idioma',
-            alerts: 'Alertas'
-        };
+        $scope.labels = getLabels();
 
         $scope.detail = {
             name: 'Nombre:',
@@ -910,3 +931,4 @@ module.controller('ProfileDetailController', function($scope) {
 
 
 });
+

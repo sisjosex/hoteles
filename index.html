@@ -495,7 +495,7 @@
     <ons-navigator animation="slide" var="profileNavigator">
         <ons-page ng-controller="ProfileController" var="promoPage">
             <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">CONFIGURAR MIS DATOS
+                <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">{{labels.setup_my_data}}
                     <div class="rightButton" ng-click="profileNavigator.pushPage('profile_detail.html');"></div>
                 </div>
             </ons-toolbar>
@@ -515,7 +515,7 @@
                             </div>
 
                             <div align="center" class="buttons">
-                                <div class="button" ng-click="showInfo('{{item.id}}')" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.validar_responsable}}VALIDAR POR EL RESPONSABLE DEL CLUB</div>
+                                <div class="button" ng-click="showInfo('{{item.id}}')" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.validate}}</div>
                             </div>
                         </div>
 
@@ -530,7 +530,7 @@
 <ons-template id="profile_detail.html">
     <ons-page ng-controller="ProfileDetailController" class="">
         <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-            <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">VOLVER A MI GUEST LIST
+            <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">{{labels.back_to_my_guest_list}}
                 <div class="backButton" ng-click="profileNavigator.popPage('profile_detail.html');"></div>
             </div>
         </ons-toolbar>
@@ -561,10 +561,10 @@
 
                 <div align="center">
                     <p class="title-big">{{labels.idiom}}</p>
-                    <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'es'});">
+                    <div class="button icon gray lang" ng-click="">
                         <span class="icon sp"></span> espa&ntilde;ol
                     </div>
-                    <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'en'});">
+                    <div class="button icon gray lang" ng-click="">
                         <span class="icon en"></span> english
                     </div>
                 </div>
