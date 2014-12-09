@@ -917,6 +917,8 @@ module.controller('ProfileDetailController', function($scope) {
 
                 $scope.label_edit = getLabel('edit');
             }
+
+            $scope.apply();
         };
 
     });
