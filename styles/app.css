@@ -164,9 +164,10 @@ input[type=checkbox] {
 }
 
 .session_month {
-    font-size: 0.3em;
+    font-size: 0.4em;
     font-family: 'HelveticaNeueLTStd-Lt';
     font-weight: normal;
+    text-transform: capitalize;
 }
 
 .session-item {
@@ -317,6 +318,18 @@ span.block {
     top: 0.5em;
     color: #fff;
     background: url('../img/back.png') 0 0 no-repeat transparent;
+    width: 2em;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 3em;
+}
+
+.rightButton {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    color: #fff;
+    background: url('../img/adelante.png') 0 0 no-repeat transparent;
     width: 2em;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -535,4 +548,12 @@ label.checkbox {
     color: #abaaaa;
     font-size: 1em;
     text-align: left !important;
+}
+
+.profile-sections > div {
+    margin-top:1.6em;
+}
+
+.profile-sections .button {
+    margin-top:0.5em;
 }

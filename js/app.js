@@ -1,6 +1,6 @@
 var module = ons.bootstrap();
 
-var applicationLanguage = 'sp';
+var applicationLanguage = 'es';
 
 module.controller('AppController', function($scope) { });
 
@@ -15,8 +15,6 @@ module.controller('MainMenuController', function($scope) {
 
         applicationLanguage = splash.getCurrentPage().options.lang;
 
-
-
     });
 });
 
@@ -27,45 +25,30 @@ module.controller('GuestCarouselController', function($scope) {
 
         scopeGuestCarouselController = $scope;
 
-        $scope.items = [
-            {
-                day: 1,
-                month: 'NOV'
-            },
-            {
-                day: 2,
-                month: 'NOV'
-            },
-            {
-                day: 3,
-                month: 'NOV',
-                selected: 'selected'
-            },
-            {
-                day: 4,
-                month: 'NOV'
-            },
-            {
-                day: 5,
-                month: 'NOV'
+        moment.lang(applicationLanguage);
+        console.log('lang: ' + applicationLanguage);
+
+        $scope.items = [];
+
+        var currentDay = parseInt( moment().format("D") );
+
+        //$scope.items.push({day: currentDay-3, month: moment().subtract(currentDay-3, 'days').format("MMM") });
+        $scope.items.push({day: moment().subtract('days', 2).format("D"), month: moment().subtract('days', 2).format("MMM"), date: moment().subtract('days', 2).format("L") });
+        $scope.items.push({day: moment().subtract('days', 1).format("D"), month: moment().subtract('days', 1).format("MMM"), date: moment().subtract('days', 1).format("L") });
+
+
+        for (i = 0; i <= 30; i ++) {
+            if(i == 0) {
+
+                $scope.items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), selected: 'selected', date: moment().add('days', i).format("L") });
+
+            } else {
+
+                $scope.items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), date: moment().add('days', i).format("L") });
             }
-            ,{
-                day: 6,
-                month: 'NOV'
-            },
-            {
-                day: 7,
-                month: 'NOV'
-            },
-            {
-                day: 8,
-                month: 'NOV'
-            },
-            {
-                day: 9,
-                month: 'NOV'
-            }
-        ];
+
+        }
+
 
         $scope.filterSessionDay = function(index) {
 
@@ -787,6 +770,141 @@ module.controller('PromoInfoController', function($scope) {
             guestListCarousel.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
+
+    });
+
+
+});
+
+
+
+
+
+
+module.controller('ProfileController', function($scope) {
+    ons.ready(function() {
+
+        var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
+
+        height = parseInt(height/2)-1;
+
+        $('body').append(
+            '<style type="text/css">'+
+            '.guest_list_item {\
+            position:relative;\
+            height:'+height+'px;\
+                }'+
+            '</style>'
+        );
+
+        $scope.getWindowDimensions = function () {
+            return { h: height };
+        };
+
+        $scope.$watch($scope.getWindowDimensions, function (newValue, oldValue) {
+
+            $('.guest_list_item').height(newValue.h);
+        }, true);
+
+    });
+});
+
+
+module.controller('ProfileListController', function($scope) {
+    ons.ready(function() {
+
+        $scope.items = [
+            {
+                title: 'Funky Night',
+                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
+                club: 'en PACHA CBN',
+                list_image: 'img/list_promo.jpg'
+            },
+            {
+                title: 'Funky Night',
+                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
+                club: 'en PACHA CBN',
+                list_image: 'img/list_promo.jpg'
+            },
+            {
+                title: 'Funky Night',
+                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
+                club: 'en PACHA CBN',
+                list_image: 'img/list_promo.jpg'
+            },
+            {
+                title: 'Funky Night',
+                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
+                club: 'en PACHA CBN',
+                list_image: 'img/list_promo.jpg'
+            },
+            {
+                title: 'Funky Night',
+                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
+                club: 'en PACHA CBN',
+                list_image: 'img/list_promo.jpg'
+            }
+        ];
+
+        $scope.showDetail = function(index) {
+
+            var selectedItem = $scope.items[index];
+
+            splash.pushPage('profile_detail.html');
+        };
+
+    });
+});
+
+
+
+
+module.controller('ProfileDetailController', function($scope) {
+    ons.ready(function() {
+
+        $scope.pictures = [
+            {
+                title: 'Funky Night',
+                place: 'en PANCHA CBN',
+                time: 'martes 22:00 FREE hasta las 2:00h',
+                list_image: 'img/list.png',
+                selected:'selected'
+            },
+            {
+                title: 'Funky Night',
+                place: 'en PANCHA CBN',
+                time: 'martes 22:00 FREE hasta las 2:00h',
+                list_image: 'img/list.png'
+            },
+            {
+                title: 'Funky Night',
+                place: 'en PANCHA CBN',
+                time: 'martes 22:00 FREE hasta las 2:00h',
+                list_image: 'img/list.png'
+            },
+            {
+                title: 'Funky Night',
+                place: 'en PANCHA CBN',
+                time: 'martes 22:00 FREE hasta las 2:00h',
+                list_image: 'img/list.png'
+            }
+        ];
+
+        $scope.labels = {
+            my_data: 'Mis Datos',
+            name: 'Nombre:',
+            email: 'Email:',
+            phone: 'Telefono:',
+            edit: 'EDITAR',
+            idiom: 'Idioma',
+            alerts: 'Alertas'
+        };
+
+        $scope.detail = {
+            name: 'Nombre:',
+            email: 'Email:',
+            phone: 'Telefono:'
+        };
 
     });
 

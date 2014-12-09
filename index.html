@@ -18,6 +18,7 @@
     <script src="lib/onsen/js/angular/angular.js"></script>
 
     <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/moment-with-locales.min.js"></script>
     <script src="js/app.js"></script>
 </head>
 
@@ -26,10 +27,10 @@
 <ons-navigator animation="slide" var="splash">
     <ons-page ng-controller="LanguageController" class="splash">
         <div align="center" style="margin-top:47%">
-            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'sp'});">
+            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'es'});">
                 <span class="icon sp"></span> espa&ntilde;ol
             </div>
-            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'sp'});">
+            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'en'});">
                 <span class="icon en"></span> english
             </div>
         </div>
@@ -491,6 +492,96 @@
 </ons-template>
 
 <ons-template id="profile.html">
+    <ons-navigator animation="slide" var="profileNavigator">
+        <ons-page ng-controller="ProfileController" var="promoPage">
+            <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
+                <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">CONFIGURAR MIS DATOS
+                    <div class="rightButton" ng-click="profileNavigator.pushPage('profile_detail.html');"></div>
+                </div>
+            </ons-toolbar>
+
+            <ons-scroller>
+                <ons-list ng-controller="ProfileListController">
+                    <ons-list-item class="guest_list_item" ng-repeat="item in items">
+
+                        <div class="item-bg" style="background-image: url('{{item.list_image}}')">
+
+                        </div>
+
+                        <div class="guesto-list-verlay overlay">
+                            <div align="center" class="guest-list-item-content">
+                                <p class="title-big">{{item.title}} <span class="title-medium">{{item.club}}</span></p>
+                                <p class="title-normal block">{{item.subtitle}}</p>
+                            </div>
+
+                            <div align="center" class="buttons">
+                                <div class="button" ng-click="showInfo('{{item.id}}')" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.validar_responsable}}VALIDAR POR EL RESPONSABLE DEL CLUB</div>
+                            </div>
+                        </div>
+
+                    </ons-list-item>
+                </ons-list>
+            </ons-scroller>
+        </ons-page>
+    </ons-navigator>
+</ons-template>
+
+
+<ons-template id="profile_detail.html">
+    <ons-page ng-controller="ProfileDetailController" class="">
+        <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
+            <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">VOLVER A MI GUEST LIST
+                <div class="backButton" ng-click="profileNavigator.popPage('profile_detail.html');"></div>
+            </div>
+        </ons-toolbar>
+
+        <ons-scroller style="height:100%">
+            <div class="profile-sections">
+
+                <div align="center">
+                    <p class="title-big">{{labels.my_data}}</p>
+
+                    <div class="card-content">
+                        <p>
+                            <label>{{labels.name}}</label>
+                            <span>{{detail.name}}</span>
+                        </p>
+                        <p>
+                            <label>{{labels.email}}</label>
+                            <span>{{detail.email}}</span>
+                        </p>
+                        <p>
+                            <label>{{labels.phone}}</label>
+                            <span>{{detail.phone}}</span>
+                        </p>
+                    </div>
+                    <div class="button" ng-click="showInfo('{{item.id}}')" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.edit}}</div>
+                </div>
+
+
+                <div align="center">
+                    <p class="title-big">{{labels.idiom}}</p>
+                    <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'es'});">
+                        <span class="icon sp"></span> espa&ntilde;ol
+                    </div>
+                    <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'en'});">
+                        <span class="icon en"></span> english
+                    </div>
+                </div>
+
+
+                <div align="center">
+                    <p class="title-big">{{labels.alerts}}</p>
+                    <div class="button gray" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'es'});">
+                        Si
+                    </div>
+                    <div class="button gray" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'en'});">
+                        No
+                    </div>
+                </div>
+            </div>
+        </ons-scroller>
+    </ons-page>
 </ons-template>
 
 </body>
