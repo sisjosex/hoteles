@@ -5,6 +5,13 @@ var applicationLanguage = 'es';
 
 var labels = {
     'es': {
+        tab_guest_list: 'GUEST LIST',
+        tab_clubs: 'CLUBS',
+        tab_life: 'LIFE',
+        tab_promos: 'PROMOS',
+        tab_profile: 'MI PERFIL',
+        header_guest_list: 'Guest List',
+        header_clubs: 'Clubs',
         back_to_my_guest_list: 'VOLVER A MI GUEST LIST',
         my_data: 'Mis Datos',
         name: 'Nombre:',
@@ -33,6 +40,13 @@ var labels = {
         type: 'Tipo de cocina:'
     },
     'en': {
+        tab_guest_list: 'GUEST LIST',
+        tab_clubs: 'CLUBS',
+        tab_life: 'LIFE',
+        tab_promos: 'PROMOS',
+        tab_profile: 'MY PROFILE',
+        header_guest_list: 'Guest List',
+        header_clubs: 'Clubs',
         back_to_my_guest_list: 'BACK TO MY GUEST LIST',
         my_data: 'My Info',
         name: 'Name:',
@@ -79,6 +93,8 @@ module.controller('MainMenuController', function($scope) {
     ons.ready(function() {
 
         applicationLanguage = splash.getCurrentPage().options.lang;
+
+        $scope.labels = getLabels();
 
     });
 });
@@ -187,6 +203,8 @@ module.controller('GuestListController', function($scope) {
                 list_image: 'img/list.png'
             }
         ];
+
+        $scope.labels = getLabels();
 
         $scope.showGuestList = function(index) {
 
@@ -384,6 +402,8 @@ module.controller('ClubsListController', function($scope) {
             }
         ];
 
+        $scope.labels = getLabels();
+
         $scope.showClubInfo = function(index) {
 
             var selectedItem = $scope.items[index];
@@ -445,7 +465,7 @@ module.controller('ClubInfoController', function($scope) {
 
         $scope.carouselPostChange = function() {
 
-            var selectedItem = $scope.pictures[guestListCarousel.getActiveCarouselItemIndex()];
+            var selectedItem = $scope.pictures[clubListCarousel.getActiveCarouselItemIndex()];
 
             for(var i in $scope.pictures) {
 
@@ -459,7 +479,7 @@ module.controller('ClubInfoController', function($scope) {
 
         setTimeout(function(){
 
-            guestListCarousel.on('postchange', $scope.carouselPostChange);
+            clubListCarousel.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
 
@@ -543,7 +563,7 @@ module.controller('LifeListController', function($scope) {
                 title: 'Funky Night',
                 subtitle: 'RESTAURANTE MEDITERRANEO CON VISTAS AL MAR',
                 list_image: 'img/list_life.jpg'
-            },
+            }
         ];
 
         $scope.showClubInfo = function(index) {

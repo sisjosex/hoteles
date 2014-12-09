@@ -4,6 +4,7 @@
     <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,57 +31,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.625" vertical-offset="7215" max-vertical-offset="8910">
-              <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-12.923077" vertical-offset="3948" max-vertical-offset="10064">
+              <caret line="252" column="39" selection-start-line="252" selection-start-column="39" selection-end-line="252" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,9 +41,48 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7613" max-vertical-offset="8460">
-              <caret line="553" column="18" selection-start-line="553" selection-start-column="18" selection-end-line="553" selection-end-column="18" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9486" max-vertical-offset="9588">
+              <caret line="558" column="1" selection-start-line="558" selection-start-column="1" selection-end-line="558" selection-end-column="1" />
+              <folding>
+                <marker date="1418135588730" expanded="true" signature="3915:3996" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="4012:4146" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="4201:4225" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="4268:4417" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="4502:4514" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="4563:4841" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="4887:4993" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5024:5086" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5118:5162" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5181:5237" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5254:5289" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5328:5349" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5383:5385" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5432:5458" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5490:5533" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5564:5586" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5694:5701" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5771:5816" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="5845:6184" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="6355:6410" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="6907:7155" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="7948:8000" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="8040:8073" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="8190:8320" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="8394:8560" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="8581:8613" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="8681:8686" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="8739:8761" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="8836:8915" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="9004:9036" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="9134:9544" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="9586:9699" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="9766:10022" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="10151:10187" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="10253:10262" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="10345:10663" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="10755:10809" placeholder="{...}" />
+                <marker date="1418135588730" expanded="true" signature="10876:10966" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,8 +90,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7414449" vertical-offset="405" max-vertical-offset="14100">
-              <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.60032105" vertical-offset="1224" max-vertical-offset="16320">
+              <caret line="94" column="66" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -108,7 +100,7 @@
       <file leaf-file-name="test.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="285">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="323">
               <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
@@ -146,10 +138,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1444" />
-    <option name="y" value="128" />
-    <option name="width" value="1366" />
-    <option name="height" value="894" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1368" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -177,7 +169,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,6 +217,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,15 +251,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-env-vars>false</pass-parent-env-vars>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -286,7 +278,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1444" y="128" width="1366" height="894" extended-state="0" />
+    <frame x="-4" y="-4" width="1368" height="738" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -295,7 +287,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27719033" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2764706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -331,59 +323,27 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15980">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="323">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6521" max-vertical-offset="7545">
           <caret line="453" column="60" selection-start-line="453" selection-start-column="60" selection-end-line="453" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -391,7 +351,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2617" max-vertical-offset="8145">
           <caret line="198" column="21" selection-start-line="198" selection-start-column="21" selection-end-line="198" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1418135588730" expanded="true" signature="3915:3996" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4012:4146" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4201:4225" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4268:4417" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4502:4514" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4563:4841" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4887:4993" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5024:5086" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5118:5162" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5181:5237" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5254:5289" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5328:5349" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5383:5385" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5432:5458" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5490:5533" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5564:5586" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5694:5701" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5771:5816" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5845:6184" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6355:6410" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6907:7155" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="7948:8000" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8040:8073" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8190:8320" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8394:8560" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8581:8613" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8681:8686" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8739:8761" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8836:8915" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9004:9036" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9134:9544" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9586:9699" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9766:10022" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10151:10187" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10253:10262" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10345:10663" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10755:10809" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10876:10966" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -407,7 +406,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="330">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -415,7 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -431,55 +428,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6521" max-vertical-offset="7545">
           <caret line="453" column="60" selection-start-line="453" selection-start-column="60" selection-end-line="453" selection-end-column="60" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -487,7 +436,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2617" max-vertical-offset="8145">
           <caret line="198" column="21" selection-start-line="198" selection-start-column="21" selection-end-line="198" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1418135588730" expanded="true" signature="3915:3996" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4012:4146" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4201:4225" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4268:4417" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4502:4514" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4563:4841" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4887:4993" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5024:5086" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5118:5162" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5181:5237" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5254:5289" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5328:5349" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5383:5385" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5432:5458" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5490:5533" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5564:5586" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5694:5701" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5771:5816" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5845:6184" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6355:6410" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6907:7155" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="7948:8000" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8040:8073" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8190:8320" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8394:8560" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8581:8613" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8681:8686" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8739:8761" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8836:8915" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9004:9036" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9134:9544" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9586:9699" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9766:10022" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10151:10187" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10253:10262" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10345:10663" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10755:10809" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10876:10966" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -503,7 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="330">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -511,7 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -527,55 +513,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7545">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +521,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2617" max-vertical-offset="8145">
           <caret line="198" column="21" selection-start-line="198" selection-start-column="21" selection-end-line="198" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1418135588730" expanded="true" signature="3915:3996" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4012:4146" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4201:4225" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4268:4417" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4502:4514" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4563:4841" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4887:4993" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5024:5086" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5118:5162" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5181:5237" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5254:5289" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5328:5349" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5383:5385" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5432:5458" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5490:5533" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5564:5586" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5694:5701" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5771:5816" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5845:6184" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6355:6410" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6907:7155" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="7948:8000" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8040:8073" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8190:8320" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8394:8560" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8581:8613" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8681:8686" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8739:8761" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8836:8915" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9004:9036" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9134:9544" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9586:9699" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9766:10022" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10151:10187" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10253:10262" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10345:10663" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10755:10809" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10876:10966" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -591,55 +568,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2023" max-vertical-offset="2970">
           <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +576,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1418135588730" expanded="true" signature="3915:3996" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4012:4146" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4201:4225" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4268:4417" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4502:4514" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4563:4841" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4887:4993" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5024:5086" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5118:5162" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5181:5237" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5254:5289" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5328:5349" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5383:5385" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5432:5458" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5490:5533" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5564:5586" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5694:5701" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5771:5816" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5845:6184" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6355:6410" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6907:7155" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="7948:8000" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8040:8073" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8190:8320" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8394:8560" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8581:8613" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8681:8686" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8739:8761" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8836:8915" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9004:9036" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9134:9544" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9586:9699" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9766:10022" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10151:10187" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10253:10262" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10345:10663" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10755:10809" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10876:10966" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -663,55 +631,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="2055">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +639,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1418135588730" expanded="true" signature="3915:3996" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4012:4146" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4201:4225" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4268:4417" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4502:4514" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4563:4841" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4887:4993" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5024:5086" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5118:5162" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5181:5237" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5254:5289" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5328:5349" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5383:5385" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5432:5458" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5490:5533" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5564:5586" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5694:5701" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5771:5816" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5845:6184" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6355:6410" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6907:7155" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="7948:8000" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8040:8073" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8190:8320" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8394:8560" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8581:8613" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8681:8686" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8739:8761" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8836:8915" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9004:9036" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9134:9544" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9586:9699" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9766:10022" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10151:10187" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10253:10262" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10345:10663" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10755:10809" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10876:10966" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -740,55 +699,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2312">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,7 +707,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
+          <folding>
+            <marker date="1418135588730" expanded="true" signature="3915:3996" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4012:4146" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4201:4225" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4268:4417" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4502:4514" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4563:4841" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4887:4993" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5024:5086" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5118:5162" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5181:5237" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5254:5289" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5328:5349" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5383:5385" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5432:5458" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5490:5533" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5564:5586" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5694:5701" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5771:5816" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5845:6184" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6355:6410" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6907:7155" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="7948:8000" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8040:8073" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8190:8320" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8394:8560" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8581:8613" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8681:8686" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8739:8761" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8836:8915" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9004:9036" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9134:9544" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9586:9699" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9766:10022" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10151:10187" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10253:10262" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10345:10663" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10755:10809" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10876:10966" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -817,55 +767,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="391">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -880,55 +782,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="391">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -954,13 +808,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/README.md">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_support/mocks/1-inicio.jpg">
@@ -1042,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14139694" vertical-offset="67" max-vertical-offset="675">
           <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1050,98 +903,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2044293" vertical-offset="0" max-vertical-offset="587">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/moment.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="598">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/moment-with-locales.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1923077" vertical-offset="0" max-vertical-offset="702">
-          <caret line="9" column="6942" selection-start-line="9" selection-start-column="6942" selection-end-line="9" selection-end-column="6942" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7613" max-vertical-offset="8460">
-          <caret line="553" column="18" selection-start-line="553" selection-start-column="18" selection-end-line="553" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="9486" max-vertical-offset="9588">
+          <caret line="558" column="1" selection-start-line="558" selection-start-column="1" selection-end-line="558" selection-end-column="1" />
+          <folding>
+            <marker date="1418135588730" expanded="true" signature="3915:3996" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4012:4146" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4201:4225" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4268:4417" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4502:4514" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4563:4841" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="4887:4993" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5024:5086" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5118:5162" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5181:5237" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5254:5289" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5328:5349" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5383:5385" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5432:5458" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5490:5533" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5564:5586" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5694:5701" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5771:5816" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="5845:6184" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6355:6410" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="6907:7155" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="7948:8000" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8040:8073" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8190:8320" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8394:8560" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8581:8613" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8681:8686" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8739:8761" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="8836:8915" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9004:9036" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9134:9544" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9586:9699" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="9766:10022" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10151:10187" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10253:10262" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10345:10663" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10755:10809" placeholder="{...}" />
+            <marker date="1418135588730" expanded="true" signature="10876:10966" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.625" vertical-offset="7215" max-vertical-offset="8910">
-          <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#6;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#7;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-12.923077" vertical-offset="3948" max-vertical-offset="10064">
+          <caret line="252" column="39" selection-start-line="252" selection-start-column="39" selection-end-line="252" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7414449" vertical-offset="405" max-vertical-offset="14100">
-          <caret line="66" column="37" selection-start-line="66" selection-start-column="37" selection-end-line="66" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.60032105" vertical-offset="1224" max-vertical-offset="16320">
+          <caret line="94" column="66" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="66" />
           <folding />
         </state>
       </provider>

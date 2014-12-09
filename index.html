@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="styles/app.css"/>
 
     <script src="jquery1.7.1.min.js"></script>
-
     <script src="lib/onsen/js/angular/angular.js"></script>
-
     <script src="lib/onsen/js/onsenui.js"></script>
     <script src="lib/moment-with-locales.min.js"></script>
     <script src="js/app.js"></script>
@@ -40,11 +38,11 @@
 <ons-template id="page.html">
     <ons-page ng-controller="MainMenuController" var="mainPage">
         <ons-tabbar>
-            <ons-tab page="guest.html" label="GUEST LIST" class="tabicon icon-guest" icon="square" active="true"></ons-tab>
-            <ons-tab page="clubs.html" label="CLUBS" class="tabicon icon-clubs" icon="square"></ons-tab>
-            <ons-tab page="life.html" label="LIFE" class="tabicon icon-life" icon="square"></ons-tab>
-            <ons-tab page="promos.html" label="PROMOS" class="tabicon icon-promos" icon="square"></ons-tab>
-            <ons-tab page="profile.html" label="MI PERFIL" class="tabicon icon-profile" icon="square"></ons-tab>
+            <ons-tab page="guest.html" label="{{labels.guest_list}}" class="tabicon icon-guest" icon="square" active="true"></ons-tab>
+            <ons-tab page="clubs.html" label="{{labels.tab_clubs}}" class="tabicon icon-clubs" icon="square"></ons-tab>
+            <ons-tab page="life.html" label="{{labels.tab_life}}" class="tabicon icon-life" icon="square"></ons-tab>
+            <ons-tab page="promos.html" label="{{labels.tab_promos}}" class="tabicon icon-promos" icon="square"></ons-tab>
+            <ons-tab page="profile.html" label="{{labels.tab_profile}}" class="tabicon icon-profile" icon="square"></ons-tab>
         </ons-tabbar>
     </ons-page>
 </ons-template>
@@ -53,7 +51,7 @@
     <ons-navigator animation="slide" var="guestNavigator">
     <ons-page class="guestpage" ng-controller="GuestController" var="guestPage">
         <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;">
-            <div class="center header-title">Guest List
+            <div class="center header-title">{{labels.header_guest_list}}
                 <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="60px">
                     <ons-carousel-item class="session-item" ng-repeat="item in items">
                         <div class="session_day {{item.selected}}" ng-click="filterSessionDay($index);">{{item.day}}<span class="session_month">{{item.month}}</span></div>
@@ -209,7 +207,7 @@
     <ons-navigator animation="slide" var="clubsNavigator">
         <ons-page ng-controller="ClubsController" var="clubsPage">
             <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                <div class="center header-title">Clubs
+                <div class="center header-title">{{details.header_clubs}}
                 </div>
 
             </ons-toolbar>
@@ -252,7 +250,7 @@
         <ons-scroller style="height:100%">
             <div>
                 <div style="position:relative;">
-                    <ons-carousel var="guestListCarousel" style="height:12em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
+                    <ons-carousel var="clubListCarousel" style="height:12em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
                         <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in pictures"></ons-carousel-item>
                     </ons-carousel>
 
@@ -398,7 +396,7 @@
     <ons-navigator animation="slide" var="promoNavigator">
         <ons-page ng-controller="PromosController" var="promoPage">
             <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                <div class="center header-title">Life
+                <div class="center header-title">Promos
                 </div>
 
             </ons-toolbar>
