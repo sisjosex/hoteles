@@ -74,7 +74,7 @@
                         </div>
 
                         <div align="center" class="buttons">
-                            <div class="button purple" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
+                            <div class="button purple" ng-click="showGuestList($index)">GUEST LIST</div>
                             <div class="button" ng-click="showGuestInfo($index)">+ INFO</div>
                         </div>
                     </div>
@@ -157,26 +157,35 @@
 
             <form class="card-content" style="text-align: center;position:relative;">
                 <div class="button close" ng-click="closeForm()">X</div>
-                <p>
-                    <label></label>
-                    <span>{{labels.fill_form}}</span>
-                </p>
-                <p>
-                    <label>{{labels.first_name}}</label>
-                    <input class="" ng-model="userData.first_name" type="text"/>
-                </p>
-                <p>
-                    <label>{{labels.last_name}}</label>
-                    <input class="" ng-model="userData.last_name" type="text"/>
-                </p>
-                <p>
-                    <label>{{labels.email}}</label>
-                    <input class="" ng-model="userData.email" type="email"/>
-                </p>
-                <p>
-                    <label>{{labels.phone}}</label>
-                    <input class="" ng-model="userData.phone" type="phone"/>
-                </p>
+                <div class="user_data {{form_visible}}" style="">
+                    <p>
+                        <label></label>
+                        <span>{{labels.fill_form}}</span>
+                    </p>
+                    <p>
+                        <label>{{labels.first_name}}</label>
+                        <input class="" ng-model="userData.first_name" type="text"/>
+                    </p>
+                    <p>
+                        <label>{{labels.last_name}}</label>
+                        <input class="" ng-model="userData.last_name" type="text"/>
+                    </p>
+                    <p>
+                        <label>{{labels.email}}</label>
+                        <input class="" ng-model="userData.email" type="email"/>
+                    </p>
+                    <p>
+                        <label>{{labels.phone}}</label>
+                        <input class="" ng-model="userData.phone" type="phone"/>
+                    </p>
+                </div>
+
+                <div class="user_data {{detail_visible}}">
+                    <p>
+                        <label></label>
+                        <span>{{labels.fill_form}}</span>
+                    </p>
+                </div>
 
                 <p>
                     <label>{{labels.persons}}</label>
@@ -532,35 +541,39 @@
                     <div class="card-content">
                         <div class="user_data {{detail_visible}}">
                             <p>
-                                <label>{{labels.name}}</label>
-                                <span>{{detail.name}}</span>
+                                <label>{{labels.first_name}}</label>
+                                <span>{{userData.first_name}}</span>
+                            </p>
+                            <p>
+                                <label>{{labels.last_name}}</label>
+                                <span>{{userData.last_name}}</span>
                             </p>
                             <p>
                                 <label>{{labels.email}}</label>
-                                <span>{{detail.email}}</span>
+                                <span>{{userData.email}}</span>
                             </p>
                             <p>
                                 <label>{{labels.phone}}</label>
-                                <span>{{detail.phone}}</span>
+                                <span>{{userData.phone}}</span>
                             </p>
                         </div>
 
                         <div class="user_data {{form_visible}}">
                             <p>
                                 <label>{{labels.first_name}}</label>
-                                <input type="text" ng-model="userData.first_name" value="{{details.first_name}}" required />
+                                <input type="text" ng-model="userData.first_name" required />
                             </p>
                             <p>
                                 <label>{{labels.last_name}}</label>
-                                <input type="text" ng-model="userData.last_name" value="{{details.last_name}}" required />
+                                <input type="text" ng-model="userData.last_name" required />
                             </p>
                             <p>
                                 <label>{{labels.email}}</label>
-                                <input type="email" ng-model="userData.email" value="{{details.email}}" required />
+                                <input type="email" ng-model="userData.email" required />
                             </p>
                             <p>
                                 <label>{{labels.phone}}</label>
-                                <input type="phone" ng-model="userData.phone" value="{{details.phone}}" required />
+                                <input type="phone" ng-model="userData.phone" required />
                             </p>
                         </div>
                     </div>

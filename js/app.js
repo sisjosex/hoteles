@@ -10,7 +10,8 @@ var clubs_list = [];
 var life_list = [];
 var promos_list = [];
 var currentDate = '';
-var userData = {};
+var userData = (localStorage.getItem("user") != null || localStorage.getItem("user") != undefined) ? JSON.parse(localStorage.getItem("user")) : null;
+var currentSession;
 
 var labels = {
     'es': {
@@ -182,7 +183,7 @@ module.controller('GuestController', function($scope) {
         }, true);
 
 
-        getJsonP(api_url + 'getSessions/?callback=JSON_CALLBACK', function(data){
+        getJsonP(api_url + 'getSessions/', function(data){
 
             $scope.items = data.list;
             $scope.$apply();
@@ -197,6 +198,8 @@ module.controller('GuestController', function($scope) {
         $scope.labels = getLabels();
 
         $scope.showGuestList = function(index) {
+
+            currentSession = session_list[index];
 
             ons.createDialog('guest_list_form.html').then(function(dialog) {
                 guestFormDialog.show();
@@ -262,9 +265,30 @@ module.controller('GuestListCardController', function($scope) {
 module.controller('GuestListFormController', function($scope) {
     ons.ready(function() {
 
-        $scope.userData = {
-            persons: 1
-        };
+        $scope.form_visible = 'visible';
+        $scope.detail_visible = '';
+
+        if(userData == undefined || userData == null) {
+
+            $scope.userData = {
+                persons: 1,
+                session_id: currentSession.id
+            };
+
+            $scope.form_visible = 'visible';
+            $scope.detail_visible = '';
+
+        } else {
+
+            $scope.userData = userData;
+            $scope.userData.persons = 1;
+            $scope.userData.session_id = currentSession.id;
+
+            $scope.form_visible = '';
+            $scope.detail_visible = 'visible';
+        }
+
+
 
         $scope.labels = getLabels();
 
@@ -312,11 +336,15 @@ module.controller('GuestListFormController', function($scope) {
 
             } else {
 
-                getJsonP(api_url + 'registerUser/?callback=JSON_CALLBACK', function(data){
+                getJsonP(api_url + 'registerUser/', function(data){
 
                     userData = data.user;
 
-                }, function(){
+                    $scope.closeForm();
+
+                    localStorage.setItem("user", JSON.stringify(userData));
+
+                }, function(data){
 
 
                 }, $scope.userData);
@@ -353,7 +381,7 @@ module.controller('ClubsController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-        getJsonP(api_url + 'getClubs/?callback=JSON_CALLBACK', function(data){
+        getJsonP(api_url + 'getClubs/', function(data){
 
             $scope.items = data.list;
             $scope.$apply();
@@ -450,7 +478,7 @@ module.controller('LifeController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-        getJsonP(api_url + 'getLifes/?callback=JSON_CALLBACK', function(data){
+        getJsonP(api_url + 'getLifes/', function(data){
 
             $scope.items = data.list;
             $scope.$apply();
@@ -551,7 +579,7 @@ module.controller('PromosController', function($scope) {
         }, true);
 
 
-        getJsonP(api_url + 'getPromos/?callback=JSON_CALLBACK', function(data){
+        getJsonP(api_url + 'getPromos/', function(data){
 
             $scope.items = data.list;
             $scope.$apply();
@@ -689,19 +717,26 @@ module.controller('ProfileController', function($scope) {
 
 
 
-
 module.controller('ProfileDetailController', function($scope) {
     ons.ready(function() {
 
-        if(userData == undefined) {
-            userData = {};
+        if(userData == undefined || userData == null ) {
+
+            $scope.userData = {
+                session_id: 0,
+                persons: 0
+            };
+
+        } else {
+
+            $scope.userData = userData;
+            $scope.userData.session_id = 0;
+            $scope.userData.persons = 0;
         }
 
-        $scope.userData = userData;
+
 
         $scope.label_edit = getLabel('edit');
-
-        $scope.detail = {};
 
         $scope.detail_visible = 'visible';
         $scope.form_visible = '';
@@ -739,7 +774,7 @@ module.controller('ProfileDetailController', function($scope) {
 
                 } else {
 
-                    getJsonP(api_url + 'registerUser/?callback=JSON_CALLBACK', function(data){
+                    getJsonP(api_url + 'registerUser/', function(data){
 
                         userData = data.user;
 
@@ -748,6 +783,8 @@ module.controller('ProfileDetailController', function($scope) {
 
                         $scope.label_edit = getLabel('edit');
 
+                        $scope.$apply();
+
                     }, function(){
 
 
@@ -755,12 +792,7 @@ module.controller('ProfileDetailController', function($scope) {
 
 
                 }
-
-
-
             }
-
-            $scope.apply();
         };
 
     });
