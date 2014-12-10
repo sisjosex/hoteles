@@ -163,24 +163,24 @@
                 </p>
                 <p>
                     <label>{{labels.first_name}}</label>
-                    <input class="" type="text"/>
+                    <input class="" ng-model="userData.first_name" type="text"/>
                 </p>
                 <p>
                     <label>{{labels.last_name}}</label>
-                    <input class="" type="text"/>
+                    <input class="" ng-model="userData.last_name" type="text"/>
                 </p>
                 <p>
                     <label>{{labels.email}}</label>
-                    <input class="" type="text"/>
+                    <input class="" ng-model="userData.email" type="email"/>
                 </p>
                 <p>
                     <label>{{labels.phone}}</label>
-                    <input class="" type="text"/>
+                    <input class="" ng-model="userData.phone" type="phone"/>
                 </p>
 
                 <p>
                     <label>{{labels.persons}}</label>
-                    <label class="spinner">{{values.persons}}</label>
+                    <label class="spinner">{{userData.persons}}</label>
                     <a class="button spinner" ng-click="increasePersons()">+</a>
                     <a class="button spinner" ng-click="decreasePersons()">-</a>
                 </p>
@@ -194,7 +194,7 @@
                 </p>
 
                 <p style="display:block;text-align:center;">
-                    <a class="button">{{labels.confirm}}</a>
+                    <a class="button" ng-click="confirm()">{{labels.confirm}}</a>
                 </p>
             </form>
         </ons-page>

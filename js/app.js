@@ -9,7 +9,8 @@ var session_list = [];
 var clubs_list = [];
 var life_list = [];
 var promos_list = [];
-
+var currentDate = '';
+var userData = {};
 
 var labels = {
     'es': {
@@ -47,7 +48,12 @@ var labels = {
         open: 'Abierto:',
         type: 'Tipo de cocina:',
         save: 'Guardar',
-        in: ' en '
+        in: ' en ',
+        user_first_name_required: 'Nombre es requerido',
+        user_last_name_required: 'Apellido es requerido',
+        user_email_required: 'Email esrequerido',
+        user_email_invalid: 'Direccion de Email inválida',
+        user_phone_required: 'Telefono es requerido'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -84,9 +90,14 @@ var labels = {
         open: 'Open:',
         type: 'Type of kitchen:',
         save: 'Save',
-        in: ' in '
+        in: ' in ',
+        user_first_name_required: 'Name is required',
+        user_last_name_required: 'Surename is required',
+        user_email_required: 'Email is required',
+        user_email_invalid: 'Invalid email address',
+        user_phone_required: 'Phone is required'
     }
-}
+};
 
 
 module.controller('AppController', function($scope) { });
@@ -116,7 +127,9 @@ module.controller('GuestCarouselController', function($scope) {
 
         moment.lang(applicationLanguage);
 
-        $scope.items = generateCalendar();
+        currentDate = moment().subtract('days', 2).format("L");
+
+        scopeGuestCarouselController.items = generateCalendar();
 
 
         $scope.filterSessionDay = function(index) {
@@ -240,19 +253,19 @@ module.controller('GuestListCardController', function($scope) {
 module.controller('GuestListFormController', function($scope) {
     ons.ready(function() {
 
-        $scope.labels = getLabels();
-
-        $scope.values = {
+        $scope.userData = {
             persons: 1
         };
 
+        $scope.labels = getLabels();
+
         $scope.increasePersons = function() {
-            $scope.values.persons ++;
+            $scope.userData.persons ++;
         };
 
         $scope.decreasePersons = function() {
-            if($scope.values.persons >= 2) {
-                $scope.values.persons --;
+            if($scope.userData.persons >= 2) {
+                $scope.userData.persons --;
             }
         };
 
@@ -260,6 +273,40 @@ module.controller('GuestListFormController', function($scope) {
 
             $('#conditions').remove();
             guestFormDialog.hide();
+        };
+
+        $scope.confirm = function() {
+
+            if($scope.userData.first_name == undefined) {
+
+                alert(getLabel('user_first_name_required'));
+
+            } else if($scope.userData.last_name == undefined) {
+
+                alert(getLabel('user_last_name_required'));
+
+            } else if($scope.userData.email == undefined) {
+
+                alert(getLabel('user_email_required'));
+
+            } else if(!$scope.userData.email.match( /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/ ) ) {
+
+                alert(getLabel('user_email_invalid'));
+
+            } else if($scope.userData.phone == undefined) {
+
+                alert(getLabel('user_phone_required'));
+
+            } else {
+
+                getJsonP(api_url + 'registerUser/?callback=JSON_CALLBACK', function(data){
+
+
+                }, function(){
+
+
+                }, $scope.userData);
+            }
         };
 
     });
@@ -709,12 +756,19 @@ function getArrayAsObjects(array) {
 
 function getJsonP(url, callback_success, callback_error, data) {
 
+    if(data == undefined) {
+        data = {};
+    }
+
+    data['lang'] = applicationLanguage;
+
     $.ajax({
         type: 'GET',
         url: url,
         data: data,
         dataType: 'JSONp',
         timeout: 30000,
+        async:true,
         success: function(data) {
 
             callback_success(data);
