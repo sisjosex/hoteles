@@ -1,272 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/1-inicio.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/2-GUEST-LIST-FICHA.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/2-GUEST-LIST-form.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/2-GUEST-LIST.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/3-CLUBS-ficha.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/3-CLUBS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/4-LIFE-ficha.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/4-LIFE.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/5-PROMOS-ficha.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/5-PROMOS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/6-MI-PERFIL-datos.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/mocks/6-MI-PERFIL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/hooks/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/merges/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/platforms/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/plugins/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/css/ionicons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/css/ionicons.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/fonts/ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/fonts/ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/fonts/ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/ionicons/fonts/ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-blue-basic-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-blue-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-dark-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-purple-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components-sunshine-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsen-css-components.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/css/onsenui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular-touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/onsenui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/onsenui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/onsenui_all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/js/onsenui_all.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/blue-basic-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/blue-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/alert-dialog.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/button-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/checkbox.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/dialog.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/global.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/index.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/list.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/modal.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/navigation-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/notification.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/page.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/popover.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/radio-button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/range.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/search-input.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/switch.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/tab-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/text-input.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/textarea.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/toolbar-button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/components/util.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/dark-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/default.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/purple-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/lib/onsen/stylus/sunshine-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-blue-basic-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-blue-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-dark-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-purple-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components-sunshine-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsen-css-components.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_master_detail/www/styles/onsenui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/hooks/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/merges/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/platforms/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/plugins/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/css/ionicons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/css/ionicons.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/fonts/ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/fonts/ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/fonts/ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/ionicons/fonts/ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-blue-basic-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-blue-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-dark-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-purple-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components-sunshine-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsen-css-components.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/css/onsenui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular-touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/onsenui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/onsenui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/onsenui_all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/js/onsenui_all.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/blue-basic-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/blue-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/alert-dialog.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/button-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/checkbox.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/dialog.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/global.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/index.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/list.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/modal.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/navigation-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/notification.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/page.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/popover.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/radio-button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/range.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/search-input.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/switch.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/tab-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/text-input.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/textarea.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/toolbar-button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/components/util.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/dark-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/default.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/purple-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/lib/onsen/stylus/sunshine-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-blue-basic-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-blue-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-dark-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-purple-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components-sunshine-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsen-css-components.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_sliding_menu/www/styles/onsenui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/hooks/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/merges/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/platforms/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/plugins/.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/css/ionicons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/css/ionicons.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/fonts/ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/fonts/ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/fonts/ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/ionicons/fonts/ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-blue-basic-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-blue-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-dark-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-purple-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components-sunshine-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsen-css-components.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/css/onsenui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular-touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/onsenui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/onsenui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/onsenui_all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/js/onsenui_all.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/blue-basic-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/blue-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/alert-dialog.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/button-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/checkbox.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/dialog.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/global.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/index.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/list.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/modal.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/navigation-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/notification.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/page.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/popover.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/radio-button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/range.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/search-input.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/switch.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/tab-bar.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/text-input.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/textarea.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/toolbar-button.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/components/util.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/dark-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/default.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/purple-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/lib/onsen/stylus/sunshine-theme.styl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/app.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-blue-basic-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-blue-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-dark-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-purple-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components-sunshine-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsen-css-components.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_support/onsen_tab_bar/www/styles/onsenui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="" />
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -377,9 +112,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1744" />
+    <option name="x" value="-1920" />
     <option name="y" value="23" />
-    <option name="width" value="1744" />
+    <option name="width" value="1366" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -503,7 +238,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1744" y="23" width="1744" height="745" extended-state="1" />
+    <frame x="-1920" y="23" width="1366" height="745" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -512,7 +247,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21797885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28021148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -556,14 +291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="323">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6521" max-vertical-offset="7545">
@@ -611,14 +338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="285">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="6521" max-vertical-offset="7545">
@@ -663,14 +382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="285">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -885,14 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2044293" vertical-offset="0" max-vertical-offset="587">
           <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19932999" vertical-offset="0" max-vertical-offset="597">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
