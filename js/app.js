@@ -2,7 +2,7 @@ var module = ons.bootstrap();
 
 var applicationLanguage = 'es';
 
-var api_url = 'http://localhost/hoteles_admin/hoteles/api/';
+var api_url = 'http://golden-vip.com/api/';
 
 
 var session_list = [];
