@@ -62,20 +62,20 @@
         </ons-toolbar>
 
         <ons-scroller>
-            <ons-list ng-controller="GuestListController">
+            <ons-list>
                 <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                    <div class="item-bg" style="background-image: url('{{item.list_image}}')"></div>
+                    <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
 
                     <div class="guesto-list-verlay overlay">
                         <div align="center" class="guest-list-item-content">
-                            <p class="title-big">{{item.title}} <span class="title-medium">{{item.place}}</span></p>
-                            <p class="title-normal block">{{item.time}}</p>
+                            <p class="title-big">{{item.guest_list}} <span class="title-medium">{{labels.in}} {{item.club}}</span></p>
+                            <p class="title-normal block">{{item.hour}}</p>
                         </div>
 
                         <div align="center" class="buttons">
                             <div class="button purple" ng-click="showGuestList('{{item.id}}')">GUEST LIST</div>
-                            <div class="button" ng-click="showGuestInfo('{{item.id}}')">+ INFO</div>
+                            <div class="button" ng-click="showGuestInfo($index)">+ INFO</div>
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@
                         </ul>
 
                         <div align="center" class="guest-list-item-content">
-                            <p class="title-big">{{title}} <span class="title-medium">{{subtitle}}</span></p>
+                            <p class="title-big">{{detail.guest_list}} <span class="title-medium">{{detail.club}}</span></p>
 
                             <div align="center" class="buttons">
                                 <div class="button" ng-click="showForm('{{detail.id}}')">GUEST LIST</div>
@@ -205,27 +205,25 @@
     <ons-navigator animation="slide" var="clubsNavigator">
         <ons-page ng-controller="ClubsController" var="clubsPage">
             <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                <div class="center header-title">{{details.header_clubs}}
+                <div class="center header-title">{{labels.header_clubs}}
                 </div>
 
             </ons-toolbar>
 
             <ons-scroller>
-                <ons-list ng-controller="ClubsListController">
+                <ons-list>
                     <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                        <div class="item-bg" style="background-image: url('{{item.list_image}}')">
-
-                        </div>
+                        <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
 
                         <div class="guesto-list-verlay overlay">
                             <div align="center" class="guest-list-item-content">
-                                <p class="title-big">{{item.title}}</p>
+                                <p class="title-big">{{item.name}}</p>
                                 <p class="title-normal block">{{item.days}}</p>
                             </div>
 
                             <div align="center" class="buttons">
-                                <div class="button" ng-click="showClubInfo('{{item.id}}')">+ INFO</div>
+                                <div class="button" ng-click="showClubInfo($index)">+ INFO</div>
                             </div>
                         </div>
 
@@ -259,7 +257,7 @@
                         </ul>
 
                         <div align="center" class="guest-list-item-content">
-                            <p class="title-big">{{title}}</p>
+                            <p class="title-big">{{detail.name}}</p>
                         </div>
                     </div>
                 </div>
@@ -304,21 +302,19 @@
             </ons-toolbar>
 
             <ons-scroller>
-                <ons-list ng-controller="LifeListController">
+                <ons-list>
                     <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                        <div class="item-bg" style="background-image: url('{{item.list_image}}')">
-
-                        </div>
+                        <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
 
                         <div class="guesto-list-verlay overlay">
                             <div align="center" class="guest-list-item-content">
-                                <p class="title-big">{{item.title}}</p>
-                                <p class="title-normal block">{{item.subtitle}}</p>
+                                <p class="title-big">{{item.name}}</p>
+                                <p class="title-normal block">{{item.cut_content}}</p>
                             </div>
 
                             <div align="center" class="buttons">
-                                <div class="button" ng-click="showClubInfo('{{item.id}}')">+ INFO</div>
+                                <div class="button" ng-click="showClubInfo($index)">+ INFO</div>
                             </div>
                         </div>
 
@@ -333,7 +329,7 @@
     <ons-page ng-controller="LifeInfoController" class="guestlist">
         <ons-toolbar class="toolbar" style="position:relative;background: none;border:none;width:2em;">
             <div class="left">
-                <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
+                <div class="backButton" ng-click="splash.popPage('life_info.html');"></div>
             </div>
         </ons-toolbar>
 
@@ -351,7 +347,7 @@
                         </ul>
 
                         <div align="center" class="guest-list-item-content">
-                            <p class="title-big">{{title}}</p>
+                            <p class="title-big">{{detail.name}}</p>
                         </div>
                     </div>
                 </div>
@@ -400,21 +396,19 @@
             </ons-toolbar>
 
             <ons-scroller>
-                <ons-list ng-controller="PromosListController">
+                <ons-list>
                     <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                        <div class="item-bg" style="background-image: url('{{item.list_image}}')">
-
-                        </div>
+                        <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
 
                         <div class="guesto-list-verlay overlay">
                             <div align="center" class="guest-list-item-content">
-                                <p class="title-big">{{item.title}}</p>
-                                <p class="title-normal block">{{item.subtitle}}</p>
+                                <p class="title-big">{{item.name}}</p>
+                                <p class="title-normal block">{{item.cut_content}}</p>
                             </div>
 
                             <div align="center" class="buttons">
-                                <div class="button" ng-click="showInfo('{{item.id}}')">+ INFO</div>
+                                <div class="button" ng-click="showInfo($index)">+ INFO</div>
                             </div>
                         </div>
 
@@ -447,8 +441,8 @@
                         </ul>
 
                         <div align="center" class="guest-list-item-content">
-                            <p class="title-big">{{title}}</p>
-                            <p class="title-normal block">{{subtitle}}</p>
+                            <p class="title-big">{{detail.name}}</p>
+                            <p class="title-normal block">{{detail.cut_content}}</p>
                         </div>
                     </div>
                 </div>
@@ -469,7 +463,7 @@
                     <p>
                         <label>{{labels.hour}}</label>
                         <span>{{detail.hour}}</span>
-                        <label>{{labels.metro}}</label>
+                        <label>{{labels.metro}}</label>+
                         <span>{{detail.metro}}</span>
                     </p>
                     <p>
@@ -497,12 +491,10 @@
             </ons-toolbar>
 
             <ons-scroller>
-                <ons-list ng-controller="ProfileListController">
+                <ons-list>
                     <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                        <div class="item-bg" style="background-image: url('{{item.list_image}}')">
-
-                        </div>
+                        <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
 
                         <div class="guesto-list-verlay overlay">
                             <div align="center" class="guest-list-item-content">
@@ -511,7 +503,7 @@
                             </div>
 
                             <div align="center" class="buttons">
-                                <div class="button" ng-click="showInfo('{{item.id}}')" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.validate}}</div>
+                                <div class="button" ng-click="validate($index)" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.validate}}</div>
                             </div>
                         </div>
 

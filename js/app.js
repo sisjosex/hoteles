@@ -2,6 +2,14 @@ var module = ons.bootstrap();
 
 var applicationLanguage = 'es';
 
+var api_url = 'http://localhost/hoteles_admin/hoteles/api/';
+
+
+var session_list = [];
+var clubs_list = [];
+var life_list = [];
+var promos_list = [];
+
 
 var labels = {
     'es': {
@@ -38,7 +46,8 @@ var labels = {
         sessions: 'Sesiones:',
         open: 'Abierto:',
         type: 'Tipo de cocina:',
-        save: 'Guardar'
+        save: 'Guardar',
+        in: ' en '
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -74,7 +83,8 @@ var labels = {
         sessions: 'Sessions:',
         open: 'Open:',
         type: 'Type of kitchen:',
-        save: 'Save'
+        save: 'Save',
+        in: ' in '
     }
 }
 
@@ -105,7 +115,6 @@ module.controller('GuestCarouselController', function($scope) {
         scopeGuestCarouselController = $scope;
 
         moment.lang(applicationLanguage);
-        console.log('lang: ' + applicationLanguage);
 
         $scope.items = generateCalendar();
 
@@ -150,38 +159,18 @@ module.controller('GuestController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-    });
-});
 
-module.controller('GuestListController', function($scope) {
-    ons.ready(function() {
+        getJsonP(api_url + 'getSessions/?callback=JSON_CALLBACK', function(data){
 
-        $scope.items = [
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            }
-        ];
+            $scope.items = data.list;
+            $scope.$apply();
+
+            session_list = $scope.items;
+        }, function(){
+
+            $scope.error = true;
+            $scope.$apply();
+        });
 
         $scope.labels = getLabels();
 
@@ -197,7 +186,7 @@ module.controller('GuestListController', function($scope) {
 
             var selectedItem = $scope.items[index];
 
-            splash.pushPage('guest_list.html');
+            splash.pushPage('guest_list.html', {index:index});
         };
 
     });
@@ -207,49 +196,11 @@ module.controller('GuestListController', function($scope) {
 module.controller('GuestListCardController', function($scope) {
     ons.ready(function() {
 
-        $scope.pictures = [
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png',
-                selected:'selected'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            }
-        ];
-
         $scope.labels = getLabels();
 
-        $scope.detail = {
-            guest_list: 'GUEST LIST:',
-            club: 'Club:',
-            address: 'Dirección:',
-            hour: 'Horario:',
-            metro: 'Metro:',
-            ambient: 'Ambiente:',
-            accept_card: 'Acepta Tarjeta',
-            content: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimenaceptar condiciones. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.aaaaa bbbb ccddddfa aaaaa bbbb ccddddfaaaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfaaaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa'
-        };
+        $scope.pictures = getArrayAsObjects(session_list[splash.getCurrentPage().options.index].images);
 
-        $scope.title = 'Funky Night';
-        $scope.subtitle = 'en PANCHA CBN';
+        $scope.detail = session_list[splash.getCurrentPage().options.index];
 
         $scope.carouselPostChange = function() {
 
@@ -341,53 +292,23 @@ module.controller('ClubsController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-    });
-});
+        getJsonP(api_url + 'getClubs/?callback=JSON_CALLBACK', function(data){
 
+            $scope.items = data.list;
+            $scope.$apply();
 
-module.controller('ClubsListController', function($scope) {
-    ons.ready(function() {
+            clubs_list = $scope.items;
+        }, function(){
 
-        $scope.items = [
-            {
-                title: 'Funky Night',
-                days: 'lunes, martes, miércoles, jueves, viernes, sábados, domingos',
-                list_image: 'img/list_clubs.jpg'
-            },
-            {
-                title: 'Funky Night',
-                days: 'lunes, martes, miércoles, jueves, viernes, sábados, domingos',
-                list_image: 'img/list_clubs.jpg'
-            },
-            {
-                title: 'Funky Night',
-                days: 'lunes, martes, miércoles, jueves, viernes, sábados, domingos',
-                list_image: 'img/list_clubs.jpg'
-            },
-            {
-                title: 'Funky Night',
-                days: 'lunes, martes, miércoles, jueves, viernes, sábados, domingos',
-                list_image: 'img/list_clubs.jpg'
-            },
-            {
-                title: 'Funky Night',
-                days: 'lunes, martes, miércoles, jueves, viernes, sábados, domingos',
-                list_image: 'img/list_clubs.jpg'
-            },
-            {
-                title: 'Funky Night',
-                days: 'lunes, martes, miércoles, jueves, viernes, sábados, domingos',
-                list_image: 'img/list_clubs.jpg'
-            }
-        ];
+            $scope.error = true;
+            $scope.$apply();
+        });
 
         $scope.labels = getLabels();
 
         $scope.showClubInfo = function(index) {
 
-            var selectedItem = $scope.items[index];
-
-            splash.pushPage('club_info.html');
+            splash.pushPage('club_info.html', {index:index});
         };
 
     });
@@ -399,48 +320,11 @@ module.controller('ClubsListController', function($scope) {
 module.controller('ClubInfoController', function($scope) {
     ons.ready(function() {
 
-        $scope.pictures = [
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png',
-                selected:'selected'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            }
-        ];
+        $scope.pictures = getArrayAsObjects(clubs_list[splash.getCurrentPage().options.index].images);
+
+        $scope.detail = clubs_list[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
-
-        $scope.detail = {
-            sessions: 'Sesiones:',
-            address: 'Dirección:',
-            hour: 'Horario:',
-            metro: 'Metro:',
-            ambient: 'Ambiente:',
-            accept_card: 'Acepta Tarjeta',
-            content: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimenaceptar condiciones. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.aaaaa bbbb ccddddfa aaaaa bbbb ccddddfaaaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfaaaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa'
-        };
-
-        $scope.title = 'Funky Night';
-        $scope.subtitle = 'en PANCHA CBN';
 
         $scope.carouselPostChange = function() {
 
@@ -505,51 +389,24 @@ module.controller('LifeController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-    });
-});
+        getJsonP(api_url + 'getLifes/?callback=JSON_CALLBACK', function(data){
 
+            $scope.items = data.list;
+            $scope.$apply();
 
-module.controller('LifeListController', function($scope) {
-    ons.ready(function() {
+            life_list = $scope.items;
 
-        $scope.items = [
-            {
-                title: 'Funky Night',
-                subtitle: 'RESTAURANTE MEDITERRANEO CON VISTAS AL MAR',
-                list_image: 'img/list_life.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'RESTAURANTE MEDITERRANEO CON VISTAS AL MAR',
-                list_image: 'img/list_life.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'RESTAURANTE MEDITERRANEO CON VISTAS AL MAR',
-                list_image: 'img/list_life.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'RESTAURANTE MEDITERRANEO CON VISTAS AL MAR',
-                list_image: 'img/list_life.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'RESTAURANTE MEDITERRANEO CON VISTAS AL MAR',
-                list_image: 'img/list_life.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'RESTAURANTE MEDITERRANEO CON VISTAS AL MAR',
-                list_image: 'img/list_life.jpg'
-            }
-        ];
+        }, function(){
+
+            $scope.error = true;
+            $scope.$apply();
+        });
+
+        $scope.labels = getLabels();
 
         $scope.showClubInfo = function(index) {
 
-            var selectedItem = $scope.items[index];
-
-            splash.pushPage('life_info.html');
+            splash.pushPage('life_info.html', {index:index});
         };
 
     });
@@ -561,49 +418,11 @@ module.controller('LifeListController', function($scope) {
 module.controller('LifeInfoController', function($scope) {
     ons.ready(function() {
 
-        $scope.pictures = [
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png',
-                selected:'selected'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            }
-        ];
+        $scope.pictures = getArrayAsObjects(life_list[splash.getCurrentPage().options.index].images);
+
+        $scope.detail = life_list[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
-
-        $scope.detail = {
-            open: 'Lunes, Martes, etc...',
-            type: 'mediterranea, etc.',
-            address: 'Dirección:',
-            hour: 'Horario:',
-            metro: 'Metro:',
-            ambient: 'Ambiente:',
-            accept_card: 'Acepta Tarjeta',
-            content: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimenaceptar condiciones. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.aaaaa bbbb ccddddfa aaaaa bbbb ccddddfaaaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfaaaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa'
-        };
-
-        $scope.title = 'Funky Night';
-        $scope.subtitle = 'en PANCHA CBN';
 
         $scope.carouselPostChange = function() {
 
@@ -670,56 +489,25 @@ module.controller('PromosController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-    });
-});
 
+        getJsonP(api_url + 'getPromos/?callback=JSON_CALLBACK', function(data){
 
-module.controller('PromosListController', function($scope) {
-    ons.ready(function() {
+            $scope.items = data.list;
+            $scope.$apply();
 
-        $scope.items = [
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                list_image: 'img/list_promo.jpg'
-            }
-        ];
+            promos_list = $scope.items;
+
+        }, function(){
+
+            $scope.error = true;
+            $scope.$apply();
+        });
+
+        $scope.labels = getLabels();
 
         $scope.showInfo = function(index) {
 
-            var selectedItem = $scope.items[index];
-
-            splash.pushPage('promo_info.html');
+            splash.pushPage('promo_info.html', {index:index});
         };
 
     });
@@ -731,46 +519,11 @@ module.controller('PromosListController', function($scope) {
 module.controller('PromoInfoController', function($scope) {
     ons.ready(function() {
 
-        $scope.pictures = [
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png',
-                selected:'selected'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            },
-            {
-                title: 'Funky Night',
-                place: 'en PANCHA CBN',
-                time: 'martes 22:00 FREE hasta las 2:00h',
-                list_image: 'img/list.png'
-            }
-        ];
+        $scope.pictures = getArrayAsObjects(promos_list[splash.getCurrentPage().options.index].images);
+
+        $scope.detail = promos_list[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
-
-        $scope.detail = {
-            open: 'Lunes, Martes, etc...',
-            type: 'mediterranea, etc.',
-            address: 'Dirección:',
-            hour: 'Horario:',
-            metro: 'Metro:',
-            ambient: 'Ambiente:',
-            accept_card: 'Acepta Tarjeta',
-            content: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimenaceptar condiciones. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.aaaaa bbbb ccddddfa aaaaa bbbb ccddddfaaaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfaaaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa aaaaa bbbb ccddddfa'
-        };
 
         $scope.title = 'Funky Night';
         $scope.subtitle = '2X1 CENAS, A LA CARTA 50% Y BOTELLA GRATIS';
@@ -830,15 +583,6 @@ module.controller('ProfileController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-        $scope.labels = getLabels();
-
-    });
-});
-
-
-module.controller('ProfileListController', function($scope) {
-    ons.ready(function() {
-
         $scope.items = [
             {
                 title: 'Funky Night',
@@ -876,9 +620,7 @@ module.controller('ProfileListController', function($scope) {
 
         $scope.showDetail = function(index) {
 
-            var selectedItem = $scope.items[index];
-
-            splash.pushPage('profile_detail.html');
+            splash.pushPage('profile_detail.html', {index:index});
         };
 
     });
@@ -951,4 +693,35 @@ function generateCalendar() {
             items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), date: moment().add('days', i).format("L") });
         }
     }
+
+    return items;
+}
+
+function getArrayAsObjects(array) {
+    var result = [];
+
+    for(var i in array) {
+        result.push({list_image:array[i], selected:i == 0 ? 'selected' : ''});
+    }
+
+    return result;
+}
+
+function getJsonP(url, callback_success, callback_error, data) {
+
+    $.ajax({
+        type: 'GET',
+        url: url,
+        data: data,
+        dataType: 'JSONp',
+        timeout: 30000,
+        success: function(data) {
+
+            callback_success(data);
+        },
+        error: function(data) {
+
+            callback_error(data);
+        }
+    });
 }
