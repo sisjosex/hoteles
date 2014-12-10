@@ -375,11 +375,15 @@ ons-carousel {
     margin:0.5em;
 }
 
-form.card-content {
+form.card-content, .form.card-content {
     padding-top: 1.9em !important;
     margin: 0;
     padding: 0.5em;
     margin: 0.3em;
+}
+
+.form.card-content {
+    padding-top: 0em !important;
 }
 
 .card-content p {
@@ -389,7 +393,7 @@ form.card-content {
     color:#494949;
 }
 
-form.card-content p {
+form.card-content p, .form.card-content p {
     font-size: 0.8em;
     display: table;
 }
@@ -398,7 +402,14 @@ form.card-content p {
     color:#fc00be;
 }
 
-form.card-content label {
+form.card-content label, .form.card-content label.editable {
+    min-width: 7em;
+    max-width: 7em;
+    display: inline-block;
+    text-align: right;
+}
+
+form.card-content label .form.card-content label {
     display: table-cell;
     min-width: 7em;
     max-width: 7em;
@@ -406,7 +417,7 @@ form.card-content label {
     text-align: right;
 }
 
-form.card-content input {
+form.card-content input, .form.card-content input {
     display: table-cell;
     width: 11.3em;
     vertical-align: middle;
@@ -424,7 +435,7 @@ form.card-content input {
     color:#494949;
 }
 
-form.card-content span {
+form.card-content span, .form.card-content span {
     color:#abaaaa;
 }
 

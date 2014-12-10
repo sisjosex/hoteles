@@ -538,8 +538,8 @@
                 <div align="center">
                     <p class="title-big">{{labels.my_data}}</p>
 
-                    <div class="card-content">
-                        <div class="user_data {{detail_visible}}">
+                    <div class="">
+                        <div class="form card-content user_data {{detail_visible}}">
                             <p>
                                 <label>{{labels.first_name}}</label>
                                 <span>{{userData.first_name}}</span>
@@ -558,27 +558,30 @@
                             </p>
                         </div>
 
-                        <div class="user_data {{form_visible}}">
+                        <div class="form card-content user_data {{form_visible}}">
                             <p>
-                                <label>{{labels.first_name}}</label>
+                                <label class="editable">{{labels.first_name}}</label>
                                 <input type="text" ng-model="userData.first_name" required />
                             </p>
                             <p>
-                                <label>{{labels.last_name}}</label>
+                                <label class="editable">{{labels.last_name}}</label>
                                 <input type="text" ng-model="userData.last_name" required />
                             </p>
                             <p>
-                                <label>{{labels.email}}</label>
+                                <label class="editable">{{labels.email}}</label>
                                 <input type="email" ng-model="userData.email" required />
                             </p>
                             <p>
-                                <label>{{labels.phone}}</label>
+                                <label class="editable">{{labels.phone}}</label>
                                 <input type="phone" ng-model="userData.phone" required />
                             </p>
                         </div>
+
+                        <div class="form card-content">
+                            <div class="button" ng-click="actionForm()" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{label_edit}}</div>
+                        </div>
                     </div>
 
-                    <div class="button" ng-click="actionForm()" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{label_edit}}</div>
                 </div>
 
 
@@ -593,7 +596,7 @@
                 </div>
 
 
-                <div align="center">
+                <div align="center" style="margin-bottom:2em;">
                     <p class="title-big">{{labels.alerts}}</p>
                     <div class="button gray" ng-click="">
                         Si
