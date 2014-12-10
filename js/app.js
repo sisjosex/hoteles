@@ -102,7 +102,13 @@ var labels = {
 };
 
 
-module.controller('AppController', function($scope) { });
+module.controller('AppController', function($scope) {
+    ons.ready(function() {
+        try {
+            StatusBar.hide();
+        }catch(error){}
+    });
+});
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
