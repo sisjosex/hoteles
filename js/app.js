@@ -51,9 +51,10 @@ var labels = {
         in: ' en ',
         user_first_name_required: 'Nombre es requerido',
         user_last_name_required: 'Apellido es requerido',
-        user_email_required: 'Email esrequerido',
+        user_email_required: 'Email es requerido',
         user_email_invalid: 'Direccion de Email inválida',
-        user_phone_required: 'Telefono es requerido'
+        user_phone_required: 'Telefono es requerido',
+        user_conditions_required: 'Debe aceptar las condiciones'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -95,7 +96,8 @@ var labels = {
         user_last_name_required: 'Surename is required',
         user_email_required: 'Email is required',
         user_email_invalid: 'Invalid email address',
-        user_phone_required: 'Phone is required'
+        user_phone_required: 'Phone is required',
+        user_conditions_required: 'You must accept conditions'
     }
 };
 
@@ -297,10 +299,15 @@ module.controller('GuestListFormController', function($scope) {
 
                 alert(getLabel('user_phone_required'));
 
+            } else if($scope.userData.conditions == undefined || $scope.userData.conditions == false) {
+
+                alert(getLabel('user_conditions_required'));
+
             } else {
 
                 getJsonP(api_url + 'registerUser/?callback=JSON_CALLBACK', function(data){
 
+                    userData = data.user;
 
                 }, function(){
 
@@ -679,13 +686,15 @@ module.controller('ProfileController', function($scope) {
 module.controller('ProfileDetailController', function($scope) {
     ons.ready(function() {
 
+        if(userData == undefined) {
+            userData = {};
+        }
+
+        $scope.userData = userData;
+
         $scope.label_edit = getLabel('edit');
 
-        $scope.detail = {
-            name: '',
-            email: '',
-            phone: ''
-        };
+        $scope.detail = {};
 
         $scope.detail_visible = 'visible';
         $scope.form_visible = '';
@@ -701,10 +710,47 @@ module.controller('ProfileDetailController', function($scope) {
 
             } else {
 
-                $scope.detail_visible = 'visible';
-                $scope.form_visible = '';
+                if($scope.userData.first_name == undefined) {
 
-                $scope.label_edit = getLabel('edit');
+                    alert(getLabel('user_first_name_required'));
+
+                } else if($scope.userData.last_name == undefined) {
+
+                    alert(getLabel('user_last_name_required'));
+
+                } else if($scope.userData.email == undefined) {
+
+                    alert(getLabel('user_email_required'));
+
+                } else if(!$scope.userData.email.match( /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/ ) ) {
+
+                    alert(getLabel('user_email_invalid'));
+
+                } else if($scope.userData.phone == undefined) {
+
+                    alert(getLabel('user_phone_required'));
+
+                } else {
+
+                    getJsonP(api_url + 'registerUser/?callback=JSON_CALLBACK', function(data){
+
+                        userData = data.user;
+
+                        $scope.detail_visible = 'visible';
+                        $scope.form_visible = '';
+
+                        $scope.label_edit = getLabel('edit');
+
+                    }, function(){
+
+
+                    }, $scope.userData);
+
+
+                }
+
+
+
             }
 
             $scope.apply();

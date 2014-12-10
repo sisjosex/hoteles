@@ -188,7 +188,7 @@
                 <p style="margin-bottom:1em;">
                     <label>&nbsp;</label>
                     <span style="display:inline-block;">
-                        <input id="conditions" type="checkbox" name="check" value="check1">
+                        <input id="conditions" ng-model="userData.conditions" type="checkbox" name="check" value="check1">
                         <label class="checkbox" for="conditions">{{labels.conditions}}</label>
                     </span>
                 </p>
@@ -547,16 +547,20 @@
 
                         <div class="user_data {{form_visible}}">
                             <p>
-                                <label>{{labels.name}}</label>
-                                <input type="text" value="{{detail.name}}" required />
+                                <label>{{labels.first_name}}</label>
+                                <input type="text" ng-model="userData.first_name" value="{{details.first_name}}" required />
+                            </p>
+                            <p>
+                                <label>{{labels.last_name}}</label>
+                                <input type="text" ng-model="userData.last_name" value="{{details.last_name}}" required />
                             </p>
                             <p>
                                 <label>{{labels.email}}</label>
-                                <input type="email" value="{{detail.email}}" required />
+                                <input type="email" ng-model="userData.email" value="{{details.email}}" required />
                             </p>
                             <p>
                                 <label>{{labels.phone}}</label>
-                                <input type="phone" value="{{detail.phone}}" required />
+                                <input type="phone" ng-model="userData.phone" value="{{details.phone}}" required />
                             </p>
                         </div>
                     </div>
