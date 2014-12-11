@@ -108,8 +108,10 @@
         <ons-scroller style="height:100%">
             <div>
                 <div style="position:relative;">
-                    <ons-carousel var="guestListCarousel" style="height:12em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
-                        <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in pictures"></ons-carousel-item>
+                    <ons-carousel class="carousel-detail" var="guestListCarousel" style="height:15em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
+                        <ons-carousel-item class="item-bg session-item" ng-repeat="item in pictures">
+                            <img onload="fadeIn(this)" src="{{item.list_image}}" />
+                        </ons-carousel-item>
                     </ons-carousel>
 
                     <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
@@ -205,7 +207,7 @@
                     <a class="button spinner" ng-click="decreasePersons()">-</a>
                 </p>
 
-                <p style="margin-bottom:1em;">
+                <p>
                     <label>&nbsp;</label>
                     <span style="display:inline-block;">
                         <input id="conditions" ng-model="userData.conditions" type="checkbox" name="check" value="check1">
@@ -268,8 +270,10 @@
         <ons-scroller style="height:100%">
             <div>
                 <div style="position:relative;">
-                    <ons-carousel var="clubListCarousel" style="height:12em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
-                        <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in pictures"></ons-carousel-item>
+                    <ons-carousel class="carousel-detail" var="clubListCarousel" style="height:15em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
+                        <ons-carousel-item class="item-bg session-item" ng-repeat="item in pictures">
+                            <img onload="fadeIn(this)" src="{{item.list_image}}" />
+                        </ons-carousel-item>
                     </ons-carousel>
 
                     <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
@@ -360,8 +364,10 @@
         <ons-scroller style="height:100%">
             <div>
                 <div style="position:relative;">
-                    <ons-carousel var="guestListCarousel" style="height:12em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
-                        <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in pictures"></ons-carousel-item>
+                    <ons-carousel class="carousel-detail" var="guestListCarousel" style="height:15em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
+                        <ons-carousel-item class="item-bg session-item" ng-repeat="item in pictures">
+                            <img onload="fadeIn(this)" src="{{item.list_image}}" />
+                        </ons-carousel-item>
                     </ons-carousel>
 
                     <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
@@ -456,8 +462,10 @@
         <ons-scroller style="height:100%">
             <div>
                 <div style="position:relative;">
-                    <ons-carousel var="promoListCarousel" style="height:12em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
-                        <ons-carousel-item class="session-item" style="background-image: url('{{item.list_image}}')" ng-repeat="item in pictures"></ons-carousel-item>
+                    <ons-carousel class="carousel-detail" var="promoListCarousel" style="height:15em;position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
+                        <ons-carousel-item class="item-bg session-item" ng-repeat="item in pictures">
+                            <img onload="fadeIn(this)" src="{{item.list_image}}" />
+                        </ons-carousel-item>
                     </ons-carousel>
 
                     <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">

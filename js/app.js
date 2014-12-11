@@ -3,6 +3,7 @@ var module = ons.bootstrap();
 var applicationLanguage = (localStorage.getItem("lang") != null || localStorage.getItem("lang") != undefined) ? localStorage.getItem("lang") : null;
 
 var api_url = 'http://golden-vip.com/api/';
+var thumb_url = 'http://golden-vip.com/helpers/timthumb.php?w=%width%&h=%height%&src=';
 
 
 var session_list = [];
@@ -170,7 +171,7 @@ module.controller('GuestCarouselController', function($scope) {
                 //scopeGuestcontroller.items = data.list;
                 //scopeGuestcontroller.$digest();
 
-                apply(scopeGuestcontroller, 'items', data.list);
+                apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
 
                 session_list = scopeGuestcontroller.items;
             }, function(){
@@ -180,7 +181,9 @@ module.controller('GuestCarouselController', function($scope) {
 
                 apply(scopeGuestcontroller, 'items', []);
             }, {
-                date: selectedItem.date
+                date: selectedItem.date,
+                width: scopeGuestcontroller.thumb_width,
+                height: scopeGuestcontroller.thumb_height
             });
         };
     });
@@ -196,8 +199,8 @@ module.controller('GuestController', function($scope) {
 
         height = parseInt(height/2)-1;
 
-        $scope.thumb_width = window.innerWidth;
-        $scope.thumb_height = height;
+        scopeGuestcontroller.thumb_width = window.innerWidth;
+        scopeGuestcontroller.thumb_height = height;
 
         $('body').append(
             '<style type="text/css">'+
@@ -224,7 +227,7 @@ module.controller('GuestController', function($scope) {
             //scopeGuestcontroller.items = data.list;
             //scopeGuestcontroller.$digest();
 
-            apply(scopeGuestcontroller, 'items', data.list);
+            apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
 
             session_list = $scope.items;
         }, function(){
@@ -234,7 +237,7 @@ module.controller('GuestController', function($scope) {
 
             apply(scopeGuestcontroller, 'items', []);
         },{
-            date: currentDate,
+            date: moment().add(0, 'days').format("YYYY-M-D"),
             width: $scope.thumb_width,
             height: $scope.thumb_height//,
             //density: $scope.density,
@@ -262,13 +265,18 @@ module.controller('GuestController', function($scope) {
     });
 });
 
-
+var scopeGuestListCardController;
 module.controller('GuestListCardController', function($scope) {
     ons.ready(function() {
 
+        scopeGuestListCardController = $scope;
+
         $scope.labels = getLabels();
 
-        $scope.pictures = getArrayAsObjects(session_list[splash.getCurrentPage().options.index].images);
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = 255;
+
+        $scope.pictures = getArrayAsObjects(session_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
         $scope.detail = session_list[splash.getCurrentPage().options.index];
 
@@ -281,6 +289,7 @@ module.controller('GuestListCardController', function($scope) {
                 $scope.pictures[i].selected = '';
             }
 
+            if(selectedItem)
             selectedItem.selected = 'selected';
 
             $scope.$apply();
@@ -437,7 +446,7 @@ module.controller('ClubsController', function($scope) {
             //scopeClubsController.items = data.list;
             //scopeClubsController.$digest();
 
-            apply(scopeClubsController, 'items', data.list);
+            apply(scopeClubsController, 'items', data.list, scopeClubsController.thumb_width, scopeClubsController.thumb_height);
 
             clubs_list = $scope.items;
         }, function(){
@@ -467,7 +476,10 @@ module.controller('ClubsController', function($scope) {
 module.controller('ClubInfoController', function($scope) {
     ons.ready(function() {
 
-        $scope.pictures = getArrayAsObjects(clubs_list[splash.getCurrentPage().options.index].images);
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = 255;
+
+        $scope.pictures = getArrayAsObjects(clubs_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
         $scope.detail = clubs_list[splash.getCurrentPage().options.index];
 
@@ -482,6 +494,7 @@ module.controller('ClubInfoController', function($scope) {
                 $scope.pictures[i].selected = '';
             }
 
+            if(selectedItem)
             selectedItem.selected = 'selected';
 
             $scope.$apply();
@@ -546,7 +559,7 @@ module.controller('LifeController', function($scope) {
             //scopeLifeController.items = data.list;
             //scopeLifeController.$digest();
 
-            apply(scopeLifeController, 'items', data.list);
+            apply(scopeLifeController, 'items', data.list, scopeLifeController.thumb_width, scopeLifeController.thumb_height);
 
             life_list = $scope.items;
 
@@ -577,7 +590,10 @@ module.controller('LifeController', function($scope) {
 module.controller('LifeInfoController', function($scope) {
     ons.ready(function() {
 
-        $scope.pictures = getArrayAsObjects(life_list[splash.getCurrentPage().options.index].images);
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = 255;
+
+        $scope.pictures = getArrayAsObjects(life_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
         $scope.detail = life_list[splash.getCurrentPage().options.index];
 
@@ -592,6 +608,7 @@ module.controller('LifeInfoController', function($scope) {
                 $scope.pictures[i].selected = '';
             }
 
+            if(selectedItem)
             selectedItem.selected = 'selected';
 
             $scope.$apply();
@@ -659,7 +676,7 @@ module.controller('PromosController', function($scope) {
             //scopePromosController.items = data.list;
             //scopePromosController.$digest();
 
-            apply(scopePromosController, 'items', data.list);
+            apply(scopePromosController, 'items', data.list, scopePromosController.thumb_width, scopePromosController.thumb_height);
 
             promos_list = $scope.items;
 
@@ -690,7 +707,10 @@ module.controller('PromosController', function($scope) {
 module.controller('PromoInfoController', function($scope) {
     ons.ready(function() {
 
-        $scope.pictures = getArrayAsObjects(promos_list[splash.getCurrentPage().options.index].images);
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = 255;
+
+        $scope.pictures = getArrayAsObjects(promos_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
         $scope.detail = promos_list[splash.getCurrentPage().options.index];
 
@@ -708,6 +728,7 @@ module.controller('PromoInfoController', function($scope) {
                 $scope.pictures[i].selected = '';
             }
 
+            if(selectedItem)
             selectedItem.selected = 'selected';
 
             $scope.$apply();
@@ -764,7 +785,7 @@ module.controller('ProfileController', function($scope) {
             //scopeProfileController.items = data.list;
             //scopeProfileController.$digest();
 
-            apply(scopeProfileController, 'items', data.list);
+            apply(scopeProfileController, 'items', data.list, scopeProfileController.thumb_width, scopeProfileController.thumb_height);
 
             profile_list = $scope.items;
 
@@ -939,31 +960,55 @@ function generateCalendar() {
 
     var currentDay = parseInt( moment().format("D") );
 
-    items.push({day: moment().subtract(2, 'days').format("D"), month: moment().subtract(2, 'days').format("MMM"), date: moment().subtract(2, 'days').format("L") });
-    items.push({day: moment().subtract(1, 'days').format("D"), month: moment().subtract(1, 'days').format("MMM"), date: moment().subtract(1, 'days').format("L") });
+    items.push({day: moment().subtract(2, 'days').format("D"), month: moment().subtract(2, 'days').format("MMM"), date: moment().subtract(2, 'days').format("YYYY-M-D") });
+    items.push({day: moment().subtract(1, 'days').format("D"), month: moment().subtract(1, 'days').format("MMM"), date: moment().subtract(1, 'days').format("YYYY-M-D") });
 
 
     for (i = 0; i <= 30; i ++) {
         if(i == 0) {
-            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("L") });
+            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("YYYY-M-D") });
         } else {
-            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), date: moment().add(i, 'days').format("L") });
+            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), date: moment().add(i, 'days').format("YYYY-M-D") });
         }
     }
 
     return items;
 }
 
-function apply($scope, key, value) {
+// result json
+function apply($scope, key, value, width, height) {
+    var result = [];
+    if(value && value.length > 0) {
+        for(var i in value) {
+            var obj = value[i];
+
+            try {
+                if(width && height) {
+                    obj.thumb = thumb_url.replace('%width%', width).replace('%height%', height) + obj.images[0];
+                } else {
+                    obj.thumb = obj.images[0];
+                }
+
+            }catch(error){}
+
+            result.push(obj);
+        }
+    }
+
     $scope.$apply(function() {
         $scope[key] = value;
     });
 }
 
-function getArrayAsObjects(array) {
+function getArrayAsObjects(array, width, height) {
     var result = [];
 
     for(var i in array) {
+        if(width && height) {
+            result.push({list_image: thumb_url.replace('%width%', width).replace('%height%', height) + array[i], selected:i == 0 ? 'selected' : ''});
+        } else {
+
+        }
         result.push({list_image:array[i], selected:i == 0 ? 'selected' : ''});
     }
 
