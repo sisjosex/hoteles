@@ -1007,9 +1007,8 @@ function getArrayAsObjects(array, width, height) {
         if(width && height) {
             result.push({list_image: thumb_url.replace('%width%', width).replace('%height%', height) + array[i], selected:i == 0 ? 'selected' : ''});
         } else {
-
+            result.push({list_image:array[i], selected:i == 0 ? 'selected' : ''});
         }
-        result.push({list_image:array[i], selected:i == 0 ? 'selected' : ''});
     }
 
     return result;
