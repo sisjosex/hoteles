@@ -374,8 +374,11 @@ module.controller('GuestListFormController', function($scope) {
 
 });
 
+var scopeClubsController;
 module.controller('ClubsController', function($scope) {
     ons.ready(function() {
+
+        scopeClubsController = $scope;
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
@@ -401,14 +404,14 @@ module.controller('ClubsController', function($scope) {
 
         getJsonP(api_url + 'getClubs/', function(data){
 
-            $scope.items = data.list;
-            $scope.$apply();
+            scopeClubsController.items = data.list;
+            scopeClubsController.$apply();
 
             clubs_list = $scope.items;
         }, function(){
 
-            $scope.error = true;
-            $scope.$apply();
+            scopeClubsController.error = true;
+            scopeClubsController.$apply();
         });
 
         $scope.labels = getLabels();
@@ -470,9 +473,11 @@ module.controller('ClubInfoController', function($scope) {
 
 
 
-
+var scopeLifeController;
 module.controller('LifeController', function($scope) {
     ons.ready(function() {
+
+        scopeLifeController = $scope;
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
@@ -498,15 +503,15 @@ module.controller('LifeController', function($scope) {
 
         getJsonP(api_url + 'getLifes/', function(data){
 
-            $scope.items = data.list;
-            $scope.$apply();
+            scopeLifeController.items = data.list;
+            scopeLifeController.$apply();
 
             life_list = $scope.items;
 
         }, function(){
 
-            $scope.error = true;
-            $scope.$apply();
+            scopeLifeController.error = true;
+            scopeLifeController.$apply();
         });
 
         $scope.labels = getLabels();
@@ -570,9 +575,11 @@ module.controller('LifeInfoController', function($scope) {
 
 
 
-
+var scopePromosController;
 module.controller('PromosController', function($scope) {
     ons.ready(function() {
+
+        scopePromosController = $scope;
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
@@ -599,15 +606,15 @@ module.controller('PromosController', function($scope) {
 
         getJsonP(api_url + 'getPromos/', function(data){
 
-            $scope.items = data.list;
-            $scope.$apply();
+            scopePromosController.items = data.list;
+            scopePromosController.$apply();
 
             promos_list = $scope.items;
 
         }, function(){
 
-            $scope.error = true;
-            $scope.$apply();
+            scopePromosController.error = true;
+            scopePromosController.$apply();
         });
 
         $scope.labels = getLabels();
@@ -664,9 +671,11 @@ module.controller('PromoInfoController', function($scope) {
 
 
 
-
+var scopeProfileController;
 module.controller('ProfileController', function($scope) {
     ons.ready(function() {
+
+        scopeProfileController = $scope;
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
@@ -692,15 +701,15 @@ module.controller('ProfileController', function($scope) {
 
         getJsonP(api_url + 'getUserSessions/', function(data){
 
-            $scope.items = data.list;
-            $scope.$apply();
+            scopeProfileController.items = data.list;
+            scopeProfileController.$apply();
 
             profile_list = $scope.items;
 
         }, function(){
 
-            $scope.error = true;
-            $scope.$apply();
+            scopeProfileController.error = true;
+            scopeProfileController.$apply();
         }, {user_id: (userData && userData.id) ? userData.id : ''});
 
         $scope.labels = getLabels();
