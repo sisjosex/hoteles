@@ -30,17 +30,17 @@
 <ons-navigator animation="slide" var="splash">
     <ons-page ng-controller="LanguageController" class="splash">
         <div align="center" style="margin-top:47%">
-            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'es'});">
+            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {lang: 'es'});">
                 <span class="icon sp"></span> espa&ntilde;ol
             </div>
-            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {onTransitionEnd:loadMainApp, lang: 'en'});">
+            <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {lang: 'en'});">
                 <span class="icon en"></span> english
             </div>
         </div>
     </ons-page>
 </ons-navigator>
 
-<ons-template id="page.html">
+<ons-template id="page.html" var="languagePage">
     <ons-page ng-controller="MainMenuController" var="mainPage">
         <ons-tabbar>
             <ons-tab page="guest.html" label="{{labels.guest_list}}" class="tabicon icon-guest" icon="square" active="true"></ons-tab>

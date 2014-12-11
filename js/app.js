@@ -1,6 +1,6 @@
 var module = ons.bootstrap();
 
-var applicationLanguage = 'es';
+var applicationLanguage = (localStorage.getItem("lang") != null || localStorage.getItem("lang") != undefined) ? localStorage.getItem("lang") : null;
 
 var api_url = 'http://golden-vip.com/api/';
 
@@ -112,7 +112,6 @@ window.fadeIn = function(obj) {
 
 module.controller('AppController', function($scope) {
     ons.ready(function() {
-
     });
 });
 
@@ -122,6 +121,10 @@ module.controller('LanguageController', function($scope) {
         try {
             StatusBar.hide();
         }catch(error){}
+
+        if(applicationLanguage != null) {
+            splash.pushPage('page.html', {lang: applicationLanguage, animation: 'none'});
+        }
     });
 });
 
@@ -129,6 +132,8 @@ module.controller('MainMenuController', function($scope) {
     ons.ready(function() {
 
         applicationLanguage = splash.getCurrentPage().options.lang;
+
+        localStorage.setItem('lang', applicationLanguage);
 
         $scope.labels = getLabels();
 
@@ -882,6 +887,8 @@ module.controller('ProfileDetailController', function($scope) {
             getJsonP(api_url + 'setIdiomaUser/', function(data){
 
                 applicationLanguage = lang;
+
+                localStorage.setItem('lang', applicationLanguage);
 
                 if(data.message) {
                     alert(data.message);
