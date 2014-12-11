@@ -157,6 +157,7 @@ module.controller('GuestCarouselController', function($scope) {
 
                 scopeGuestcontroller.items = data.list;
                 scopeGuestcontroller.$apply();
+                window.trigger('resize');
 
                 session_list = $scope.items;
             }, function(){
@@ -203,6 +204,8 @@ module.controller('GuestController', function($scope) {
 
             scopeGuestcontroller.items = data.list;
             scopeGuestcontroller.$apply();
+
+            window.trigger('resize');
 
             session_list = $scope.items;
         }, function(){
@@ -407,6 +410,8 @@ module.controller('ClubsController', function($scope) {
             scopeClubsController.items = data.list;
             scopeClubsController.$apply();
 
+            window.trigger('resize');
+
             clubs_list = $scope.items;
         }, function(){
 
@@ -505,6 +510,8 @@ module.controller('LifeController', function($scope) {
 
             scopeLifeController.items = data.list;
             scopeLifeController.$apply();
+
+            window.trigger('resize');
 
             life_list = $scope.items;
 
@@ -609,6 +616,8 @@ module.controller('PromosController', function($scope) {
             scopePromosController.items = data.list;
             scopePromosController.$apply();
 
+            window.trigger('resize');
+
             promos_list = $scope.items;
 
         }, function(){
@@ -703,6 +712,8 @@ module.controller('ProfileController', function($scope) {
 
             scopeProfileController.items = data.list;
             scopeProfileController.$apply();
+
+            window.trigger('resize');
 
             profile_list = $scope.items;
 
