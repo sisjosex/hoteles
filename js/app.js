@@ -135,7 +135,7 @@ module.controller('GuestCarouselController', function($scope) {
 
         scopeGuestCarouselController = $scope;
 
-        moment.lang(applicationLanguage);
+        moment.locale(applicationLanguage);
 
         currentDate = moment().format("L");
 
@@ -893,15 +893,15 @@ function generateCalendar() {
 
     var currentDay = parseInt( moment().format("D") );
 
-    items.push({day: moment().subtract('days', 2).format("D"), month: moment().subtract('days', 2).format("MMM"), date: moment().subtract('days', 2).format("L") });
-    items.push({day: moment().subtract('days', 1).format("D"), month: moment().subtract('days', 1).format("MMM"), date: moment().subtract('days', 1).format("L") });
+    items.push({day: moment().subtract(2, 'days').format("D"), month: moment().subtract(2, 'days').format("MMM"), date: moment().subtract(2, 'days').format("L") });
+    items.push({day: moment().subtract(1, 'days').format("D"), month: moment().subtract(1, 'days').format("MMM"), date: moment().subtract(1, 'days').format("L") });
 
 
     for (i = 0; i <= 30; i ++) {
         if(i == 0) {
-            items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), selected: 'selected', date: moment().add('days', i).format("L") });
+            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("L") });
         } else {
-            items.push({day: moment().add('days', i).format("D"), month: moment().add('days', i).format("MMM"), date: moment().add('days', i).format("L") });
+            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), date: moment().add(i, 'days').format("L") });
         }
     }
 
