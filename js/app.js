@@ -155,15 +155,18 @@ module.controller('GuestCarouselController', function($scope) {
 
             getJsonP(api_url + 'getSessions/', function(data){
 
-                scopeGuestcontroller.items = data.list;
-                scopeGuestcontroller.$apply();
-                window.trigger('resize');
+                //scopeGuestcontroller.items = data.list;
+                //scopeGuestcontroller.$digest();
 
-                session_list = $scope.items;
+                apply(scopeGuestcontroller, 'items', data.list);
+
+                session_list = scopeGuestcontroller.items;
             }, function(){
 
                 scopeGuestcontroller.error = true;
-                scopeGuestcontroller.$apply();
+                //scopeGuestcontroller.$digest();
+
+                apply(scopeGuestcontroller, 'items', []);
             }, {
                 date: selectedItem.date
             });
@@ -202,16 +205,18 @@ module.controller('GuestController', function($scope) {
 
         getJsonP(api_url + 'getSessions/', function(data){
 
-            scopeGuestcontroller.items = data.list;
-            scopeGuestcontroller.$apply();
+            //scopeGuestcontroller.items = data.list;
+            //scopeGuestcontroller.$digest();
 
-            window.trigger('resize');
+            apply(scopeGuestcontroller, 'items', data.list);
 
             session_list = $scope.items;
         }, function(){
 
             scopeGuestcontroller.error = true;
-            scopeGuestcontroller.$apply();
+            //scopeGuestcontroller.$digest();
+
+            apply(scopeGuestcontroller, 'items', []);
         },{
             date: currentDate
         });
@@ -407,16 +412,18 @@ module.controller('ClubsController', function($scope) {
 
         getJsonP(api_url + 'getClubs/', function(data){
 
-            scopeClubsController.items = data.list;
-            scopeClubsController.$apply();
+            //scopeClubsController.items = data.list;
+            //scopeClubsController.$digest();
 
-            window.trigger('resize');
+            apply(scopeClubsController, 'items', data.list);
 
             clubs_list = $scope.items;
         }, function(){
 
             scopeClubsController.error = true;
-            scopeClubsController.$apply();
+            //scopeClubsController.$digest();
+
+            apply(scopeClubsController, 'items', []);
         });
 
         $scope.labels = getLabels();
@@ -508,17 +515,19 @@ module.controller('LifeController', function($scope) {
 
         getJsonP(api_url + 'getLifes/', function(data){
 
-            scopeLifeController.items = data.list;
-            scopeLifeController.$apply();
+            //scopeLifeController.items = data.list;
+            //scopeLifeController.$digest();
 
-            window.trigger('resize');
+            apply(scopeLifeController, 'items', data.list);
 
             life_list = $scope.items;
 
         }, function(){
 
             scopeLifeController.error = true;
-            scopeLifeController.$apply();
+            //scopeLifeController.$digest();
+
+            apply(scopeLifeController, 'items', []);
         });
 
         $scope.labels = getLabels();
@@ -613,17 +622,19 @@ module.controller('PromosController', function($scope) {
 
         getJsonP(api_url + 'getPromos/', function(data){
 
-            scopePromosController.items = data.list;
-            scopePromosController.$apply();
+            //scopePromosController.items = data.list;
+            //scopePromosController.$digest();
 
-            window.trigger('resize');
+            apply(scopePromosController, 'items', data.list);
 
             promos_list = $scope.items;
 
         }, function(){
 
             scopePromosController.error = true;
-            scopePromosController.$apply();
+            //scopePromosController.$digest();
+
+            apply(scopePromosController, 'items', []);
         });
 
         $scope.labels = getLabels();
@@ -710,17 +721,20 @@ module.controller('ProfileController', function($scope) {
 
         getJsonP(api_url + 'getUserSessions/', function(data){
 
-            scopeProfileController.items = data.list;
-            scopeProfileController.$apply();
+            //scopeProfileController.items = data.list;
+            //scopeProfileController.$digest();
 
-            window.trigger('resize');
+            apply(scopeProfileController, 'items', data.list);
 
             profile_list = $scope.items;
 
         }, function(){
 
             scopeProfileController.error = true;
-            scopeProfileController.$apply();
+            //scopeProfileController.$digest();
+
+            apply(scopeProfileController, 'items', []);
+
         }, {user_id: (userData && userData.id) ? userData.id : ''});
 
         $scope.labels = getLabels();
@@ -892,6 +906,12 @@ function generateCalendar() {
     }
 
     return items;
+}
+
+function apply($scope, key, value) {
+    $scope.$apply(function() {
+        $scope[key] = value;
+    });
 }
 
 function getArrayAsObjects(array) {
