@@ -856,6 +856,8 @@ function getJsonP(url, callback_success, callback_error, data) {
 
     data['lang'] = applicationLanguage;
 
+    modal.show();
+
     $.ajax({
         type: 'GET',
         url: url,
@@ -865,9 +867,13 @@ function getJsonP(url, callback_success, callback_error, data) {
         async:true,
         success: function(data) {
 
+            modal.hide();
+
             callback_success(data);
         },
         error: function(data) {
+
+            modal.hide();
 
             callback_error(data);
         }
