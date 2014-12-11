@@ -70,7 +70,9 @@
             <ons-list>
                 <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                    <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
+                    <div class="item-bg">
+                        <img onload="fadeIn(this)" src="{{item.images[0]}}" />
+                    </div>
 
                     <div class="guesto-list-verlay overlay">
                         <div align="center" class="guest-list-item-content">
@@ -84,6 +86,10 @@
                         </div>
                     </div>
 
+                </ons-list-item>
+
+                <ons-list-item ng-show="no_items">
+                    {{labels.no_records}}
                 </ons-list-item>
             </ons-list>
         </ons-scroller>
@@ -228,7 +234,9 @@
                 <ons-list>
                     <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                        <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
+                        <div class="item-bg">
+                            <img onload="fadeIn(this)" src="{{item.images[0]}}" />
+                        </div>
 
                         <div class="guesto-list-verlay overlay">
                             <div align="center" class="guest-list-item-content">
@@ -319,7 +327,9 @@
                 <ons-list>
                     <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                        <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
+                        <div class="item-bg">
+                            <img onload="fadeIn(this)" src="{{item.images[0]}}" />
+                        </div>
 
                         <div class="guesto-list-verlay overlay">
                             <div align="center" class="guest-list-item-content">
@@ -413,7 +423,9 @@
                 <ons-list>
                     <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                        <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
+                        <div class="item-bg">
+                            <img onload="fadeIn(this)" src="{{item.images[0]}}" />
+                        </div>
 
                         <div class="guesto-list-verlay overlay">
                             <div align="center" class="guest-list-item-content">
@@ -508,7 +520,9 @@
                 <ons-list>
                     <ons-list-item class="guest_list_item" ng-repeat="item in items">
 
-                        <div class="item-bg" style="background-image: url('{{item.images[0]}}')"></div>
+                        <div class="item-bg">
+                            <img onload="fadeIn(this)" src="{{item.images[0]}}" />
+                        </div>
 
                         <div class="guesto-list-verlay overlay">
                             <div align="center" class="guest-list-item-content">

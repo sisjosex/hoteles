@@ -103,6 +103,13 @@ var labels = {
 };
 
 
+window.fadeIn = function(obj) {
+    //$(obj).fadeIn(1000);
+
+    $(obj).addClass('fadein');
+}
+
+
 module.controller('AppController', function($scope) {
     ons.ready(function() {
 
@@ -184,6 +191,9 @@ module.controller('GuestController', function($scope) {
 
         height = parseInt(height/2)-1;
 
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = height;
+
         $('body').append(
             '<style type="text/css">'+
                 '.guest_list_item {\
@@ -192,6 +202,7 @@ module.controller('GuestController', function($scope) {
                 }'+
             '</style>'
         );
+        //$scope.density = ;
 
         $scope.getWindowDimensions = function () {
             return { h: height };
@@ -218,7 +229,10 @@ module.controller('GuestController', function($scope) {
 
             apply(scopeGuestcontroller, 'items', []);
         },{
-            date: currentDate
+            date: currentDate,
+            width: $scope.thumb_width,
+            height: $scope.thumb_height//,
+            //density: $scope.density,
         });
 
         $scope.labels = getLabels();
@@ -392,6 +406,9 @@ module.controller('ClubsController', function($scope) {
 
         height = parseInt(height/2)-1;
 
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = height;
+
         $('body').append(
             '<style type="text/css">'+
             '.guest_list_item {\
@@ -424,6 +441,9 @@ module.controller('ClubsController', function($scope) {
             //scopeClubsController.$digest();
 
             apply(scopeClubsController, 'items', []);
+        }, {
+            width: $scope.thumb_width,
+            height: $scope.thumb_height
         });
 
         $scope.labels = getLabels();
@@ -495,6 +515,9 @@ module.controller('LifeController', function($scope) {
 
         height = parseInt(height/2)-1;
 
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = height;
+
         $('body').append(
             '<style type="text/css">'+
             '.guest_list_item {\
@@ -528,6 +551,9 @@ module.controller('LifeController', function($scope) {
             //scopeLifeController.$digest();
 
             apply(scopeLifeController, 'items', []);
+        }, {
+            width: $scope.thumb_width,
+            height: $scope.thumb_height
         });
 
         $scope.labels = getLabels();
@@ -601,6 +627,9 @@ module.controller('PromosController', function($scope) {
 
         height = parseInt(height/2)-1;
 
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = height;
+
         $('body').append(
             '<style type="text/css">'+
             '.guest_list_item {\
@@ -635,6 +664,9 @@ module.controller('PromosController', function($scope) {
             //scopePromosController.$digest();
 
             apply(scopePromosController, 'items', []);
+        }, {
+            width: $scope.thumb_width,
+            height: $scope.thumb_height
         });
 
         $scope.labels = getLabels();
@@ -701,6 +733,9 @@ module.controller('ProfileController', function($scope) {
 
         height = parseInt(height/2)-1;
 
+        $scope.thumb_width = window.innerWidth;
+        $scope.thumb_height = height;
+
         $('body').append(
             '<style type="text/css">'+
             '.guest_list_item {\
@@ -735,7 +770,11 @@ module.controller('ProfileController', function($scope) {
 
             apply(scopeProfileController, 'items', []);
 
-        }, {user_id: (userData && userData.id) ? userData.id : ''});
+        }, {
+            user_id: (userData && userData.id) ? userData.id : '',
+            width: $scope.thumb_width,
+            height: $scope.thumb_height
+        });
 
         $scope.labels = getLabels();
 
@@ -955,3 +994,4 @@ function getJsonP(url, callback_success, callback_error, data) {
         }
     });
 }
+
