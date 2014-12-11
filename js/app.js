@@ -137,7 +137,7 @@ module.controller('GuestCarouselController', function($scope) {
 
         moment.lang(applicationLanguage);
 
-        currentDate = moment().subtract('days', 2).format("L");
+        currentDate = moment().format("L");
 
         scopeGuestCarouselController.items = generateCalendar();
 
@@ -201,14 +201,14 @@ module.controller('GuestController', function($scope) {
 
         getJsonP(api_url + 'getSessions/', function(data){
 
-            $scope.items = data.list;
-            $scope.$apply();
+            scopeGuestcontroller.items = data.list;
+            scopeGuestcontroller.$apply();
 
             session_list = $scope.items;
         }, function(){
 
-            $scope.error = true;
-            $scope.$apply();
+            scopeGuestcontroller.error = true;
+            scopeGuestcontroller.$apply();
         },{
             date: currentDate
         });
@@ -802,6 +802,42 @@ module.controller('ProfileDetailController', function($scope) {
 
                 }
             }
+        };
+
+        $scope.updateLanguage = function(lang) {
+
+            getJsonP(api_url + 'setIdiomaUser/', function(data){
+
+                applicationLanguage = lang;
+
+                if(data.message) {
+                    alert(data.message);
+                }
+
+            }, function(){
+
+
+            }, {
+                user_id: $scope.userData ? $scope.userData.id : '',
+                lang: lang
+            });
+        };
+
+        $scope.updateNotifications = function(flag) {
+
+            getJsonP(api_url + 'setNotificationUser/', function(data){
+
+                if(data.message) {
+                    alert(data.message);
+                }
+
+            }, function(){
+
+
+            }, {
+                user_id: $scope.userData ? $scope.userData.id : '',
+                notif: flag
+            });
         };
 
     });

@@ -591,10 +591,10 @@
 
                 <div align="center">
                     <p class="title-big">{{labels.idiom}}</p>
-                    <div class="button icon gray lang" ng-click="">
+                    <div class="button icon gray lang" ng-click="updateLanguage('es')">
                         <span class="icon sp"></span> espa&ntilde;ol
                     </div>
-                    <div class="button icon gray lang" ng-click="">
+                    <div class="button icon gray lang" ng-click="updateLanguage('en')">
                         <span class="icon en"></span> english
                     </div>
                 </div>
@@ -602,10 +602,10 @@
 
                 <div align="center" style="margin-bottom:2em;">
                     <p class="title-big">{{labels.alerts}}</p>
-                    <div class="button gray" ng-click="">
+                    <div class="button gray" ng-click="updateNotifications('1')">
                         Si
                     </div>
-                    <div class="button gray" ng-click="">
+                    <div class="button gray" ng-click="updateNotifications('0')">
                         No
                     </div>
                 </div>
