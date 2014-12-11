@@ -152,13 +152,29 @@ module.controller('GuestCarouselController', function($scope) {
             }
 
             selectedItem.selected = 'selected';
+
+            getJsonP(api_url + 'getSessions/', function(data){
+
+                scopeGuestcontroller.items = data.list;
+                scopeGuestcontroller.$apply();
+
+                session_list = $scope.items;
+            }, function(){
+
+                scopeGuestcontroller.error = true;
+                scopeGuestcontroller.$apply();
+            }, {
+                date: selectedItem.date
+            });
         };
     });
 });
 
-
+var scopeGuestcontroller;
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
+
+        scopeGuestcontroller = $scope;
 
         var height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
 
@@ -193,6 +209,8 @@ module.controller('GuestController', function($scope) {
 
             $scope.error = true;
             $scope.$apply();
+        },{
+            date: currentDate
         });
 
         $scope.labels = getLabels();
@@ -672,44 +690,35 @@ module.controller('ProfileController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-        $scope.items = [
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                club: 'en PACHA CBN',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                club: 'en PACHA CBN',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                club: 'en PACHA CBN',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                club: 'en PACHA CBN',
-                list_image: 'img/list_promo.jpg'
-            },
-            {
-                title: 'Funky Night',
-                subtitle: 'COPA GRATIS HASTA LAS 3:00H',
-                club: 'en PACHA CBN',
-                list_image: 'img/list_promo.jpg'
-            }
-        ];
+        getJsonP(api_url + 'getUserSessions/', function(data){
+
+            $scope.items = data.list;
+            $scope.$apply();
+
+            profile_list = $scope.items;
+
+        }, function(){
+
+            $scope.error = true;
+            $scope.$apply();
+        }, {user_id: (userData && userData.id) ? userData.id : ''});
 
         $scope.labels = getLabels();
 
-        $scope.showDetail = function(index) {
+        $scope.validate = function(index) {
 
-            splash.pushPage('profile_detail.html', {index:index});
+            user_session = profile_list[index];
+
+            getJsonP(api_url + 'validateByAdmin/', function(data){
+
+                alert(data.message);
+
+            }, function(){
+
+                $scope.error = true;
+                $scope.$apply();
+
+            }, {user_id: (userData && userData.id) ? userData.id : '', users_session_id: user_session.users_session_id});
         };
 
     });
