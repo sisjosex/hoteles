@@ -184,16 +184,13 @@ module.controller('LanguageController', function($scope) {
             splash.pushPage('page.html', {lang: applicationLanguage, animation: 'none'});
 
         } else {
+
+            try { navigator.splashscreen.hide(); } catch(error){}
+
             setTimeout(function(){
                 $('.languageButtons').addClass('fadein');
             }, 100);
         }
-
-        try {
-
-            navigator.splashscreen.hide();
-
-        } catch(error){}
 
     });
 });
@@ -255,14 +252,19 @@ module.controller('GuestCarouselController', function($scope) {
                     });
                 }
 
-
                 session_list = scopeGuestcontroller.items;
+
+                try { navigator.splashscreen.hide(); } catch(error){}
+
             }, function(){
 
                 scopeGuestcontroller.error = true;
                 //scopeGuestcontroller.$digest();
 
                 apply(scopeGuestcontroller, 'items', []);
+
+                try { navigator.splashscreen.hide(); } catch(error){}
+
             }, {
                 date: selectedItem.date/*,
                 width: scopeGuestcontroller.thumb_width,
