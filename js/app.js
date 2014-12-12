@@ -253,7 +253,7 @@ module.controller('GuestController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)-1;
+        height = parseInt(height/2)+1;
 
         scopeGuestcontroller.thumb_width = window.innerWidth;
         scopeGuestcontroller.thumb_height = height;
@@ -486,7 +486,7 @@ module.controller('ClubsController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)-1;
+        height = parseInt(height/2)+1;
 
         $scope.thumb_width = window.innerWidth;
         $scope.thumb_height = height;
@@ -610,7 +610,7 @@ module.controller('LifeController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)-1;
+        height = parseInt(height/2)+1;
 
         $scope.thumb_width = window.innerWidth;
         $scope.thumb_height = height;
@@ -737,7 +737,7 @@ module.controller('PromosController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)-1;
+        height = parseInt(height/2)+1;
 
         $scope.thumb_width = window.innerWidth;
         $scope.thumb_height = height;
@@ -858,7 +858,7 @@ module.controller('ProfileController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)-1;
+        height = parseInt(height/2)+1;
 
         $scope.thumb_width = window.innerWidth;
         $scope.thumb_height = height;

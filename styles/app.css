@@ -651,7 +651,7 @@ label.checkbox {
 }
 
 .guestpage .page__content {
-    top: 46px;
+    top: 46px !important;
 }
 
 .guestpage.carousel .page__content{
@@ -660,4 +660,8 @@ label.checkbox {
 
 .center.header-title {
     padding-top:0 !important;
+}
+
+.navigation-bar__title {
+    padding-top:0;
 }
