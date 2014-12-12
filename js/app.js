@@ -153,6 +153,10 @@ window.fadeIn = function(obj) {
 };
 
 window.onresize = function(){
+    resizeCardCarousel();
+}
+
+function resizeCardCarousel() {
     thumb_width = window.innerWidth;
     thumb_height = parseInt(510 / 640 * window.innerWidth);
 
@@ -342,11 +346,7 @@ module.controller('GuestListCardController', function($scope) {
 
         $scope.labels = getLabels();
 
-        thumb_width = window.innerWidth;
-        thumb_height = parseInt(510 / 640 * window.innerWidth);
-
-        $('.hascarousel .carousel-detail').height(thumb_height);
-        $('.hascarousel .page__content').css('top', thumb_height);
+        resizeCardCarousel();
 
         $scope.pictures = getArrayAsObjects(session_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
@@ -581,11 +581,7 @@ module.controller('ClubsController', function($scope) {
 module.controller('ClubInfoController', function($scope) {
     ons.ready(function() {
 
-        thumb_width = window.innerWidth;
-        thumb_height = parseInt(510 / 640 * window.innerWidth);
-
-        $('.hascarousel .carousel-detail').height(thumb_height);
-        $('.hascarousel .page__content').css('top', thumb_height);
+        resizeCardCarousel();
 
         $scope.pictures = getArrayAsObjects(clubs_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
@@ -713,11 +709,7 @@ module.controller('LifeController', function($scope) {
 module.controller('LifeInfoController', function($scope) {
     ons.ready(function() {
 
-        thumb_width = window.innerWidth;
-        thumb_height = parseInt(510 / 640 * window.innerWidth);
-
-        $('.hascarousel .carousel-detail').height(thumb_height);
-        $('.hascarousel .page__content').css('top', thumb_height);
+        resizeCardCarousel();
 
         $scope.pictures = getArrayAsObjects(life_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
@@ -848,11 +840,7 @@ module.controller('PromosController', function($scope) {
 module.controller('PromoInfoController', function($scope) {
     ons.ready(function() {
 
-        thumb_width = window.innerWidth;
-        thumb_height = parseInt(510 / 640 * window.innerWidth);
-
-        $('.hascarousel .carousel-detail').height(thumb_height);
-        $('.hascarousel .page__content').css('top', thumb_height);
+        resizeCardCarousel();
 
         $scope.pictures = getArrayAsObjects(promos_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
