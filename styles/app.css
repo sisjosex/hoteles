@@ -642,8 +642,8 @@ label.checkbox {
     color: #fb00c2 !important;
 }
 
-.toolbar {
-    height:45px;
+.normal-page .toolbar {
+    height:45px !important;
 }
 
 .toolbar.big {
@@ -651,6 +651,10 @@ label.checkbox {
 }
 
 .guestpage .page__content {
+    top: 46px !important;
+}
+
+.normal-page .page__content {
     top: 46px !important;
 }
 
