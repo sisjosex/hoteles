@@ -40,7 +40,7 @@ var labels = {
         metro: 'Metro:',
         ambient: 'Ambiente:',
         accept_card: 'Acepta Tarjeta',
-        fill_form: 'rellena este pequeño formulario',
+        fill_form: 'rellena este pequeño formulario. Este proceso sólo es necesario una vez',
         first_name: 'Nombre:',
         last_name: 'Apellidos:',
         persons: 'Nº de personas:',
@@ -56,7 +56,23 @@ var labels = {
         user_email_required: 'Email es requerido',
         user_email_invalid: 'Direccion de Email inválida',
         user_phone_required: 'Telefono es requerido',
-        user_conditions_required: 'Debe aceptar las condiciones'
+        user_conditions_required: 'Debe aceptar las condiciones',
+        no_guest_list: 'No tienes ningún GUEST LIST. Entra en la sección y elige tus sesiones',
+        no_data: 'No hay datos para mostrar',
+        hi: 'Hola',
+        complete_nro_persons: 'completa el n° de personas que asistiréis',
+        to_session: 'a la sessión',
+        to_day: 'del día',
+        perfect: 'Perfecto!',
+        you_are_in_guest_list: 'ya estas en la guest list de ',
+        for_session: 'para la ',
+        present_invitation: 'presenta la invitación que te hemos guardado',
+        in_seccion: 'en la seccion',
+        this_app: 'de este app',
+        club_door: 'en la puerta del club',
+        my_profile: 'MI PERFIL',
+        profile: 'mi perfil',
+        alert: 'ALERTA'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -83,7 +99,7 @@ var labels = {
         metro: 'Metro:',
         ambient: 'Ambient:',
         accept_card: 'Accept Card',
-        fill_form: 'fill this few form',
+        fill_form: 'fill this few form, This process is only required once',
         first_name: 'Name:',
         last_name: 'Surename:',
         persons: 'Nº of persons:',
@@ -99,7 +115,23 @@ var labels = {
         user_email_required: 'Email is required',
         user_email_invalid: 'Invalid email address',
         user_phone_required: 'Phone is required',
-        user_conditions_required: 'You must accept conditions'
+        user_conditions_required: 'You must accept conditions',
+        no_guest_list: 'You have no GUEST LIST. Enter the section and select your sessions',
+        no_data: 'There is no data to show',
+        hi: 'Hi',
+        complete_nro_persons: 'cComplete the n ° of people who will attend',
+        to_session: 'to session',
+        to_day: 'of the day',
+        perfect: 'Perfect!',
+        you_are_in_guest_list: "and you're on the guest list of ",
+        for_session: 'for ',
+        present_invitation: "presents the invitation that we've kept",
+        in_seccion: 'in section',
+        this_app: 'of this app',
+        club_door: 'in front of the club',
+        my_profile: 'MY PROFILE',
+        profile: 'my profile',
+        alert: 'ALERT'
     }
 };
 
@@ -107,7 +139,17 @@ var labels = {
 window.fadeIn = function(obj) {
     //$(obj).fadeIn(1000);
 
-    $(obj).addClass('fadein');
+    //$(obj).addClass('fadein');
+
+    var finalImage = $('<div class="item-bg-final"></div>');
+
+    finalImage.css('background-image', "url('" + $(obj).attr('src') + "')");
+
+    $(obj).parent().html(finalImage);
+
+    setTimeout(function(){
+        finalImage.addClass('fadein');
+    }, 50);
 }
 
 
@@ -152,16 +194,16 @@ module.controller('GuestCarouselController', function($scope) {
 
         currentDate = moment().format("L");
 
-        scopeGuestCarouselController.items = generateCalendar();
+        scopeGuestCarouselController.calendar = generateCalendar();
 
 
         $scope.filterSessionDay = function(index) {
 
-            var selectedItem = $scope.items[index];
+            var selectedItem = $scope.calendar[index];
 
-            for(var i in $scope.items) {
+            for(var i in $scope.calendar) {
 
-                $scope.items[i].selected = '';
+                $scope.calendar[i].selected = '';
             }
 
             selectedItem.selected = 'selected';
@@ -172,6 +214,20 @@ module.controller('GuestCarouselController', function($scope) {
                 //scopeGuestcontroller.$digest();
 
                 apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
+
+                if(data.status == 'fail') {
+
+                    scopeGuestcontroller.$apply(function(){
+                        scopeGuestcontroller.no_data = true;
+                    });
+
+                } else {
+
+                    scopeGuestcontroller.$apply(function(){
+                        scopeGuestcontroller.no_data = false;
+                    });
+                }
+
 
                 session_list = scopeGuestcontroller.items;
             }, function(){
@@ -210,37 +266,32 @@ module.controller('GuestController', function($scope) {
                 }'+
             '</style>'
         );
-        //$scope.density = ;
 
-        $scope.getWindowDimensions = function () {
-            return { h: height };
-        };
-
-        $scope.$watch($scope.getWindowDimensions, function (newValue, oldValue) {
-
-            $('.guest_list_item').height(newValue.h);
-        }, true);
-
+        scopeGuestcontroller.no_data = false;
 
         getJsonP(api_url + 'getSessions/', function(data){
 
-            //scopeGuestcontroller.items = data.list;
-            //scopeGuestcontroller.$digest();
-
             apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
+
+            if(data.status == 'fail') {
+
+                apply(scopeGuestcontroller, 'no_data', true);
+
+            } else {
+
+                apply(scopeGuestcontroller, 'no_data', false);
+            }
 
             session_list = $scope.items;
         }, function(){
 
             scopeGuestcontroller.error = true;
-            //scopeGuestcontroller.$digest();
 
             apply(scopeGuestcontroller, 'items', []);
         },{
             date: moment().add(0, 'days').format("YYYY-M-D"),
             width: $scope.thumb_width,
-            height: $scope.thumb_height//,
-            //density: $scope.density,
+            height: $scope.thumb_height
         });
 
         $scope.labels = getLabels();
@@ -251,13 +302,12 @@ module.controller('GuestController', function($scope) {
 
             ons.createDialog('guest_list_form.html').then(function(dialog) {
                 guestFormDialog.show();
-                //naviDialog.show();
             });
         };
 
         $scope.showGuestInfo = function(index) {
 
-            var selectedItem = $scope.items[index];
+            currentSession = session_list[index];
 
             splash.pushPage('guest_list.html', {index:index});
         };
@@ -315,9 +365,11 @@ module.controller('GuestListCardController', function($scope) {
 });
 
 
-
+var scopeGuestListFormController;
 module.controller('GuestListFormController', function($scope) {
     ons.ready(function() {
+
+        scopeGuestListFormController = $scope;
 
         $scope.form_visible = 'visible';
         $scope.detail_visible = '';
@@ -342,9 +394,13 @@ module.controller('GuestListFormController', function($scope) {
             $scope.detail_visible = 'visible';
         }
 
+        $scope.detail = currentSession;
 
 
         $scope.labels = getLabels();
+
+        $scope.reservation_complete = false;
+        $scope.reservation_inprogress = true;
 
         $scope.increasePersons = function() {
             $scope.userData.persons ++;
@@ -394,7 +450,12 @@ module.controller('GuestListFormController', function($scope) {
 
                     userData = data.user;
 
-                    $scope.closeForm();
+                    //$scope.closeForm();
+
+                    scopeGuestListFormController.$apply(function(){
+                        scopeGuestListFormController.reservation_complete = true;
+                        scopeGuestListFormController.reservation_inprogress = false;
+                    });
 
                     localStorage.setItem("user", JSON.stringify(userData));
 
@@ -403,6 +464,13 @@ module.controller('GuestListFormController', function($scope) {
 
                 }, $scope.userData);
             }
+        };
+
+        $scope.goToProfile = function() {
+
+            $scope.closeForm();
+
+            mainTabBar.setActiveTab(4);
         };
 
     });
@@ -441,12 +509,23 @@ module.controller('ClubsController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
+        $scope.no_data = true;
+
         getJsonP(api_url + 'getClubs/', function(data){
 
             //scopeClubsController.items = data.list;
             //scopeClubsController.$digest();
 
             apply(scopeClubsController, 'items', data.list, scopeClubsController.thumb_width, scopeClubsController.thumb_height);
+
+            if(data.status == 'fail') {
+
+                apply(scopeClubsController, 'no_data', true);
+
+            } else {
+
+                apply(scopeClubsController, 'no_data', false);
+            }
 
             clubs_list = $scope.items;
         }, function(){
@@ -554,12 +633,23 @@ module.controller('LifeController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
+        $scope.no_data = true;
+
         getJsonP(api_url + 'getLifes/', function(data){
 
             //scopeLifeController.items = data.list;
             //scopeLifeController.$digest();
 
             apply(scopeLifeController, 'items', data.list, scopeLifeController.thumb_width, scopeLifeController.thumb_height);
+
+            if(data.status == 'fail') {
+
+                apply(scopeLifeController, 'no_data', true);
+
+            } else {
+
+                apply(scopeLifeController, 'no_data', false);
+            }
 
             life_list = $scope.items;
 
@@ -671,12 +761,23 @@ module.controller('PromosController', function($scope) {
         }, true);
 
 
+        $scope.no_data = true;
+
         getJsonP(api_url + 'getPromos/', function(data){
 
             //scopePromosController.items = data.list;
             //scopePromosController.$digest();
 
             apply(scopePromosController, 'items', data.list, scopePromosController.thumb_width, scopePromosController.thumb_height);
+
+            if(data.status == 'fail') {
+
+                apply(scopePromosController, 'no_data', true);
+
+            } else {
+
+                apply(scopePromosController, 'no_data', false);
+            }
 
             promos_list = $scope.items;
 
@@ -721,7 +822,7 @@ module.controller('PromoInfoController', function($scope) {
 
         $scope.carouselPostChange = function() {
 
-            var selectedItem = $scope.pictures[guestListCarousel.getActiveCarouselItemIndex()];
+            var selectedItem = $scope.pictures[promoListCarousel.getActiveCarouselItemIndex()];
 
             for(var i in $scope.pictures) {
 
@@ -736,7 +837,7 @@ module.controller('PromoInfoController', function($scope) {
 
         setTimeout(function(){
 
-            guestListCarousel.on('postchange', $scope.carouselPostChange);
+            promoListCarousel.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
 
@@ -780,14 +881,24 @@ module.controller('ProfileController', function($scope) {
             $('.guest_list_item').height(newValue.h);
         }, true);
 
-        getJsonP(api_url + 'getUserSessions/', function(data){
+        $scope.no_guest_list = true;
 
-            //scopeProfileController.items = data.list;
-            //scopeProfileController.$digest();
+        $scope.no_data = true;
+
+        getJsonP(api_url + 'getUserSessions/', function(data){
 
             apply(scopeProfileController, 'items', data.list, scopeProfileController.thumb_width, scopeProfileController.thumb_height);
 
             profile_list = $scope.items;
+
+            if(data.status == 'fail') {
+
+                apply(scopeProfileController, 'no_guest_list', true);
+
+            } else {
+
+                apply(scopeProfileController, 'no_guest_list', false);
+            }
 
         }, function(){
 
@@ -984,6 +1095,8 @@ function apply($scope, key, value, width, height) {
 
             try {
                 if(width && height) {
+                    width = width*2;
+                    height = height*2;
                     obj.thumb = thumb_url.replace('%width%', width).replace('%height%', height) + obj.images[0];
                 } else {
                     obj.thumb = obj.images[0];
@@ -993,15 +1106,28 @@ function apply($scope, key, value, width, height) {
 
             result.push(obj);
         }
+
+        $scope.$apply(function() {
+            $scope[key] = result;
+        });
+
+    } else {
+
+        console.log('applyed' + key + '=' + value);
+
+        $scope.$apply(function() {
+            $scope[key] = value;
+        });
     }
 
-    $scope.$apply(function() {
-        $scope[key] = value;
-    });
+
 }
 
 function getArrayAsObjects(array, width, height) {
     var result = [];
+
+    width = width*2;
+    height = height*2;
 
     for(var i in array) {
         if(width && height) {
@@ -1046,3 +1172,17 @@ function getJsonP(url, callback_success, callback_error, data) {
     });
 }
 
+
+function alert(message) {
+    ons.notification.alert({
+        message: message,
+        // or messageHTML: '<div>Message in HTML</div>',
+        title: getLabel('alert'),
+        buttonLabel: 'OK',
+        animation: 'default', // or 'none'
+        // modifier: 'optional-modifier'
+        callback: function() {
+            // Alert button is closed!
+        }
+    });
+}

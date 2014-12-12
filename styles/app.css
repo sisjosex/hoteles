@@ -128,8 +128,11 @@ input[type=checkbox] {
     left: 0;
     bottom: 0;
     right: 0;
-    background-size: 100% auto;
-    background-image: url('../img/thumb_list.jpg');
+    background-size: 4em auto;
+    background-image: url('../img/loading.png');
+    background-color: #fff;
+    background-position: center 5%;
+    background-repeat: no-repeat;
 }
 
 .item-bg img {
@@ -149,12 +152,37 @@ input[type=checkbox] {
     display:block !important;
 }
 
-.item-bg img.fadein {
+.item-bg-final {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: auto 100%;
+    background-color: #fff;
+    background-position: center 5%;
+    background-repeat: no-repeat;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: 0;
+}
+
+.fadein {
     opacity: 1;
 }
 
 .guest_list_item {
-    border-top: 0.1em solid #58c25b;
+    border-top: 0.1em solid #fa00c2;
 }
 
 .guest_list_item:first-child {
@@ -163,12 +191,13 @@ input[type=checkbox] {
 
 .session_day {
     color: #878888;
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: 'HelveticaNeueLTStd-Lt';
     font-weight: bold;
     height: auto;
     display: inline-block;
-    position:relative;
+    position: relative;
+    vertical-align: middle;
 }
 
 .session_day.selected {
@@ -179,7 +208,7 @@ input[type=checkbox] {
     font-family: 'FontAwesome';
     position: absolute;
     content: "\f0d8";
-    bottom: -7px;
+    bottom: -11px;
     left: 50%;
     margin-left: -8px;
     font-size: 0.5em;
@@ -200,8 +229,9 @@ input[type=checkbox] {
     left: 0;
     bottom: 0;
     right: 0;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-position: center 16%;
+    /*background-size: 100% auto;
+    background-repeat: no-repeat;*/
 }
 
 .overlay {
@@ -233,11 +263,11 @@ input[type=checkbox] {
     min-width: 115px;
     padding: 0;
     font-weight: bold;
-    height: 1.7em;
+    height: 1.8em;
     position:relative;
     overflow:visible;
-    border-radius:none;
-    -webkit-border-radius: none;
+    border-radius:0px;
+    -webkit-border-radius: 0px;
 }
 
 .icon {
@@ -386,7 +416,7 @@ ons-carousel {
 }
 
 .guestlist .page__content{
-    top:0;
+    top:258px;
 }
 
 .buttons {
@@ -418,6 +448,7 @@ form.card-content, .form.card-content {
 form.card-content p, .form.card-content p {
     font-size: 0.8em;
     display: table;
+    width:100%;
 }
 
 .card-content label {
@@ -425,8 +456,8 @@ form.card-content p, .form.card-content p {
 }
 
 form.card-content label, .form.card-content label.editable {
-    min-width: 7em;
-    max-width: 7em;
+    min-width: 8em;
+    max-width: 8em;
     display: inline-block;
     text-align: right;
 }
@@ -510,12 +541,14 @@ form.card-content span, .form.card-content span {
 }
 
 label.spinner {
-    color:#969696;
-    font-size:2.5em;
+    color: #969696;
+    font-size: 2.5em;
     font-weight: bold;
     min-width: 2em !important;
     max-width: 2em !important;
     width: 2em !important;
+    line-height: 1em;
+    vertical-align: middle;
 }
 
 .button.spinner {
@@ -581,6 +614,8 @@ label.checkbox {
     color: #abaaaa;
     font-size: 1em;
     text-align: left !important;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .profile-sections > div {
@@ -601,4 +636,12 @@ label.checkbox {
 
 .carousel-detail {
     height:255px;
+}
+
+.rosa {
+    color: #fb00c2 !important;
+}
+
+.toolbar.big {
+    height:257px;
 }

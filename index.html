@@ -42,7 +42,7 @@
 
 <ons-template id="page.html" var="languagePage">
     <ons-page ng-controller="MainMenuController" var="mainPage">
-        <ons-tabbar>
+        <ons-tabbar var="mainTabBar">
             <ons-tab page="guest.html" label="{{labels.guest_list}}" class="tabicon icon-guest" icon="square" active="true"></ons-tab>
             <ons-tab page="clubs.html" label="{{labels.tab_clubs}}" class="tabicon icon-clubs" icon="square"></ons-tab>
             <ons-tab page="life.html" label="{{labels.tab_life}}" class="tabicon icon-life" icon="square"></ons-tab>
@@ -57,8 +57,8 @@
     <ons-page class="guestpage" ng-controller="GuestController" var="guestPage">
         <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;">
             <div class="center header-title">{{labels.header_guest_list}}
-                <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="60px">
-                    <ons-carousel-item class="session-item" ng-repeat="item in items">
+                <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="50px">
+                    <ons-carousel-item class="session-item" ng-repeat="item in calendar">
                         <div class="session_day {{item.selected}}" ng-click="filterSessionDay($index);">{{item.day}}<span class="session_month">{{item.month}}</span></div>
                     </ons-carousel-item>
                 </ons-carousel>
@@ -88,8 +88,14 @@
 
                 </ons-list-item>
 
-                <ons-list-item ng-show="no_items">
-                    {{labels.no_records}}
+                <ons-list-item class="guest_list_item" ng-show="no_data">
+
+                    <div class="guesto-list-verlay overlay">
+                        <div align="center" class="guest-list-item-content">
+                            <p class="title-normal block">{{labels.no_data}}</p>
+                        </div>
+                    </div>
+
                 </ons-list-item>
             </ons-list>
         </ons-scroller>
@@ -99,14 +105,10 @@
 
 <ons-template id="guest_list.html">
     <ons-page ng-controller="GuestListCardController" class="guestlist">
-        <ons-toolbar class="toolbar" style="position:relative;background: none;border:none;width:2em;">
-            <div class="left">
-                <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
-            </div>
-        </ons-toolbar>
+        <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
 
-        <ons-scroller style="height:100%">
-            <div>
+
+            <div class="center">
                 <div style="position:relative;">
                     <ons-carousel class="carousel-detail" var="guestListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
                         <ons-carousel-item class="item-bg session-item" ng-repeat="item in pictures">
@@ -121,7 +123,7 @@
                         </ul>
 
                         <div align="center" class="guest-list-item-content">
-                            <p class="title-big">{{detail.guest_list}} <span class="title-medium">{{detail.club}}</span></p>
+                            <span class="title-big">{{detail.guest_list}} <span class="title-medium">{{labels.in}} {{detail.club}}</span></span>
 
                             <div align="center" class="buttons">
                                 <div class="button" ng-click="showForm('{{detail.id}}')">GUEST LIST</div>
@@ -129,6 +131,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
+            </div>
+
+        </ons-toolbar>
+
+        <ons-scroller style="height:100%">
+            <div>
+
 
                 <div class="card-content">
                     <p>
@@ -170,54 +180,87 @@
 
             <form class="card-content" style="text-align: center;position:relative;">
                 <div class="button close" ng-click="closeForm()">X</div>
-                <div class="user_data {{form_visible}}" style="">
-                    <p>
-                        <label></label>
-                        <span>{{labels.fill_form}}</span>
-                    </p>
-                    <p>
-                        <label>{{labels.first_name}}</label>
-                        <input class="" ng-model="userData.first_name" type="text"/>
-                    </p>
-                    <p>
-                        <label>{{labels.last_name}}</label>
-                        <input class="" ng-model="userData.last_name" type="text"/>
-                    </p>
-                    <p>
-                        <label>{{labels.email}}</label>
-                        <input class="" ng-model="userData.email" type="email"/>
-                    </p>
-                    <p>
-                        <label>{{labels.phone}}</label>
-                        <input class="" ng-model="userData.phone" type="phone"/>
-                    </p>
-                </div>
 
-                <div class="user_data {{detail_visible}}">
+                <div ng-show="reservation_inprogress">
+                    <div class="user_data {{form_visible}}" style="">
+                        <p>
+                            <label></label>
+                            <span>{{labels.fill_form}}</span>
+                        </p>
+                        <p>
+                            <label>{{labels.first_name}}</label>
+                            <input class="" ng-model="userData.first_name" type="text"/>
+                        </p>
+                        <p>
+                            <label>{{labels.last_name}}</label>
+                            <input class="" ng-model="userData.last_name" type="text"/>
+                        </p>
+                        <p>
+                            <label>{{labels.email}}</label>
+                            <input class="" ng-model="userData.email" type="email"/>
+                        </p>
+                        <p>
+                            <label>{{labels.phone}}</label>
+                            <input class="" ng-model="userData.phone" type="phone"/>
+                        </p>
+                    </div>
+
+                    <div class="user_data {{detail_visible}}">
+                        <p>
+                            <span>{{labels.hi}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span></span>
+                            <br/>
+                            <span>{{labels.complete_nro_persons}}</span>
+                            <br/>
+                            <span>{{labels.to_session}} {{detail.guest_list}} {{session.to_day}} {{detail.hour}}</span>
+                        </p>
+                    </div>
+
+
                     <p>
-                        <label></label>
-                        <span>{{labels.fill_form}}</span>
+                        <label>{{labels.persons}}</label>
+                        <label class="spinner">{{userData.persons}}</label>
+                        <a class="button spinner" ng-click="increasePersons()">+</a>
+                        <a class="button spinner" ng-click="decreasePersons()">-</a>
                     </p>
-                </div>
 
-                <p>
-                    <label>{{labels.persons}}</label>
-                    <label class="spinner">{{userData.persons}}</label>
-                    <a class="button spinner" ng-click="increasePersons()">+</a>
-                    <a class="button spinner" ng-click="decreasePersons()">-</a>
-                </p>
-
-                <p>
-                    <label>&nbsp;</label>
+                    <p>
+                        <label>&nbsp;</label>
                     <span style="display:inline-block;">
                         <input id="conditions" ng-model="userData.conditions" type="checkbox" name="check" value="check1">
                         <label class="checkbox" for="conditions">{{labels.conditions}}</label>
                     </span>
-                </p>
+                    </p>
 
-                <p style="display:block;text-align:center;">
-                    <a class="button" ng-click="confirm()">{{labels.confirm}}</a>
-                </p>
+                    <p style="display:block;text-align:center;">
+                        <a class="button" ng-click="confirm()">{{labels.confirm}}</a>
+                    </p>
+                </div>
+
+                <div ng-show="reservation_complete">
+                    <div class="user_data visible">
+                        <p>
+                            <span>{{labels.perfect}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span>
+                            <br/>
+                            <span>{{labels.you_are_in_guest_list}} {{detail.club}}</span>
+                            <br/>
+                            <span>{{labels.for_session}} {{detail.guest_list}} {{session.to_day}} {{detail.hour}}</span>
+                            <br/>
+                            <br/>
+                            <span>{{labels.present_invitation}}</span>
+                            <br/>
+                            <span>{{labels.in_seccion}} <span class="rosa">{{labels.profile}}</span> {{labels.this_app}}</span>
+                            <br/>
+                            <span>{{labels.club_door}}</span>
+                            <br/>
+                            <br/>
+                        </p>
+                    </div>
+
+                    <p style="display:block;text-align:center;">
+                        <a class="button" ng-click="goToProfile()">{{labels.my_profile}}</a>
+                    </p>
+                </div>
+
             </form>
         </ons-page>
     </ons-dialog>
@@ -252,6 +295,16 @@
                         </div>
 
                     </ons-list-item>
+
+                    <ons-list-item class="guest_list_item" ng-show="no_data">
+
+                        <div class="guesto-list-verlay overlay">
+                            <div align="center" class="guest-list-item-content">
+                                <p class="title-normal block">{{labels.no_data}}</p>
+                            </div>
+                        </div>
+
+                    </ons-list-item>
                 </ons-list>
             </ons-scroller>
         </ons-page>
@@ -261,14 +314,8 @@
 
 <ons-template id="club_info.html">
     <ons-page ng-controller="ClubInfoController" class="guestlist">
-        <ons-toolbar class="toolbar" style="position:relative;background: none;border:none;width:2em;">
-            <div class="left">
-                <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
-            </div>
-        </ons-toolbar>
-
-        <ons-scroller style="height:100%">
-            <div>
+        <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
+            <div class="center">
                 <div style="position:relative;">
                     <ons-carousel class="carousel-detail" var="clubListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
                         <ons-carousel-item class="item-bg session-item" ng-repeat="item in pictures">
@@ -287,6 +334,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="backButton" ng-click="splash.popPage('guest_info.html');"></div>
+            </div>
+        </ons-toolbar>
+
+        <ons-scroller style="height:100%">
+            <div>
+
 
                 <div class="card-content">
                     <p>
@@ -347,6 +402,16 @@
                         </div>
 
                     </ons-list-item>
+
+                    <ons-list-item class="guest_list_item" ng-show="no_data">
+
+                        <div class="guesto-list-verlay overlay">
+                            <div align="center" class="guest-list-item-content">
+                                <p class="title-normal block">{{labels.no_data}}</p>
+                            </div>
+                        </div>
+
+                    </ons-list-item>
                 </ons-list>
             </ons-scroller>
         </ons-page>
@@ -355,14 +420,9 @@
 
 <ons-template id="life_info.html">
     <ons-page ng-controller="LifeInfoController" class="guestlist">
-        <ons-toolbar class="toolbar" style="position:relative;background: none;border:none;width:2em;">
-            <div class="left">
-                <div class="backButton" ng-click="splash.popPage('life_info.html');"></div>
-            </div>
-        </ons-toolbar>
+        <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
+            <div class="center">
 
-        <ons-scroller style="height:100%">
-            <div>
                 <div style="position:relative;">
                     <ons-carousel class="carousel-detail" var="guestListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
                         <ons-carousel-item class="item-bg session-item" ng-repeat="item in pictures">
@@ -381,6 +441,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="backButton" ng-click="splash.popPage('life_info.html');"></div>
+            </div>
+        </ons-toolbar>
+
+        <ons-scroller style="height:100%">
+            <div>
+
 
                 <div class="card-content">
                     <p>
@@ -445,6 +513,16 @@
                         </div>
 
                     </ons-list-item>
+
+                    <ons-list-item class="guest_list_item" ng-show="no_data">
+
+                        <div class="guesto-list-verlay overlay">
+                            <div align="center" class="guest-list-item-content">
+                                <p class="title-normal block">{{labels.no_data}}</p>
+                            </div>
+                        </div>
+
+                    </ons-list-item>
                 </ons-list>
             </ons-scroller>
         </ons-page>
@@ -453,14 +531,9 @@
 
 <ons-template id="promo_info.html">
     <ons-page ng-controller="PromoInfoController" class="guestlist">
-        <ons-toolbar class="toolbar" style="position:relative;background: none;border:none;width:2em;">
-            <div class="left">
-                <div class="backButton" ng-click="splash.popPage('promo_info.html');"></div>
-            </div>
-        </ons-toolbar>
+        <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
+            <div class="center">
 
-        <ons-scroller style="height:100%">
-            <div>
                 <div style="position:relative;">
                     <ons-carousel class="carousel-detail" var="promoListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
                         <ons-carousel-item class="item-bg session-item" ng-repeat="item in pictures">
@@ -480,6 +553,13 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="backButton" ng-click="splash.popPage('promo_info.html');"></div>
+            </div>
+        </ons-toolbar>
+
+        <ons-scroller style="height:100%">
+            <div>
 
                 <div class="card-content">
                     <p>
@@ -540,6 +620,16 @@
 
                             <div align="center" class="buttons">
                                 <div class="button" ng-click="validate($index)" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.validate}}</div>
+                            </div>
+                        </div>
+
+                    </ons-list-item>
+
+                    <ons-list-item class="guest_list_item" ng-show="no_guest_list">
+
+                        <div class="guesto-list-verlay overlay">
+                            <div align="center" class="guest-list-item-content">
+                                <p class="title-normal block">{{labels.no_guest_list}}</p>
                             </div>
                         </div>
 
