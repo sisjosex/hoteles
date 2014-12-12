@@ -173,38 +173,27 @@ function resizeCardCarousel() {
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
 
-        $('body').css('opacity', 1);
+        $('#app-wrapper').show();
 
-        setTimeout(function(){
+        try {
+            StatusBar.hide();
+        }catch(error){}
 
-            try {
+        if(applicationLanguage != null) {
 
-                navigator.splashscreen.hide();
+            splash.pushPage('page.html', {lang: applicationLanguage, animation: 'none'});
 
-            } catch(error){}
+        } else {
+            setTimeout(function(){
+                $('.languageButtons').addClass('fadein');
+            }, 100);
+        }
 
+        try {
 
-            $('#app-wrapper').show();
+            navigator.splashscreen.hide();
 
-            //navigator.getDeviceBackButtonHandler().enable();
-            try {
-                StatusBar.hide();
-            }catch(error){}
-
-            //applicationLanguage = null;
-
-            if(applicationLanguage != null) {
-
-                splash.pushPage('page.html', {lang: applicationLanguage, animation: 'none'});
-
-            } else {
-                setTimeout(function(){
-                    $('.languageButtons').addClass('fadein');
-                }, 100);
-            }
-
-        }, 500);
-
+        } catch(error){}
 
     });
 });
