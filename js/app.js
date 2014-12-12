@@ -254,7 +254,7 @@ module.controller('GuestController', function($scope) {
         var height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
 
         height = parseInt(height/2)+1;
-        
+
         if(height < 150) {
             height = 150;
         }
