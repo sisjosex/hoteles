@@ -56,7 +56,7 @@
 
 <ons-template id="guest.html">
     <ons-navigator animation="slide" var="guestNavigator">
-    <ons-page class="guestpage" ng-controller="GuestController" var="guestPage">
+    <ons-page class="guestpage carousel" ng-controller="GuestController" var="guestPage">
         <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;">
             <div class="center header-title">{{labels.header_guest_list}}
                 <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="50px">

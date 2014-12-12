@@ -642,6 +642,22 @@ label.checkbox {
     color: #fb00c2 !important;
 }
 
+.toolbar {
+    height:45px;
+}
+
 .toolbar.big {
     height:257px;
+}
+
+.guestpage .page__content {
+    top: 46px;
+}
+
+.guestpage.carousel .page__content{
+    top: 87px !important;
+}
+
+.center.header-title {
+    padding-top:0 !important;
 }
