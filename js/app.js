@@ -150,6 +150,14 @@ window.fadeIn = function(obj) {
     setTimeout(function(){
         finalImage.addClass('fadein');
     }, 50);
+};
+
+window.onresize = function(){
+    thumb_width = window.innerWidth;
+    thumb_height = parseInt(510 / 640 * window.innerWidth);
+
+    $('.hascarousel .carousel-detail').height(thumb_height);
+    $('.hascarousel .page__content').css('top', thumb_height);
 }
 
 
@@ -243,9 +251,9 @@ module.controller('GuestCarouselController', function($scope) {
 
                 apply(scopeGuestcontroller, 'items', []);
             }, {
-                date: selectedItem.date,
+                date: selectedItem.date/*,
                 width: scopeGuestcontroller.thumb_width,
-                height: scopeGuestcontroller.thumb_height
+                height: scopeGuestcontroller.thumb_height*/
             });
         };
     });
@@ -300,9 +308,9 @@ module.controller('GuestController', function($scope) {
 
             apply(scopeGuestcontroller, 'items', []);
         },{
-            date: moment().add(0, 'days').format("YYYY-M-D"),
+            date: moment().add(0, 'days').format("YYYY-M-D")/*,
             width: $scope.thumb_width,
-            height: $scope.thumb_height
+            height: $scope.thumb_height*/
         });
 
         $scope.labels = getLabels();
@@ -335,7 +343,7 @@ module.controller('GuestListCardController', function($scope) {
         $scope.labels = getLabels();
 
         $scope.thumb_width = window.innerWidth;
-        $scope.thumb_height = 255;
+        $scope.thumb_height = parseInt(510 / 640 * window.innerWidth);
 
         $scope.pictures = getArrayAsObjects(session_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
@@ -550,8 +558,8 @@ module.controller('ClubsController', function($scope) {
 
             apply(scopeClubsController, 'items', []);
         }, {
-            width: $scope.thumb_width,
-            height: $scope.thumb_height
+            /*width: $scope.thumb_width,
+            height: $scope.thumb_height*/
         });
 
         $scope.labels = getLabels();
@@ -678,9 +686,9 @@ module.controller('LifeController', function($scope) {
             //scopeLifeController.$digest();
 
             apply(scopeLifeController, 'items', []);
-        }, {
+        }, {/*
             width: $scope.thumb_width,
-            height: $scope.thumb_height
+            height: $scope.thumb_height*/
         });
 
         $scope.labels = getLabels();
@@ -810,9 +818,9 @@ module.controller('PromosController', function($scope) {
             //scopePromosController.$digest();
 
             apply(scopePromosController, 'items', []);
-        }, {
+        }, {/*
             width: $scope.thumb_width,
-            height: $scope.thumb_height
+            height: $scope.thumb_height*/
         });
 
         $scope.labels = getLabels();
@@ -935,9 +943,9 @@ module.controller('ProfileController', function($scope) {
             apply(scopeProfileController, 'items', []);
 
         }, {
-            user_id: (userData && userData.id) ? userData.id : '',
+            user_id: (userData && userData.id) ? userData.id : ''/*,
             width: $scope.thumb_width,
-            height: $scope.thumb_height
+            height: $scope.thumb_height*/
         });
 
         $scope.labels = getLabels();

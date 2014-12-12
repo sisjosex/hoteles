@@ -181,6 +181,16 @@ input[type=checkbox] {
     opacity: 0;
 }
 
+.item-bg.list .item-bg-final {
+    background-position: center center;
+    background-size: 100% auto;
+}
+
+.item-bg.detail .item-bg-final {
+    background-position: center center;
+    background-size: auto 100%;
+}
+
 .languageButtons {
     -webkit-transition-property: all;
     -moz-transition-property: all;
@@ -239,6 +249,7 @@ input[type=checkbox] {
     font-family: 'HelveticaNeueLTStd-Lt';
     font-weight: normal;
     text-transform: capitalize;
+    padding-left: 0.5em;
 }
 
 .session-item {
@@ -671,15 +682,15 @@ label.checkbox {
 }
 
 .guestpage .page__content {
-    top: 46px !important;
+    top: 46px;
 }
 
 .normal-page .page__content {
-    top: 46px !important;
+    top: 46px;
 }
 
 .guestpage.carousel .page__content{
-    top: 87px !important;
+    top: 87px;
 }
 
 .center.header-title {
@@ -691,7 +702,7 @@ label.checkbox {
 }
 
 .hascarousel .page__content {
-    top: 257px !important;
+    top: 257px;
 }
 
 .session_day_text {
