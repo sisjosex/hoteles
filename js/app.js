@@ -173,7 +173,7 @@ function resizeCardCarousel() {
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
 
-        $('body').addClass('fadein');
+        $('body').css('opacity', 1);
 
         setTimeout(function(){
 
