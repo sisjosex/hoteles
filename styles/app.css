@@ -663,5 +663,5 @@ label.checkbox {
 }
 
 .navigation-bar__title {
-    padding-top:0;
+    padding-top:0 !important;
 }
