@@ -177,6 +177,13 @@ module.controller('LanguageController', function($scope) {
 
         setTimeout(function(){
 
+            try {
+
+                navigator.splashscreen.hide();
+
+            } catch(error){}
+
+
             $('#app-wrapper').show();
 
             //navigator.getDeviceBackButtonHandler().enable();
