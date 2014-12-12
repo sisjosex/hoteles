@@ -172,6 +172,9 @@ function resizeCardCarousel() {
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
+
+        $('#app-wrapper').show();
+
         //navigator.getDeviceBackButtonHandler().enable();
         try {
             StatusBar.hide();

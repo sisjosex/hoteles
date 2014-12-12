@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,49 +30,50 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="11085">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.763986" vertical-offset="10528" max-vertical-offset="11100">
+              <caret line="731" column="33" selection-start-line="731" selection-start-column="33" selection-end-line="731" selection-end-column="33" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +82,8 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7821" max-vertical-offset="10755">
-              <caret line="532" column="1" selection-start-line="532" selection-start-column="1" selection-end-line="532" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="7596" max-vertical-offset="10755">
+              <caret line="544" column="35" selection-start-line="544" selection-start-column="35" selection-end-line="544" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -91,16 +92,9 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3882" max-vertical-offset="18450">
-              <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
-              <folding>
-                <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-                <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-                <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-                <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-                <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-                <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="2250" max-vertical-offset="18495">
+              <caret line="175" column="33" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,16 +123,16 @@
         <option value="$PROJECT_DIR$/lib/moment-with-locales.min.js" />
         <option value="$PROJECT_DIR$/.gitgnore" />
         <option value="$PROJECT_DIR$/lib/onsen/js/onsenui.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/styles/app.css" />
+        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="y" value="335" />
+    <option name="x" value="-1729" />
+    <option name="y" value="127" />
     <option name="width" value="1366" />
     <option name="height" value="703" />
   </component>
@@ -278,8 +272,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="335" width="1366" height="703" extended-state="0" />
-    <editor active="false" />
+    <frame x="-1729" y="127" width="1366" height="703" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -287,7 +281,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28851965" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28851965" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -335,14 +329,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14807">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -352,45 +339,46 @@
           <caret line="157" column="37" selection-start-line="157" selection-start-column="25" selection-end-line="157" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -407,14 +395,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="10785" max-vertical-offset="13065">
           <caret line="719" column="63" selection-start-line="719" selection-start-column="63" selection-end-line="719" selection-end-column="63" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -424,45 +405,46 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -479,14 +461,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="14263">
           <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -496,45 +471,46 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -551,14 +527,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1547" max-vertical-offset="14263">
           <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -568,45 +537,46 @@
           <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -623,14 +593,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="14246">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -638,14 +601,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15980">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -655,45 +611,46 @@
           <caret line="453" column="60" selection-start-line="453" selection-start-column="60" selection-end-line="453" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,14 +667,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="11357" max-vertical-offset="11985">
           <caret line="777" column="13" selection-start-line="777" selection-start-column="13" selection-end-line="777" selection-end-column="13" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,45 +691,46 @@
           <caret line="453" column="60" selection-start-line="453" selection-start-column="60" selection-end-line="453" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -796,14 +747,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="11357" max-vertical-offset="11985">
           <caret line="777" column="13" selection-start-line="777" selection-start-column="13" selection-end-line="777" selection-end-column="13" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -827,45 +771,46 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -884,45 +829,46 @@
           <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -939,14 +885,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="3330">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -956,45 +895,46 @@
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1011,14 +951,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="165">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,45 +961,46 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1083,14 +1017,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="1343">
           <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,45 +1027,46 @@
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1156,45 +1084,46 @@
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1265,72 +1194,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3882" max-vertical-offset="18450">
-          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
-          <folding>
-            <marker date="1418405773000" expanded="true" signature="5908:5957" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="5908:5947" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29529:29752" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="29758:29934" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30659:30686" placeholder="{...}" />
-            <marker date="1418405773000" expanded="true" signature="30692:30700" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="2250" max-vertical-offset="18495">
+          <caret line="175" column="33" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7821" max-vertical-offset="10755">
-          <caret line="532" column="1" selection-start-line="532" selection-start-column="1" selection-end-line="532" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="7596" max-vertical-offset="10755">
+          <caret line="544" column="35" selection-start-line="544" selection-start-column="35" selection-end-line="544" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="11085">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.763986" vertical-offset="10528" max-vertical-offset="11100">
+          <caret line="731" column="33" selection-start-line="731" selection-start-column="33" selection-end-line="731" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#ons-list-item#0;n#ons-list#0;n#ons-scroller#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#10;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#11;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
