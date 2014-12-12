@@ -669,3 +669,8 @@ label.checkbox {
 .navigation-bar__title {
     padding-top:0 !important;
 }
+
+.hascarousel .page__content {
+    top: 257px !important;
+}
+
