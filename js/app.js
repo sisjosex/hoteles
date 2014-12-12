@@ -153,10 +153,10 @@ window.fadeIn = function(obj) {
 }
 
 
-module.controller('AppController', function($scope) {
+/*module.controller('AppController', function($scope) {
     ons.ready(function() {
     });
-});
+});*/
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {

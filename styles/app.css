@@ -1,3 +1,12 @@
+.splash .page__background {
+    /*background: url('../img/splash.jpg') center 0 no-repeat transparent;
+    background-size: 100% auto;*/
+    background-color:transparent;
+}
+
+.splash.page {
+    background-color:transparent !important;
+}
 
 .fa {
     display: inline-block;
@@ -70,11 +79,6 @@ input[type=text], input[type=email], input[type=phone] {
 input[type=checkbox] {
     min-width:1em;
     max-width:1em;
-}
-
-.splash .page__background {
-    background: url('../img/splash.jpg') center 0 no-repeat transparent;
-    background-size: 100% auto;
 }
 
 .header-title {
