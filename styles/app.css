@@ -158,10 +158,26 @@ input[type=checkbox] {
     left: 0;
     bottom: 0;
     right: 0;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-color: #fff;
     background-position: center 5%;
     background-repeat: no-repeat;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    opacity: 0;
+}
+
+.languageButtons {
     -webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
@@ -674,3 +690,7 @@ label.checkbox {
     top: 257px !important;
 }
 
+.session_day_text {
+    font-weight:normal;
+    letter-spacing: -5px;
+}

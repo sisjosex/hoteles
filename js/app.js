@@ -166,7 +166,13 @@ module.controller('LanguageController', function($scope) {
         }catch(error){}
 
         if(applicationLanguage != null) {
+
             splash.pushPage('page.html', {lang: applicationLanguage, animation: 'none'});
+
+        } else {
+            setTimeout(function(){
+                $('.languageButtons').addClass('fadein');
+            }, 100);
         }
     });
 });
@@ -1115,13 +1121,15 @@ function apply($scope, key, value, width, height) {
             var obj = value[i];
 
             try {
-                if(width && height) {
+                /*if(width && height) {
                     width = width*2;
                     height = height*2;
                     obj.thumb = thumb_url.replace('%width%', width).replace('%height%', height) + obj.images[0];
                 } else {
                     obj.thumb = obj.images[0];
-                }
+                }*/
+
+                obj.thumb = obj.images[0];
 
             }catch(error){}
 
@@ -1133,8 +1141,6 @@ function apply($scope, key, value, width, height) {
         });
 
     } else {
-
-        console.log('applyed' + key + '=' + value);
 
         $scope.$apply(function() {
             $scope[key] = value;
@@ -1151,11 +1157,12 @@ function getArrayAsObjects(array, width, height) {
     height = height*2;
 
     for(var i in array) {
-        if(width && height) {
+        result.push({list_image:array[i], selected:i == 0 ? 'selected' : ''});
+        /*if(width && height) {
             result.push({list_image: thumb_url.replace('%width%', width).replace('%height%', height) + array[i], selected:i == 0 ? 'selected' : ''});
         } else {
             result.push({list_image:array[i], selected:i == 0 ? 'selected' : ''});
-        }
+        }*/
     }
 
     return result;

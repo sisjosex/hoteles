@@ -31,7 +31,7 @@
 
 <ons-navigator animation="slide" var="splash">
     <ons-page ng-controller="LanguageController" class="splash">
-        <div align="center" style="margin-top:47%">
+        <div align="center" class="languageButtons" style="margin-top:47%">
             <div class="button icon gray lang" ng-click="splash.pushPage('page.html', {lang: 'es'});">
                 <span class="icon sp"></span> espa&ntilde;ol
             </div>
@@ -61,7 +61,7 @@
             <div class="center header-title">{{labels.header_guest_list}}
                 <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="50px">
                     <ons-carousel-item class="session-item" ng-repeat="item in calendar">
-                        <div class="session_day {{item.selected}}" ng-click="filterSessionDay($index);">{{item.day}}<span class="session_month">{{item.month}}</span></div>
+                        <div class="session_day {{item.selected}}" ng-click="filterSessionDay($index);"><span class="session_day_text">{{item.day}}</span><span class="session_month">{{item.month}}</span></div>
                     </ons-carousel-item>
                 </ons-carousel>
             </div>
