@@ -318,7 +318,10 @@ module.controller('GuestController', function($scope) {
 
             session_list = $scope.items;
 
-            try { navigator.splashscreen.hide(); } catch(error){}
+            setTimeout(function(){
+                try { navigator.splashscreen.hide(); } catch(error){}
+            }, 200);
+
 
         }, function(){
 
@@ -326,7 +329,9 @@ module.controller('GuestController', function($scope) {
 
             apply(scopeGuestcontroller, 'items', []);
 
-            try { navigator.splashscreen.hide(); } catch(error){}
+            setTimeout(function(){
+                try { navigator.splashscreen.hide(); } catch(error){}
+            }, 200);
 
         },{
             date: moment().add(0, 'days').format("YYYY-M-D")/*,
@@ -423,6 +428,8 @@ module.controller('GuestListFormController', function($scope) {
             $scope.form_visible = 'visible';
             $scope.detail_visible = '';
 
+            $('body').append('<style type="text/css">.bottom-dialog .dialog {min-height: 21.2em;}</style>');
+
         } else {
 
             $scope.userData = userData;
@@ -431,6 +438,8 @@ module.controller('GuestListFormController', function($scope) {
 
             $scope.form_visible = '';
             $scope.detail_visible = 'visible';
+
+            $('body').append('<style type="text/css">.bottom-dialog .dialog {min-height: 13.2em;}</style>');
         }
 
         $scope.detail = currentSession;
@@ -497,6 +506,8 @@ module.controller('GuestListFormController', function($scope) {
                     });
 
                     localStorage.setItem("user", JSON.stringify(userData));
+
+                    $('body').append('<style type="text/css">.bottom-dialog .dialog {min-height: 13.2em;}</style>');
 
                 }, function(data){
 

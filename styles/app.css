@@ -103,7 +103,7 @@ input[type=checkbox] {
     text-shadow: 1em 1em 1em rgba(255,255,255, 1);
     padding:0;
     margin:0;
-    background: #989898;
+    background: #3c3c3c;
     color:#fdfdfe;
     text-align:center;
 }
@@ -556,6 +556,20 @@ form.card-content span, .form.card-content span {
     min-width: 100%;
     border-radius: 0;
     webkit-border-radius: 0;
+
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
 }
 
 @media all and (max-height: 20em) {
@@ -575,11 +589,9 @@ form.card-content span, .form.card-content span {
     padding: 0.4em;
     display: table-cell;
     min-width: 0.5em;
-    padding-top: 0.1em;
-    padding-bottom: 1.8em;
+    padding-top: 0em;
+    padding-bottom: 0em;
     position: absolute;
-    /*top: 0.3em;
-    right: 0.2em;*/
     top: 0em;
     right: 0em;
     padding-left: 0.5em;
