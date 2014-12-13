@@ -204,6 +204,35 @@ module.controller('LanguageController', function($scope) {
             }, 100);
         }
 
+
+
+        if(userData == null) {
+
+            userData = {
+                first_name: '',
+                last_name: '',
+                email: '',
+                phone: '',
+                persons: '',
+                session_id: ''
+            };
+
+            getJsonP(api_url + 'registerUser/', function(data){
+
+                userData = data.user;
+
+                localStorage.setItem("user", JSON.stringify(userData));
+
+            }, function(){
+
+                userData = null;
+
+            }, userData);
+
+        }
+
+
+
     });
 });
 
@@ -430,7 +459,7 @@ module.controller('GuestListFormController', function($scope) {
         $scope.form_visible = 'visible';
         $scope.detail_visible = '';
 
-        if(userData == undefined || userData == null) {
+        if( (userData == undefined || userData == null) || (userData != null && userData.email=='') )  {
 
             $scope.userData = {
                 persons: 1,
@@ -445,6 +474,7 @@ module.controller('GuestListFormController', function($scope) {
         } else {
 
             $scope.userData = userData;
+
             $scope.userData.persons = 1;
             $scope.userData.session_id = currentSession.id;
 
@@ -480,15 +510,15 @@ module.controller('GuestListFormController', function($scope) {
 
         $scope.confirm = function() {
 
-            if($scope.userData.first_name == undefined) {
+            if($scope.userData.first_name == undefined || $scope.userData.first_name == '') {
 
                 alert(getLabel('user_first_name_required'));
 
-            } else if($scope.userData.last_name == undefined) {
+            } else if($scope.userData.last_name == undefined || $scope.userData.last_name == '') {
 
                 alert(getLabel('user_last_name_required'));
 
-            } else if($scope.userData.email == undefined) {
+            } else if($scope.userData.email == undefined || $scope.userData.email == '') {
 
                 alert(getLabel('user_email_required'));
 
@@ -496,7 +526,7 @@ module.controller('GuestListFormController', function($scope) {
 
                 alert(getLabel('user_email_invalid'));
 
-            } else if($scope.userData.phone == undefined) {
+            } else if($scope.userData.phone == undefined || $scope.userData.phone == '') {
 
                 alert(getLabel('user_phone_required'));
 
@@ -505,6 +535,10 @@ module.controller('GuestListFormController', function($scope) {
                 alert(getLabel('user_conditions_required'));
 
             } else {
+
+                if(userData && userData.id != undefined && userData.id != '') {
+                    $scope.userData.id = userData.id;
+                }
 
                 getJsonP(api_url + 'registerUser/', function(data){
 
@@ -1064,15 +1098,15 @@ module.controller('ProfileDetailController', function($scope) {
 
             } else {
 
-                if($scope.userData.first_name == undefined) {
+                if($scope.userData.first_name == undefined || $scope.userData.first_name == '') {
 
                     alert(getLabel('user_first_name_required'));
 
-                } else if($scope.userData.last_name == undefined) {
+                } else if($scope.userData.last_name == undefined || $scope.userData.last_name == '') {
 
                     alert(getLabel('user_last_name_required'));
 
-                } else if($scope.userData.email == undefined) {
+                } else if($scope.userData.email == undefined || $scope.userData.email == '') {
 
                     alert(getLabel('user_email_required'));
 
@@ -1080,11 +1114,15 @@ module.controller('ProfileDetailController', function($scope) {
 
                     alert(getLabel('user_email_invalid'));
 
-                } else if($scope.userData.phone == undefined) {
+                } else if($scope.userData.phone == undefined || $scope.userData.phone == '') {
 
                     alert(getLabel('user_phone_required'));
 
                 } else {
+
+                    if(userData && userData.id != undefined && userData.id != '') {
+                        $scope.userData.id = userData.id;
+                    }
 
                     getJsonP(api_url + 'registerUser/', function(data){
 
@@ -1096,6 +1134,8 @@ module.controller('ProfileDetailController', function($scope) {
                         $scope.label_edit = getLabel('edit');
 
                         $scope.$apply();
+
+                        localStorage.setItem("user", JSON.stringify(userData));
 
                     }, function(){
 
@@ -1246,6 +1286,8 @@ function getArrayAsObjects(array, width, height) {
 
 function getJsonP(url, callback_success, callback_error, data) {
 
+    console.log(data);
+
     if(data == undefined) {
         data = {};
     }
@@ -1256,6 +1298,42 @@ function getJsonP(url, callback_success, callback_error, data) {
     }
 
     modal.show();
+
+    $.ajax({
+        type: 'GET',
+        url: url,
+        data: data,
+        dataType: 'JSONp',
+        timeout: 30000,
+        async:true,
+        success: function(data) {
+
+            modal.hide();
+
+            callback_success(data);
+        },
+        error: function(data) {
+
+            modal.hide();
+
+            callback_error(data);
+        }
+    });
+}
+
+
+function getJsonPBackground(url, callback_success, callback_error, data) {
+
+    console.log(data);
+
+    if(data == undefined) {
+        data = {};
+    }
+
+
+    if(data['lang'] == undefined) {
+        data['lang'] = applicationLanguage;
+    }
 
     $.ajax({
         type: 'GET',
