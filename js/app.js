@@ -398,6 +398,11 @@ module.controller('GuestController', function($scope) {
             splash.pushPage('guest_list.html', {index:index});
         };
 
+
+        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+            $('.guesto-list-verlay.overlay').css('opacity', 1);
+        });
+
     });
 });
 
@@ -788,6 +793,11 @@ module.controller('LifeController', function($scope) {
             splash.pushPage('life_info.html', {index:index});
         };
 
+
+        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+            $('.guesto-list-verlay.overlay').css('opacity', 1);
+        });
+
     });
 });
 
@@ -922,6 +932,11 @@ module.controller('PromosController', function($scope) {
 
             splash.pushPage('promo_info.html', {index:index});
         };
+
+
+        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+            $('.guesto-list-verlay.overlay').css('opacity', 1);
+        });
 
     });
 });
@@ -1061,6 +1076,11 @@ module.controller('ProfileController', function($scope) {
 
             }, {user_id: (userData && userData.id) ? userData.id : '', users_session_id: user_session.users_session_id});
         };
+
+
+        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+            $('.guesto-list-verlay.overlay').css('opacity', 1);
+        });
 
     });
 });
