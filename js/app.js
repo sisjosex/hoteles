@@ -254,16 +254,12 @@ module.controller('GuestCarouselController', function($scope) {
 
                 session_list = scopeGuestcontroller.items;
 
-                try { navigator.splashscreen.hide(); } catch(error){}
-
             }, function(){
 
                 scopeGuestcontroller.error = true;
                 //scopeGuestcontroller.$digest();
 
                 apply(scopeGuestcontroller, 'items', []);
-
-                try { navigator.splashscreen.hide(); } catch(error){}
 
             }, {
                 date: selectedItem.date/*,
@@ -321,11 +317,17 @@ module.controller('GuestController', function($scope) {
             }
 
             session_list = $scope.items;
+
+            try { navigator.splashscreen.hide(); } catch(error){}
+
         }, function(){
 
             scopeGuestcontroller.error = true;
 
             apply(scopeGuestcontroller, 'items', []);
+
+            try { navigator.splashscreen.hide(); } catch(error){}
+            
         },{
             date: moment().add(0, 'days').format("YYYY-M-D")/*,
             width: $scope.thumb_width,
