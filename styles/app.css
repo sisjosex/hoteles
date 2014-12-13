@@ -140,6 +140,7 @@ input[type=checkbox] {
 .guest_list_item {
     position:relative;
     height:200px;
+    max-height:205px;
 }
 
 .guest_list_item .item-bg, .item-bg {
