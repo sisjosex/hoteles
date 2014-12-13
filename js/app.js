@@ -80,7 +80,8 @@ var labels = {
         profile: 'mi perfil',
         alert: 'ALERTA',
         yes: 'Si',
-        no: 'No'
+        no: 'No',
+        call: 'LLAMAR'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -145,7 +146,8 @@ var labels = {
         profile: 'my profile',
         alert: 'ALERT',
         yes: 'Yes',
-        no: 'No'
+        no: 'No',
+        call: 'CALL'
     }
 };
 
@@ -855,6 +857,10 @@ module.controller('LifeInfoController', function($scope) {
                 guestFormDialog.show();
                 //naviDialog.show();
             });
+        };
+
+        $scope.actionCall = function(phone) {
+            document.location.href = 'tel:' + phone;
         };
 
     });

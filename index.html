@@ -427,6 +427,10 @@
 
                                 <div align="center" class="guest-list-item-content">
                                     <p class="title-big">{{detail.name}}</p>
+
+                                    <div align="center" class="buttons">
+                                        <div class="button" ng-click="actionCall('{{detail.phone}}')">{{labels.call}}</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
