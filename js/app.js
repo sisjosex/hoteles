@@ -271,6 +271,8 @@ module.controller('GuestCarouselController', function($scope) {
                 $scope.calendar[i].selected = '';
             }
 
+            $('div.page__content.ons-page-inner').scrollTop(0);
+
             selectedItem.selected = 'selected';
 
             getJsonP(api_url + 'getSessions/', function(data){
@@ -400,6 +402,7 @@ module.controller('GuestController', function($scope) {
 
 
         $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+            console.log('scroll');
             $('.guesto-list-verlay.overlay').css('opacity', 1);
         });
 
