@@ -748,3 +748,7 @@ label.checkbox {
 .navigation-bar {
     white-space: normal;
 }
+
+.navigation-bar--android__center:first-child:last-child {
+    padding-left:0;
+}
