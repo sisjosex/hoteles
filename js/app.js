@@ -309,11 +309,15 @@ module.controller('GuestController', function($scope) {
 
             if(data.status == 'fail') {
 
-                apply(scopeGuestcontroller, 'no_data', true);
+                scopeGuestcontroller.$apply(function(){
+                    scopeGuestcontroller.no_data = true;
+                });
 
             } else {
 
-                apply(scopeGuestcontroller, 'no_data', false);
+                scopeGuestcontroller.$apply(function(){
+                    scopeGuestcontroller.no_data = false;
+                });
             }
 
             session_list = $scope.items;
@@ -557,11 +561,15 @@ module.controller('ClubsController', function($scope) {
 
             if(data.status == 'fail') {
 
-                apply(scopeClubsController, 'no_data', true);
+                scopeClubsController.$apply(function(){
+                    scopeClubsController.no_data = true;
+                });
 
             } else {
 
-                apply(scopeClubsController, 'no_data', false);
+                scopeClubsController.$apply(function(){
+                    scopeClubsController.no_data = false;
+                });
             }
 
             clubs_list = $scope.items;
@@ -684,11 +692,15 @@ module.controller('LifeController', function($scope) {
 
             if(data.status == 'fail') {
 
-                apply(scopeLifeController, 'no_data', true);
+                scopeLifeController.$apply(function(){
+                    scopeLifeController.no_data = true;
+                });
 
             } else {
 
-                apply(scopeLifeController, 'no_data', false);
+                scopeLifeController.$apply(function(){
+                    scopeLifeController.no_data = false;
+                });
             }
 
             life_list = $scope.items;
@@ -815,11 +827,15 @@ module.controller('PromosController', function($scope) {
 
             if(data.status == 'fail') {
 
-                apply(scopePromosController, 'no_data', true);
+                scopePromosController.$apply(function(){
+                    scopePromosController.no_data = true;
+                });
 
             } else {
 
-                apply(scopePromosController, 'no_data', false);
+                scopePromosController.$apply(function(){
+                    scopePromosController.no_data = false;
+                });
             }
 
             promos_list = $scope.items;
@@ -939,11 +955,15 @@ module.controller('ProfileController', function($scope) {
 
             if(data.status == 'fail') {
 
-                apply(scopeProfileController, 'no_guest_list', true);
+                scopeProfileController.$apply(function(){
+                    scopeProfileController.no_data = true;
+                });
 
             } else {
 
-                apply(scopeProfileController, 'no_guest_list', false);
+                scopeProfileController.$apply(function(){
+                    scopeProfileController.no_data = false;
+                });
             }
 
         }, function(){

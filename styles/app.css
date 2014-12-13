@@ -702,7 +702,7 @@ label.checkbox {
 }
 
 .normal-page .page__content {
-    top: 46px;
+    top: 46px !important;
 }
 
 .guestpage.carousel .page__content{
@@ -724,4 +724,8 @@ label.checkbox {
 .session_day_text {
     font-weight:normal;
     letter-spacing: -5px;
+}
+
+.guesto-list-verlay.overlay {
+    display:block !important;
 }
