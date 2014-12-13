@@ -650,6 +650,12 @@ module.controller('ClubsController', function($scope) {
             splash.pushPage('club_info.html', {index:index});
         };
 
+
+
+        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+            $('.guesto-list-verlay.overlay').css('opacity', 1);
+        });
+
     });
 });
 
