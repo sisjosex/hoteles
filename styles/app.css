@@ -140,7 +140,7 @@ input[type=checkbox] {
 .guest_list_item {
     position:relative;
     height:200px;
-    max-height:205px;
+    /*max-height:205px;*/
 }
 
 .guest_list_item .item-bg, .item-bg {
@@ -200,7 +200,7 @@ input[type=checkbox] {
 
 .item-bg.list .item-bg-final {
     background-position: center center;
-    background-size: 100% auto;
+    background-size: auto 100%;
 }
 
 .item-bg.detail .item-bg-final {
@@ -577,6 +577,14 @@ form.card-content span, .form.card-content span {
 @media all and (max-height: 20em) {
     .bottom-dialog .dialog {
         min-height: 100%;
+    }
+}
+
+@media all and (min-width: 500px) {
+
+    .item-bg.list .item-bg-final {
+        background-position: center center;
+        background-size: 100% auto;
     }
 }
 
