@@ -327,7 +327,7 @@ module.controller('GuestController', function($scope) {
             apply(scopeGuestcontroller, 'items', []);
 
             try { navigator.splashscreen.hide(); } catch(error){}
-            
+
         },{
             date: moment().add(0, 'days').format("YYYY-M-D")/*,
             width: $scope.thumb_width,
