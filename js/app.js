@@ -217,7 +217,7 @@ module.controller('LanguageController', function($scope) {
                 session_id: ''
             };
 
-            getJsonP(api_url + 'registerUser/', function(data){
+            getJsonPBackground(api_url + 'registerUser/', function(data){
 
                 userData = data.user;
 
