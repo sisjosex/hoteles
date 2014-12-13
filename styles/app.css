@@ -114,23 +114,23 @@ input[type=checkbox] {
     font-size: 2em;
     margin: 0;
     padding: 0;
-    line-height: 1em;
+    line-height: 0.9em;
 }
 
 .title-medium {
     font-family: 'dubielplainregular';
-    font-size: 0.5em !important;
+    font-size: 1.1em !important;
     margin: 0;
     padding: 0;
     line-height: 1em;
-    color:#fff;
+    color: #fff;
 }
 
 .title-normal {
     font-size: 0.7em;
     margin: 0;
     padding: 0;
-    line-height: 1em;
+    line-height: 2em;
 }
 
 .guestpage .page__content {
@@ -361,10 +361,11 @@ span.block {
 .guest-list-item-content {
     padding-top: 4px;
     padding-bottom: 4px;
+    line-height: 1em;
 }
 
 .guest-list-item-content span {
-    line-height:15px;
+    line-height: 22px;
 }
 
 .tab-bar {
@@ -678,7 +679,7 @@ label.checkbox {
 }
 
 .profile-sections > div {
-    margin-top:1.6em;
+    margin-top:1em;
 }
 
 .profile-sections .button {
@@ -740,4 +741,10 @@ label.checkbox {
 
 .guesto-list-verlay.overlay {
     display:block !important;
+    line-height: 23px;
+}
+
+
+.navigation-bar {
+    white-space: normal;
 }

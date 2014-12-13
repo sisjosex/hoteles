@@ -59,20 +59,26 @@ var labels = {
         user_conditions_required: 'Debe aceptar las condiciones',
         no_guest_list: 'No tienes ningún GUEST LIST. Entra en la sección y elige tus sesiones',
         no_data: 'No hay datos para mostrar',
+        no_sessions: 'No hay sessiones disponibles',
+        no_clubs: 'No hay clubs disponibles',
+        no_life: 'No hay life disponibles',
+        no_promos: 'No hay promos disponibles',
         hi: 'Hola',
         complete_nro_persons: 'completa el n° de personas que asistiréis',
         to_session: 'a la sessión',
         to_day: 'del día',
         perfect: 'Perfecto!',
-        you_are_in_guest_list: 'ya estas en la guest list de ',
+        you_are_in_guest_list: 'ya estás en la guest list de ',
         for_session: 'para la ',
         present_invitation: 'presenta la invitación que te hemos guardado',
-        in_seccion: 'en la seccion',
+        in_seccion: 'en la sección',
         this_app: 'de este app',
         club_door: 'en la puerta del club',
         my_profile: 'MI PERFIL',
         profile: 'mi perfil',
-        alert: 'ALERTA'
+        alert: 'ALERTA',
+        yes: 'Si',
+        no: 'No'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -118,6 +124,10 @@ var labels = {
         user_conditions_required: 'You must accept conditions',
         no_guest_list: 'You have no GUEST LIST. Enter the section and select your sessions',
         no_data: 'There is no data to show',
+        no_sessions: 'There is no sessions available',
+        no_clubs: 'There is no clubs available',
+        no_life: 'There is no life available',
+        no_promos: 'There is promos available',
         hi: 'Hi',
         complete_nro_persons: 'cComplete the n ° of people who will attend',
         to_session: 'to session',
@@ -131,7 +141,9 @@ var labels = {
         club_door: 'in front of the club',
         my_profile: 'MY PROFILE',
         profile: 'my profile',
-        alert: 'ALERT'
+        alert: 'ALERT',
+        yes: 'Yes',
+        no: 'No'
     }
 };
 
@@ -278,7 +290,7 @@ module.controller('GuestController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)+1;
+        height = parseInt(height/2);
 
         if(height < 150) {
             height = 150;
@@ -297,7 +309,7 @@ module.controller('GuestController', function($scope) {
             '</style>'
         );
 
-        scopeGuestcontroller.no_data = false;
+        scopeGuestcontroller.no_data = true;
 
         getJsonP(api_url + 'getSessions/', function(data){
 
@@ -536,7 +548,7 @@ module.controller('ClubsController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)+1;
+        height = parseInt(height/2);
 
         if(height < 150) {
             height = 150;
@@ -667,7 +679,7 @@ module.controller('LifeController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)+1;
+        height = parseInt(height/2);
 
         if(height < 150) {
             height = 150;
@@ -801,7 +813,7 @@ module.controller('PromosController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)+1;
+        height = parseInt(height/2);
 
         if(height < 150) {
             height = 150;
@@ -929,7 +941,7 @@ module.controller('ProfileController', function($scope) {
 
         var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
-        height = parseInt(height/2)+1;
+        height = parseInt(height/2);
 
         if(height < 150) {
             height = 150;
@@ -969,13 +981,13 @@ module.controller('ProfileController', function($scope) {
             if(data.status == 'fail') {
 
                 scopeProfileController.$apply(function(){
-                    scopeProfileController.no_data = true;
+                    scopeProfileController.no_guest_list = true;
                 });
 
             } else {
 
                 scopeProfileController.$apply(function(){
-                    scopeProfileController.no_data = false;
+                    scopeProfileController.no_guest_list = false;
                 });
             }
 
@@ -1014,9 +1026,11 @@ module.controller('ProfileController', function($scope) {
 });
 
 
-
+var scopeProfileDetailController;
 module.controller('ProfileDetailController', function($scope) {
     ons.ready(function() {
+
+        scopeProfileDetailController = $scope;
 
         if(userData == undefined || userData == null ) {
 
@@ -1032,7 +1046,7 @@ module.controller('ProfileDetailController', function($scope) {
             $scope.userData.persons = 0;
         }
 
-
+        $scope.labels = getLabels();
 
         $scope.label_edit = getLabel('edit');
 
@@ -1093,11 +1107,11 @@ module.controller('ProfileDetailController', function($scope) {
             }
         };
 
-        $scope.updateLanguage = function(lang) {
+        $scope.updateLanguage = function(newLanguage) {
 
             getJsonP(api_url + 'setIdiomaUser/', function(data){
 
-                applicationLanguage = lang;
+                applicationLanguage = newLanguage;
 
                 localStorage.setItem('lang', applicationLanguage);
 
@@ -1105,12 +1119,22 @@ module.controller('ProfileDetailController', function($scope) {
                     alert(data.message);
                 }
 
+                //apply(scopeProfileDetailController, 'labels', getLabels());
+
+                scopeProfileDetailController.$apply(function(){
+                    scopeProfileDetailController.labels = getLabels();
+                });
+
+                scopeProfileController.$apply(function(){
+                    scopeProfileController.labels = getLabels();
+                });
+
             }, function(){
 
 
             }, {
                 user_id: $scope.userData ? $scope.userData.id : '',
-                lang: lang
+                lang: newLanguage
             });
         };
 
@@ -1226,7 +1250,10 @@ function getJsonP(url, callback_success, callback_error, data) {
         data = {};
     }
 
-    data['lang'] = applicationLanguage;
+
+    if(data['lang'] == undefined) {
+        data['lang'] = applicationLanguage;
+    }
 
     modal.show();
 
