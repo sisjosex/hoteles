@@ -14,6 +14,8 @@ var currentDate = '';
 var userData = (localStorage.getItem("user") != null || localStorage.getItem("user") != undefined) ? JSON.parse(localStorage.getItem("user")) : null;
 var currentSession;
 
+var selectedDate;
+
 var labels = {
     'es': {
         tab_guest_list: 'GUEST LIST',
@@ -275,40 +277,46 @@ module.controller('GuestCarouselController', function($scope) {
 
             selectedItem.selected = 'selected';
 
-            getJsonP(api_url + 'getSessions/', function(data){
+            if(selectedDate != selectedItem.date) {
 
-                //scopeGuestcontroller.items = data.list;
-                //scopeGuestcontroller.$digest();
+                selectedDate = selectedItem.date;
 
-                apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
+                getJsonP(api_url + 'getSessions/', function (data) {
 
-                if(data.status == 'fail') {
+                    //scopeGuestcontroller.items = data.list;
+                    //scopeGuestcontroller.$digest();
 
-                    scopeGuestcontroller.$apply(function(){
-                        scopeGuestcontroller.no_data = true;
-                    });
+                    apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
 
-                } else {
+                    if (data.status == 'fail') {
 
-                    scopeGuestcontroller.$apply(function(){
-                        scopeGuestcontroller.no_data = false;
-                    });
-                }
+                        scopeGuestcontroller.$apply(function () {
+                            scopeGuestcontroller.no_data = true;
+                        });
 
-                session_list = scopeGuestcontroller.items;
+                    } else {
 
-            }, function(){
+                        scopeGuestcontroller.$apply(function () {
+                            scopeGuestcontroller.no_data = false;
+                        });
+                    }
 
-                scopeGuestcontroller.error = true;
-                //scopeGuestcontroller.$digest();
+                    session_list = scopeGuestcontroller.items;
 
-                apply(scopeGuestcontroller, 'items', []);
+                }, function () {
 
-            }, {
-                date: selectedItem.date/*,
-                width: scopeGuestcontroller.thumb_width,
-                height: scopeGuestcontroller.thumb_height*/
-            });
+                    scopeGuestcontroller.error = true;
+                    //scopeGuestcontroller.$digest();
+
+                    apply(scopeGuestcontroller, 'items', []);
+
+                }, {
+                    date: selectedItem.date/*,
+                     width: scopeGuestcontroller.thumb_width,
+                     height: scopeGuestcontroller.thumb_height*/
+                });
+
+            }
         };
     });
 });
@@ -341,6 +349,8 @@ module.controller('GuestController', function($scope) {
         );
 
         scopeGuestcontroller.no_data = true;
+
+        selectedDate = moment().add(0, 'days').format("YYYY-M-D");
 
         getJsonP(api_url + 'getSessions/', function(data){
 
