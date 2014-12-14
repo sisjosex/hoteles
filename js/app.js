@@ -252,7 +252,7 @@ function onNotificationGCM(e) {
         case 'message':
             // this is the actual push notification. its format depends on the data model from the push server
             //alert('message = '+e.message+' msgcnt = '+e.msgcnt);
-            if(TOKEN_PUSH_NOTIFICATION == 0){
+            if(TOKEN_PUSH_NOTIFICATION != 0){
                 showNotification(e,'android');
             }else{
                 HAVE_NOTIFICATION = true;
@@ -273,7 +273,7 @@ function onNotificationGCM(e) {
 
 function onNotificationAPN(event) {
     if (event.alert) {
-        if(APP_INITIALIZED){
+        if(TOKEN_PUSH_NOTIFICATION != 0){
             showNotification(event,'ios');
         }else{
             HAVE_NOTIFICATION = true;
