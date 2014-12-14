@@ -1,6 +1,6 @@
 var module = ons.bootstrap();
 
-var applicationLanguage = (localStorage.getItem("lang") != null || localStorage.getItem("lang") != undefined) ? localStorage.getItem("lang") : null;
+var applicationLanguage = (localStorage.getItem("lang") != null || localStorage.getItem("lang") != undefined) ? localStorage.getItem("lang") : 'es';
 
 var api_url = 'http://golden-vip.com/api/';
 var thumb_url = 'http://golden-vip.com/helpers/timthumb.php?w=%width%&h=%height%&src=';
@@ -15,6 +15,8 @@ var userData = (localStorage.getItem("user") != null || localStorage.getItem("us
 var currentSession;
 
 var selectedDate;
+
+var TOKEN_PUSH_NOTIFICATION = (localStorage.getItem("push_token") != null || localStorage.getItem("push_token") != undefined) ? JSON.parse(localStorage.getItem("push_token")) : 0;
 
 var labels = {
     'es': {
@@ -79,6 +81,7 @@ var labels = {
         my_profile: 'MI PERFIL',
         profile: 'mi perfil',
         alert: 'ALERTA',
+        accept: 'Aceptar',
         yes: 'Si',
         no: 'No',
         call: 'LLAMAR'
@@ -145,6 +148,7 @@ var labels = {
         my_profile: 'MY PROFILE',
         profile: 'my profile',
         alert: 'ALERT',
+        accept: 'Accept',
         yes: 'Yes',
         no: 'No',
         call: 'CALL'
@@ -153,9 +157,6 @@ var labels = {
 
 
 window.fadeIn = function(obj) {
-    //$(obj).fadeIn(1000);
-
-    //$(obj).addClass('fadein');
 
     var finalImage = $('<div class="item-bg-final"></div>');
 
@@ -186,8 +187,162 @@ function resizeCardCarousel() {
     });
 });*/
 
+
+function registerNotifications() {
+
+    if(window.plugins && window.plugins.pushNotification) {
+
+        var pushNotification = window.plugins.pushNotification;
+
+        if (device.platform == 'android' || device.platform == 'Android') {
+
+            pushNotification.register(successHandler, this.errorHandler, {
+                "senderID": "51393321226",
+                "ecb": "onNotificationGCM"
+            });
+
+        } else {
+
+            pushNotification.register(tokenHandler, this.errorHandler, {
+                "badge": "true",
+                "sound": "true",
+                "alert": "true",
+                "ecb": "onNotificationAPN"
+            });
+        }
+    }
+}
+
+function successHandler() {}
+
+// android
+function tokenHandler(result) {
+
+    if(TOKEN_PUSH_NOTIFICATION == 0){
+        storeToken(device.uuid, result, 'iphone');
+    }
+}
+
+function onNotificationGCM(e) {
+    switch( e.event )
+    {
+        case 'registered':
+            if ( e.regid.length > 0 )
+            {
+                if(TOKEN_PUSH_NOTIFICATION == 0){
+                    storeToken(device.uuid, e.regid, 'android');
+                }
+            }
+            break;
+
+        case 'message':
+            // this is the actual push notification. its format depends on the data model from the push server
+            //alert('message = '+e.message+' msgcnt = '+e.msgcnt);
+            if(TOKEN_PUSH_NOTIFICATION == 0){
+                showNotification(e,'android');
+            }else{
+                HAVE_NOTIFICATION = true;
+                TYPE_NOTIFICATION = 'android';
+                EVENT = e;
+            }
+            break;
+
+        case 'error':
+            alert('GCM error = '+e.msg);
+            break;
+
+        default:
+            alert('An unknown GCM event has occurred');
+            break;
+    }
+}
+
+function onNotificationAPN(event) {
+    if (event.alert) {
+        if(APP_INITIALIZED){
+            showNotification(event,'ios');
+        }else{
+            HAVE_NOTIFICATION = true;
+            TYPE_NOTIFICATION = 'ios';
+            EVENT = event;
+        }
+    }
+}
+
+function showNotification(event, type){
+    var message = type == "android" ? event.message : event.alert;
+    var seccion = type == "android" ? event.payload.seccion : event.seccion;
+    var seccion_id = type == "android" ? event.payload.seccion_id : event.seccion_id;
+
+    navigator.notification.alert(
+        message,
+        function(){
+            redirectToPage(seccion, seccion_id);
+        },
+        getLabel("alert"),
+        getLabel("accept")
+    );
+}
+
+function redirectToPage(seccion, id){
+    var page = "";
+    var params = {};
+
+    if(id != ""){
+        params.id = id;
+    }
+
+    if(seccion == "session"){
+        page = "guest.html"
+        if(id != ""){
+            params.id = id;
+            page = "guest_list.html";
+        }
+    }else if(seccion == "club"){
+        page = "clubs.html";
+        if(id != ""){
+            page = "club_info.html";
+        }
+    }else if(seccion == "life"){
+        page = "life.html";
+        if(id != ""){
+            page = "life_info.html";
+        }
+    }else if(seccion == "promo"){
+        page = "promos.html";
+        if(id != ""){
+            page = "promo_info.html";
+        }
+    }
+
+    alert('page: ' + page + ' id: ' + id);
+
+    splash.pushPage(page, params);
+}
+
+function errorHandler() {}
+
+function storeToken(uuid, token, device) {
+    TOKEN_PUSH_NOTIFICATION = token;
+
+    getJsonPBackground(api_url + 'registerUser/', function(data){
+
+        userData = data.user;
+
+        localStorage.setItem("user", JSON.stringify(userData));
+
+    }, function(){
+
+        userData = null;
+
+    }, userData);
+}
+
+
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
+
+        registerNotifications();
 
         $('#app-wrapper').show();
 
@@ -206,6 +361,7 @@ module.controller('LanguageController', function($scope) {
             setTimeout(function(){
                 $('.languageButtons').addClass('fadein');
             }, 100);
+
         }
 
 
