@@ -340,6 +340,8 @@ function storeToken(uuid, token, device) {
 
     TOKEN_PUSH_NOTIFICATION = token;
 
+    console.log('uuid: ' + uuid + ' token: ' + token + ' device: ' + device);
+
     getJsonPBackground(api_url + 'updateUUID/', function(data) {
 
         localStorage.setItem("push_token", TOKEN_PUSH_NOTIFICATION);
