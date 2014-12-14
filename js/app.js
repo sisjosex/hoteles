@@ -570,34 +570,6 @@ module.controller('GuestCarouselController', function($scope) {
             }
         };
 
-        $scope.setSelectedDate = function(date) {
-
-            var selectedItem;
-
-            var calendar = generateCalendar();
-
-            for(var i in calendar) {
-
-                calendar[i].selected = '';
-
-                if(calendar[i].date == date) {
-
-                    selectedItem = calendar[i];
-                }
-            }
-
-            if(selectedItem != undefined) {
-
-                selectedItem.selected = 'selected';
-            }
-
-            //apply(scopeGuestCarouselController, 'calendar', calendar);
-
-            $scope.calendar = calendar;
-
-            //console.log($scope.calendar);
-        };
-
     });
 });
 
@@ -641,81 +613,80 @@ module.controller('GuestController', function($scope) {
 
         selectedDate = moment().add(0, 'days').format("YYYY-M-D");
 
-        getJsonP(api_url + 'getSessions/', function(data){
+        if(currentDate == moment().add(0, 'days').format("YYYY-M-D")) {
 
-            apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
+            getJsonP(api_url + 'getSessions/', function (data) {
 
-            lists.session_list = $scope.items;
+                apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
 
-            if(data.status == 'fail') {
+                lists.session_list = $scope.items;
 
-                scopeGuestcontroller.$apply(function(){
-                    scopeGuestcontroller.no_data = true;
-                });
+                if (data.status == 'fail') {
 
-            } else {
+                    scopeGuestcontroller.$apply(function () {
+                        scopeGuestcontroller.no_data = true;
+                    });
 
-                scopeGuestcontroller.$apply(function(){
-                    scopeGuestcontroller.no_data = false;
-                });
+                } else {
 
-                redirectToSection(scopeGuestcontroller, 'session');
-            }
+                    scopeGuestcontroller.$apply(function () {
+                        scopeGuestcontroller.no_data = false;
+                    });
 
+                    redirectToSection(scopeGuestcontroller, 'session');
+                }
 
-
-
-            if(currentDate != moment().add(0, 'days').format("YYYY-M-D")) {
-
-                scopeGuestCarouselController.setSelectedDate(currentDate);
-/*
-                var selectedItem;
-
-                calendar = generateCalendar();
-
-                for(var i in calendar) {
-
-                    calendar[i].selected = '';
-
-                    if(calendar[i].date == currentDate) {
-
-                        selectedItem = calendar[i];
+                setTimeout(function () {
+                    try {
+                        navigator.splashscreen.hide();
+                    } catch (error) {
                     }
+                }, 200);
+
+
+            }, function () {
+
+                scopeGuestcontroller.error = true;
+
+                apply(scopeGuestcontroller, 'items', []);
+
+                setTimeout(function () {
+                    try {
+                        navigator.splashscreen.hide();
+                    } catch (error) {
+                    }
+                }, 200);
+
+            }, {
+                date: currentDate
+            });
+
+        } else {
+
+            var selectedIndex = -1;
+
+            console.log(scopeGuestCarouselController.calendar);
+
+            for(var i in scopeGuestCarouselController.calendar) {
+
+                console.log(i);
+
+                scopeGuestCarouselController.calendar[i].selected = '';
+
+                if(scopeGuestCarouselController.calendar[i].date == currentDate) {
+
+                    selectedIndex = i;
+                    break;
                 }
-
-                if(selectedItem != undefined) {
-
-                    selectedItem.selected = 'selected';
-                }
-
-                    scopeGuestCarouselController.$apply(function(){
-                        scopeGuestCarouselController.calendar = calendar;
-                    });*/
-
-
-                //apply(scopeGuestCarouselController, 'calendar', calendar);
             }
 
+            if( selectedIndex != -1 ) {
+                setTimeout(function(){
+                    scopeGuestCarouselController.filterSessionDay(selectedIndex);
+                }, 200);
 
-
-            setTimeout(function(){
-                try { navigator.splashscreen.hide(); } catch(error){}
-            }, 200);
-
-
-        }, function(){
-
-            scopeGuestcontroller.error = true;
-
-            apply(scopeGuestcontroller, 'items', []);
-
-            setTimeout(function(){
-                try { navigator.splashscreen.hide(); } catch(error){}
-            }, 200);
-
-        },{
-            date: currentDate
-        });
+            }
+        }
 
         $scope.labels = getLabels();
 
