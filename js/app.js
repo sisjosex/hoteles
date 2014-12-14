@@ -190,6 +190,8 @@ function resizeCardCarousel() {
 
 function registerNotifications() {
 
+    console.log('registerNotifications');
+
     if(window.plugins && window.plugins.pushNotification) {
 
         var pushNotification = window.plugins.pushNotification;
@@ -201,6 +203,8 @@ function registerNotifications() {
                 "ecb": "onNotificationGCM"
             });
 
+            console.log('Android');
+
         } else {
 
             pushNotification.register(tokenHandler, this.errorHandler, {
@@ -209,6 +213,8 @@ function registerNotifications() {
                 "alert": "true",
                 "ecb": "onNotificationAPN"
             });
+
+            console.log('IPhone');
         }
     }
 }
@@ -218,12 +224,19 @@ function successHandler() {}
 // android
 function tokenHandler(result) {
 
+    console.log('tokenHandler');
+
     if(TOKEN_PUSH_NOTIFICATION == 0){
         storeToken(device.uuid, result, 'iphone');
+
+        console.log('tokenHandler ' + result);
     }
 }
 
 function onNotificationGCM(e) {
+
+    console.log('onNotificationGCM');
+
     switch( e.event )
     {
         case 'registered':
@@ -1491,8 +1504,6 @@ function getArrayAsObjects(array, width, height) {
 }
 
 function getJsonP(url, callback_success, callback_error, data) {
-
-    console.log(data);
 
     if(data == undefined) {
         data = {};
