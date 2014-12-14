@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-    </list>
+    <list default="true" id="812c94a2-9014-4861-ad8c-3b681597af51" name="Default" comment="" />
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8039216" vertical-offset="2193" max-vertical-offset="25005">
-              <caret line="179" column="13" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.5637255" vertical-offset="2265" max-vertical-offset="25005">
+              <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
               <folding>
                 <marker date="1418568531000" expanded="true" signature="7219:43951" placeholder="{...}" />
               </folding>
@@ -1344,8 +1342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8039216" vertical-offset="2193" max-vertical-offset="25005">
-          <caret line="179" column="13" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.5637255" vertical-offset="2265" max-vertical-offset="25005">
+          <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
           <folding>
             <marker date="1418568531000" expanded="true" signature="7219:43951" placeholder="{...}" />
           </folding>
