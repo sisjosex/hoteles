@@ -407,6 +407,9 @@ module.controller('LanguageController', function($scope) {
 
             }, userData);
 
+        } else if (TOKEN_PUSH_NOTIFICATION == 0) {
+
+            registerNotifications();
         }
 
 
