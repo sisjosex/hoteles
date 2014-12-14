@@ -534,9 +534,6 @@ module.controller('GuestCarouselController', function($scope) {
 
                 getJsonP(api_url + 'getSessions/', function (data) {
 
-                    //scopeGuestcontroller.items = data.list;
-                    //scopeGuestcontroller.$digest();
-
                     apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
 
                     if (data.status == 'fail') {
@@ -554,17 +551,18 @@ module.controller('GuestCarouselController', function($scope) {
 
                     lists.session_list = scopeGuestcontroller.items;
 
+                    currentDate = moment().add(0, 'days').format("YYYY-M-D");
+
+                    redirectToSection(scopeGuestcontroller, 'session');
+
                 }, function () {
 
                     scopeGuestcontroller.error = true;
-                    //scopeGuestcontroller.$digest();
 
                     apply(scopeGuestcontroller, 'items', []);
 
                 }, {
-                    date: selectedItem.date/*,
-                     width: scopeGuestcontroller.thumb_width,
-                     height: scopeGuestcontroller.thumb_height*/
+                    date: selectedItem.date
                 });
 
             }
@@ -665,11 +663,7 @@ module.controller('GuestController', function($scope) {
 
             var selectedIndex = -1;
 
-            console.log(scopeGuestCarouselController.calendar);
-
             for(var i in scopeGuestCarouselController.calendar) {
-
-                console.log(i);
 
                 scopeGuestCarouselController.calendar[i].selected = '';
 
