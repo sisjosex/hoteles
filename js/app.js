@@ -168,7 +168,19 @@ function redirectToSection(scope, section) {
 
         index=0;
 
-        scope.gotoDetailFromNotification(index);
+        list = lists[section + '_list'];
+
+        if(list && list.length > 0) {
+
+            for(var i in list) {
+                if(list[i].id == current_seccion_id) {
+                    index = i;
+                    break;
+                }
+            }
+
+            scope.gotoDetailFromNotification(index);
+        }
 
         current_seccion_id = '';
     }
@@ -319,7 +331,7 @@ function showNotification(event, type){
 function redirectToPage(seccion, id){
     var page = "";
     var params = {};
-    var active_tab = 0;
+    var active_tab = -1;
 
     if(id != ""){
         params.id = id;
@@ -344,7 +356,9 @@ function redirectToPage(seccion, id){
         active_tab = 3;
     }
 
-    mainTabBar.setActiveTab(active_tab);
+    if(active_tab != -1) {
+        mainTabBar.setActiveTab(active_tab);
+    }
 }
 
 function errorHandler() {}
