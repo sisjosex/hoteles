@@ -166,7 +166,7 @@ function redirectToSection(scope, section) {
 
     if(current_seccion_id != '') {
 
-        index=0;
+        index=-1;
 
         list = lists[section + '_list'];
 
@@ -179,7 +179,10 @@ function redirectToSection(scope, section) {
                 }
             }
 
-            scope.gotoDetailFromNotification(index);
+
+            if(index != -1) {
+                scope.gotoDetailFromNotification(index);
+            }
         }
 
         current_seccion_id = '';
