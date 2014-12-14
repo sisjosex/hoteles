@@ -21,7 +21,7 @@ var selectedDate;
 var TOKEN_PUSH_NOTIFICATION = (localStorage.getItem("push_token") != null || localStorage.getItem("push_token") != undefined) ? JSON.parse(localStorage.getItem("push_token")) : 0;
 var DEVICE_UUID = (localStorage.getItem("uuid") != null || localStorage.getItem("uuid") != undefined) ? JSON.parse(localStorage.getItem("uuid")) : 0;
 
-var current_section = '';
+var current_page = '';
 var current_seccion_id = '';
 
 var labels = {
@@ -366,7 +366,34 @@ function redirectToPage(seccion, id){
         active_tab = 3;
     }
 
+    if(isShowingForm == true) {
+        scopeGuestListFormController.closeForm();
+    }
+
     if(active_tab != -1) {
+
+        if(current_page == 'profile_detail.html') {
+
+            profileNavigator.popPage('profile_detail.html');
+
+        } else if(current_page == 'promo_info.html') {
+
+            splash.popPage('promo_info.html');
+
+        } else if(current_page == 'life_info.html') {
+
+            splash.popPage('life_info.html');
+
+        } else if(current_page == 'club_info.html') {
+
+            splash.popPage('club_info.html');
+
+        } else if(current_page == 'guest_list.html') {
+
+            splash.popPage('guest_info.html');
+        }
+
+
         mainTabBar.setActiveTab(active_tab);
     }
 }
@@ -548,6 +575,8 @@ var scopeGuestcontroller;
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
 
+        current_page = 'guest.html';
+
         scopeGuestcontroller = $scope;
 
         var height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
@@ -657,6 +686,8 @@ var scopeGuestListCardController;
 module.controller('GuestListCardController', function($scope) {
     ons.ready(function() {
 
+        current_page = 'guest_list.html';
+
         scopeGuestListCardController = $scope;
 
         $scope.labels = getLabels();
@@ -703,8 +734,11 @@ module.controller('GuestListCardController', function($scope) {
 
 
 var scopeGuestListFormController;
+var isShowingForm = false;
 module.controller('GuestListFormController', function($scope) {
     ons.ready(function() {
+
+        isShowingForm = true;
 
         scopeGuestListFormController = $scope;
 
@@ -755,6 +789,8 @@ module.controller('GuestListFormController', function($scope) {
         };
 
         $scope.closeForm = function() {
+
+            isShowingForm = false;
 
             $('#conditions').remove();
             guestFormDialog.hide();
@@ -831,6 +867,8 @@ module.controller('GuestListFormController', function($scope) {
 var scopeClubsController;
 module.controller('ClubsController', function($scope) {
     ons.ready(function() {
+
+        current_page = 'clubs.html';
 
         scopeClubsController = $scope;
 
@@ -928,6 +966,8 @@ module.controller('ClubsController', function($scope) {
 module.controller('ClubInfoController', function($scope) {
     ons.ready(function() {
 
+        current_page = 'club_info.html';
+
         resizeCardCarousel();
 
         $scope.pictures = getArrayAsObjects(lists.club_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
@@ -977,6 +1017,8 @@ module.controller('ClubInfoController', function($scope) {
 var scopeLifeController;
 module.controller('LifeController', function($scope) {
     ons.ready(function() {
+
+        current_page = 'life.html';
 
         scopeLifeController = $scope;
 
@@ -1072,6 +1114,8 @@ module.controller('LifeController', function($scope) {
 module.controller('LifeInfoController', function($scope) {
     ons.ready(function() {
 
+        current_page = 'life_info.html';
+
         resizeCardCarousel();
 
         $scope.pictures = getArrayAsObjects(lists.life_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
@@ -1127,6 +1171,8 @@ module.controller('LifeInfoController', function($scope) {
 var scopePromosController;
 module.controller('PromosController', function($scope) {
     ons.ready(function() {
+
+        current_page = 'promos.html';
 
         scopePromosController = $scope;
 
@@ -1223,6 +1269,8 @@ module.controller('PromosController', function($scope) {
 module.controller('PromoInfoController', function($scope) {
     ons.ready(function() {
 
+        current_page = 'promo_info.html';
+
         resizeCardCarousel();
 
         $scope.pictures = getArrayAsObjects(lists.promos_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
@@ -1267,6 +1315,8 @@ module.controller('PromoInfoController', function($scope) {
 var scopeProfileController;
 module.controller('ProfileController', function($scope) {
     ons.ready(function() {
+
+        current_page = 'profile.html';
 
         scopeProfileController = $scope;
 
@@ -1365,6 +1415,8 @@ module.controller('ProfileController', function($scope) {
 var scopeProfileDetailController;
 module.controller('ProfileDetailController', function($scope) {
     ons.ready(function() {
+
+        current_page = 'profile_detail.html';
 
         scopeProfileDetailController = $scope;
 
