@@ -7,7 +7,7 @@ var thumb_url = 'http://golden-vip.com/helpers/timthumb.php?w=%width%&h=%height%
 
 var lists = {
     session_list: [],
-    clubs_list: [],
+    club_list: [],
     life_list: [],
     promos_list: []
 };
@@ -164,13 +164,20 @@ var labels = {
 
 function redirectToSection(scope, section) {
 
+    console.log('redirectToSection');
+
     if(current_seccion_id != '') {
 
         index=-1;
 
+        console.log(section + '_list');
+
         list = lists[section + '_list'];
 
-        if(list && list.length > 0) {
+        console.log(list);
+
+        if(list.length > 0) {
+            console.log('searching');
 
             for(var i in list) {
                 if(list[i].id == current_seccion_id) {
@@ -572,6 +579,8 @@ module.controller('GuestController', function($scope) {
 
             apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
 
+            lists.session_list = $scope.items;
+
             if(data.status == 'fail') {
 
                 scopeGuestcontroller.$apply(function(){
@@ -587,7 +596,7 @@ module.controller('GuestController', function($scope) {
                 redirectToSection(scopeGuestcontroller, 'session');
             }
 
-            lists.session_list = $scope.items;
+
 
             setTimeout(function(){
                 try { navigator.splashscreen.hide(); } catch(error){}
@@ -863,6 +872,8 @@ module.controller('ClubsController', function($scope) {
 
             apply(scopeClubsController, 'items', data.list, scopeClubsController.thumb_width, scopeClubsController.thumb_height);
 
+            lists.club_list = $scope.items;
+
             if(data.status == 'fail') {
 
                 scopeClubsController.$apply(function(){
@@ -878,7 +889,7 @@ module.controller('ClubsController', function($scope) {
                 redirectToSection(scopeClubsController, 'club');
             }
 
-            lists.clubs_list = $scope.items;
+
         }, function(){
 
             scopeClubsController.error = true;
@@ -919,9 +930,9 @@ module.controller('ClubInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(lists.clubs_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        $scope.pictures = getArrayAsObjects(lists.club_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = lists.clubs_list[splash.getCurrentPage().options.index];
+        $scope.detail = lists.club_list[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
@@ -1007,6 +1018,8 @@ module.controller('LifeController', function($scope) {
 
             apply(scopeLifeController, 'items', data.list, scopeLifeController.thumb_width, scopeLifeController.thumb_height);
 
+            lists.life_list = $scope.items;
+
             if(data.status == 'fail') {
 
                 scopeLifeController.$apply(function(){
@@ -1021,8 +1034,6 @@ module.controller('LifeController', function($scope) {
 
                 redirectToSection(scopeLifeController, 'life');
             }
-
-            lists.life_list = $scope.items;
 
         }, function(){
 
@@ -1158,6 +1169,8 @@ module.controller('PromosController', function($scope) {
 
             apply(scopePromosController, 'items', data.list, scopePromosController.thumb_width, scopePromosController.thumb_height);
 
+            lists.promos_list = $scope.items;
+
             if(data.status == 'fail') {
 
                 scopePromosController.$apply(function(){
@@ -1172,8 +1185,6 @@ module.controller('PromosController', function($scope) {
 
                 redirectToSection(scopePromosController, 'promo');
             }
-
-            lists.promos_list = $scope.items;
 
         }, function(){
 
