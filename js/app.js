@@ -324,9 +324,12 @@ function onNotificationAPN(event) {
 }
 
 function showNotification(event, type){
-    var message = type == "android" ? event.message : event.alert;
-    var seccion = type == "android" ? event.payload.seccion : event.seccion;
-    var seccion_id = type == "android" ? event.payload.seccion_id : event.seccion_id;
+    var message     = type == "android" ? event.message : event.alert;
+    var seccion     = type == "android" ? event.payload.seccion : event.seccion;
+    var seccion_id  = type == "android" ? event.payload.seccion_id : event.seccion_id;
+    var date        = type == "android" ? event.payload.date : event.date;
+
+    currentDate = date;
 
     navigator.notification.alert(
         message,
@@ -509,8 +512,6 @@ module.controller('GuestCarouselController', function($scope) {
 
         moment.locale(applicationLanguage);
 
-        currentDate = moment().format("L");
-
         scopeGuestCarouselController.calendar = generateCalendar();
 
 
@@ -568,12 +569,48 @@ module.controller('GuestCarouselController', function($scope) {
 
             }
         };
+
+        $scope.setSelectedDate = function(date) {
+
+            var selectedItem;
+
+            var calendar = generateCalendar();
+
+            for(var i in calendar) {
+
+                calendar[i].selected = '';
+
+                if(calendar[i].date == date) {
+
+                    selectedItem = calendar[i];
+                }
+            }
+
+            if(selectedItem != undefined) {
+
+                selectedItem.selected = 'selected';
+            }
+
+            //apply(scopeGuestCarouselController, 'calendar', calendar);
+
+            $scope.calendar = calendar;
+
+            //console.log($scope.calendar);
+        };
+
     });
 });
 
 var scopeGuestcontroller;
+var calendar;
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
+
+        if(currentDate == '') {
+            currentDate = moment().add(0, 'days').format("YYYY-M-D");
+        }
+
+
 
         current_page = 'guest.html';
 
@@ -627,6 +664,40 @@ module.controller('GuestController', function($scope) {
 
 
 
+
+            if(currentDate != moment().add(0, 'days').format("YYYY-M-D")) {
+
+                scopeGuestCarouselController.setSelectedDate(currentDate);
+/*
+                var selectedItem;
+
+                calendar = generateCalendar();
+
+                for(var i in calendar) {
+
+                    calendar[i].selected = '';
+
+                    if(calendar[i].date == currentDate) {
+
+                        selectedItem = calendar[i];
+                    }
+                }
+
+                if(selectedItem != undefined) {
+
+                    selectedItem.selected = 'selected';
+                }
+
+                    scopeGuestCarouselController.$apply(function(){
+                        scopeGuestCarouselController.calendar = calendar;
+                    });*/
+
+
+                //apply(scopeGuestCarouselController, 'calendar', calendar);
+            }
+
+
+
             setTimeout(function(){
                 try { navigator.splashscreen.hide(); } catch(error){}
             }, 200);
@@ -643,9 +714,7 @@ module.controller('GuestController', function($scope) {
             }, 200);
 
         },{
-            date: moment().add(0, 'days').format("YYYY-M-D")/*,
-            width: $scope.thumb_width,
-            height: $scope.thumb_height*/
+            date: currentDate
         });
 
         $scope.labels = getLabels();
