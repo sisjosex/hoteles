@@ -322,27 +322,30 @@ function redirectToPage(seccion, id){
 
 function errorHandler() {}
 
+
 function storeToken(uuid, token, device) {
+
     TOKEN_PUSH_NOTIFICATION = token;
 
-    getJsonPBackground(api_url + 'registerUser/', function(data){
+    getJsonPBackground(api_url + 'updateUUID/', function(data) {
 
-        userData = data.user;
-
-        localStorage.setItem("user", JSON.stringify(userData));
+        localStorage.setItem("push_token", TOKEN_PUSH_NOTIFICATION);
 
     }, function(){
 
-        userData = null;
+        TOKEN_PUSH_NOTIFICATION = 0;
 
-    }, userData);
+    }, {
+        user_id: userData.id,
+        uuid: TOKEN_PUSH_NOTIFICATION,
+        uuid_device: uuid,
+        device: device
+    });
 }
 
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
-
-        registerNotifications();
 
         $('#app-wrapper').show();
 
@@ -382,6 +385,8 @@ module.controller('LanguageController', function($scope) {
                 userData = data.user;
 
                 localStorage.setItem("user", JSON.stringify(userData));
+
+                registerNotifications();
 
             }, function(){
 
