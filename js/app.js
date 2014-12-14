@@ -346,12 +346,14 @@ function storeToken(uuid, token, device) {
 
     getJsonPBackground(api_url + 'updateUUID/', function(data) {
 
+        console.log(data);
+
         localStorage.setItem("push_token", TOKEN_PUSH_NOTIFICATION);
         localStorage.setItem("uuid", DEVICE_UUID);
 
     }, function(){
 
-        TOKEN_PUSH_NOTIFICATION = 0;
+        //TOKEN_PUSH_NOTIFICATION = 0;
 
     }, {
         user_id: userData.id,
