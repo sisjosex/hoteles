@@ -9,7 +9,7 @@ var lists = {
     session_list: [],
     club_list: [],
     life_list: [],
-    promos_list: []
+    promo_list: []
 };
 
 var currentDate = '';
@@ -1215,7 +1215,7 @@ module.controller('PromosController', function($scope) {
 
             apply(scopePromosController, 'items', data.list, scopePromosController.thumb_width, scopePromosController.thumb_height);
 
-            lists.promos_list = $scope.items;
+            lists.promo_list = $scope.items;
 
             if(data.status == 'fail') {
 
@@ -1273,9 +1273,9 @@ module.controller('PromoInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(lists.promos_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        $scope.pictures = getArrayAsObjects(lists.promo_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = lists.promos_list[splash.getCurrentPage().options.index];
+        $scope.detail = lists.promo_list[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
