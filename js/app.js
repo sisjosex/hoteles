@@ -755,7 +755,7 @@ module.controller('GuestListFormController', function($scope) {
 
                     localStorage.setItem("user", JSON.stringify(userData));
 
-                    storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android'); {
+                    storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');
 
                     $('body').append('<style type="text/css">.bottom-dialog .dialog {min-height: 13.2em;}</style>');
 
