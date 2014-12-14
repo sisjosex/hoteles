@@ -5,11 +5,13 @@ var applicationLanguage = (localStorage.getItem("lang") != null || localStorage.
 var api_url = 'http://golden-vip.com/api/';
 var thumb_url = 'http://golden-vip.com/helpers/timthumb.php?w=%width%&h=%height%&src=';
 
+var lists = {
+    session_list: [],
+    clubs_list: [],
+    life_list: [],
+    promos_list: []
+};
 
-var session_list = [];
-var clubs_list = [];
-var life_list = [];
-var promos_list = [];
 var currentDate = '';
 var userData = (localStorage.getItem("user") != null || localStorage.getItem("user") != undefined) ? JSON.parse(localStorage.getItem("user")) : null;
 var currentSession;
@@ -18,6 +20,9 @@ var selectedDate;
 
 var TOKEN_PUSH_NOTIFICATION = (localStorage.getItem("push_token") != null || localStorage.getItem("push_token") != undefined) ? JSON.parse(localStorage.getItem("push_token")) : 0;
 var DEVICE_UUID = (localStorage.getItem("uuid") != null || localStorage.getItem("uuid") != undefined) ? JSON.parse(localStorage.getItem("uuid")) : 0;
+
+var current_section = '';
+var current_seccion_id = '';
 
 var labels = {
     'es': {
@@ -155,6 +160,19 @@ var labels = {
         call: 'CALL'
     }
 };
+
+
+function redirectToSection(scope, section) {
+
+    if(current_seccion_id != '') {
+
+        index=0;
+
+        scope.gotoDetailFromNotification(index);
+
+        current_seccion_id = '';
+    }
+}
 
 
 window.fadeIn = function(obj) {
@@ -301,37 +319,32 @@ function showNotification(event, type){
 function redirectToPage(seccion, id){
     var page = "";
     var params = {};
+    var active_tab = 0;
 
     if(id != ""){
         params.id = id;
     }
 
+    current_seccion_id = id;
+
     if(seccion == "session"){
-        page = "guest.html"
-        if(id != ""){
-            params.id = id;
-            page = "guest_list.html";
-        }
-    }else if(seccion == "club"){
-        page = "clubs.html";
-        if(id != ""){
-            page = "club_info.html";
-        }
-    }else if(seccion == "life"){
-        page = "life.html";
-        if(id != ""){
-            page = "life_info.html";
-        }
-    }else if(seccion == "promo"){
-        page = "promos.html";
-        if(id != ""){
-            page = "promo_info.html";
-        }
+
+        active_tab = 0;
+
+    } else if(seccion == "club"){
+
+        active_tab = 1;
+
+    } else if(seccion == "life"){
+
+        active_tab = 2;
+
+    } else if(seccion == "promo"){
+
+        active_tab = 3;
     }
 
-    alert('page: ' + page + ' id: ' + id);
-
-    splash.pushPage(page, params);
+    mainTabBar.setActiveTab(active_tab);
 }
 
 function errorHandler() {}
@@ -487,7 +500,7 @@ module.controller('GuestCarouselController', function($scope) {
                         });
                     }
 
-                    session_list = scopeGuestcontroller.items;
+                    lists.session_list = scopeGuestcontroller.items;
 
                 }, function () {
 
@@ -553,9 +566,11 @@ module.controller('GuestController', function($scope) {
                 scopeGuestcontroller.$apply(function(){
                     scopeGuestcontroller.no_data = false;
                 });
+
+                redirectToSection(scopeGuestcontroller, 'session');
             }
 
-            session_list = $scope.items;
+            lists.session_list = $scope.items;
 
             setTimeout(function(){
                 try { navigator.splashscreen.hide(); } catch(error){}
@@ -582,7 +597,7 @@ module.controller('GuestController', function($scope) {
 
         $scope.showGuestList = function(index) {
 
-            currentSession = session_list[index];
+            currentSession = lists.session_list[index];
 
             ons.createDialog('guest_list_form.html').then(function(dialog) {
                 guestFormDialog.show();
@@ -591,7 +606,14 @@ module.controller('GuestController', function($scope) {
 
         $scope.showGuestInfo = function(index) {
 
-            currentSession = session_list[index];
+            currentSession = lists.session_list[index];
+
+            splash.pushPage('guest_list.html', {index:index});
+        };
+
+        $scope.gotoDetailFromNotification = function(index) {
+
+            currentSession = lists.session_list[index];
 
             splash.pushPage('guest_list.html', {index:index});
         };
@@ -615,9 +637,9 @@ module.controller('GuestListCardController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(session_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        $scope.pictures = getArrayAsObjects(lists.session_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = session_list[splash.getCurrentPage().options.index];
+        $scope.detail = lists.session_list[splash.getCurrentPage().options.index];
 
         $scope.carouselPostChange = function() {
 
@@ -835,9 +857,11 @@ module.controller('ClubsController', function($scope) {
                 scopeClubsController.$apply(function(){
                     scopeClubsController.no_data = false;
                 });
+
+                redirectToSection(scopeClubsController, 'club');
             }
 
-            clubs_list = $scope.items;
+            lists.clubs_list = $scope.items;
         }, function(){
 
             scopeClubsController.error = true;
@@ -852,6 +876,11 @@ module.controller('ClubsController', function($scope) {
         $scope.labels = getLabels();
 
         $scope.showClubInfo = function(index) {
+
+            splash.pushPage('club_info.html', {index:index});
+        };
+
+        $scope.gotoDetailFromNotification = function(index) {
 
             splash.pushPage('club_info.html', {index:index});
         };
@@ -873,9 +902,9 @@ module.controller('ClubInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(clubs_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        $scope.pictures = getArrayAsObjects(lists.clubs_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = clubs_list[splash.getCurrentPage().options.index];
+        $scope.detail = lists.clubs_list[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
@@ -972,9 +1001,11 @@ module.controller('LifeController', function($scope) {
                 scopeLifeController.$apply(function(){
                     scopeLifeController.no_data = false;
                 });
+
+                redirectToSection(scopeLifeController, 'life');
             }
 
-            life_list = $scope.items;
+            lists.life_list = $scope.items;
 
         }, function(){
 
@@ -990,6 +1021,11 @@ module.controller('LifeController', function($scope) {
         $scope.labels = getLabels();
 
         $scope.showClubInfo = function(index) {
+
+            splash.pushPage('life_info.html', {index:index});
+        };
+
+        $scope.gotoDetailFromNotification = function(index) {
 
             splash.pushPage('life_info.html', {index:index});
         };
@@ -1010,9 +1046,9 @@ module.controller('LifeInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(life_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        $scope.pictures = getArrayAsObjects(lists.life_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = life_list[splash.getCurrentPage().options.index];
+        $scope.detail = lists.life_list[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
@@ -1116,9 +1152,11 @@ module.controller('PromosController', function($scope) {
                 scopePromosController.$apply(function(){
                     scopePromosController.no_data = false;
                 });
+
+                redirectToSection(scopePromosController, 'promo');
             }
 
-            promos_list = $scope.items;
+            lists.promos_list = $scope.items;
 
         }, function(){
 
@@ -1134,6 +1172,11 @@ module.controller('PromosController', function($scope) {
         $scope.labels = getLabels();
 
         $scope.showInfo = function(index) {
+
+            splash.pushPage('promo_info.html', {index:index});
+        };
+
+        $scope.gotoDetailFromNotification = function(index) {
 
             splash.pushPage('promo_info.html', {index:index});
         };
@@ -1154,9 +1197,9 @@ module.controller('PromoInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(promos_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        $scope.pictures = getArrayAsObjects(lists.promos_list[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = promos_list[splash.getCurrentPage().options.index];
+        $scope.detail = lists.promos_list[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
