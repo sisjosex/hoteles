@@ -17,6 +17,7 @@ var currentSession;
 var selectedDate;
 
 var TOKEN_PUSH_NOTIFICATION = (localStorage.getItem("push_token") != null || localStorage.getItem("push_token") != undefined) ? JSON.parse(localStorage.getItem("push_token")) : 0;
+var DEVICE_UUID = (localStorage.getItem("uuid") != null || localStorage.getItem("uuid") != undefined) ? JSON.parse(localStorage.getItem("uuid")) : 0;
 
 var labels = {
     'es': {
@@ -224,7 +225,7 @@ function successHandler() {}
 // android
 function tokenHandler(result) {
 
-    console.log('tokenHandler');
+    console.log('tokenHandler ' + result);
 
     if(TOKEN_PUSH_NOTIFICATION == 0){
         storeToken(device.uuid, result, 'iphone');
@@ -339,12 +340,14 @@ function errorHandler() {}
 function storeToken(uuid, token, device) {
 
     TOKEN_PUSH_NOTIFICATION = token;
+    DEVICE_UUID = uuid;
 
     console.log('uuid: ' + uuid + ' token: ' + token + ' device: ' + device);
 
     getJsonPBackground(api_url + 'updateUUID/', function(data) {
 
         localStorage.setItem("push_token", TOKEN_PUSH_NOTIFICATION);
+        localStorage.setItem("uuid", DEVICE_UUID);
 
     }, function(){
 
@@ -751,6 +754,8 @@ module.controller('GuestListFormController', function($scope) {
                     });
 
                     localStorage.setItem("user", JSON.stringify(userData));
+
+                    storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android'); {
 
                     $('body').append('<style type="text/css">.bottom-dialog .dialog {min-height: 13.2em;}</style>');
 
@@ -1360,6 +1365,8 @@ module.controller('ProfileDetailController', function($scope) {
                         $scope.$apply();
 
                         localStorage.setItem("user", JSON.stringify(userData));
+
+                        storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');
 
                     }, function(){
 
