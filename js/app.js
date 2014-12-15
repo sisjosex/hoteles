@@ -216,7 +216,7 @@ window.onresize = function(){
 
 function resizeCardCarousel() {
     thumb_width = window.innerWidth;
-    thumb_height = parseInt(510 / 640 * window.innerWidth);
+    thumb_height = parseInt(514 / 640 * window.innerWidth);
 
     $('.hascarousel .carousel-detail').height(thumb_height);
     $('.hascarousel .page__content').css('top', thumb_height);
