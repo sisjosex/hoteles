@@ -199,7 +199,7 @@ input[type=checkbox] {
 
 .item-bg.list .item-bg-final {
     background-position: center center;
-    background-size: auto 100%;
+    background-size: 100% auto;
 }
 
 .item-bg.detail .item-bg-final {

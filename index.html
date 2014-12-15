@@ -57,8 +57,8 @@
         </ons-toolbar>
 
         <ons-scroller>
-            <ons-list>
-                <ons-list-item class="guest_list_item" ng-repeat="item in items">
+            <div>
+                <div class="guest_list_item" ng-repeat="item in items">
 
                     <div class="item-bg list">
                         <img onload="fadeIn(this)" src="{{item.images[0]}}" />
@@ -76,9 +76,9 @@
                         </div>
                     </div>
 
-                </ons-list-item>
+                </div>
 
-                <ons-list-item class="guest_list_item" ng-show="no_data">
+                <div class="guest_list_item" ng-show="no_data">
 
                     <div class="guesto-list-verlay overlay">
                         <div align="center" class="guest-list-item-content">
@@ -86,8 +86,8 @@
                         </div>
                     </div>
 
-                </ons-list-item>
-            </ons-list>
+                </div>
+            </div>
         </ons-scroller>
     </ons-page>
     </ons-navigator>
