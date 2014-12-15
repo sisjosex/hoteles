@@ -709,7 +709,6 @@ module.controller('GuestController', function($scope) {
 
 
         $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            console.log('scroll');
             $('.guesto-list-verlay.overlay').css('opacity', 1);
         });
 
