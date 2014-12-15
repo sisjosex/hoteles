@@ -477,7 +477,7 @@ module.controller('LanguageController', function($scope) {
 
             }, function(){
 
-                userData = null;
+                //userData = null;
 
             }, userData);
 
