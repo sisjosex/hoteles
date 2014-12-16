@@ -121,8 +121,8 @@ var labels = {
         email: 'Email:',
         phone: 'Phone:',
         edit: 'EDIT',
-        idiom: 'Idiom',
-        alerts: 'Alerts',
+        idiom: 'Language',
+        alerts: 'Notifications',
         setup_my_data: 'SETUP MY INFO',
         validate: 'VALIDATE BY CLUB RESPONSABLE',
         guest_list: 'GUEST LIST:',
@@ -232,7 +232,7 @@ window.onresize = function(){
 
 function resizeCardCarousel() {
     thumb_width = window.innerWidth;
-    thumb_height = parseInt(510 / 640 * window.innerWidth);
+    thumb_height = parseInt(514 / 640 * window.innerWidth);
 
     $('.hascarousel .carousel-detail').height(thumb_height);
     $('.hascarousel .page__content').css('top', thumb_height);
