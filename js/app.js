@@ -1,6 +1,12 @@
 var module = ons.bootstrap();
 
-var applicationLanguage = (localStorage.getItem("lang") != null || localStorage.getItem("lang") != undefined) ? localStorage.getItem("lang") : 'es';
+var applicationLanguage = '';
+
+try {
+    applicationLanguage = (localStorage.getItem("lang") != null || localStorage.getItem("lang") != undefined) ? localStorage.getItem("lang") : 'es';
+} catch(error) {
+    applicationLanguage = '';
+}
 
 var api_url = 'http://golden-vip.com/api/';
 var thumb_url = 'http://golden-vip.com/helpers/timthumb.php?w=%width%&h=%height%&src=';
@@ -13,7 +19,15 @@ var lists = {
 };
 
 var currentDate = '';
-var userData = (localStorage.getItem("user") != null || localStorage.getItem("user") != undefined) ? JSON.parse(localStorage.getItem("user")) : null;
+var userData = null;
+
+try {
+    userData = (localStorage.getItem("user") != null || localStorage.getItem("user") != undefined) ? JSON.parse(localStorage.getItem("user")) : null;
+}catch(error) {
+    userData = null;
+}
+
+
 var currentSession;
 
 var selectedDate;
@@ -90,7 +104,8 @@ var labels = {
         accept: 'Aceptar',
         yes: 'Si',
         no: 'No',
-        call: 'LLAMAR'
+        call: 'LLAMAR',
+        persons: 'personas'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -141,7 +156,7 @@ var labels = {
         no_life: 'There is no life available',
         no_promos: 'There is promos available',
         hi: 'Hi',
-        complete_nro_persons: 'cComplete the n ° of people who will attend',
+        complete_nro_persons: 'Complete the n° of people who will attend',
         to_session: 'to session',
         to_day: 'of the day',
         perfect: 'Perfect!',
@@ -157,7 +172,8 @@ var labels = {
         accept: 'Accept',
         yes: 'Yes',
         no: 'No',
-        call: 'CALL'
+        call: 'CALL',
+        persons: 'persons'
     }
 };
 
@@ -440,7 +456,7 @@ module.controller('LanguageController', function($scope) {
             StatusBar.hide();
         }catch(error){}
 
-        if(applicationLanguage != null) {
+        if(applicationLanguage != '' && (applicationLanguage == 'es' || applicationLanguage == 'en')) {
 
             splash.pushPage('page.html', {lang: applicationLanguage, animation: 'none'});
 
