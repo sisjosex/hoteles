@@ -724,9 +724,9 @@ module.controller('GuestController', function($scope) {
         };
 
 
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });
@@ -1002,9 +1002,9 @@ module.controller('ClubsController', function($scope) {
 
 
 
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });
@@ -1150,9 +1150,9 @@ module.controller('LifeController', function($scope) {
         };
 
 
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });
@@ -1305,9 +1305,9 @@ module.controller('PromosController', function($scope) {
         };
 
 
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });
@@ -1453,9 +1453,9 @@ module.controller('ProfileController', function($scope) {
         };
 
 
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });

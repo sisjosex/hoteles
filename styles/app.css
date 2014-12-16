@@ -760,3 +760,8 @@ label.checkbox {
 .navigation-bar--android__center:first-child:last-child {
     padding-left:0;
 }
+
+.page__content.ons-page-inner {
+    overflow: auto;
+    -webkit-overflow-scrolling: none;
+}
