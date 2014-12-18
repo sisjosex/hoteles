@@ -47,47 +47,13 @@
         <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;">
 
             <div class="center header-title">{{labels.header_guest_list}}
-                <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="50px">
-                    <ons-carousel-item class="session-item" ng-repeat="item in calendar">
-                        <div class="session_day {{item.selected}}" ng-click="filterSessionDay($index);"><span class="session_day_text">{{item.day}}</span><span class="session_month">{{item.month}}</span></div>
-                    </ons-carousel-item>
-                </ons-carousel>
+                <ons-carousel ng-controller="GuestCarouselController" var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="50px"></ons-carousel>
             </div>
 
         </ons-toolbar>
 
         <!--<ons-scroller>-->
-            <div>
-                <div class="guest_list_item" ng-repeat="item in items">
-
-                    <div class="item-bg list">
-                        <img onload="fadeIn(this)" src="{{item.images[0]}}" />
-                    </div>
-
-                    <div class="guesto-list-verlay overlay">
-                        <div align="center" class="guest-list-item-content">
-                            <span class="title-big">{{item.guest_list}}</span> <span class="title-medium">{{labels.in}} {{item.club}}</span>
-                            <p class="title-normal block">{{item.hour}}</p>
-                        </div>
-
-                        <div align="center" class="buttons">
-                            <div class="button purple" ng-click="showGuestList($index)">GUEST LIST</div>
-                            <div class="button" ng-click="showGuestInfo($index)">+ INFO</div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="guest_list_item" ng-show="no_data">
-
-                    <div class="guesto-list-verlay overlay">
-                        <div align="center" class="guest-list-item-content">
-                            <p class="title-normal block">{{labels.no_sessions}}</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <div id="session_list_container"></div>
         <!--</ons-scroller>-->
     </ons-page>
     </ons-navigator>
@@ -738,6 +704,7 @@
 <script src="js/notifications.js"></script>
 <script src="js/language.js"></script>
 <script src="js/util.js"></script>
+<script src="js/templates.js"></script>
 <script src="js/app.js"></script>
 
 </body>

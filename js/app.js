@@ -7,7 +7,8 @@ var lists = {
     club: [],
     life: [],
     promo: [],
-    profile: []
+    profile: [],
+    calendar: []
 };
 
 var calendar = generateCalendar();
@@ -17,7 +18,7 @@ var currentDate = '';
 
 var currentSession;
 
-var selectedDate;
+var selectedDate = '';
 var current_page = '';
 var current_seccion_id = '';
 
@@ -90,6 +91,51 @@ function createUserAndRegisterNotifications() {
 }
 
 
+
+filterSessionDay = function(index, element) {
+
+    if(element !== undefined) {
+        $('.session_day').removeClass('selected');
+        $(element).addClass('selected');
+    }
+
+    var selectedItem = lists.calendar[index];
+
+    $('div.page__content.ons-page-inner').scrollTop(0);
+
+    selectedItem.selected = 'selected';
+
+    loadIntoTemplateSingle('#session_list_container', {}, 'no_rows', getLabels());
+
+    console.log(selectedDate);
+    console.log(selectedItem.date);
+
+    selectedDate = selectedItem.date;
+
+    getJsonP(api_url + 'getSessions/', function (data) {
+
+        if (data.status === 'fail') {
+
+
+
+        } else {
+
+            lists.session = data.list;
+
+            loadIntoTemplate('#session_list_container', lists.session, 'session_list', getLabels());
+
+            redirectToSection(scopeGuestcontroller, 'session');
+        }
+
+        currentDate = moment().add(0, 'days').format("YYYY-M-D");
+
+    }, function () {
+    }, {
+        date: selectedItem.date
+    });
+};
+
+
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
 
@@ -143,70 +189,15 @@ module.controller('GuestCarouselController', function($scope) {
 
         moment.locale(applicationLanguage);
 
-        scopeGuestCarouselController.calendar = calendar;
+        /*console.log(lists.calendar);
+        lists.calendar = generateCalendar();*/
 
-        $scope.filterSessionDay = function(index) {
-
-            var selectedItem = $scope.calendar[index];
-
-            for(var i in $scope.calendar) {
-
-                $scope.calendar[i].selected = '';
-            }
-
-            $('div.page__content.ons-page-inner').scrollTop(0);
-
-            selectedItem.selected = 'selected';
-
-            if(selectedDate !== selectedItem.date) {
-
-                selectedDate = selectedItem.date;
-
-                getJsonP(api_url + 'getSessions/', function (data) {
-
-                    apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
-
-                    if (data.status === 'fail') {
-
-                        scopeGuestcontroller.$apply(function () {
-                            scopeGuestcontroller.no_data = true;
-                        });
-
-                    } else {
-
-                        scopeGuestcontroller.$apply(function () {
-                            scopeGuestcontroller.no_data = false;
-                        });
-                    }
-
-                    lists.session = scopeGuestcontroller.items;
-
-                    currentDate = moment().add(0, 'days').format("YYYY-M-D");
-
-                    redirectToSection(scopeGuestcontroller, 'session');
-
-                }, function () {
-
-                    scopeGuestcontroller.error = true;
-
-                    apply(scopeGuestcontroller, 'items', []);
-
-                }, {
-                    date: selectedItem.date
-                });
-
-            }
-        };
-
-        $scope.$on("$destroy",function( event ) {
-            //$timeout.cancel( timer );
-        });
+        loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
 
     });
 });
 
 var scopeGuestcontroller;
-var calendar;
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
 
@@ -214,7 +205,7 @@ module.controller('GuestController', function($scope) {
             currentDate = moment().add(0, 'days').format("YYYY-M-D");
         }
 
-
+        lists.calendar = generateCalendar();
 
         current_page = 'guest.html';
 
@@ -228,85 +219,34 @@ module.controller('GuestController', function($scope) {
             height = 150;
         }
 
-
-        scopeGuestcontroller.thumb_width = window.innerWidth;
-        scopeGuestcontroller.thumb_height = height;
-
         fixGuestListItem(height);
 
-        scopeGuestcontroller.no_data = true;
+        currentDate = moment().add(0, 'days').format("YYYY-M-D");
 
-        selectedDate = moment().add(0, 'days').format("YYYY-M-D");
+        if(selectedDate === '') {
+            selectedDate = currentDate;
+        }
 
-        if(currentDate === moment().add(0, 'days').format("YYYY-M-D")) {
+        var selectedIndex = -1;
 
-            getJsonP(api_url + 'getSessions/', function (data) {
+        for(var i in lists.calendar) {
 
-                apply(scopeGuestcontroller, 'items', data.list, scopeGuestcontroller.thumb_width, scopeGuestcontroller.thumb_height);
+            lists.calendar[i].selected = '';
 
-                lists.session = $scope.items;
+            if(lists.calendar[i].date === selectedDate) {
 
-                if (data.status === 'fail') {
+                lists.calendar[i].selected = 'selected';
 
-                    scopeGuestcontroller.$apply(function () {
-                        scopeGuestcontroller.no_data = true;
-                    });
-
-                } else {
-
-                    scopeGuestcontroller.$apply(function () {
-                        scopeGuestcontroller.no_data = false;
-                    });
-
-                    redirectToSection(scopeGuestcontroller, 'session');
-                }
-
-                setTimeout(function () {
-                    try {
-                        navigator.splashscreen.hide();
-                    } catch (error) {
-                    }
-                }, 200);
-
-
-            }, function () {
-
-                scopeGuestcontroller.error = true;
-
-                apply(scopeGuestcontroller, 'items', []);
-
-                setTimeout(function () {
-                    try {
-                        navigator.splashscreen.hide();
-                    } catch (error) {
-                    }
-                }, 200);
-
-            }, {
-                date: currentDate
-            });
-
-        } else {
-
-            var selectedIndex = -1;
-
-            for(var i in scopeGuestCarouselController.calendar) {
-
-                scopeGuestCarouselController.calendar[i].selected = '';
-
-                if(scopeGuestCarouselController.calendar[i].date === currentDate) {
-
-                    selectedIndex = i;
-                    break;
-                }
+                selectedIndex = i;
+                break;
             }
+        }
 
-            if( selectedIndex !== -1 ) {
-                setTimeout(function(){
-                    scopeGuestCarouselController.filterSessionDay(selectedIndex);
-                }, 200);
+        if( selectedIndex !== -1 ) {
+            setTimeout(function(){
+                filterSessionDay(selectedIndex);
+            }, 200);
 
-            }
         }
 
         $scope.labels = getLabels();
@@ -1243,15 +1183,15 @@ function generateCalendar() {
 
     var currentDay = parseInt( moment().format("D") );
 
-    items.push({day: moment().subtract(2, 'days').format("D"), month: moment().subtract(2, 'days').format("MMM"), date: moment().subtract(2, 'days').format("YYYY-M-D") });
-    items.push({day: moment().subtract(1, 'days').format("D"), month: moment().subtract(1, 'days').format("MMM"), date: moment().subtract(1, 'days').format("YYYY-M-D") });
+    items.push({day: moment().subtract(2, 'days').format("D"), month: moment().subtract(2, 'days').format("MMM"), selected: '', date: moment().subtract(2, 'days').format("YYYY-M-D") });
+    items.push({day: moment().subtract(1, 'days').format("D"), month: moment().subtract(1, 'days').format("MMM"), selected: '', date: moment().subtract(1, 'days').format("YYYY-M-D") });
 
 
     for (i = 0; i <= 30; i ++) {
         if(i === 0) {
             items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("YYYY-M-D") });
         } else {
-            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), date: moment().add(i, 'days').format("YYYY-M-D") });
+            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: '', date: moment().add(i, 'days').format("YYYY-M-D") });
         }
     }
 
@@ -1260,9 +1200,6 @@ function generateCalendar() {
 
 // result json
 function apply($scope, key, value, width, height) {
-
-    console.log('old');
-    console.log($scope[key]);
 
     var result = [];
     var i;
@@ -1311,9 +1248,6 @@ function apply($scope, key, value, width, height) {
 
         $scope[key] = result;
     }
-
-    console.log('new');
-    console.log($scope[key]);
 
     delete result;
     delete i;

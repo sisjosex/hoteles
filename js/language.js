@@ -65,7 +65,10 @@ var labels = {
         yes: 'Si',
         no: 'No',
         call: 'LLAMAR',
-        total_persons: 'personas'
+        total_persons: 'personas',
+        access_conditions: 'Condiciones de acceso:',
+        age: 'Edad:',
+        dress_code: 'Dress Code:'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -133,6 +136,9 @@ var labels = {
         yes: 'Yes',
         no: 'No',
         call: 'CALL',
-        total_persons: 'persons'
+        total_persons: 'persons',
+        access_conditions: 'Access Conditions:',
+        age: 'Age:',
+        dress_code: 'Dress Code:'
     }
 };
