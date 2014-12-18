@@ -29,7 +29,7 @@
     <script src="js/app.js"></script>
 </head>
 
-<body style="background-size:100% auto; background-color: #000;background-image: url('img/splash.jpg'); background-repeat:no-repeat; background-position: 0 0;">
+<body>
 
 <ons-modal var="modal">
     <ons-icon icon="ion-loading-c" spin="true"></ons-icon>
@@ -38,10 +38,10 @@
 <ons-navigator animation="slide" var="splash">
     <ons-page ng-controller="LanguageController" class="splash">
         <div align="center" class="languageButtons" style="margin-top:47%">
-            <div class="button icon gray lang" onclick="gotoPage('tab_bar.html', {lang: 'es'});">
+            <div class="button icon gray lang" onclick="gotoPage('tab_bar.html', 'es');">
                 <span class="icon sp"></span> espa&ntilde;ol
             </div>
-            <div class="button icon gray lang" onclick="gotoPage('tab_bar.html', {lang: 'en'})">
+            <div class="button icon gray lang" onclick="gotoPage('tab_bar.html', 'en')">
                 <span class="icon en"></span> english
             </div>
         </div>
@@ -147,8 +147,8 @@
                     <form class="card-content" style="text-align: center;position:relative;">
                         <div class="button close" onclick="closeForm()">X</div>
 
-                        <div ng-show="reservation_inprogress">
-                            <div class="user_data {{form_visible}}" style="">
+                        <div class="reservation_inprogress">
+                            <div class="user_data form_visible" style="">
                                 <p>
                                     <label></label>
                                     <span>{{labels.fill_form}}</span>
@@ -171,7 +171,7 @@
                                 </p>
                             </div>
 
-                            <div class="user_data {{detail_visible}}">
+                            <div class="user_data detail_visible">
                                 <p>
                                     <span>{{labels.hi}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span></span>
                                     <br/>
@@ -204,7 +204,7 @@
                             </p>
                         </div>
 
-                        <div ng-show="reservation_complete">
+                        <div class="reservation_complete">
                             <div class="user_data visible">
                                 <p>
                                     <span>{{labels.perfect}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span>

@@ -11,7 +11,7 @@ var lists = {
     calendar: []
 };
 
-var calendar = generateCalendar();
+var calendar;
 
 var currentDate = '';
 
@@ -51,9 +51,13 @@ function resizeCardCarousel() {
 function onError() {}
 
 
-function gotoPage(page, params) {
+function gotoPage(page, lang) {
 
-    splash.pushPage(page, params);
+    applicationLanguage = lang;
+
+    localStorage.setItem('lang', applicationLanguage);
+
+    splash.pushPage(page);
 }
 
 
@@ -94,14 +98,8 @@ function createUserAndRegisterNotifications() {
 
 filterSessionDay = function(index, element) {
 
-    if(element !== undefined) {
-        $('.session_day').removeClass('selected');
-        $(element).addClass('selected');
-
-    } else {
-        $('.session_day').removeClass('selected');
-        $('#carouselSession > ons-carousel-item:nth-child(' + index + ')').addClass('selected');
-    }
+    $('.session_day').removeClass('selected');
+    $('#carouselSession > ons-carousel-item:nth-child(' + (parseInt(index) + 1) + ') .session_day').addClass('selected');
 
     var selectedItem = lists.calendar[index];
 
@@ -207,9 +205,6 @@ module.controller('LanguageController', function($scope) {
 
         if(applicationLanguage !== '' && (applicationLanguage === 'es' || applicationLanguage === 'en')) {
 
-            moment.locale(applicationLanguage);
-            localStorage.setItem('lang', applicationLanguage);
-
             splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
 
         } else {
@@ -241,11 +236,11 @@ module.controller('GuestController', function($scope) {
 
         console.log('recreating');
 
+        moment.locale(applicationLanguage);
+
         if(currentDate === '') {
             currentDate = moment().add(0, 'days').format("YYYY-M-D");
         }
-
-
 
         current_page = 'guest.html';
 
@@ -370,9 +365,6 @@ module.controller('GuestListFormController', function($scope) {
 
         scopeGuestListFormController = $scope;
 
-        $scope.form_visible = 'visible';
-        $scope.detail_visible = '';
-
         if( (userData === undefined || userData === null) || (userData !== null && userData.email === '') )  {
 
             $scope.userData = {
@@ -380,31 +372,37 @@ module.controller('GuestListFormController', function($scope) {
                 session_id: currentSession.id
             };
 
-            $scope.form_visible = 'visible';
-            $scope.detail_visible = '';
+            $('.form_visible').show();
+            $('.detail_visible').hide();
 
             fixModalBottomHeight('21.2em');
 
         } else {
+
+            $scope.userData = {
+                first_name: userData.first_name,
+                last_name: userData.last_name,
+                email: userData.email,
+                phone: userData.phone
+            };
 
             $scope.userData = userData;
 
             $scope.userData.persons = 1;
             $scope.userData.session_id = currentSession.id;
 
-            $scope.form_visible = '';
-            $scope.detail_visible = 'visible';
+            $('.form_visible').hide();
+            $('.detail_visible').show();
 
             fixModalBottomHeight('13.2em');
         }
 
+        $('.reservation_complete').hide();
+        $('.reservation_inprogress').show();
+
         $scope.detail = currentSession;
 
-
         $scope.labels = getLabels();
-
-        $scope.reservation_complete = false;
-        $scope.reservation_inprogress = true;
 
         $scope.increasePersons = function() {
             $scope.userData.persons ++;
@@ -450,32 +448,27 @@ module.controller('GuestListFormController', function($scope) {
 
                 getJsonP(api_url + 'registerUser/', function(data){
 
-                    userData = data.user;
+                    $scope.userData = userData = {
+                        id: data.id,
+                        first_name: data.first_name,
+                        last_name: data.last_name,
+                        email: data.email,
+                        phone: data.phone
+                    };
 
-                    //$scope.closeForm();
-
-                    scopeGuestListFormController.$apply(function(){
-                        scopeGuestListFormController.reservation_complete = true;
-                        scopeGuestListFormController.reservation_inprogress = false;
-                    });
+                    $('.reservation_complete').show();
+                    $('.reservation_inprogress').hide();
 
                     localStorage.setItem("user", JSON.stringify(userData));
 
                     storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');
 
-
                     fixModalBottomHeight('13.2em');
 
                 }, function(data){
-
-
                 }, $scope.userData);
             }
         };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
 
     });
 
@@ -532,14 +525,6 @@ module.controller('ClubsController', function($scope) {
             splash.pushPage('club_info.html', {index:index});
         };
 
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
-
-        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });*/
-
     });
 });
 
@@ -582,18 +567,6 @@ module.controller('ClubInfoController', function($scope) {
             clubListCarousel.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
-
-
-        $scope.showForm = function(session_id) {
-            ons.createDialog('guest_list_form.html').then(function(dialog) {
-                guestFormDialog.show();
-                //naviDialog.show();
-            });
-        };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
 
     });
 
@@ -655,14 +628,6 @@ module.controller('LifeController', function($scope) {
 
             splash.pushPage('life_info.html', {index:index});
         };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
-
-        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });*/
 
     });
 });
@@ -1074,9 +1039,9 @@ function generateCalendar() {
 
 
     for (i = 0; i <= 30; i ++) {
-        if(i === 0) {
+        /*if(i === 0) {
             items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("YYYY-M-D") });
-        } else {
+        } else */{
             items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: '', date: moment().add(i, 'days').format("YYYY-M-D") });
         }
     }

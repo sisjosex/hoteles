@@ -15,8 +15,12 @@ body {
 }
 
 .splash .page__background {
-    /*background: url('../img/splash.jpg') center 0 no-repeat transparent;
-    background-size: 100% auto;*/
+    background-size:100% auto;
+    background-color: #000;
+    background-image: url('../img/splash.jpg');
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    background-size: 100% auto;
     background-color:transparent;
 }
 
