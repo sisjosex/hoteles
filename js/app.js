@@ -186,7 +186,7 @@ closeForm = function() {
 
 goToProfile = function() {
 
-    scopeGuestListFormController.closeForm();
+    closeForm();
 
     mainTabBar.setActiveTab(4);
 };
@@ -337,11 +337,10 @@ module.controller('GuestListCardController', function($scope) {
 
         $scope.detail = lists.session[splash.getCurrentPage().options.index];
 
-        $('#guest_paginator > li:nth-child(0)').addClass('selected');
-
+        $('#guest_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
             $('#guest_paginator > li').removeClass('selected');
-            $('#guest_paginator > li:nth-child(' + guestListCarousel.getActiveCarouselItemIndex() + ')').addClass('selected');
+            $('#guest_paginator > li:nth-child(' + (guestListCarousel.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
 
         setTimeout(function(){
@@ -365,19 +364,25 @@ module.controller('GuestListFormController', function($scope) {
 
         scopeGuestListFormController = $scope;
 
-        if( (userData === undefined || userData === null) || (userData !== null && userData.email === '') )  {
+        if( (userData === undefined || userData === null) || (userData !== null && (userData.email === '' || userData.email === undefined)) )  {
 
             $scope.userData = {
                 persons: 1,
                 session_id: currentSession.id
             };
 
-            $('.form_visible').show();
-            $('.detail_visible').hide();
+            setTimeout(function(){
+                $('.form_visible').show();
+                $('.detail_visible').hide();
+                $('.reservation_complete').hide();
+                $('.reservation_inprogress').show();
+            }, 200);
 
             fixModalBottomHeight('21.2em');
 
         } else {
+
+            console.log('There is user');
 
             $scope.userData = {
                 first_name: userData.first_name,
@@ -391,14 +396,17 @@ module.controller('GuestListFormController', function($scope) {
             $scope.userData.persons = 1;
             $scope.userData.session_id = currentSession.id;
 
-            $('.form_visible').hide();
-            $('.detail_visible').show();
+            setTimeout(function() {
+                $('.form_visible').hide();
+                $('.detail_visible').show();
+                $('.reservation_complete').hide();
+                $('.reservation_inprogress').show();
+            }, 200);
 
             fixModalBottomHeight('13.2em');
         }
 
-        $('.reservation_complete').hide();
-        $('.reservation_inprogress').show();
+
 
         $scope.detail = currentSession;
 
@@ -449,11 +457,11 @@ module.controller('GuestListFormController', function($scope) {
                 getJsonP(api_url + 'registerUser/', function(data){
 
                     $scope.userData = userData = {
-                        id: data.id,
-                        first_name: data.first_name,
-                        last_name: data.last_name,
-                        email: data.email,
-                        phone: data.phone
+                        id: data.user.id,
+                        first_name: data.user.first_name,
+                        last_name: data.user.last_name,
+                        email: data.user.email,
+                        phone: data.user.phone
                     };
 
                     $('.reservation_complete').show();
@@ -466,6 +474,9 @@ module.controller('GuestListFormController', function($scope) {
                     fixModalBottomHeight('13.2em');
 
                 }, function(data){
+
+                    userData = null;
+
                 }, $scope.userData);
             }
         };
@@ -547,19 +558,10 @@ module.controller('ClubInfoController', function($scope) {
         loadIntoTemplate('#club_images', pictures, 'club_images');
         loadIntoTemplate('#club_paginator', pictures, 'club_paginator');
 
+        $('#club_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
-
-            var selectedItem = $scope.pictures[clubListCarousel.getActiveCarouselItemIndex()];
-
-            for(var i in $scope.pictures) {
-
-                $scope.pictures[i].selected = '';
-            }
-
-            if(selectedItem)
-            selectedItem.selected = 'selected';
-
-            $scope.$apply();
+            $('#club_paginator > li').removeClass('selected');
+            $('#club_paginator > li:nth-child(' + (clubListCarousel.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
 
         setTimeout(function(){
@@ -651,24 +653,15 @@ module.controller('LifeInfoController', function($scope) {
         loadIntoTemplate('#life_images', pictures, 'life_images');
         loadIntoTemplate('#life_paginator', pictures, 'life_paginator');
 
+        $('#life_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
-
-            var selectedItem = $scope.pictures[guestListCarousel.getActiveCarouselItemIndex()];
-
-            for(var i in $scope.pictures) {
-
-                $scope.pictures[i].selected = '';
-            }
-
-            if(selectedItem)
-            selectedItem.selected = 'selected';
-
-            $scope.$apply();
+            $('#life_paginator > li').removeClass('selected');
+            $('#life_paginator > li:nth-child(' + (lifeCarouselPaginator.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
 
         setTimeout(function(){
 
-            guestListCarousel.on('postchange', $scope.carouselPostChange);
+            lifeCarouselPaginator.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
 
@@ -770,22 +763,11 @@ module.controller('PromoInfoController', function($scope) {
         loadIntoTemplate('#promo_images', pictures, 'promo_images');
         loadIntoTemplate('#promo_paginator', pictures, 'promo_paginator');
 
+        $('#promo_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
-
-            var selectedItem = pictures[promoListCarousel.getActiveCarouselItemIndex()];
-
-            for(var i in pictures) {
-
-                pictures[i].selected = '';
-            }
-
-            if(selectedItem)
-            selectedItem.selected = 'selected';
+            $('#promo_paginator > li').removeClass('selected');
+            $('#promo_paginator > li:nth-child(' + (promoListCarousel.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
 
         setTimeout(function(){
 
@@ -827,7 +809,6 @@ module.controller('ProfileController', function($scope) {
 
         getJsonP(api_url + 'getUserSessions/', function(data){
 
-            apply(scopeProfileController, 'items', data.list, scopeProfileController.thumb_width, scopeProfileController.thumb_height);
 
             lists.profile = data.list;
 
@@ -837,6 +818,7 @@ module.controller('ProfileController', function($scope) {
             } else {
 
                 loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
+                ons.compile($('#profile_list')[0])
             }
 
         }, function(){
@@ -858,9 +840,6 @@ module.controller('ProfileController', function($scope) {
 
             }, function(){
 
-                $scope.error = true;
-                $scope.$apply();
-
             }, {user_id: (userData && userData.id) ? userData.id : '', users_session_id: user_session.users_session_id});
         };
 
@@ -880,7 +859,7 @@ module.controller('ProfileDetailController', function($scope) {
 
         scopeProfileDetailController = $scope;
 
-        if(userData === undefined || userData === null ) {
+        if( (userData === undefined || userData === null) || (userData !== null && (userData.email === '' || userData.email === undefined)) )  {
 
             $scope.userData = {
                 session_id: 0,
@@ -940,7 +919,13 @@ module.controller('ProfileDetailController', function($scope) {
 
                     getJsonP(api_url + 'registerUser/', function(data){
 
-                        userData = data.user;
+                        $scope.userData = userData = {
+                            id: data.user.id,
+                            first_name: data.user.first_name,
+                            last_name: data.user.last_name,
+                            email: data.user.email,
+                            phone: data.user.phone
+                        };
 
                         $scope.detail_visible = 'visible';
                         $scope.form_visible = '';
