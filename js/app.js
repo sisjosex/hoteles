@@ -225,7 +225,7 @@ module.controller('GuestCarouselController', function($scope) {
         /*console.log(lists.calendar);
         lists.calendar = generateCalendar();*/
 
-        loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
+        //lists.calendar = generateCalendar();
 
     });
 });
@@ -239,6 +239,8 @@ module.controller('GuestController', function($scope) {
         }
 
         lists.calendar = generateCalendar();
+
+        loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
 
         current_page = 'guest.html';
 
@@ -319,6 +321,7 @@ module.controller('GuestListCardController', function($scope) {
         pictures = getArrayAsObjects(lists.session[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
         loadIntoTemplate('#guest_images', pictures, 'guest_images');
+        loadIntoTemplate('#guest_paginator', pictures, 'guest_paginator');
 
         $scope.detail = lists.session[splash.getCurrentPage().options.index];
 
@@ -575,6 +578,7 @@ module.controller('ClubInfoController', function($scope) {
         $scope.labels = getLabels();
 
         loadIntoTemplate('#club_images', pictures, 'club_images');
+        loadIntoTemplate('#club_paginator', pictures, 'club_paginator');
 
         $scope.carouselPostChange = function() {
 
@@ -698,6 +702,7 @@ module.controller('LifeInfoController', function($scope) {
         $scope.labels = getLabels();
 
         loadIntoTemplate('#life_images', pictures, 'life_images');
+        loadIntoTemplate('#life_paginator', pictures, 'life_paginator');
 
         $scope.carouselPostChange = function() {
 
@@ -824,20 +829,19 @@ module.controller('PromoInfoController', function($scope) {
         $scope.labels = getLabels();
 
         loadIntoTemplate('#promo_images', pictures, 'promo_images');
+        loadIntoTemplate('#promo_paginator', pictures, 'promo_paginator');
 
         $scope.carouselPostChange = function() {
 
-            var selectedItem = $scope.pictures[promoListCarousel.getActiveCarouselItemIndex()];
+            var selectedItem = pictures[promoListCarousel.getActiveCarouselItemIndex()];
 
-            for(var i in $scope.pictures) {
+            for(var i in pictures) {
 
-                $scope.pictures[i].selected = '';
+                pictures[i].selected = '';
             }
 
             if(selectedItem)
             selectedItem.selected = 'selected';
-
-            $scope.$apply();
         };
 
         /*$scope.$on("$destroy",function( event ) {
