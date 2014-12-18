@@ -137,6 +137,21 @@ filterSessionDay = function(index, element) {
 
 };
 
+showClubInfo = function(index) {
+
+    splash.pushPage('club_info.html', {index:index});
+};
+
+showLifeInfo = function(index) {
+
+    splash.pushPage('life_info.html', {index:index});
+};
+
+showPromoInfo = function(index) {
+
+    splash.pushPage('promo_info.html', {index:index});
+};
+
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
@@ -525,11 +540,6 @@ module.controller('ClubsController', function($scope) {
 
         $scope.labels = getLabels();
 
-        $scope.showClubInfo = function(index) {
-
-            splash.pushPage('club_info.html', {index:index});
-        };
-
         $scope.gotoDetailFromNotification = function(index) {
 
             splash.pushPage('club_info.html', {index:index});
@@ -556,11 +566,13 @@ module.controller('ClubInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(lists.club[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        pictures = getArrayAsObjects(lists.club[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
         $scope.detail = lists.club[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
+
+        loadIntoTemplate('#club_images', pictures, 'club_images');
 
         $scope.carouselPostChange = function() {
 
@@ -677,11 +689,12 @@ module.controller('LifeInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(lists.life[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
-
         $scope.detail = lists.life[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
+
+
+        loadIntoTemplate('#life_images', pictures, 'life_images');
 
         $scope.carouselPostChange = function() {
 

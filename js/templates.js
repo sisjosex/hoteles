@@ -17,8 +17,8 @@ var templates = {
                 '<p class="title-normal block">%hour%</p>'+
             '</div>'+
             '<div align="center" class="buttons">'+
-                '<div class="button purple" ng-click="showGuestList(%index%)">GUEST LIST</div>'+
-                '<div class="button" ng-click="showGuestInfo(%index%)">+ INFO</div>'+
+                '<div class="button purple" onclick="showGuestList(%index%)">GUEST LIST</div>'+
+                '<div class="button" onclick="showGuestInfo(%index%)">+ INFO</div>'+
             '</div>'+
         '</div>'+
     '</div>',
@@ -34,7 +34,7 @@ var templates = {
             '<p class="title-normal block">%days%</p>'+
         '</div>'+
         '<div align="center" class="buttons">'+
-            '<div class="button" ng-click="showClubInfo(%index%)">+ INFO</div>' +
+            '<div class="button" onclick="showClubInfo(%index%)">+ INFO</div>' +
         '</div>'+
         '</div>'+
     '</div>',
@@ -50,7 +50,7 @@ var templates = {
             '<p class="title-normal block">%cut_content%</p>'+
             '</div>'+
             '<div align="center" class="buttons">'+
-                '<div class="button" ng-click="showClubInfo(%index%)">+ INFO</div>'+
+                '<div class="button" onclick="showLifeInfo(%index%)">+ INFO</div>'+
             '</div>'+
         '</div>'+
     '</ons-list-item>',
@@ -66,7 +66,7 @@ var templates = {
                     '<p class="title-normal block">%cut_content%</p>'+
                 '</div>'+
                     '<div align="center" class="buttons">'+
-                    '<div class="button" ng-click="showInfo(%index%)">+ INFO</div>'+
+                    '<div class="button" onclick="showPromoInfo(%index%)">+ INFO</div>'+
                 '</div>'+
             '</div>'+
         '</ons-list-item>',
@@ -82,7 +82,7 @@ var templates = {
                     '<p class="title-normal block">%hour% - %persons% {total_persons}</p>'+
                 '</div>'+
                     '<div align="center" class="buttons">'+
-                    '<div class="button" ng-click="validate(%index%)" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{validate}</div>'+
+                    '<div class="button" onclick="validate(%index%)" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{validate}</div>'+
                     '</div>'+
                 '</div>'+
         '</ons-list-item>',
@@ -109,7 +109,7 @@ var templates = {
     '<ons-list-item class="guest_list_item" ng-show="no_data">'+
         '<div class="guesto-list-verlay overlay">'+
             '<div align="center" class="guest-list-item-content">'+
-                '<p class="title-normal block">%no_life%</p>'+
+                '<p class="title-normal block">{no_life}</p>'+
             '</div>'+
         '</div>'+
     '</ons-list-item>',
