@@ -152,6 +152,22 @@ showPromoInfo = function(index) {
     splash.pushPage('promo_info.html', {index:index});
 };
 
+showGuestList = function(index) {
+
+    currentSession = lists.session[index];
+
+    ons.createDialog('guest_list_form.html').then(function(dialog) {
+        guestFormDialog.show();
+    });
+};
+
+showGuestInfo = function(index) {
+
+    currentSession = lists.session[index];
+
+    splash.pushPage('guest_list.html', {index:index});
+};
+
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
@@ -268,22 +284,6 @@ module.controller('GuestController', function($scope) {
 
         $scope.labels = getLabels();
 
-        $scope.showGuestList = function(index) {
-
-            currentSession = lists.session[index];
-
-            ons.createDialog('guest_list_form.html').then(function(dialog) {
-                guestFormDialog.show();
-            });
-        };
-
-        $scope.showGuestInfo = function(index) {
-
-            currentSession = lists.session[index];
-
-            splash.pushPage('guest_list.html', {index:index});
-        };
-
         $scope.gotoDetailFromNotification = function(index) {
 
             currentSession = lists.session[index];
@@ -316,7 +316,9 @@ module.controller('GuestListCardController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(lists.session[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        pictures = getArrayAsObjects(lists.session[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+
+        loadIntoTemplate('#guest_images', pictures, 'guest_images');
 
         $scope.detail = lists.session[splash.getCurrentPage().options.index];
 
@@ -689,10 +691,11 @@ module.controller('LifeInfoController', function($scope) {
 
         resizeCardCarousel();
 
+        pictures = getArrayAsObjects(lists.life[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+
         $scope.detail = lists.life[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
-
 
         loadIntoTemplate('#life_images', pictures, 'life_images');
 
@@ -814,14 +817,13 @@ module.controller('PromoInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        $scope.pictures = getArrayAsObjects(lists.promo[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        pictures = getArrayAsObjects(lists.promo[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
         $scope.detail = lists.promo[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
-        $scope.title = 'Funky Night';
-        $scope.subtitle = '2X1 CENAS, A LA CARTA 50% Y BOTELLA GRATIS';
+        loadIntoTemplate('#promo_images', pictures, 'promo_images');
 
         $scope.carouselPostChange = function() {
 
