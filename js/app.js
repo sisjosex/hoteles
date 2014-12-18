@@ -105,7 +105,7 @@ filterSessionDay = function(index, element) {
 
     selectedItem.selected = 'selected';
 
-    loadIntoTemplateSingle('#session_list_container', {}, 'no_rows', getLabels());
+    loadIntoTemplateSingle('#session_list_container', {}, 'no_guests', getLabels());
 
     console.log(selectedDate);
     console.log(selectedItem.date);
@@ -133,15 +133,17 @@ filterSessionDay = function(index, element) {
     }, {
         date: selectedItem.date
     });
+
+
 };
 
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             //$timeout.cancel( timer );
-        });
+        });*/
 
         try {
             StatusBar.hide();
@@ -173,9 +175,9 @@ module.controller('MainMenuController', function($scope) {
 
         $scope.labels = getLabels();
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             //$timeout.cancel( timer );
-        });
+        });*/
 
     });
 });
@@ -275,9 +277,9 @@ module.controller('GuestController', function($scope) {
         };
 
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             //$timeout.cancel( timer );
-        });
+        });*/
 
 
         $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
@@ -332,9 +334,9 @@ module.controller('GuestListCardController', function($scope) {
             });
         };
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
-        });
+        });*/
 
     });
 
@@ -469,9 +471,9 @@ module.controller('GuestListFormController', function($scope) {
             mainTabBar.setActiveTab(4);
         };
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
-        });
+        });*/
 
     });
 
@@ -494,42 +496,22 @@ module.controller('ClubsController', function($scope) {
             height = 150;
         }
 
-        $scope.thumb_width = window.innerWidth;
-        $scope.thumb_height = height;
-
         fixGuestListItem(height);
 
-        $scope.getWindowDimensions = function () {
-            return { h: height };
-        };
+        setTimeout(function(){
+            loadIntoTemplateSingle('#club_list', {}, 'no_club', getLabels());
+        }, 200);
 
-        $scope.$watch($scope.getWindowDimensions, function (newValue, oldValue) {
-
-            $('.guest_list_item').height(newValue.h);
-        }, true);
-
-        $scope.no_data = true;
 
         getJsonP(api_url + 'getClubs/', function(data){
 
-            //scopeClubsController.items = data.list;
-            //scopeClubsController.$digest();
-
-            apply(scopeClubsController, 'items', data.list, scopeClubsController.thumb_width, scopeClubsController.thumb_height);
-
-            lists.club = $scope.items;
+            lists.club = data.list;
 
             if(data.status === 'fail') {
 
-                scopeClubsController.$apply(function(){
-                    scopeClubsController.no_data = true;
-                });
-
             } else {
 
-                scopeClubsController.$apply(function(){
-                    scopeClubsController.no_data = false;
-                });
+                loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
 
                 redirectToSection(scopeClubsController, 'club');
             }
@@ -538,13 +520,8 @@ module.controller('ClubsController', function($scope) {
         }, function(){
 
             scopeClubsController.error = true;
-            //scopeClubsController.$digest();
 
-            apply(scopeClubsController, 'items', []);
-        }, {
-            /*width: $scope.thumb_width,
-            height: $scope.thumb_height*/
-        });
+        }, {});
 
         $scope.labels = getLabels();
 
@@ -558,13 +535,13 @@ module.controller('ClubsController', function($scope) {
             splash.pushPage('club_info.html', {index:index});
         };
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
-        });
+        });*/
 
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });
@@ -614,9 +591,9 @@ module.controller('ClubInfoController', function($scope) {
             });
         };
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
-        });
+        });*/
 
     });
 
@@ -643,56 +620,29 @@ module.controller('LifeController', function($scope) {
             height = 150;
         }
 
-        $scope.thumb_width = window.innerWidth;
-        $scope.thumb_height = height;
-
         fixGuestListItem(height);
 
-        $scope.getWindowDimensions = function () {
-            return { h: height };
-        };
+        setTimeout(function(){
+            loadIntoTemplateSingle('#life_list', {}, 'no_life', getLabels());
+        }, 200);
 
-        $scope.$watch($scope.getWindowDimensions, function (newValue, oldValue) {
-
-            $('.guest_list_item').height(newValue.h);
-        }, true);
-
-        $scope.no_data = true;
 
         getJsonP(api_url + 'getLifes/', function(data){
 
-            //scopeLifeController.items = data.list;
-            //scopeLifeController.$digest();
-
-            apply(scopeLifeController, 'items', data.list, scopeLifeController.thumb_width, scopeLifeController.thumb_height);
-
-            lists.life = $scope.items;
+            lists.life = data.list;
 
             if(data.status === 'fail') {
 
-                scopeLifeController.$apply(function(){
-                    scopeLifeController.no_data = true;
-                });
-
             } else {
 
-                scopeLifeController.$apply(function(){
-                    scopeLifeController.no_data = false;
-                });
+                loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
 
                 redirectToSection(scopeLifeController, 'life');
             }
 
         }, function(){
 
-            scopeLifeController.error = true;
-            //scopeLifeController.$digest();
-
-            apply(scopeLifeController, 'items', []);
-        }, {/*
-            width: $scope.thumb_width,
-            height: $scope.thumb_height*/
-        });
+        }, {});
 
         $scope.labels = getLabels();
 
@@ -706,13 +656,13 @@ module.controller('LifeController', function($scope) {
             splash.pushPage('life_info.html', {index:index});
         };
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
-        });
+        });*/
 
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });
@@ -766,9 +716,9 @@ module.controller('LifeInfoController', function($scope) {
             document.location.href = 'tel:' + phone;
         };
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
-        });
+        });*/
 
     });
 
@@ -797,57 +747,30 @@ module.controller('PromosController', function($scope) {
             height = 150;
         }
 
-        $scope.thumb_width = window.innerWidth;
-        $scope.thumb_height = height;
-
         fixGuestListItem(height);
 
-        $scope.getWindowDimensions = function () {
-            return { h: height };
-        };
+        setTimeout(function(){
+            loadIntoTemplateSingle('#promo_list', {}, 'no_promo', getLabels());
+        }, 200);
 
-        $scope.$watch($scope.getWindowDimensions, function (newValue, oldValue) {
-
-            $('.guest_list_item').height(newValue.h);
-        }, true);
-
-
-        $scope.no_data = true;
 
         getJsonP(api_url + 'getPromos/', function(data){
 
-            //scopePromosController.items = data.list;
-            //scopePromosController.$digest();
-
-            apply(scopePromosController, 'items', data.list, scopePromosController.thumb_width, scopePromosController.thumb_height);
-
-            lists.promo = $scope.items;
+            lists.promo = data.list;
 
             if(data.status === 'fail') {
 
-                scopePromosController.$apply(function(){
-                    scopePromosController.no_data = true;
-                });
-
             } else {
 
-                scopePromosController.$apply(function(){
-                    scopePromosController.no_data = false;
-                });
+                loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
 
                 redirectToSection(scopePromosController, 'promo');
             }
 
         }, function(){
 
-            scopePromosController.error = true;
-            //scopePromosController.$digest();
 
-            apply(scopePromosController, 'items', []);
-        }, {/*
-            width: $scope.thumb_width,
-            height: $scope.thumb_height*/
-        });
+        }, {});
 
         $scope.labels = getLabels();
 
@@ -861,13 +784,9 @@ module.controller('PromosController', function($scope) {
             splash.pushPage('promo_info.html', {index:index});
         };
 
-        $scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });
-
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });
@@ -906,9 +825,9 @@ module.controller('PromoInfoController', function($scope) {
             $scope.$apply();
         };
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
-        });
+        });*/
 
         setTimeout(function(){
 
@@ -941,54 +860,32 @@ module.controller('ProfileController', function($scope) {
             height = 150;
         }
 
-        $scope.thumb_width = window.innerWidth;
-        $scope.thumb_height = height;
-
         fixGuestListItem(height);
 
-        $scope.getWindowDimensions = function () {
-            return { h: height };
-        };
+        setTimeout(function(){
+            loadIntoTemplateSingle('#profile_list', {}, 'no_profile', getLabels());
+        }, 200);
 
-        $scope.$watch($scope.getWindowDimensions, function (newValue, oldValue) {
-
-            $('.guest_list_item').height(newValue.h);
-        }, true);
-
-        $scope.no_guest = true;
-
-        $scope.no_data = true;
 
         getJsonP(api_url + 'getUserSessions/', function(data){
 
             apply(scopeProfileController, 'items', data.list, scopeProfileController.thumb_width, scopeProfileController.thumb_height);
 
-            lists.profile = $scope.items;
+            lists.profile = data.list;
 
             if(data.status === 'fail') {
 
-                scopeProfileController.$apply(function(){
-                    scopeProfileController.no_guest_list = true;
-                });
 
             } else {
 
-                scopeProfileController.$apply(function(){
-                    scopeProfileController.no_guest_list = false;
-                });
+                loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
             }
 
         }, function(){
 
-            scopeProfileController.error = true;
-            //scopeProfileController.$digest();
-
-            apply(scopeProfileController, 'items', []);
 
         }, {
-            user_id: (userData && userData.id) ? userData.id : ''/*,
-            width: $scope.thumb_width,
-            height: $scope.thumb_height*/
+            user_id: (userData && userData.id) ? userData.id : ''
         });
 
         $scope.labels = getLabels();
@@ -1009,13 +906,9 @@ module.controller('ProfileController', function($scope) {
             }, {user_id: (userData && userData.id) ? userData.id : '', users_session_id: user_session.users_session_id});
         };
 
-        $scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });
-
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });
+        });*/
 
     });
 });
@@ -1160,9 +1053,9 @@ module.controller('ProfileDetailController', function($scope) {
             });
         };
 
-        $scope.$on("$destroy",function( event ) {
+        /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
-        });
+        });*/
 
     });
 });

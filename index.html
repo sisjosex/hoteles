@@ -65,17 +65,11 @@
 
             <div class="center">
                 <div style="position:relative;">
-                    <ons-carousel class="carousel-detail" var="guestListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
-                        <ons-carousel-item class="item-bg detail session-item" ng-repeat="item in pictures">
-                            <img onload="fadeIn(this)" src="{{item.list_image}}" />
-                        </ons-carousel-item>
-                    </ons-carousel>
+                    <ons-carousel class="carousel-detail" id="guest_images" var="guestListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
 
                     <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
-                        <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator">
-                            <li class="carousel-page {{item.selected}}" ng-repeat="item in pictures">
-                            </li>
-                        </ul>
+                        <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator"></ul>
+
                         <span class="title-big">{{detail.guest_list}}</span> <span class="title-medium">{{labels.in}} {{detail.club}}</span>
                         <div align="center" class="guest-list-item-content">
 
@@ -230,37 +224,8 @@
 
                     </ons-toolbar>
 
-                    <ons-scroller infinit-scroll-enable="true" on-scrolled="getNextItems()">
-                        <ons-list>
-                            <div class="guest_list_item" ng-repeat="item in items">
-
-                                <div class="item-bg list">
-                                    <img onload="fadeIn(this)" src="{{item.images[0]}}" />
-                                </div>
-
-                                <div class="guesto-list-verlay overlay">
-                                    <div align="center" class="guest-list-item-content">
-                                        <p class="title-big">{{item.name}}</p>
-                                        <p class="title-normal block">{{item.days}}</p>
-                                    </div>
-
-                                    <div align="center" class="buttons">
-                                        <div class="button" ng-click="showClubInfo($index)">+ INFO</div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="guest_list_item" ng-show="no_data">
-
-                                <div class="guesto-list-verlay overlay">
-                                    <div align="center" class="guest-list-item-content">
-                                        <p class="title-normal block">{{labels.no_clubs}}</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </ons-list>
+                    <ons-scroller>
+                        <ons-list id="club_list"></ons-list>
                     </ons-scroller>
                 </ons-page>
             </ons-navigator>
@@ -272,17 +237,11 @@
                 <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
                     <div class="center">
                         <div style="position:relative;">
-                            <ons-carousel class="carousel-detail" var="clubListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
-                                <ons-carousel-item class="item-bg detail session-item" ng-repeat="item in pictures">
-                                    <img onload="fadeIn(this)" src="{{item.list_image}}" />
-                                </ons-carousel-item>
-                            </ons-carousel>
+                            <ons-carousel id="club_images" class="carousel-detail" var="clubListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
 
                             <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
-                                <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator">
-                                    <li class="carousel-page {{item.selected}}" ng-repeat="item in pictures">
-                                    </li>
-                                </ul>
+
+                                <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator"></ul>
 
                                 <div align="center" class="guest-list-item-content">
                                     <p class="title-big">{{detail.name}}</p>
@@ -338,36 +297,7 @@
                     </ons-toolbar>
 
                     <ons-scroller>
-                        <ons-list>
-                            <ons-list-item class="guest_list_item" ng-repeat="item in items">
-
-                                <div class="item-bg list">
-                                    <img onload="fadeIn(this)" src="{{item.images[0]}}" />
-                                </div>
-
-                                <div class="guesto-list-verlay overlay">
-                                    <div align="center" class="guest-list-item-content">
-                                        <p class="title-big">{{item.name}}</p>
-                                        <p class="title-normal block">{{item.cut_content}}</p>
-                                    </div>
-
-                                    <div align="center" class="buttons">
-                                        <div class="button" ng-click="showClubInfo($index)">+ INFO</div>
-                                    </div>
-                                </div>
-
-                            </ons-list-item>
-
-                            <ons-list-item class="guest_list_item" ng-show="no_data">
-
-                                <div class="guesto-list-verlay overlay">
-                                    <div align="center" class="guest-list-item-content">
-                                        <p class="title-normal block">{{labels.no_life}}</p>
-                                    </div>
-                                </div>
-
-                            </ons-list-item>
-                        </ons-list>
+                        <ons-list id="life_list"></ons-list>
                     </ons-scroller>
                 </ons-page>
             </ons-navigator>
@@ -379,17 +309,11 @@
                     <div class="center">
 
                         <div style="position:relative;">
-                            <ons-carousel class="carousel-detail" var="guestListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
-                                <ons-carousel-item class="item-bg detail session-item" ng-repeat="item in pictures">
-                                    <img onload="fadeIn(this)" src="{{item.list_image}}" />
-                                </ons-carousel-item>
-                            </ons-carousel>
+                            <ons-carousel id="life_images" class="carousel-detail" var="guestListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
 
                             <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
-                                <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator">
-                                    <li class="carousel-page {{item.selected}}" ng-repeat="item in pictures">
-                                    </li>
-                                </ul>
+
+                                <ul id="guestListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator"></ul>
 
                                 <div align="center" class="guest-list-item-content">
                                     <p class="title-big">{{detail.name}}</p>
@@ -453,36 +377,7 @@
                     </ons-toolbar>
 
                     <ons-scroller>
-                        <ons-list>
-                            <ons-list-item class="guest_list_item" ng-repeat="item in items">
-
-                                <div class="item-bg list">
-                                    <img onload="fadeIn(this)" src="{{item.images[0]}}" />
-                                </div>
-
-                                <div class="guesto-list-verlay overlay">
-                                    <div align="center" class="guest-list-item-content">
-                                        <p class="title-big">{{item.name}}</p>
-                                        <p class="title-normal block">{{item.cut_content}}</p>
-                                    </div>
-
-                                    <div align="center" class="buttons">
-                                        <div class="button" ng-click="showInfo($index)">+ INFO</div>
-                                    </div>
-                                </div>
-
-                            </ons-list-item>
-
-                            <ons-list-item class="guest_list_item" ng-show="no_data">
-
-                                <div class="guesto-list-verlay overlay">
-                                    <div align="center" class="guest-list-item-content">
-                                        <p class="title-normal block">{{labels.no_promos}}</p>
-                                    </div>
-                                </div>
-
-                            </ons-list-item>
-                        </ons-list>
+                        <ons-list id="promo_list"></ons-list>
                     </ons-scroller>
                 </ons-page>
             </ons-navigator>
@@ -494,17 +389,10 @@
                     <div class="center">
 
                         <div style="position:relative;">
-                            <ons-carousel class="carousel-detail" var="promoListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll="">
-                                <ons-carousel-item class="item-bg detail session-item" ng-repeat="item in pictures">
-                                    <img onload="fadeIn(this)" src="{{item.list_image}}" />
-                                </ons-carousel-item>
-                            </ons-carousel>
+                            <ons-carousel id="promo_images" class="carousel-detail" var="promoListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
 
                             <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
-                                <ul id="promoListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator">
-                                    <li class="carousel-page {{item.selected}}" ng-repeat="item in pictures">
-                                    </li>
-                                </ul>
+                                <ul id="promoListCarouselPaginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator"></ul>
 
                                 <div align="center" class="guest-list-item-content">
                                     <p class="title-big">{{detail.name}}</p>
@@ -564,36 +452,7 @@
                     </ons-toolbar>
 
                     <ons-scroller>
-                        <ons-list>
-                            <ons-list-item class="guest_list_item" ng-repeat="item in items">
-
-                                <div class="item-bg list">
-                                    <img onload="fadeIn(this)" src="{{item.images[0]}}" />
-                                </div>
-
-                                <div class="guesto-list-verlay overlay">
-                                    <div align="center" class="guest-list-item-content">
-                                        <span class="title-big">{{item.guest_list}}</span> <span class="title-medium">{{labels.in}} {{item.club}}</span>
-                                        <p class="title-normal block">{{item.hour}} - {{item.persons}} {{labels.total_persons}}</p>
-                                    </div>
-
-                                    <div align="center" class="buttons">
-                                        <div class="button" ng-click="validate($index)" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{{labels.validate}}</div>
-                                    </div>
-                                </div>
-
-                            </ons-list-item>
-
-                            <ons-list-item class="guest_list_item" ng-show="no_guest_list">
-
-                                <div class="guesto-list-verlay overlay">
-                                    <div align="center" class="guest-list-item-content">
-                                        <p class="title-normal block">{{labels.no_guest_list}}</p>
-                                    </div>
-                                </div>
-
-                            </ons-list-item>
-                        </ons-list>
+                        <ons-list id="profile_list"></ons-list>
                     </ons-scroller>
                 </ons-page>
             </ons-navigator>
