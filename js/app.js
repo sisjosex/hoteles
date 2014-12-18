@@ -104,19 +104,13 @@ filterSessionDay = function(index, element) {
     $('div.page__content.ons-page-inner').scrollTop(0);
 
     selectedItem.selected = 'selected';
+    selectedDate = selectedItem.date;
 
     loadIntoTemplateSingle('#session_list_container', {}, 'no_guests', getLabels());
-
-    console.log(selectedDate);
-    console.log(selectedItem.date);
-
-    selectedDate = selectedItem.date;
 
     getJsonP(api_url + 'getSessions/', function (data) {
 
         if (data.status === 'fail') {
-
-
 
         } else {
 
@@ -168,6 +162,31 @@ showGuestInfo = function(index) {
     splash.pushPage('guest_list.html', {index:index});
 };
 
+actionCall = function(phone) {
+    document.location.href = 'tel:' + phone;
+};
+
+showForm = function(session_id) {
+    ons.createDialog('guest_list_form.html').then(function(dialog) {
+        guestFormDialog.show();
+    });
+};
+
+closeForm = function() {
+
+    isShowingForm = false;
+
+    $('#conditions').remove();
+    guestFormDialog.hide();
+};
+
+goToProfile = function() {
+
+    scopeGuestListFormController.closeForm();
+
+    mainTabBar.setActiveTab(4);
+};
+
 
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
@@ -181,6 +200,9 @@ module.controller('LanguageController', function($scope) {
         }catch(error){}
 
         if(applicationLanguage !== '' && (applicationLanguage === 'es' || applicationLanguage === 'en')) {
+
+            moment.locale(applicationLanguage);
+            localStorage.setItem('lang', applicationLanguage);
 
             splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
 
@@ -199,33 +221,9 @@ module.controller('LanguageController', function($scope) {
 module.controller('MainMenuController', function($scope) {
     ons.ready(function() {
 
-        applicationLanguage = splash.getCurrentPage().options.lang;
-        localStorage.setItem('lang', applicationLanguage);
-
         createUserAndRegisterNotifications();
 
         $scope.labels = getLabels();
-
-        /*$scope.$on("$destroy",function( event ) {
-            //$timeout.cancel( timer );
-        });*/
-
-    });
-});
-
-
-var scopeGuestCarouselController;
-module.controller('GuestCarouselController', function($scope) {
-    ons.ready(function() {
-
-        scopeGuestCarouselController = $scope;
-
-        moment.locale(applicationLanguage);
-
-        /*console.log(lists.calendar);
-        lists.calendar = generateCalendar();*/
-
-        //lists.calendar = generateCalendar();
 
     });
 });
@@ -234,13 +232,13 @@ var scopeGuestcontroller;
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
 
+        console.log('recreating');
+
         if(currentDate === '') {
             currentDate = moment().add(0, 'days').format("YYYY-M-D");
         }
 
-        lists.calendar = generateCalendar();
 
-        loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
 
         current_page = 'guest.html';
 
@@ -261,6 +259,10 @@ module.controller('GuestController', function($scope) {
         if(selectedDate === '') {
             selectedDate = currentDate;
         }
+
+        lists.calendar = generateCalendar(selectedDate);
+
+        loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
 
         var selectedIndex = -1;
 
@@ -294,14 +296,17 @@ module.controller('GuestController', function($scope) {
         };
 
 
-        /*$scope.$on("$destroy",function( event ) {
-            //$timeout.cancel( timer );
-        });*/
+        $scope.$on("$destroy",function( event ) {
 
+            loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
+            selectedDate = moment().add(0, 'days').format("YYYY-M-D");
 
-        $('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            $('.guesto-list-verlay.overlay').css('opacity', 1);
         });
+
+
+        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
+            $('.guesto-list-verlay.overlay').css('opacity', 1);
+        });*/
 
     });
 });
@@ -345,18 +350,6 @@ module.controller('GuestListCardController', function($scope) {
             guestListCarousel.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
-
-
-        $scope.showForm = function(session_id) {
-            ons.createDialog('guest_list_form.html').then(function(dialog) {
-                guestFormDialog.show();
-                //naviDialog.show();
-            });
-        };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
 
     });
 
@@ -419,14 +412,6 @@ module.controller('GuestListFormController', function($scope) {
             }
         };
 
-        $scope.closeForm = function() {
-
-            isShowingForm = false;
-
-            $('#conditions').remove();
-            guestFormDialog.hide();
-        };
-
         $scope.confirm = function() {
 
             if($scope.userData.first_name === undefined || $scope.userData.first_name === '') {
@@ -482,13 +467,6 @@ module.controller('GuestListFormController', function($scope) {
 
                 }, $scope.userData);
             }
-        };
-
-        $scope.goToProfile = function() {
-
-            $scope.closeForm();
-
-            mainTabBar.setActiveTab(4);
         };
 
         /*$scope.$on("$destroy",function( event ) {
@@ -732,14 +710,6 @@ module.controller('LifeInfoController', function($scope) {
                 //naviDialog.show();
             });
         };
-
-        $scope.actionCall = function(phone) {
-            document.location.href = 'tel:' + phone;
-        };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
 
     });
 
