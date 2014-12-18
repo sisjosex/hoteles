@@ -97,6 +97,10 @@ filterSessionDay = function(index, element) {
     if(element !== undefined) {
         $('.session_day').removeClass('selected');
         $(element).addClass('selected');
+
+    } else {
+        $('.session_day').removeClass('selected');
+        $('#carouselSession > ons-carousel-item:nth-child(' + index + ')').addClass('selected');
     }
 
     var selectedItem = lists.calendar[index];
@@ -119,6 +123,8 @@ filterSessionDay = function(index, element) {
             loadIntoTemplate('#session_list_container', lists.session, 'session_list', getLabels());
 
             redirectToSection(scopeGuestcontroller, 'session');
+
+            ons.compile($('#carouselSession')[0]);
         }
 
         currentDate = moment().add(0, 'days').format("YYYY-M-D");
@@ -229,6 +235,7 @@ module.controller('MainMenuController', function($scope) {
 });
 
 var scopeGuestcontroller;
+var scopeGuestcontrollerFirstTime = true;
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
 
@@ -260,33 +267,32 @@ module.controller('GuestController', function($scope) {
             selectedDate = currentDate;
         }
 
-        lists.calendar = generateCalendar(selectedDate);
+        $scope.init = function() {
 
-        loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
+            lists.calendar = generateCalendar(selectedDate);
 
-        var selectedIndex = -1;
+            loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
 
-        for(var i in lists.calendar) {
+            var selectedIndex = -1;
 
-            lists.calendar[i].selected = '';
+            for(var i in lists.calendar) {
 
-            if(lists.calendar[i].date === selectedDate) {
+                if(lists.calendar[i].date === selectedDate) {
 
-                lists.calendar[i].selected = 'selected';
-
-                selectedIndex = i;
-                break;
+                    selectedIndex = i;
+                    break;
+                }
             }
-        }
 
-        if( selectedIndex !== -1 ) {
-            setTimeout(function(){
-                filterSessionDay(selectedIndex);
-            }, 200);
+            if( selectedIndex !== -1 ) {
+                setTimeout(function(){
+                    filterSessionDay(selectedIndex);
+                }, 200);
 
-        }
+            }
 
-        $scope.labels = getLabels();
+            $scope.labels = getLabels();
+        };
 
         $scope.gotoDetailFromNotification = function(index) {
 
@@ -298,11 +304,17 @@ module.controller('GuestController', function($scope) {
 
         $scope.$on("$destroy",function( event ) {
 
-            loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
-            selectedDate = moment().add(0, 'days').format("YYYY-M-D");
+            if(current_page === 'guest.html') {
+
+                /*loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
+                selectedDate = moment().add(0, 'days').format("YYYY-M-D");*/
+
+                scopeGuestcontroller.init();
+            }
 
         });
 
+        $scope.init();
 
         /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
             $('.guesto-list-verlay.overlay').css('opacity', 1);
@@ -330,19 +342,11 @@ module.controller('GuestListCardController', function($scope) {
 
         $scope.detail = lists.session[splash.getCurrentPage().options.index];
 
+        $('#guest_paginator > li:nth-child(0)').addClass('selected');
+
         $scope.carouselPostChange = function() {
-
-            var selectedItem = $scope.pictures[guestListCarousel.getActiveCarouselItemIndex()];
-
-            for(var i in $scope.pictures) {
-
-                $scope.pictures[i].selected = '';
-            }
-
-            if(selectedItem)
-            selectedItem.selected = 'selected';
-
-            $scope.$apply();
+            $('#guest_paginator > li').removeClass('selected');
+            $('#guest_paginator > li:nth-child(' + guestListCarousel.getActiveCarouselItemIndex() + ')').addClass('selected');
         };
 
         setTimeout(function(){
