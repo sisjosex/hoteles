@@ -53,6 +53,9 @@ function onError() {}
 
 function gotoPage(page, params) {
 
+    console.log(page);
+    console.log(params);
+
     splash.pushPage(page, params);
 }
 
@@ -226,6 +229,11 @@ module.controller('LanguageController', function($scope) {
 
 module.controller('MainMenuController', function($scope) {
     ons.ready(function() {
+
+        splash.getCurrentPage().options;
+
+        moment.locale(applicationLanguage);
+        localStorage.setItem('lang', applicationLanguage);
 
         createUserAndRegisterNotifications();
 
