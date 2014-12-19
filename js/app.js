@@ -137,6 +137,8 @@ filterSessionDay = function(index, element) {
 
             redirectToSection(scopeGuestcontroller, 'session');
 
+            try { navigator.splashscreen.hide(); } catch(error){}
+
             /*$('.show_guest_info').unbind('click').bind('click', function(event){
 
                 event.preventDefault();
