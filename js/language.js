@@ -68,7 +68,8 @@ var labels = {
         total_persons: 'personas',
         access_conditions: 'Condiciones de acceso:',
         age: 'Edad:',
-        dress_code: 'Dress Code:'
+        dress_code: 'Dress Code:',
+        ask_golden: 'PREGUNTA POR GOLDEN VIP LIST<br>O MUESTRA ESTA PANTALLA'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -139,6 +140,7 @@ var labels = {
         total_persons: 'persons',
         access_conditions: 'Access Conditions:',
         age: 'Age:',
-        dress_code: 'Dress Code:'
+        dress_code: 'Dress Code:',
+        ask_golden: 'ASK FOR GOLDEN VIP LIST <br>OR SAMPLE THIS SCREEN'
     }
 };

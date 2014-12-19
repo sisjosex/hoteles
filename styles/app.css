@@ -129,11 +129,25 @@ input[type=checkbox] {
     color: #fff;
 }
 
+.title-normal.access_conditions {
+    font-size: 1em !important;
+}
+
 .title-normal {
     font-size: 0.67em;
     margin: 0;
     padding: 0;
     line-height: 1em;
+}
+
+.info_content {
+    font-family: 'dubielplainregular';
+    font-size: 0.7em !important;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    color: #abaaaa;
+    padding:2em;
 }
 
 .guestpage .page__content {
@@ -322,6 +336,13 @@ input[type=checkbox] {
     display: inline-block;
     margin-left: 0.3em;
     margin-right: 0.3em;
+}
+
+.button.transparent {
+    display: block;
+    height: auto !important;
+    line-height: 1.8em;
+    background: rgba(0,0,0,0.4);
 }
 
 .icon {

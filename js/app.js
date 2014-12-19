@@ -22,6 +22,8 @@ var selectedDate = '';
 var current_page = '';
 var current_seccion_id = '';
 
+var applicationParams = '';
+
 
 window.fadeIn = function(obj) {
 
@@ -58,6 +60,17 @@ function gotoPage(page, lang) {
     localStorage.setItem('lang', applicationLanguage);
 
     splash.pushPage(page);
+}
+
+function loadApplicationParams() {
+
+    getJsonPBackground(api_url + 'getParams/', function(data){
+
+        applicationParams = data;
+
+    }, function(){
+
+    }, {});
 }
 
 
@@ -270,6 +283,8 @@ module.controller('LanguageController', function($scope) {
         }catch(error){}
 
         if(applicationLanguage !== '' && (applicationLanguage === 'es' || applicationLanguage === 'en')) {
+
+            loadApplicationParams();
 
             splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
 
@@ -558,6 +573,8 @@ module.controller('GuestListFormController', function($scope) {
                     $scope.userData.id = userData.id;
                 }
 
+                $scope.userData.date = selectedDate;
+
                 getJsonP(api_url + 'registerUser/', function(data){
 
                     $scope.userData = userData = {
@@ -596,6 +613,12 @@ var scopeGuestInfoController;
 var isShowingInfo = false;
 module.controller('GuestInfoController', function($scope) {
     ons.ready(function() {
+
+        if(applicationParams !== '') {
+            setTimeout(function(){
+                $('.info_content').html(applicationParams.info.content);
+            },200);
+        }
 
         isShowingInfo = true;
     });
@@ -938,7 +961,21 @@ module.controller('ProfileController', function($scope) {
 
             } else {
 
+                for(var i in lists.profile) {
+                    for(var j in lists.profile[i]) {
+                        if(j == 'date') {
+                            lists.profile[i][j] = moment(lists.profile[i][j], "YYYY-MM-DD").format("D MMMM dddd");
+                        }
+                    }
+                }
+
                 loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
+
+                $('#profile_list .access_conditions .value').each(function(){
+                    if( $(this).html() === '') {
+                        $(this).parent().remove();
+                    }
+                });
 
                 ons.compile($('#profile_list')[0]);
 

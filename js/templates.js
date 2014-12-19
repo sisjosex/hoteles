@@ -79,10 +79,11 @@ var templates = {
             '<div class="guesto-list-verlay overlay">'+
                 '<div align="center" class="guest-list-item-content">'+
                     '<span class="title-big">%guest_list%</span> <span class="title-medium">{in} %club%</span>'+
-                    '<p class="title-normal block">%hour% - %persons% {total_persons}</p>'+
+                    '<p class="title-normal block">%date% %hour%</p>'+
+                    '<p class="title-normal block access_conditions"><span class="rosa">{access_conditions}</span> <span class="value">%access_conditions%</span></p>'+
                 '</div>'+
                 '<div align="center" class="buttons">'+
-                    '<div class="button" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{validate}</div>'+
+                    '<div class="button transparent" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{ask_golden}</div>'+
                 '</div>'+
             '</div>'+
         '</ons-list-item>',
