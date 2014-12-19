@@ -142,12 +142,13 @@ input[type=checkbox] {
 
 .info_content {
     font-family: 'dubielplainregular';
-    font-size: 0.7em !important;
+    font-size: 1em !important;
     margin: 0;
     padding: 0;
     line-height: 1em;
     color: #abaaaa;
     padding:2em;
+    text-align: justify;
 }
 
 .guestpage .page__content {
@@ -516,7 +517,7 @@ span.block {
     text-align: center;
     width: 19em;
     margin: 0 auto;
-    background-position: center 11px;
+    background-position: center 7px;
     vertical-align: middle;
     display: table-cell;
 }
@@ -542,8 +543,9 @@ span.block {
     background: url('../img/info.png') 0 0 no-repeat transparent;
     width: 1.4em;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto 80%;
     height: 1em;
+    background-position: center 5px;
 }
 
 .rightButton {
