@@ -465,7 +465,7 @@ span.block {
 }
 
 .guest_list_title {
-    background: url('../img/guest_list.png') 0 0 no-repeat transparent;
+    background: url('../img/guest_list_header.png') 0 0 no-repeat transparent;
     background-repeat: no-repeat;
     background-size: auto 90%;
     height: 1.3em;
@@ -473,6 +473,65 @@ span.block {
     width: 9em;
     margin: 0 auto;
     background-position: center center;
+}
+
+.clubs_title {
+    background: url('../img/clubs_header.png') 0 0 no-repeat transparent;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    height: 1.3em;
+    text-align: center;
+    width: 9em;
+    margin: 0 auto;
+    background-position: center center;
+}
+
+.life_title {
+    background: url('../img/life_header.png') 0 0 no-repeat transparent;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    height: 1.3em;
+    text-align: center;
+    width: 9em;
+    margin: 0 auto;
+    background-position: center center;
+}
+
+.promo_title {
+    background: url('../img/promos_header.png') 0 0 no-repeat transparent;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    height: 1.3em;
+    text-align: center;
+    width: 9em;
+    margin: 0 auto;
+    background-position: center center;
+}
+
+.setup_my_data_title {
+    background: url('../img/setup_my_info.png') 0 0 no-repeat transparent;
+    background-repeat: no-repeat;
+    background-size: 59% auto;
+    height: 3em;
+    text-align: center;
+    width: 19em;
+    margin: 0 auto;
+    background-position: center 11px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.back_to_my_guest_list {
+    background: url('../img/back_to_my_guest_list_header.png') 0 0 no-repeat transparent;
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    height: 2em;
+    text-align: center;
+    width: 19em;
+    margin: 0 auto;
+    background-position: center 11px;
+    vertical-align: middle;
+    display: table-cell;
 }
 
 .buttonInfo {

@@ -258,9 +258,8 @@
         <ons-template id="clubs.html">
             <ons-navigator animation="slide" var="clubsNavigator">
                 <ons-page ng-controller="ClubsController" var="clubsPage" class="normal-page">
-                    <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                        <div class="center header-title">{{labels.header_clubs}}
-                        </div>
+                    <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;background:#000;">
+                        <div class="center header-title" style="background:#000;"><div class="clubs_title"></div></div>
 
                     </ons-toolbar>
 
@@ -331,8 +330,7 @@
             <ons-navigator animation="slide" var="lifeNavigator">
                 <ons-page ng-controller="LifeController" var="lifePage" class="normal-page">
                     <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                        <div class="center header-title">Life
-                        </div>
+                        <div class="center header-title" style="background:#000;"><div class="life_title"></div></div>
 
                     </ons-toolbar>
 
@@ -411,8 +409,7 @@
             <ons-navigator animation="slide" var="promoNavigator">
                 <ons-page ng-controller="PromosController" var="promoPage" class="normal-page">
                     <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                        <div class="center header-title">Promos
-                        </div>
+                        <div class="center header-title" style="background:#000;"><div class="promo_title"></div></div>
 
                     </ons-toolbar>
 
@@ -486,7 +483,7 @@
             <ons-navigator animation="slide" var="profileNavigator">
                 <ons-page ng-controller="ProfileController" var="promoPage" class="normal-page">
                     <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                        <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">{{labels.setup_my_data}}
+                        <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;"><div class="setup_my_data_title"></div>
                             <div class="rightButton" onclick="profileNavigator.pushPage('profile_detail.html');"></div>
                         </div>
                     </ons-toolbar>
@@ -502,7 +499,7 @@
         <ons-template id="profile_detail.html">
             <ons-page ng-controller="ProfileDetailController" class="normal-page">
                 <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                    <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">{{labels.back_to_my_guest_list}}
+                    <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;"><div class="back_to_my_guest_list"></div>
                         <div class="backButtonWhite" onclick="profileNavigator.popPage('profile_detail.html');"></div>
                     </div>
                 </ons-toolbar>
