@@ -83,8 +83,8 @@ ons-toolbar ~ .page__content {
 }
 
 .page__content {
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+  /*overflow: scroll;*/
+  /*-webkit-overflow-scrolling: touch;*/
   z-index: 0;
 }
 

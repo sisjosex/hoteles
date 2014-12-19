@@ -26,10 +26,11 @@
     <script src="js/language.js"></script>
     <script src="js/util.js"></script>
     <script src="js/templates.js"></script>
+    <script src="lib/iscroll.js"></script>
     <script src="js/app.js"></script>
 </head>
 
-<body style="background-size:100% auto; background-color: #000;background-image: url('img/splash.jpg'); background-repeat:no-repeat; background-position: 0 0;">
+<body>
 
 <ons-modal var="modal">
     <ons-icon icon="ion-loading-c" spin="true"></ons-icon>
@@ -38,10 +39,10 @@
 <ons-navigator animation="slide" var="splash">
     <ons-page ng-controller="LanguageController" class="splash">
         <div align="center" class="languageButtons" style="margin-top:47%">
-            <div class="button icon gray lang" onclick="gotoPage('tab_bar.html', {lang: 'es'});">
+            <div class="button icon gray lang" onclick="gotoPage('tab_bar.html', 'es');">
                 <span class="icon sp"></span> espa&ntilde;ol
             </div>
-            <div class="button icon gray lang" onclick="gotoPage('tab_bar.html', {lang: 'en'})">
+            <div class="button icon gray lang" onclick="gotoPage('tab_bar.html', 'en')">
                 <span class="icon en"></span> english
             </div>
         </div>
@@ -63,17 +64,18 @@
 <ons-template id="guest.html">
     <ons-navigator animation="slide" var="guestNavigator">
     <ons-page class="guestpage carousel" ng-controller="GuestController" var="guestPage">
-        <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;">
+        <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;position:relative;">
 
-            <div class="center header-title">{{labels.header_guest_list}}
+            <div class="center header-title" style="background:#000;"><div class="guest_list_title"></div>
                 <ons-carousel var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="50px"></ons-carousel>
+                <div onclick="showInformation(event)" class="buttonInfo"></div>
             </div>
 
         </ons-toolbar>
 
-        <!--<ons-scroller>-->
-            <div id="session_list_container"></div>
-        <!--</ons-scroller>-->
+        <div id="guest_scroll" class="scrollable">
+            <div id="guest_list" class="scroll-content"></div>
+        </div>
     </ons-page>
     </ons-navigator>
 </ons-template>
@@ -93,27 +95,32 @@
                         <div align="center" class="guest-list-item-content">
 
                             <div align="center" class="buttons">
-                                <div class="button" onclick="showForm('{{detail.id}}')">GUEST LIST</div>
+                                <div class="button" onclick="showForm()">GUEST LIST</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="backButton" onclick="splash.popPage('guest_info.html');"></div>
+                <div class="backButton" onclick="popPage('guest_info.html');"></div>
             </div>
 
         </ons-toolbar>
                 <ons-scroller style="height:100%">
                     <div>
-
-
                         <div class="card-content">
-                            <p>
-                                <label>{{labels.guest_list}}</label>
-                                <span>{{detail.guest_list}}</span>
+                            <p class="access_conditions">
+                                <label>{{labels.access_conditions}}</label>
+                                <span>{{detail.access_conditions}}</span>
                             </p>
                             <p>
-                                <label>{{labels.club}}</label>
-                                <span>{{detail.club}}</span>
+                                <span class="age">
+                                    <label ng-show="detail.age!=''">{{labels.age}}</label>
+                                    <span ng-show="detail.age!=''">{{detail.age}}</span>
+                                </span>
+
+                                <span class="dress_code">
+                                    <label ng-show="detail.dress_code!=''">{{labels.dress_code}}</label>
+                                    <span ng-show="detail.dress_code!=''">{{detail.dress_code}}</span>
+                                </span>
                             </p>
                             <p>
                                 <label>{{labels.address}}</label>
@@ -147,8 +154,8 @@
                     <form class="card-content" style="text-align: center;position:relative;">
                         <div class="button close" onclick="closeForm()">X</div>
 
-                        <div ng-show="reservation_inprogress">
-                            <div class="user_data {{form_visible}}" style="">
+                        <div class="reservation_inprogress">
+                            <div class="user_data form_visible" style="">
                                 <p>
                                     <label></label>
                                     <span>{{labels.fill_form}}</span>
@@ -171,7 +178,7 @@
                                 </p>
                             </div>
 
-                            <div class="user_data {{detail_visible}}">
+                            <div class="user_data detail_visible">
                                 <p>
                                     <span>{{labels.hi}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span></span>
                                     <br/>
@@ -204,7 +211,7 @@
                             </p>
                         </div>
 
-                        <div ng-show="reservation_complete">
+                        <div class="reservation_complete">
                             <div class="user_data visible">
                                 <p>
                                     <span>{{labels.perfect}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span>
@@ -234,6 +241,20 @@
             </ons-dialog>
         </ons-template>
 
+
+<ons-template id="guest_info.html">
+    <ons-dialog style="/*height: 360px;*/" var="guestInfoDialog" class="info-dialog" ng-controller="GuestInfoController">
+        <ons-page>
+                <div class="button close" onclick="closeInfo()">X</div>
+
+                <div class="info_content">
+
+
+                </div>
+        </ons-page>
+    </ons-dialog>
+</ons-template>
+
         <ons-template id="clubs.html">
             <ons-navigator animation="slide" var="clubsNavigator">
                 <ons-page ng-controller="ClubsController" var="clubsPage" class="normal-page">
@@ -243,9 +264,9 @@
 
                     </ons-toolbar>
 
-                    <ons-scroller>
-                        <ons-list id="club_list"></ons-list>
-                    </ons-scroller>
+                    <div id="club_scroll" class="scrollable">
+                        <div id="club_list" class="scroll-content"></div>
+                    </div>
                 </ons-page>
             </ons-navigator>
         </ons-template>
@@ -268,7 +289,7 @@
                             </div>
                         </div>
 
-                        <div class="backButton" onclick="splash.popPage('club_info.html');"></div>
+                        <div class="backButton" onclick="popPage('club_info.html');"></div>
                     </div>
                 </ons-toolbar>
 
@@ -315,9 +336,9 @@
 
                     </ons-toolbar>
 
-                    <ons-scroller>
-                        <ons-list id="life_list"></ons-list>
-                    </ons-scroller>
+                    <div id="life_scroll" class="scrollable">
+                        <div id="life_list" class="scroll-content"></div>
+                    </div>
                 </ons-page>
             </ons-navigator>
         </ons-template>
@@ -332,7 +353,7 @@
 
                             <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
 
-                                <ul id="life_paginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator"></ul>
+                                <ul id="life_paginator" var="lifeCarouselPaginator" align="center" class="carousel-paginator"></ul>
 
                                 <div align="center" class="guest-list-item-content">
                                     <p class="title-big">{{detail.name}}</p>
@@ -344,7 +365,7 @@
                             </div>
                         </div>
 
-                        <div class="backButton" onclick="splash.popPage('life_info.html');"></div>
+                        <div class="backButton" onclick="popPage('life_info.html');"></div>
                     </div>
                 </ons-toolbar>
 
@@ -395,9 +416,9 @@
 
                     </ons-toolbar>
 
-                    <ons-scroller>
-                        <ons-list id="promo_list"></ons-list>
-                    </ons-scroller>
+                    <div id="promo_scroll" class="scrollable">
+                        <div id="promo_list" class="scroll-content"></div>
+                    </div>
                 </ons-page>
             </ons-navigator>
         </ons-template>
@@ -420,7 +441,7 @@
                             </div>
                         </div>
 
-                        <div class="backButton" onclick="splash.popPage('promo_info.html');"></div>
+                        <div class="backButton" onclick="popPage('promo_info.html');"></div>
                     </div>
                 </ons-toolbar>
 
@@ -470,9 +491,9 @@
                         </div>
                     </ons-toolbar>
 
-                    <ons-scroller>
-                        <ons-list id="profile_list"></ons-list>
-                    </ons-scroller>
+                    <div id="profile_scroll" class="scrollable">
+                        <div id="profile_list" class="scroll-content"></div>
+                    </div>
                 </ons-page>
             </ons-navigator>
         </ons-template>
@@ -482,7 +503,7 @@
             <ons-page ng-controller="ProfileDetailController" class="normal-page">
                 <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
                     <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;">{{labels.back_to_my_guest_list}}
-                        <div class="backButton" onclick="profileNavigator.popPage('profile_detail.html');"></div>
+                        <div class="backButtonWhite" onclick="profileNavigator.popPage('profile_detail.html');"></div>
                     </div>
                 </ons-toolbar>
 

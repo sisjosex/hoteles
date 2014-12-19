@@ -11,7 +11,7 @@ var lists = {
     calendar: []
 };
 
-var calendar = generateCalendar();
+var calendar;
 
 var currentDate = '';
 
@@ -51,12 +51,13 @@ function resizeCardCarousel() {
 function onError() {}
 
 
-function gotoPage(page, params) {
+function gotoPage(page, lang) {
 
-    console.log(page);
-    console.log(params);
+    applicationLanguage = lang;
 
-    splash.pushPage(page, params);
+    localStorage.setItem('lang', applicationLanguage);
+
+    splash.pushPage(page);
 }
 
 
@@ -97,14 +98,8 @@ function createUserAndRegisterNotifications() {
 
 filterSessionDay = function(index, element) {
 
-    if(element !== undefined) {
-        $('.session_day').removeClass('selected');
-        $(element).addClass('selected');
-
-    } else {
-        $('.session_day').removeClass('selected');
-        $('#carouselSession > ons-carousel-item:nth-child(' + index + ')').addClass('selected');
-    }
+    $('.session_day').removeClass('selected');
+    $('#carouselSession > ons-carousel-item:nth-child(' + (parseInt(index) + 1) + ') .session_day').addClass('selected');
 
     var selectedItem = lists.calendar[index];
 
@@ -113,7 +108,7 @@ filterSessionDay = function(index, element) {
     selectedItem.selected = 'selected';
     selectedDate = selectedItem.date;
 
-    loadIntoTemplateSingle('#session_list_container', {}, 'no_guests', getLabels());
+    loadIntoTemplateSingle('#guest_list', {}, 'no_guests', getLabels());
 
     getJsonP(api_url + 'getSessions/', function (data) {
 
@@ -123,11 +118,22 @@ filterSessionDay = function(index, element) {
 
             lists.session = data.list;
 
-            loadIntoTemplate('#session_list_container', lists.session, 'session_list', getLabels());
+            loadIntoTemplate('#guest_list', lists.session, 'session_list', getLabels());
+
+            new iScroll('guest_scroll', { hScrollbar: false, vScrollbar: true });
 
             redirectToSection(scopeGuestcontroller, 'session');
 
-            ons.compile($('#carouselSession')[0]);
+            /*$('.show_guest_info').unbind('click').bind('click', function(event){
+
+                event.preventDefault();
+
+                showGuestInfo( parseInt($(this).attr('rel')), event );
+
+                return false;
+            });*/
+
+            //ons.compile($('#carouselSession')[0]);
         }
 
         currentDate = moment().add(0, 'days').format("YYYY-M-D");
@@ -159,16 +165,43 @@ showGuestList = function(index) {
 
     currentSession = lists.session[index];
 
-    ons.createDialog('guest_list_form.html').then(function(dialog) {
-        guestFormDialog.show();
+    if(!isShowingForm) {
+        ons.createDialog('guest_list_form.html').then(function (dialog) {
+            guestFormDialog.show();
+        });
+    }
+
+    return false;
+};
+
+showGuestInfo = function(index, event) {
+
+    event.preventDefault();
+
+    if(current_page !== 'guest_list.html') {
+
+        current_page = 'guest_list.html';
+
+        currentSession = lists.session[index];
+
+        splash.pushPage('guest_list.html', {index:index});
+    }
+
+    return false;
+};
+
+showInformation = function(event) {
+
+    ons.createDialog('guest_info.html').then(function(dialog) {
+        guestInfoDialog.show();
     });
 };
 
-showGuestInfo = function(index) {
+popPage = function(page) {
 
-    currentSession = lists.session[index];
+    current_page = '';
 
-    splash.pushPage('guest_list.html', {index:index});
+    splash.popPage(page);
 };
 
 actionCall = function(phone) {
@@ -189,9 +222,37 @@ closeForm = function() {
     guestFormDialog.hide();
 };
 
+closeInfo = function() {
+
+    isShowingInfo = false;
+    guestInfoDialog.hide();
+};
+
 goToProfile = function() {
 
-    scopeGuestListFormController.closeForm();
+    closeForm();
+
+    if(current_page === 'guest_list.html') {
+
+        splash.popPage(current_page);
+
+    } else if(current_page === 'club_info.html') {
+
+        splash.popPage(current_page);
+
+    } else if(current_page === 'life_info.html') {
+
+        splash.popPage(current_page);
+
+    } else if(current_page === 'promo_info.html') {
+
+        splash.popPage(current_page);
+
+    } else if(current_page === 'profile_detail.html') {
+
+        splash.popPage(current_page);
+
+    }
 
     mainTabBar.setActiveTab(4);
 };
@@ -209,9 +270,6 @@ module.controller('LanguageController', function($scope) {
         }catch(error){}
 
         if(applicationLanguage !== '' && (applicationLanguage === 'es' || applicationLanguage === 'en')) {
-
-            moment.locale(applicationLanguage);
-            localStorage.setItem('lang', applicationLanguage);
 
             splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
 
@@ -247,13 +305,11 @@ var scopeGuestcontrollerFirstTime = true;
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
 
-        console.log('recreating');
+        moment.locale(applicationLanguage);
 
         if(currentDate === '') {
             currentDate = moment().add(0, 'days').format("YYYY-M-D");
         }
-
-
 
         current_page = 'guest.html';
 
@@ -275,9 +331,12 @@ module.controller('GuestController', function($scope) {
             selectedDate = currentDate;
         }
 
-        $scope.init = function() {
+        $scope.init = function(reset) {
 
-            lists.calendar = generateCalendar(selectedDate);
+            if (reset === undefined) {
+
+                lists.calendar = generateCalendar(selectedDate);
+            }
 
             loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
 
@@ -314,19 +373,12 @@ module.controller('GuestController', function($scope) {
 
             if(current_page === 'guest.html') {
 
-                /*loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
-                selectedDate = moment().add(0, 'days').format("YYYY-M-D");*/
-
-                scopeGuestcontroller.init();
+                scopeGuestcontroller.init(false);
             }
 
         });
 
         $scope.init();
-
-        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });*/
 
     });
 });
@@ -350,11 +402,49 @@ module.controller('GuestListCardController', function($scope) {
 
         $scope.detail = lists.session[splash.getCurrentPage().options.index];
 
-        $('#guest_paginator > li:nth-child(0)').addClass('selected');
+        if($scope.detail.dress_code === '' || $scope.detail.dress_code === undefined) {
 
+            setTimeout(function(){
+                $('.dress_code').hide();
+            },100);
+
+        } else {
+
+            setTimeout(function(){
+                $('.dress_code').show();
+            },100);
+        }
+
+        if($scope.detail.age === '' || $scope.detail.age === undefined) {
+
+            setTimeout(function(){
+                $('.age').hide();
+            },100);
+
+        } else {
+
+            setTimeout(function(){
+                $('.age').show();
+            },100);
+        }
+
+        if($scope.detail.access_conditions === '' || $scope.detail.access_conditions === undefined) {
+
+            setTimeout(function(){
+                $('.access_conditions').hide();
+            },100);
+
+        } else {
+
+            setTimeout(function(){
+                $('.access_conditions').show();
+            },100);
+        }
+
+        $('#guest_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
             $('#guest_paginator > li').removeClass('selected');
-            $('#guest_paginator > li:nth-child(' + guestListCarousel.getActiveCarouselItemIndex() + ')').addClass('selected');
+            $('#guest_paginator > li:nth-child(' + (guestListCarousel.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
 
         setTimeout(function(){
@@ -378,41 +468,53 @@ module.controller('GuestListFormController', function($scope) {
 
         scopeGuestListFormController = $scope;
 
-        $scope.form_visible = 'visible';
-        $scope.detail_visible = '';
-
-        if( (userData === undefined || userData === null) || (userData !== null && userData.email === '') )  {
+        if( (userData === undefined || userData === null) || (userData !== null && (userData.email === '' || userData.email === undefined)) )  {
 
             $scope.userData = {
                 persons: 1,
                 session_id: currentSession.id
             };
 
-            $scope.form_visible = 'visible';
-            $scope.detail_visible = '';
+            setTimeout(function(){
+                $('.form_visible').show();
+                $('.detail_visible').hide();
+                $('.reservation_complete').hide();
+                $('.reservation_inprogress').show();
+            }, 200);
 
             fixModalBottomHeight('21.2em');
 
         } else {
+
+            console.log('There is user');
+
+            $scope.userData = {
+                first_name: userData.first_name,
+                last_name: userData.last_name,
+                email: userData.email,
+                phone: userData.phone
+            };
 
             $scope.userData = userData;
 
             $scope.userData.persons = 1;
             $scope.userData.session_id = currentSession.id;
 
-            $scope.form_visible = '';
-            $scope.detail_visible = 'visible';
+            setTimeout(function() {
+                $('.form_visible').hide();
+                $('.detail_visible').show();
+                $('.reservation_complete').hide();
+                $('.reservation_inprogress').show();
+            }, 200);
 
             fixModalBottomHeight('13.2em');
         }
 
+
+
         $scope.detail = currentSession;
 
-
         $scope.labels = getLabels();
-
-        $scope.reservation_complete = false;
-        $scope.reservation_inprogress = true;
 
         $scope.increasePersons = function() {
             $scope.userData.persons ++;
@@ -458,36 +560,45 @@ module.controller('GuestListFormController', function($scope) {
 
                 getJsonP(api_url + 'registerUser/', function(data){
 
-                    userData = data.user;
+                    $scope.userData = userData = {
+                        id: data.user.id,
+                        first_name: data.user.first_name,
+                        last_name: data.user.last_name,
+                        email: data.user.email,
+                        phone: data.user.phone
+                    };
 
-                    //$scope.closeForm();
-
-                    scopeGuestListFormController.$apply(function(){
-                        scopeGuestListFormController.reservation_complete = true;
-                        scopeGuestListFormController.reservation_inprogress = false;
-                    });
+                    $('.reservation_complete').show();
+                    $('.reservation_inprogress').hide();
 
                     localStorage.setItem("user", JSON.stringify(userData));
 
                     storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');
 
-
                     fixModalBottomHeight('13.2em');
 
                 }, function(data){
 
+                    userData = null;
 
                 }, $scope.userData);
             }
         };
 
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
-
     });
 
 
+});
+
+
+
+var scopeGuestInfoController;
+var isShowingInfo = false;
+module.controller('GuestInfoController', function($scope) {
+    ons.ready(function() {
+
+        isShowingInfo = true;
+    });
 });
 
 var scopeClubsController;
@@ -523,6 +634,8 @@ module.controller('ClubsController', function($scope) {
 
                 loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
 
+                new iScroll('club_scroll', { hScrollbar: false, vScrollbar: true });
+
                 redirectToSection(scopeClubsController, 'club');
             }
 
@@ -539,14 +652,6 @@ module.controller('ClubsController', function($scope) {
 
             splash.pushPage('club_info.html', {index:index});
         };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
-
-        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });*/
 
     });
 });
@@ -570,19 +675,10 @@ module.controller('ClubInfoController', function($scope) {
         loadIntoTemplate('#club_images', pictures, 'club_images');
         loadIntoTemplate('#club_paginator', pictures, 'club_paginator');
 
+        $('#club_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
-
-            var selectedItem = $scope.pictures[clubListCarousel.getActiveCarouselItemIndex()];
-
-            for(var i in $scope.pictures) {
-
-                $scope.pictures[i].selected = '';
-            }
-
-            if(selectedItem)
-            selectedItem.selected = 'selected';
-
-            $scope.$apply();
+            $('#club_paginator > li').removeClass('selected');
+            $('#club_paginator > li:nth-child(' + (clubListCarousel.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
 
         setTimeout(function(){
@@ -590,18 +686,6 @@ module.controller('ClubInfoController', function($scope) {
             clubListCarousel.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
-
-
-        $scope.showForm = function(session_id) {
-            ons.createDialog('guest_list_form.html').then(function(dialog) {
-                guestFormDialog.show();
-                //naviDialog.show();
-            });
-        };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
 
     });
 
@@ -645,6 +729,8 @@ module.controller('LifeController', function($scope) {
 
                 loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
 
+                new iScroll('life_scroll', { hScrollbar: false, vScrollbar: true });
+
                 redirectToSection(scopeLifeController, 'life');
             }
 
@@ -663,14 +749,6 @@ module.controller('LifeController', function($scope) {
 
             splash.pushPage('life_info.html', {index:index});
         };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
-
-        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });*/
 
     });
 });
@@ -694,24 +772,15 @@ module.controller('LifeInfoController', function($scope) {
         loadIntoTemplate('#life_images', pictures, 'life_images');
         loadIntoTemplate('#life_paginator', pictures, 'life_paginator');
 
+        $('#life_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
-
-            var selectedItem = $scope.pictures[guestListCarousel.getActiveCarouselItemIndex()];
-
-            for(var i in $scope.pictures) {
-
-                $scope.pictures[i].selected = '';
-            }
-
-            if(selectedItem)
-            selectedItem.selected = 'selected';
-
-            $scope.$apply();
+            $('#life_paginator > li').removeClass('selected');
+            $('#life_paginator > li:nth-child(' + (lifeCarouselPaginator.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
 
         setTimeout(function(){
 
-            guestListCarousel.on('postchange', $scope.carouselPostChange);
+            lifeCarouselPaginator.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
 
@@ -767,6 +836,8 @@ module.controller('PromosController', function($scope) {
 
                 loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
 
+                new iScroll('promo_scroll', { hScrollbar: false, vScrollbar: true });
+
                 redirectToSection(scopePromosController, 'promo');
             }
 
@@ -813,22 +884,11 @@ module.controller('PromoInfoController', function($scope) {
         loadIntoTemplate('#promo_images', pictures, 'promo_images');
         loadIntoTemplate('#promo_paginator', pictures, 'promo_paginator');
 
+        $('#promo_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
-
-            var selectedItem = pictures[promoListCarousel.getActiveCarouselItemIndex()];
-
-            for(var i in pictures) {
-
-                pictures[i].selected = '';
-            }
-
-            if(selectedItem)
-            selectedItem.selected = 'selected';
+            $('#promo_paginator > li').removeClass('selected');
+            $('#promo_paginator > li:nth-child(' + (promoListCarousel.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
-
-        /*$scope.$on("$destroy",function( event ) {
-            $timeout.cancel( timer );
-        });*/
 
         setTimeout(function(){
 
@@ -870,7 +930,6 @@ module.controller('ProfileController', function($scope) {
 
         getJsonP(api_url + 'getUserSessions/', function(data){
 
-            apply(scopeProfileController, 'items', data.list, scopeProfileController.thumb_width, scopeProfileController.thumb_height);
 
             lists.profile = data.list;
 
@@ -880,6 +939,10 @@ module.controller('ProfileController', function($scope) {
             } else {
 
                 loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
+
+                ons.compile($('#profile_list')[0]);
+
+                new iScroll('profile_scroll', { hScrollbar: false, vScrollbar: true });
             }
 
         }, function(){
@@ -901,9 +964,6 @@ module.controller('ProfileController', function($scope) {
 
             }, function(){
 
-                $scope.error = true;
-                $scope.$apply();
-
             }, {user_id: (userData && userData.id) ? userData.id : '', users_session_id: user_session.users_session_id});
         };
 
@@ -923,7 +983,7 @@ module.controller('ProfileDetailController', function($scope) {
 
         scopeProfileDetailController = $scope;
 
-        if(userData === undefined || userData === null ) {
+        if( (userData === undefined || userData === null) || (userData !== null && (userData.email === '' || userData.email === undefined)) )  {
 
             $scope.userData = {
                 session_id: 0,
@@ -983,7 +1043,13 @@ module.controller('ProfileDetailController', function($scope) {
 
                     getJsonP(api_url + 'registerUser/', function(data){
 
-                        userData = data.user;
+                        $scope.userData = userData = {
+                            id: data.user.id,
+                            first_name: data.user.first_name,
+                            last_name: data.user.last_name,
+                            email: data.user.email,
+                            phone: data.user.phone
+                        };
 
                         $scope.detail_visible = 'visible';
                         $scope.form_visible = '';
@@ -1082,9 +1148,9 @@ function generateCalendar() {
 
 
     for (i = 0; i <= 30; i ++) {
-        if(i === 0) {
+        /*if(i === 0) {
             items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("YYYY-M-D") });
-        } else {
+        } else */{
             items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: '', date: moment().add(i, 'days').format("YYYY-M-D") });
         }
     }

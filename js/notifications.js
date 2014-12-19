@@ -201,6 +201,8 @@ function redirectToSection(scope, section) {
 
     console.log('redirectToSection');
 
+    console.log(current_seccion_id);
+
     if(current_seccion_id !== '') {
 
         index=-1;

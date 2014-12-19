@@ -18,7 +18,7 @@ var templates = {
             '</div>'+
             '<div align="center" class="buttons">'+
                 '<div class="button purple" onclick="showGuestList(%index%)">GUEST LIST</div>'+
-                '<div class="button" onclick="showGuestInfo(%index%)">+ INFO</div>'+
+                '<div class="button" rel="%index%" onclick="showGuestInfo(%index%, event)">+ INFO</div>'+
             '</div>'+
         '</div>'+
     '</div>',
@@ -81,10 +81,10 @@ var templates = {
                     '<span class="title-big">%guest_list%</span> <span class="title-medium">{in} %club%</span>'+
                     '<p class="title-normal block">%hour% - %persons% {total_persons}</p>'+
                 '</div>'+
-                    '<div align="center" class="buttons">'+
-                    '<div class="button" onclick="validate(%index%)" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{validate}</div>'+
-                    '</div>'+
+                '<div align="center" class="buttons">'+
+                    '<div class="button" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{validate}</div>'+
                 '</div>'+
+            '</div>'+
         '</ons-list-item>',
 
     no_guests: '' +
