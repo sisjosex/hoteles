@@ -35,13 +35,11 @@ function successHandler() {}
 // android
 function tokenHandler(result) {
 
-    console.log('tokenHandler ' + result);
-
-    if(TOKEN_PUSH_NOTIFICATION === 0){
+    //if(TOKEN_PUSH_NOTIFICATION === 0){
         storeToken(device.uuid, result, 'iphone');
 
         console.log('tokenHandler ' + result);
-    }
+    //}
 }
 
 function onNotificationGCM(e) {
