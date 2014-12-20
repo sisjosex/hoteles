@@ -135,7 +135,7 @@ filterSessionDay = function(index, element) {
 
             loadIntoTemplate('#guest_list', lists.session, 'session_list', getLabels());
 
-            new iScroll('guest_scroll', { hScrollbar: false, vScrollbar: true });
+            new IScroll('guest_scroll', { hScrollbar: false, vScrollbar: true });
 
             redirectToSection(scopeGuestcontroller, 'session');
 
@@ -673,7 +673,7 @@ module.controller('ClubsController', function($scope) {
 
                 loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
 
-                new iScroll('club_scroll', { hScrollbar: false, vScrollbar: true });
+                new IScroll('club_scroll', { hScrollbar: false, vScrollbar: true });
 
                 redirectToSection(scopeClubsController, 'club');
             }
@@ -768,7 +768,7 @@ module.controller('LifeController', function($scope) {
 
                 loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
 
-                new iScroll('life_scroll', { hScrollbar: false, vScrollbar: true });
+                new IScroll('life_scroll', { hScrollbar: false, vScrollbar: true });
 
                 redirectToSection(scopeLifeController, 'life');
             }
@@ -877,7 +877,7 @@ module.controller('PromosController', function($scope) {
 
                 loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
 
-                new iScroll('promo_scroll', { hScrollbar: false, vScrollbar: true });
+                new IScroll('promo_scroll', { hScrollbar: false, vScrollbar: true });
 
                 redirectToSection(scopePromosController, 'promo');
             }
@@ -998,7 +998,7 @@ module.controller('ProfileController', function($scope) {
 
                 ons.compile($('#profile_list')[0]);
 
-                new iScroll('profile_scroll', { hScrollbar: false, vScrollbar: true });
+                new IScroll('profile_scroll', { hScrollbar: false, vScrollbar: true });
             }
 
         }, function(){
