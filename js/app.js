@@ -354,7 +354,7 @@ module.controller('GuestController', function($scope) {
 
         fixGuestListItem(height);
 
-        currentDate = moment().add(0, 'days').format("YYYY-M-D");
+        //currentDate = moment().add(0, 'days').format("YYYY-M-D");
 
         if(selectedDate === '') {
             selectedDate = currentDate;
