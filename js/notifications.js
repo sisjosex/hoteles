@@ -102,7 +102,7 @@ function showNotification(event, type){
     navigator.notification.alert(
         message,
         function(){
-            (seccion, seccion_id);
+            redirectToPage(seccion, seccion_id);
         },
         getLabel("alert"),
         getLabel("accept")
