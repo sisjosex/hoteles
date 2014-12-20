@@ -104,7 +104,7 @@ function showNotification(event, type){
     navigator.notification.alert(
         message,
         function(){
-            redirectToPage(seccion, seccion_id);
+            (seccion, seccion_id);
         },
         getLabel("alert"),
         getLabel("accept")
@@ -140,7 +140,11 @@ function redirectToPage(seccion, id){
     }
 
     if(isShowingForm === true) {
-        scopeGuestListFormController.closeForm();
+        closeForm();
+    }
+
+    if(isShowingInfo === true) {
+        closeInfo();
     }
 
     if(active_tab !== -1) {
@@ -165,6 +169,8 @@ function redirectToPage(seccion, id){
 
             splash.popPage('guest_info.html');
         }
+
+        current_page = '';
 
 
         mainTabBar.setActiveTab(active_tab);
@@ -207,9 +213,7 @@ function redirectToSection(scope, section) {
 
         index=-1;
 
-        console.log(section + '_list');
-
-        list = lists[section + '_list'];
+        list = lists[section];
 
         console.log(list);
 
@@ -230,5 +234,15 @@ function redirectToSection(scope, section) {
         }
 
         current_seccion_id = '';
+    }
+}
+
+function verifyNotification(){
+    //si tiene una notificacion pendiente la mostramos
+    if(HAVE_NOTIFICATION){
+        setTimeout(function(){
+            showNotification(EVENT, TYPE_NOTIFICATION);
+        },800);
+        HAVE_NOTIFICATION = false;
     }
 }

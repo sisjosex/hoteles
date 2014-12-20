@@ -349,11 +349,11 @@
                     <div class="center">
 
                         <div style="position:relative;">
-                            <ons-carousel id="life_images" class="carousel-detail" var="guestListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
+                            <ons-carousel id="life_images" class="carousel-detail" var="lifetListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
 
                             <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
 
-                                <ul id="life_paginator" var="lifeCarouselPaginator" align="center" class="carousel-paginator"></ul>
+                                <ul id="life_paginator" align="center" class="carousel-paginator"></ul>
 
                                 <div align="center" class="guest-list-item-content">
                                     <p class="title-big">{{detail.name}}</p>
@@ -485,7 +485,7 @@
             <ons-navigator animation="slide" var="profileNavigator">
                 <ons-page ng-controller="ProfileController" var="promoPage" class="normal-page">
                     <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                        <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;"><div class="setup_my_data_title"></div>
+                        <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;"><div class="translate setup_my_data_title"></div>
                             <div class="rightButton" onclick="profileNavigator.pushPage('profile_detail.html');"></div>
                         </div>
                     </ons-toolbar>
@@ -501,7 +501,7 @@
         <ons-template id="profile_detail.html">
             <ons-page ng-controller="ProfileDetailController" class="normal-page">
                 <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                    <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;"><div class="back_to_my_guest_list"></div>
+                    <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;"><div class="translate back_to_my_guest_list"></div>
                         <div class="backButtonWhite" onclick="profileNavigator.popPage('profile_detail.html');"></div>
                     </div>
                 </ons-toolbar>

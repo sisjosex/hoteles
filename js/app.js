@@ -207,6 +207,8 @@ showGuestInfo = function(index, event) {
 
 showInformation = function(event) {
 
+    isShowingInfo = false;
+
     ons.createDialog('guest_info.html').then(function(dialog) {
         guestInfoDialog.show();
     });
@@ -271,6 +273,14 @@ goToProfile = function() {
 
     mainTabBar.setActiveTab(4);
 };
+
+function translateImages() {
+    $('.translate').each(function(){
+
+        $(this).removeClass('en').removeClass('es').addClass(applicationLanguage);
+
+    });
+}
 
 
 module.controller('LanguageController', function($scope) {
@@ -347,6 +357,8 @@ module.controller('GuestController', function($scope) {
         if(selectedDate === '') {
             selectedDate = currentDate;
         }
+
+        verifyNotification();
 
         $scope.init = function(reset) {
 
@@ -797,15 +809,17 @@ module.controller('LifeInfoController', function($scope) {
         loadIntoTemplate('#life_images', pictures, 'life_images');
         loadIntoTemplate('#life_paginator', pictures, 'life_paginator');
 
+        //ons.compile($('#life_images')[0]);
+
         $('#life_paginator > li:nth-child(1)').addClass('selected');
         $scope.carouselPostChange = function() {
             $('#life_paginator > li').removeClass('selected');
-            $('#life_paginator > li:nth-child(' + (lifeCarouselPaginator.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
+            $('#life_paginator > li:nth-child(' + (lifetListCarousel.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
         };
 
         setTimeout(function(){
 
-            lifeCarouselPaginator.on('postchange', $scope.carouselPostChange);
+            lifetListCarousel.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
 
@@ -952,6 +966,7 @@ module.controller('ProfileController', function($scope) {
             loadIntoTemplateSingle('#profile_list', {}, 'no_profile', getLabels());
         }, 200);
 
+        translateImages();
 
         getJsonP(api_url + 'getUserSessions/', function(data){
 
@@ -1021,6 +1036,8 @@ module.controller('ProfileDetailController', function($scope) {
         current_page = 'profile_detail.html';
 
         scopeProfileDetailController = $scope;
+
+        translateImages();
 
         if( (userData === undefined || userData === null) || (userData !== null && (userData.email === '' || userData.email === undefined)) )  {
 
@@ -1132,6 +1149,8 @@ module.controller('ProfileDetailController', function($scope) {
                 scopeProfileController.$apply(function(){
                     scopeProfileController.labels = getLabels();
                 });
+
+                translateImages();
 
             }, function(){
 

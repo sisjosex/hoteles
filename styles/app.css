@@ -147,7 +147,7 @@ input[type=checkbox] {
     padding: 0;
     line-height: 1em;
     color: #abaaaa;
-    padding:2em;
+    padding: 0em;
     text-align: justify;
 }
 
@@ -510,14 +510,14 @@ span.block {
 }
 
 .setup_my_data_title {
-    background: url('../img/setup_my_info.png') 0 0 no-repeat transparent;
+    background: url('../img/setup_my_info_header.png') 0 0 no-repeat transparent;
     background-repeat: no-repeat;
-    background-size: 59% auto;
+    background-size: 85% auto;
     height: 3em;
     text-align: center;
     width: 19em;
     margin: 0 auto;
-    background-position: center 7px;
+    background-position: center 15px;
     vertical-align: middle;
     display: table-cell;
 }
@@ -526,13 +526,24 @@ span.block {
     background: url('../img/back_to_my_guest_list_header.png') 0 0 no-repeat transparent;
     background-repeat: no-repeat;
     background-size: 70% auto;
-    height: 2em;
+    height: 3em;
     text-align: center;
     width: 19em;
     margin: 0 auto;
-    background-position: center 11px;
+    background-position: center 19px;
     vertical-align: middle;
     display: table-cell;
+}
+
+.setup_my_data_title.es {
+    background-image: url('../img/configurar_mis_datos_header.png');
+    background-size: 77% auto;
+    background-position: center 11px;
+}
+
+.back_to_my_guest_list.es {
+    background-image: url('../img/volver_a_mi_guest_list_header.png');
+    background-position: center 11px;
 }
 
 .buttonInfo {
