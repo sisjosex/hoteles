@@ -101,7 +101,7 @@ function createUserAndRegisterNotifications() {
 
         }, userData);
 
-    } else if (TOKEN_PUSH_NOTIFICATION === 0) {
+    } else if (TOKEN_PUSH_NOTIFICATION === 0 || TOKEN_PUSH_NOTIFICATION === null || TOKEN_PUSH_NOTIFICATION === 'null') {
 
         registerNotifications();
     }
