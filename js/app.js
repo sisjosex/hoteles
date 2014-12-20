@@ -127,6 +127,8 @@ filterSessionDay = function(index, element) {
 
         if (data.status === 'fail') {
 
+            try { navigator.splashscreen.hide(); } catch(error){}
+
         } else {
 
             lists.session = data.list;
