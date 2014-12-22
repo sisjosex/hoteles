@@ -14,7 +14,7 @@ var templates = {
         '<div class="guesto-list-verlay overlay">'+
             '<div align="center" class="guest-list-item-content">'+
                 '<span class="title-big">%guest_list%</span> <span class="title-medium">{in} %club%</span>'+
-                '<p class="title-normal block">%hour%</p>'+
+                '<p class="title-normal block" style="color: #666666;text-decoration: none;pointer-events: none;">%hour%</p>'+
             '</div>'+
             '<div align="center" class="buttons">'+
                 '<div class="button purple" onclick="showGuestList(%index%)">GUEST LIST</div>'+
@@ -79,7 +79,7 @@ var templates = {
             '<div class="guesto-list-verlay overlay">'+
                 '<div align="center" class="guest-list-item-content">'+
                     '<span class="title-big">%guest_list%</span> <span class="title-medium">{in} %club%</span>'+
-                    '<p class="title-normal block">%date% %hour%</p>'+
+                    '<p class="title-normal block" style="color: #666666;text-decoration: none;pointer-events: none;">%date% %hour%</p>'+
                     '<p class="title-normal block access_conditions"><span class="rosa">{access_conditions}</span> <span class="value">%access_conditions%</span></p>'+
                 '</div>'+
                 '<div align="center" class="buttons">'+

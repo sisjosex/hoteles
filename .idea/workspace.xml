@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b009447-3627-4ed9-ba59-25b69a784ca9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/templates.js" afterPath="$PROJECT_DIR$/js/templates.js" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,13 +88,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="templates.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="templates.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/templates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4626">
-              <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.31858408" vertical-offset="0" max-vertical-offset="4626">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <marker date="1419127973931" expanded="true" signature="3906:3978" placeholder="..." />
+                <marker date="1419248359662" expanded="true" signature="793:851" placeholder="..." />
+                <marker date="1419248359662" expanded="true" signature="3650:3708" placeholder="..." />
+                <marker date="1419248359662" expanded="true" signature="4040:4112" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -120,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84070796" vertical-offset="986" max-vertical-offset="1944">
-              <caret line="97" column="79" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="932" max-vertical-offset="1944">
+              <caret line="63" column="101" selection-start-line="63" selection-start-column="101" selection-end-line="63" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -188,6 +190,7 @@
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/js/templates.js" />
       </list>
     </option>
   </component>
@@ -439,7 +442,9 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="3840">
           <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
           <folding>
-            <marker date="1419127973931" expanded="true" signature="3906:3978" placeholder="..." />
+            <marker date="1419248359662" expanded="true" signature="793:851" placeholder="..." />
+            <marker date="1419248359662" expanded="true" signature="3650:3708" placeholder="..." />
+            <marker date="1419248359662" expanded="true" signature="4040:4112" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -987,6 +992,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="932" max-vertical-offset="1944">
+          <caret line="63" column="101" selection-start-line="63" selection-start-column="101" selection-end-line="63" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.0" vertical-offset="0" max-vertical-offset="13392">
@@ -1048,19 +1061,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/templates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4626">
-          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.31858408" vertical-offset="0" max-vertical-offset="4626">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1419127973931" expanded="true" signature="3906:3978" placeholder="..." />
+            <marker date="1419248359662" expanded="true" signature="793:851" placeholder="..." />
+            <marker date="1419248359662" expanded="true" signature="3650:3708" placeholder="..." />
+            <marker date="1419248359662" expanded="true" signature="4040:4112" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84070796" vertical-offset="986" max-vertical-offset="1944">
-          <caret line="97" column="79" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
