@@ -24,6 +24,8 @@ var current_seccion_id = '';
 
 var applicationParams = '';
 
+var currentSessionFromNotification = null;
+
 
 window.fadeIn = function(obj) {
 
@@ -209,6 +211,43 @@ showGuestInfo = function(index, event) {
     return false;
 };
 
+showSessionDetailScreen = function(id) {
+
+    getJsonP(api_url + 'getSessions/', function(data){
+
+        if(data.list && data.list.length == 1) {
+
+            if(isShowingForm) {
+                closeForm();
+            }
+
+            if(isShowingInfo) {
+                closeInfo();
+            }
+
+            if(currentSessionFromNotification != null) {
+                splash.popPage('guest_detail.html');
+            }
+
+            currentSessionFromNotification = data.list[0];
+
+            splash.pushPage('guest_detail.html', {id:id});
+        }
+
+    }, function(){
+
+    }, {id: id});
+};
+
+closeDetailSession = function() {
+
+    popPage('guest_info.html');
+
+    currentSessionFromNotification=null;
+
+
+;}
+
 showInformation = function(event) {
 
     isShowingInfo = false;
@@ -240,13 +279,19 @@ closeForm = function() {
     isShowingForm = false;
 
     $('#conditions').remove();
-    guestFormDialog.hide();
+    try{
+        guestFormDialog.hide();
+    } catch (error) {}
+
 };
 
 closeInfo = function() {
 
     isShowingInfo = false;
-    guestInfoDialog.hide();
+
+    try{
+        guestInfoDialog.hide();
+    } catch (error) {}
 };
 
 goToProfile = function() {
@@ -271,8 +316,13 @@ goToProfile = function() {
 
     } else if(current_page === 'profile_detail.html') {
 
-        splash.popPage(current_page);
+        profileNavigator.popPage(current_page);
 
+    }
+
+    if(currentSessionFromNotification != null) {
+        closeDetailSession();
+        //splash.popPage('guest_detail.html');
     }
 
     mainTabBar.setActiveTab(4);
@@ -487,8 +537,79 @@ module.controller('GuestListCardController', function($scope) {
         }, 1000);
 
     });
+});
 
 
+var scopeGuestListDetailController;
+module.controller('GuestListDetailController', function($scope) {
+    ons.ready(function() {
+
+        //current_page = 'guest_detail.html';
+
+        GuestListDetailController = $scope;
+
+        $scope.labels = getLabels();
+
+        resizeCardCarousel();
+
+        pictures = getArrayAsObjects(currentSessionFromNotification.images);
+        $scope.detail = currentSessionFromNotification;
+
+        loadIntoTemplate('#detail_images', pictures, 'guest_images');
+        loadIntoTemplate('#detail_paginator', pictures, 'guest_paginator');
+
+        if($scope.detail.dress_code === '' || $scope.detail.dress_code === undefined) {
+
+            setTimeout(function(){
+                $('.dress_code').hide();
+            },100);
+
+        } else {
+
+            setTimeout(function(){
+                $('.dress_code').show();
+            },100);
+        }
+
+        if($scope.detail.age === '' || $scope.detail.age === undefined) {
+
+            setTimeout(function(){
+                $('.age').hide();
+            },100);
+
+        } else {
+
+            setTimeout(function(){
+                $('.age').show();
+            },100);
+        }
+
+        if($scope.detail.access_conditions === '' || $scope.detail.access_conditions === undefined) {
+
+            setTimeout(function(){
+                $('.access_conditions').hide();
+            },100);
+
+        } else {
+
+            setTimeout(function(){
+                $('.access_conditions').show();
+            },100);
+        }
+
+        $('#detail_paginator > li:nth-child(1)').addClass('selected');
+        $scope.carouselPostChange = function() {
+            $('#detail_paginator > li').removeClass('selected');
+            $('#detail_paginator > li:nth-child(' + (guestDetailCarousel.getActiveCarouselItemIndex()+1) + ')').addClass('selected');
+        };
+
+        setTimeout(function(){
+
+            guestDetailCarousel.on('postchange', $scope.carouselPostChange);
+
+        }, 1000);
+
+    });
 });
 
 
@@ -500,6 +621,10 @@ module.controller('GuestListFormController', function($scope) {
         isShowingForm = true;
 
         scopeGuestListFormController = $scope;
+
+        if(currentSessionFromNotification != null) {
+            currentSession = currentSessionFromNotification;
+        }
 
         if( (userData === undefined || userData === null) || (userData !== null && (userData.email === '' || userData.email === undefined)) )  {
 
@@ -675,6 +800,8 @@ module.controller('ClubsController', function($scope) {
 
                 loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
 
+                ons.compile($('#club_list')[0]);
+
                 new iScroll('club_scroll', { hScrollbar: false, vScrollbar: false });
 
                 redirectToSection(scopeClubsController, 'club');
@@ -769,6 +896,8 @@ module.controller('LifeController', function($scope) {
             } else {
 
                 loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
+
+                ons.compile($('#life_list')[0]);
 
                 new iScroll('life_scroll', { hScrollbar: false, vScrollbar: false });
 
@@ -878,6 +1007,8 @@ module.controller('PromosController', function($scope) {
             } else {
 
                 loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
+
+                ons.compile($('#promo_list')[0]);
 
                 new iScroll('promo_scroll', { hScrollbar: false, vScrollbar: false });
 

@@ -99,14 +99,18 @@ function showNotification(event, type){
 
     currentDate = date;
 
-    navigator.notification.alert(
-        message,
-        function(){
-            redirectToPage(seccion, seccion_id);
-        },
-        getLabel("alert"),
-        getLabel("accept")
-    );
+    try {
+        navigator.notification.alert(
+            message,
+            function () {
+                redirectToPage(seccion, seccion_id);
+            },
+            getLabel("alert"),
+            getLabel("accept")
+        );
+    } catch(error) {
+        redirectToPage(seccion, seccion_id);
+    }
 }
 
 function redirectToPage(seccion, id){
@@ -122,7 +126,9 @@ function redirectToPage(seccion, id){
 
     if(seccion === "session"){
 
-        active_tab = 0;
+        if(current_seccion_id == '') {
+            active_tab = 0;
+        }
 
     } else if(seccion === "club"){
 
@@ -172,6 +178,14 @@ function redirectToPage(seccion, id){
 
 
         mainTabBar.setActiveTab(active_tab);
+
+    } else {
+
+        if( seccion == 'session' && current_seccion_id != '') {
+
+            showSessionDetailScreen(current_seccion_id);
+            current_seccion_id = '';
+        }
     }
 }
 

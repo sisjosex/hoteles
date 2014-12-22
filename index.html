@@ -5,7 +5,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
 
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <title>GoldenVip</title>
 
@@ -52,31 +53,36 @@
 <ons-template id="tab_bar.html" var="languagePage">
     <ons-page ng-controller="MainMenuController" var="mainPage">
         <ons-tabbar var="mainTabBar">
-            <ons-tab page="guest.html" label="{{labels.guest_list}}" class="tabicon icon-guest" icon="square" active="true"></ons-tab>
+            <ons-tab page="guest.html" label="{{labels.guest_list}}" class="tabicon icon-guest" icon="square"
+                     active="true"></ons-tab>
             <ons-tab page="clubs.html" label="{{labels.tab_clubs}}" class="tabicon icon-clubs" icon="square"></ons-tab>
             <ons-tab page="life.html" label="{{labels.tab_life}}" class="tabicon icon-life" icon="square"></ons-tab>
-            <ons-tab page="promos.html" label="{{labels.tab_promos}}" class="tabicon icon-promos" icon="square"></ons-tab>
-            <ons-tab page="profile.html" label="{{labels.tab_profile}}" class="tabicon icon-profile" icon="square"></ons-tab>
+            <ons-tab page="promos.html" label="{{labels.tab_promos}}" class="tabicon icon-promos"
+                     icon="square"></ons-tab>
+            <ons-tab page="profile.html" label="{{labels.tab_profile}}" class="tabicon icon-profile"
+                     icon="square"></ons-tab>
         </ons-tabbar>
     </ons-page>
 </ons-template>
 
 <ons-template id="guest.html">
     <ons-navigator animation="slide" var="guestNavigator">
-    <ons-page class="guestpage carousel" ng-controller="GuestController" var="guestPage">
-        <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;position:relative;">
+        <ons-page class="guestpage carousel" ng-controller="GuestController" var="guestPage">
+            <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;position:relative;">
 
-            <div class="center header-title" style="background:#000;"><div class="guest_list_title"></div>
-                <ons-carousel var="carouselSession" id="carouselSession" style="height:41px;background:#fff;" overscrollable="" auto-scroll="" item-width="50px"></ons-carousel>
-                <div onclick="showInformation(event)" class="buttonInfo"></div>
+                <div class="center header-title" style="background:#000;">
+                    <div class="guest_list_title"></div>
+                    <ons-carousel var="carouselSession" id="carouselSession" style="height:41px;background:#fff;"
+                                  overscrollable="" auto-scroll="" item-width="50px"></ons-carousel>
+                    <div onclick="showInformation(event)" class="buttonInfo"></div>
+                </div>
+
+            </ons-toolbar>
+
+            <div id="guest_scroll" class="scrollable">
+                <div id="guest_list" class="scroll-content"></div>
             </div>
-
-        </ons-toolbar>
-
-        <div id="guest_scroll" class="scrollable">
-            <div id="guest_list" class="scroll-content"></div>
-        </div>
-    </ons-page>
+        </ons-page>
     </ons-navigator>
 </ons-template>
 
@@ -86,12 +92,17 @@
 
             <div class="center">
                 <div style="position:relative;">
-                    <ons-carousel class="carousel-detail" id="guest_images" var="guestListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
+                    <ons-carousel class="carousel-detail" id="guest_images" var="guestListCarousel"
+                                  style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;"
+                                  overscrollable="" auto-scroll=""></ons-carousel>
 
-                    <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
-                        <ul id="guest_paginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator"></ul>
+                    <div class="guesto-list-verlay overlay single"
+                         style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
+                        <ul id="guest_paginator" var="guestListCarouselPaginator" align="center"
+                            class="carousel-paginator"></ul>
 
                         <span class="title-big">{{detail.guest_list}}</span> <span class="title-medium">{{labels.in}} {{detail.club}}</span>
+
                         <div align="center" class="guest-list-item-content">
 
                             <div align="center" class="buttons">
@@ -104,14 +115,15 @@
             </div>
 
         </ons-toolbar>
-                <ons-scroller style="height:100%">
-                    <div>
-                        <div class="card-content">
-                            <p class="access_conditions">
-                                <label>{{labels.access_conditions}}</label>
-                                <span>{{detail.access_conditions}}</span>
-                            </p>
-                            <p>
+        <ons-scroller style="height:100%">
+            <div>
+                <div class="card-content">
+                    <p class="access_conditions">
+                        <label>{{labels.access_conditions}}</label>
+                        <span>{{detail.access_conditions}}</span>
+                    </p>
+
+                    <p>
                                 <span class="age">
                                     <label ng-show="detail.age!=''">{{labels.age}}</label>
                                     <span ng-show="detail.age!=''">{{detail.age}}</span>
@@ -121,129 +133,219 @@
                                     <label ng-show="detail.dress_code!=''">{{labels.dress_code}}</label>
                                     <span ng-show="detail.dress_code!=''">{{detail.dress_code}}</span>
                                 </span>
-                            </p>
-                            <p>
-                                <label>{{labels.address}}</label>
-                                <span>{{detail.address}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.hour}}</label>
-                                <span>{{detail.hour}}</span>
-                                <label>{{labels.metro}}</label>
-                                <span>{{detail.metro}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.ambient}}</label>
-                                <span>{{detail.ambient}}</span>
-                                <label>{{labels.accept_card}}</label>
-                                <span>{{detail.accept_card}}</span>
-                            </p>
-                            <p class="content">
-                               {{detail.content}}
-                            </p>
+                    </p>
+
+                    <p>
+                        <label>{{labels.address}}</label>
+                        <span>{{detail.address}}</span>
+                    </p>
+
+                    <p>
+                        <label>{{labels.hour}}</label>
+                        <span>{{detail.hour}}</span>
+                        <label>{{labels.metro}}</label>
+                        <span>{{detail.metro}}</span>
+                    </p>
+
+                    <p>
+                        <label>{{labels.ambient}}</label>
+                        <span>{{detail.ambient}}</span>
+                        <label>{{labels.accept_card}}</label>
+                        <span>{{detail.accept_card}}</span>
+                    </p>
+
+                    <p class="content">
+                        {{detail.content}}
+                    </p>
+                </div>
+            </div>
+        </ons-scroller>
+    </ons-page>
+</ons-template>
+
+
+<ons-template id="guest_detail.html">
+    <ons-page ng-controller="GuestListDetailController" class="guestlist hascarousel">
+        <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
+
+            <div class="center">
+                <div style="position:relative;">
+                    <ons-carousel class="carousel-detail" id="detail_images" var="guestDetailCarousel"
+                                  style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;"
+                                  overscrollable="" auto-scroll=""></ons-carousel>
+
+                    <div class="guesto-list-verlay overlay single"
+                         style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
+                        <ul id="detail_paginator" var="guestDetailCarouselPaginator" align="center"
+                            class="carousel-paginator"></ul>
+
+                        <span class="title-big">{{detail.guest_list}}</span> <span class="title-medium">{{labels.in}} {{detail.club}}</span>
+
+                        <div align="center" class="guest-list-item-content">
+
+                            <div align="center" class="buttons">
+                                <div class="button" onclick="showForm()">GUEST LIST</div>
+                            </div>
                         </div>
                     </div>
-                </ons-scroller>
-            </ons-page>
-        </ons-template>
+                </div>
+                <div class="backButton" onclick="closeDetailSession();"></div>
+            </div>
 
-        <ons-template id="guest_list_form.html">
-            <ons-dialog style="/*height: 360px;*/" var="guestFormDialog" class="bottom-dialog" ng-controller="GuestListFormController">
-                <ons-page>
+        </ons-toolbar>
+        <ons-scroller style="height:100%">
+            <div>
+                <div class="card-content">
+                    <p class="access_conditions">
+                        <label>{{labels.access_conditions}}</label>
+                        <span>{{detail.access_conditions}}</span>
+                    </p>
 
-                    <form class="card-content" style="text-align: center;position:relative;">
-                        <div class="button close" onclick="closeForm()">X</div>
+                    <p>
+                                <span class="age">
+                                    <label ng-show="detail.age!=''">{{labels.age}}</label>
+                                    <span ng-show="detail.age!=''">{{detail.age}}</span>
+                                </span>
 
-                        <div class="reservation_inprogress">
-                            <div class="user_data form_visible" style="">
-                                <p>
-                                    <label></label>
-                                    <span>{{labels.fill_form}}</span>
-                                </p>
-                                <p>
-                                    <label>{{labels.first_name}}</label>
-                                    <input class="" ng-model="userData.first_name" type="text"/>
-                                </p>
-                                <p>
-                                    <label>{{labels.last_name}}</label>
-                                    <input class="" ng-model="userData.last_name" type="text"/>
-                                </p>
-                                <p>
-                                    <label>{{labels.email}}</label>
-                                    <input class="" ng-model="userData.email" type="email"/>
-                                </p>
-                                <p>
-                                    <label>{{labels.phone}}</label>
-                                    <input class="" ng-model="userData.phone" type="phone"/>
-                                </p>
-                            </div>
+                                <span class="dress_code">
+                                    <label ng-show="detail.dress_code!=''">{{labels.dress_code}}</label>
+                                    <span ng-show="detail.dress_code!=''">{{detail.dress_code}}</span>
+                                </span>
+                    </p>
 
-                            <div class="user_data detail_visible">
-                                <p>
-                                    <span>{{labels.hi}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span></span>
-                                    <br/>
-                                    <span>{{labels.complete_nro_persons}}</span>
-                                    <br/>
-                                    <span>{{labels.to_session}} {{detail.guest_list}} {{session.to_day}} {{detail.hour}}</span>
-                                    <br/>
-                                    <br/>
-                                </p>
-                            </div>
+                    <p>
+                        <label>{{labels.address}}</label>
+                        <span>{{detail.address}}</span>
+                    </p>
+
+                    <p>
+                        <label>{{labels.hour}}</label>
+                        <span>{{detail.hour}}</span>
+                        <label>{{labels.metro}}</label>
+                        <span>{{detail.metro}}</span>
+                    </p>
+
+                    <p>
+                        <label>{{labels.ambient}}</label>
+                        <span>{{detail.ambient}}</span>
+                        <label>{{labels.accept_card}}</label>
+                        <span>{{detail.accept_card}}</span>
+                    </p>
+
+                    <p class="content">
+                        {{detail.content}}
+                    </p>
+                </div>
+            </div>
+        </ons-scroller>
+    </ons-page>
+</ons-template>
+
+<ons-template id="guest_list_form.html">
+    <ons-dialog style="/*height: 360px;*/" var="guestFormDialog" class="bottom-dialog"
+                ng-controller="GuestListFormController">
+        <ons-page>
+
+            <form class="card-content" style="text-align: center;position:relative;">
+                <div class="button close" onclick="closeForm()">X</div>
+
+                <div class="reservation_inprogress">
+                    <div class="user_data form_visible" style="">
+                        <p>
+                            <label></label>
+                            <span>{{labels.fill_form}}</span>
+                        </p>
+
+                        <p>
+                            <label>{{labels.first_name}}</label>
+                            <input class="" ng-model="userData.first_name" type="text"/>
+                        </p>
+
+                        <p>
+                            <label>{{labels.last_name}}</label>
+                            <input class="" ng-model="userData.last_name" type="text"/>
+                        </p>
+
+                        <p>
+                            <label>{{labels.email}}</label>
+                            <input class="" ng-model="userData.email" type="email"/>
+                        </p>
+
+                        <p>
+                            <label>{{labels.phone}}</label>
+                            <input class="" ng-model="userData.phone" type="phone"/>
+                        </p>
+                    </div>
+
+                    <div class="user_data detail_visible">
+                        <p>
+                            <span>{{labels.hi}} </span><span
+                                class="rosa">{{userData.first_name}} {{userData.last_name}}</span></span>
+                            <br/>
+                            <span>{{labels.complete_nro_persons}}</span>
+                            <br/>
+                            <span>{{labels.to_session}} {{detail.guest_list}} {{session.to_day}} {{detail.hour}}</span>
+                            <br/>
+                            <br/>
+                        </p>
+                    </div>
 
 
-                            <p>
-                                <label>{{labels.persons}}</label>
-                                <label class="spinner">{{userData.persons}}</label>
-                                <a class="button spinner" ng-click="increasePersons()">+</a>
-                                <a class="button spinner" ng-click="decreasePersons()">-</a>
-                            </p>
+                    <p>
+                        <label>{{labels.persons}}</label>
+                        <label class="spinner">{{userData.persons}}</label>
+                        <a class="button spinner" ng-click="increasePersons()">+</a>
+                        <a class="button spinner" ng-click="decreasePersons()">-</a>
+                    </p>
 
-                            <p>
-                                <label>&nbsp;</label>
+                    <p>
+                        <label>&nbsp;</label>
                             <span style="display:inline-block;">
-                                <input id="conditions" ng-model="userData.conditions" type="checkbox" name="check" value="check1">
+                                <input id="conditions" ng-model="userData.conditions" type="checkbox" name="check"
+                                       value="check1">
                                 <label class="checkbox" for="conditions">{{labels.conditions}}</label>
                             </span>
-                            </p>
+                    </p>
 
-                            <p style="display:block;text-align:center;">
-                                <a class="button" ng-click="confirm()">{{labels.confirm}}</a>
-                            </p>
-                        </div>
+                    <p style="display:block;text-align:center;">
+                        <a class="button" ng-click="confirm()">{{labels.confirm}}</a>
+                    </p>
+                </div>
 
-                        <div class="reservation_complete">
-                            <div class="user_data visible">
-                                <p>
-                                    <span>{{labels.perfect}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span>
-                                    <br/>
-                                    <span>{{labels.you_are_in_guest_list}} <span class="rosa">{{detail.club}}</span></span>
-                                    <br/>
-                                    <span>{{labels.for_session}} <span class="rosa">{{detail.guest_list}}</span> {{session.to_day}} {{detail.hour}}</span>
-                                    <br/>
-                                    <br/>
-                                    <span>{{labels.present_invitation}}</span>
-                                    <br/>
-                                    <span>{{labels.in_seccion}} <span class="rosa">{{labels.profile}}</span> {{labels.this_app}}</span>
-                                    <br/>
-                                    <span>{{labels.club_door}}</span>
-                                    <br/>
-                                    <br/>
-                                </p>
-                            </div>
+                <div class="reservation_complete">
+                    <div class="user_data visible">
+                        <p>
+                            <span>{{labels.perfect}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span>
+                            <br/>
+                            <span>{{labels.you_are_in_guest_list}} <span class="rosa">{{detail.club}}</span></span>
+                            <br/>
+                            <span>{{labels.for_session}} <span class="rosa">{{detail.guest_list}}</span> {{session.to_day}} {{detail.hour}}</span>
+                            <br/>
+                            <br/>
+                            <span>{{labels.present_invitation}}</span>
+                            <br/>
+                            <span>{{labels.in_seccion}} <span class="rosa">{{labels.profile}}</span> {{labels.this_app}}</span>
+                            <br/>
+                            <span>{{labels.club_door}}</span>
+                            <br/>
+                            <br/>
+                        </p>
+                    </div>
 
-                            <p style="display:block;text-align:center;">
-                                <a class="button" onclick="goToProfile()">{{labels.my_profile}}</a>
-                            </p>
-                        </div>
+                    <p style="display:block;text-align:center;">
+                        <a class="button" onclick="goToProfile()">{{labels.my_profile}}</a>
+                    </p>
+                </div>
 
-                    </form>
-                </ons-page>
-            </ons-dialog>
-        </ons-template>
+            </form>
+        </ons-page>
+    </ons-dialog>
+</ons-template>
 
 
 <ons-template id="guest_info.html">
-    <ons-dialog style="/*height: 360px;*/" var="guestInfoDialog" class="info-dialog" ng-controller="GuestInfoController">
+    <ons-dialog style="/*height: 360px;*/" var="guestInfoDialog" class="info-dialog"
+                ng-controller="GuestInfoController">
         <ons-page>
             <form class="card-content" style="text-align: center;position:relative;">
                 <div class="button close" onclick="closeInfo()">X</div>
@@ -257,312 +359,358 @@
     </ons-dialog>
 </ons-template>
 
-        <ons-template id="clubs.html">
-            <ons-navigator animation="slide" var="clubsNavigator">
-                <ons-page ng-controller="ClubsController" var="clubsPage" class="normal-page">
-                    <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;background:#000;">
-                        <div class="center header-title" style="background:#000;"><div class="clubs_title"></div></div>
+<ons-template id="clubs.html">
+    <ons-navigator animation="slide" var="clubsNavigator">
+        <ons-page ng-controller="ClubsController" var="clubsPage" class="normal-page">
+            <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;background:#000;">
+                <div class="center header-title" style="background:#000;">
+                    <div class="clubs_title"></div>
+                </div>
 
-                    </ons-toolbar>
+            </ons-toolbar>
 
-                    <div id="club_scroll" class="scrollable">
-                        <div id="club_list" class="scroll-content"></div>
+            <div id="club_scroll" class="scrollable">
+                <div id="club_list" class="scroll-content"></div>
+            </div>
+        </ons-page>
+    </ons-navigator>
+</ons-template>
+
+
+<ons-template id="club_info.html">
+    <ons-page ng-controller="ClubInfoController" class="guestlist hascarousel">
+        <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
+            <div class="center">
+                <div style="position:relative;">
+                    <ons-carousel id="club_images" class="carousel-detail" var="clubListCarousel"
+                                  style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;"
+                                  overscrollable="" auto-scroll=""></ons-carousel>
+
+                    <div class="guesto-list-verlay overlay single"
+                         style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
+
+                        <ul id="club_paginator" var="guestListCarouselPaginator" align="center"
+                            class="carousel-paginator"></ul>
+
+                        <div align="center" class="guest-list-item-content">
+                            <p class="title-big">{{detail.name}}</p>
+                        </div>
                     </div>
-                </ons-page>
-            </ons-navigator>
-        </ons-template>
+                </div>
+
+                <div class="backButton" onclick="popPage('club_info.html');"></div>
+            </div>
+        </ons-toolbar>
+
+        <ons-scroller style="height:100%">
+            <div>
 
 
-        <ons-template id="club_info.html">
-            <ons-page ng-controller="ClubInfoController" class="guestlist hascarousel">
-                <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
-                    <div class="center">
-                        <div style="position:relative;">
-                            <ons-carousel id="club_images" class="carousel-detail" var="clubListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
+                <div class="card-content">
+                    <p>
+                        <label>{{labels.sessions}}</label>
+                        <span>{{detail.sessions}}</span>
+                    </p>
 
-                            <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
+                    <p>
+                        <label>{{labels.address}}</label>
+                        <span>{{detail.address}}</span>
+                    </p>
 
-                                <ul id="club_paginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator"></ul>
+                    <p>
+                        <label>{{labels.hour}}</label>
+                        <span>{{detail.hour}}</span>
+                        <label>{{labels.metro}}</label>
+                        <span>{{detail.metro}}</span>
+                    </p>
 
-                                <div align="center" class="guest-list-item-content">
-                                    <p class="title-big">{{detail.name}}</p>
-                                </div>
+                    <p>
+                        <label>{{labels.ambient}}</label>
+                        <span>{{detail.ambient}}</span>
+                        <label>{{labels.accept_card}}</label>
+                        <span>{{detail.accept_card}}</span>
+                    </p>
+
+                    <p class="content">
+                        {{detail.content}}
+                    </p>
+                </div>
+            </div>
+        </ons-scroller>
+    </ons-page>
+</ons-template>
+
+<ons-template id="life.html">
+    <ons-navigator animation="slide" var="lifeNavigator">
+        <ons-page ng-controller="LifeController" var="lifePage" class="normal-page">
+            <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
+                <div class="center header-title" style="background:#000;">
+                    <div class="life_title"></div>
+                </div>
+
+            </ons-toolbar>
+
+            <div id="life_scroll" class="scrollable">
+                <div id="life_list" class="scroll-content"></div>
+            </div>
+        </ons-page>
+    </ons-navigator>
+</ons-template>
+
+<ons-template id="life_info.html">
+    <ons-page ng-controller="LifeInfoController" class="guestlist hascarousel">
+        <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
+            <div class="center">
+
+                <div style="position:relative;">
+                    <ons-carousel id="life_images" class="carousel-detail" var="lifetListCarousel"
+                                  style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;"
+                                  overscrollable="" auto-scroll=""></ons-carousel>
+
+                    <div class="guesto-list-verlay overlay single"
+                         style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
+
+                        <ul id="life_paginator" align="center" class="carousel-paginator"></ul>
+
+                        <div align="center" class="guest-list-item-content">
+                            <p class="title-big">{{detail.name}}</p>
+
+                            <div align="center" class="buttons">
+                                <div class="button" onclick="actionCall('{{detail.phone}}')">{{labels.call}}</div>
                             </div>
                         </div>
-
-                        <div class="backButton" onclick="popPage('club_info.html');"></div>
                     </div>
-                </ons-toolbar>
+                </div>
 
-                <ons-scroller style="height:100%">
-                    <div>
+                <div class="backButton" onclick="popPage('life_info.html');"></div>
+            </div>
+        </ons-toolbar>
+
+        <ons-scroller style="height:100%">
+            <div>
 
 
-                        <div class="card-content">
-                            <p>
-                                <label>{{labels.sessions}}</label>
-                                <span>{{detail.sessions}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.address}}</label>
-                                <span>{{detail.address}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.hour}}</label>
-                                <span>{{detail.hour}}</span>
-                                <label>{{labels.metro}}</label>
-                                <span>{{detail.metro}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.ambient}}</label>
-                                <span>{{detail.ambient}}</span>
-                                <label>{{labels.accept_card}}</label>
-                                <span>{{detail.accept_card}}</span>
-                            </p>
-                            <p class="content">
-                                {{detail.content}}
-                            </p>
+                <div class="card-content">
+                    <p>
+                        <label>{{labels.open}}</label>
+                        <span>{{detail.days}}</span>
+                    </p>
+
+                    <p>
+                        <label>{{labels.type}}</label>
+                        <span>{{detail.type_food}}</span>
+                    </p>
+
+                    <p>
+                        <label>{{labels.address}}</label>
+                        <span>{{detail.address}}</span>
+                    </p>
+
+                    <p>
+                        <label>{{labels.hour}}</label>
+                        <span>{{detail.hour}}</span>
+                        <label>{{labels.metro}}</label>
+                        <span>{{detail.metro}}</span>
+                    </p>
+
+                    <p>
+                        <label>{{labels.ambient}}</label>
+                        <span>{{detail.ambient}}</span>
+                        <label>{{labels.accept_card}}</label>
+                        <span>{{detail.accept_card}}</span>
+                    </p>
+
+                    <p class="content">
+                        {{detail.content}}
+                    </p>
+                </div>
+            </div>
+        </ons-scroller>
+    </ons-page>
+</ons-template>
+
+<ons-template id="promos.html">
+    <ons-navigator animation="slide" var="promoNavigator">
+        <ons-page ng-controller="PromosController" var="promoPage" class="normal-page">
+            <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
+                <div class="center header-title" style="background:#000;">
+                    <div class="promo_title"></div>
+                </div>
+
+            </ons-toolbar>
+
+            <div id="promo_scroll" class="scrollable">
+                <div id="promo_list" class="scroll-content"></div>
+            </div>
+        </ons-page>
+    </ons-navigator>
+</ons-template>
+
+<ons-template id="promo_info.html">
+    <ons-page ng-controller="PromoInfoController" class="guestlist hascarousel">
+        <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
+            <div class="center">
+
+                <div style="position:relative;">
+                    <ons-carousel id="promo_images" class="carousel-detail" var="promoListCarousel"
+                                  style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;"
+                                  overscrollable="" auto-scroll=""></ons-carousel>
+
+                    <div class="guesto-list-verlay overlay single"
+                         style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
+                        <ul id="promo_paginator" var="guestListCarouselPaginator" align="center"
+                            class="carousel-paginator"></ul>
+
+                        <div align="center" class="guest-list-item-content">
+                            <p class="title-big">{{detail.name}}</p>
+
+                            <p class="title-normal block">{{detail.cut_content}}</p>
                         </div>
                     </div>
-                </ons-scroller>
-            </ons-page>
-        </ons-template>
+                </div>
 
-        <ons-template id="life.html">
-            <ons-navigator animation="slide" var="lifeNavigator">
-                <ons-page ng-controller="LifeController" var="lifePage" class="normal-page">
-                    <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                        <div class="center header-title" style="background:#000;"><div class="life_title"></div></div>
+                <div class="backButton" onclick="popPage('promo_info.html');"></div>
+            </div>
+        </ons-toolbar>
 
-                    </ons-toolbar>
+        <ons-scroller style="height:100%">
+            <div>
 
-                    <div id="life_scroll" class="scrollable">
-                        <div id="life_list" class="scroll-content"></div>
-                    </div>
-                </ons-page>
-            </ons-navigator>
-        </ons-template>
+                <div class="card-content">
+                    <p>
+                        <label>{{labels.open}}</label>
+                        <span>{{detail.days}}</span>
+                    </p>
 
-        <ons-template id="life_info.html">
-            <ons-page ng-controller="LifeInfoController" class="guestlist hascarousel">
-                <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
-                    <div class="center">
+                    <p>
+                        <label>{{labels.type}}</label>
+                        <span>{{detail.type_food}}</span>
+                    </p>
 
-                        <div style="position:relative;">
-                            <ons-carousel id="life_images" class="carousel-detail" var="lifetListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
+                    <p>
+                        <label>{{labels.address}}</label>
+                        <span>{{detail.address}}</span>
+                    </p>
 
-                            <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
+                    <p>
+                        <label>{{labels.hour}}</label>
+                        <span>{{detail.hour}}</span>
+                        <label>{{labels.metro}}</label>+
+                        <span>{{detail.metro}}</span>
+                    </p>
 
-                                <ul id="life_paginator" align="center" class="carousel-paginator"></ul>
+                    <p>
+                        <label>{{labels.ambient}}</label>
+                        <span>{{detail.ambient}}</span>
+                        <label>{{labels.accept_card}}</label>
+                        <span>{{detail.accept_card}}</span>
+                    </p>
 
-                                <div align="center" class="guest-list-item-content">
-                                    <p class="title-big">{{detail.name}}</p>
+                    <p class="content">
+                        {{detail.content}}
+                    </p>
+                </div>
+            </div>
+        </ons-scroller>
+    </ons-page>
+</ons-template>
 
-                                    <div align="center" class="buttons">
-                                        <div class="button" onclick="actionCall('{{detail.phone}}')">{{labels.call}}</div>
-                                    </div>
-                                </div>
+<ons-template id="profile.html">
+    <ons-navigator animation="slide" var="profileNavigator">
+        <ons-page ng-controller="ProfileController" var="promoPage" class="normal-page">
+            <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
+                <div class="center header-title"
+                     style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;">
+                    <div class="translate setup_my_data_title"></div>
+                    <div class="rightButton" onclick="profileNavigator.pushPage('profile_detail.html');"></div>
+                </div>
+            </ons-toolbar>
+
+            <div id="profile_scroll" class="scrollable">
+                <div id="profile_list" class="scroll-content"></div>
+            </div>
+        </ons-page>
+    </ons-navigator>
+</ons-template>
+
+
+<ons-template id="profile_detail.html">
+    <ons-page ng-controller="ProfileDetailController" class="normal-page">
+        <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
+            <div class="center header-title"
+                 style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;">
+                <div class="translate back_to_my_guest_list"></div>
+                <div class="backButtonWhite" onclick="profileNavigator.popPage('profile_detail.html');"></div>
+            </div>
+        </ons-toolbar>
+
+        <ons-scroller style="height:100%">
+            <div class="profile-sections">
+
+                <div align="center">
+                    <p class="title-big">{{labels.my_data}}</p>
+
+                    <div class="">
+                        <div class="form card-content user_data {{detail_visible}}">
+                            <p>
+                                <label>{{labels.first_name}}</label>
+                                <span>{{userData.first_name}}</span>
+                            </p>
+
+                            <p>
+                                <label>{{labels.last_name}}</label>
+                                <span>{{userData.last_name}}</span>
+                            </p>
+
+                            <p>
+                                <label>{{labels.email}}</label>
+                                <span>{{userData.email}}</span>
+                            </p>
+
+                            <p>
+                                <label>{{labels.phone}}</label>
+                                <span>{{userData.phone}}</span>
+                            </p>
+                        </div>
+
+                        <div class="form card-content user_data {{form_visible}}">
+                            <p>
+                                <label class="editable">{{labels.first_name}}</label>
+                                <input type="text" ng-model="userData.first_name" required/>
+                            </p>
+
+                            <p>
+                                <label class="editable">{{labels.last_name}}</label>
+                                <input type="text" ng-model="userData.last_name" required/>
+                            </p>
+
+                            <p>
+                                <label class="editable">{{labels.email}}</label>
+                                <input type="email" ng-model="userData.email" required/>
+                            </p>
+
+                            <p>
+                                <label class="editable">{{labels.phone}}</label>
+                                <input type="phone" ng-model="userData.phone" required/>
+                            </p>
+                        </div>
+
+                        <div class="form card-content">
+                            <div class="button" ng-click="actionForm()"
+                                 style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;padding-bottom: 2.3em;display: inline-block;">
+                                {{label_edit}}
                             </div>
                         </div>
-
-                        <div class="backButton" onclick="popPage('life_info.html');"></div>
                     </div>
-                </ons-toolbar>
 
-                <ons-scroller style="height:100%">
-                    <div>
+                </div>
 
 
-                        <div class="card-content">
-                            <p>
-                                <label>{{labels.open}}</label>
-                                <span>{{detail.days}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.type}}</label>
-                                <span>{{detail.type_food}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.address}}</label>
-                                <span>{{detail.address}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.hour}}</label>
-                                <span>{{detail.hour}}</span>
-                                <label>{{labels.metro}}</label>
-                                <span>{{detail.metro}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.ambient}}</label>
-                                <span>{{detail.ambient}}</span>
-                                <label>{{labels.accept_card}}</label>
-                                <span>{{detail.accept_card}}</span>
-                            </p>
-                            <p class="content">
-                                {{detail.content}}
-                            </p>
-                        </div>
-                    </div>
-                </ons-scroller>
-            </ons-page>
-        </ons-template>
+                <div align="center">
+                    <p class="title-big">{{labels.idiom}}</p>
 
-        <ons-template id="promos.html">
-            <ons-navigator animation="slide" var="promoNavigator">
-                <ons-page ng-controller="PromosController" var="promoPage" class="normal-page">
-                    <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                        <div class="center header-title" style="background:#000;"><div class="promo_title"></div></div>
-
-                    </ons-toolbar>
-
-                    <div id="promo_scroll" class="scrollable">
-                        <div id="promo_list" class="scroll-content"></div>
-                    </div>
-                </ons-page>
-            </ons-navigator>
-        </ons-template>
-
-        <ons-template id="promo_info.html">
-            <ons-page ng-controller="PromoInfoController" class="guestlist hascarousel">
-                <ons-toolbar class="toolbar big" style="position:relative;background: none;border:none;">
-                    <div class="center">
-
-                        <div style="position:relative;">
-                            <ons-carousel id="promo_images" class="carousel-detail" var="promoListCarousel" style="position:relative;border-top: 0.1em solid #fa00c2;border-bottom: 0.1em solid #fa00c2;" overscrollable="" auto-scroll=""></ons-carousel>
-
-                            <div class="guesto-list-verlay overlay single" style="border-top: solid 0.1em #f701c4;border-bottom: solid 0.1em #f701c4;">
-                                <ul id="promo_paginator" var="guestListCarouselPaginator" align="center" class="carousel-paginator"></ul>
-
-                                <div align="center" class="guest-list-item-content">
-                                    <p class="title-big">{{detail.name}}</p>
-                                    <p class="title-normal block">{{detail.cut_content}}</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="backButton" onclick="popPage('promo_info.html');"></div>
-                    </div>
-                </ons-toolbar>
-
-                <ons-scroller style="height:100%">
-                    <div>
-
-                        <div class="card-content">
-                            <p>
-                                <label>{{labels.open}}</label>
-                                <span>{{detail.days}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.type}}</label>
-                                <span>{{detail.type_food}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.address}}</label>
-                                <span>{{detail.address}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.hour}}</label>
-                                <span>{{detail.hour}}</span>
-                                <label>{{labels.metro}}</label>+
-                                <span>{{detail.metro}}</span>
-                            </p>
-                            <p>
-                                <label>{{labels.ambient}}</label>
-                                <span>{{detail.ambient}}</span>
-                                <label>{{labels.accept_card}}</label>
-                                <span>{{detail.accept_card}}</span>
-                            </p>
-                            <p class="content">
-                                {{detail.content}}
-                            </p>
-                        </div>
-                    </div>
-                </ons-scroller>
-            </ons-page>
-        </ons-template>
-
-        <ons-template id="profile.html">
-            <ons-navigator animation="slide" var="profileNavigator">
-                <ons-page ng-controller="ProfileController" var="promoPage" class="normal-page">
-                    <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                        <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;"><div class="translate setup_my_data_title"></div>
-                            <div class="rightButton" onclick="profileNavigator.pushPage('profile_detail.html');"></div>
-                        </div>
-                    </ons-toolbar>
-
-                    <div id="profile_scroll" class="scrollable">
-                        <div id="profile_list" class="scroll-content"></div>
-                    </div>
-                </ons-page>
-            </ons-navigator>
-        </ons-template>
-
-
-        <ons-template id="profile_detail.html">
-            <ons-page ng-controller="ProfileDetailController" class="normal-page">
-                <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
-                    <div class="center header-title" style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;"><div class="translate back_to_my_guest_list"></div>
-                        <div class="backButtonWhite" onclick="profileNavigator.popPage('profile_detail.html');"></div>
-                    </div>
-                </ons-toolbar>
-
-                <ons-scroller style="height:100%">
-                    <div class="profile-sections">
-
-                        <div align="center">
-                            <p class="title-big">{{labels.my_data}}</p>
-
-                            <div class="">
-                                <div class="form card-content user_data {{detail_visible}}">
-                                    <p>
-                                        <label>{{labels.first_name}}</label>
-                                        <span>{{userData.first_name}}</span>
-                                    </p>
-                                    <p>
-                                        <label>{{labels.last_name}}</label>
-                                        <span>{{userData.last_name}}</span>
-                                    </p>
-                                    <p>
-                                        <label>{{labels.email}}</label>
-                                        <span>{{userData.email}}</span>
-                                    </p>
-                                    <p>
-                                        <label>{{labels.phone}}</label>
-                                        <span>{{userData.phone}}</span>
-                                    </p>
-                                </div>
-
-                                <div class="form card-content user_data {{form_visible}}">
-                                    <p>
-                                        <label class="editable">{{labels.first_name}}</label>
-                                        <input type="text" ng-model="userData.first_name" required />
-                                    </p>
-                                    <p>
-                                        <label class="editable">{{labels.last_name}}</label>
-                                        <input type="text" ng-model="userData.last_name" required />
-                                    </p>
-                                    <p>
-                                        <label class="editable">{{labels.email}}</label>
-                                        <input type="email" ng-model="userData.email" required />
-                                    </p>
-                                    <p>
-                                        <label class="editable">{{labels.phone}}</label>
-                                        <input type="phone" ng-model="userData.phone" required />
-                                    </p>
-                                </div>
-
-                                <div class="form card-content">
-                                    <div class="button" ng-click="actionForm()" style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;padding-bottom: 2.3em;display: inline-block;">{{label_edit}}</div>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div align="center">
-                            <p class="title-big">{{labels.idiom}}</p>
-                            <div class="button icon gray lang" ng-click="updateLanguage('es')">
-                                <span class="icon sp"></span> espa&ntilde;ol
+                    <div class="button icon gray lang" ng-click="updateLanguage('es')">
+                        <span class="icon sp"></span> espa&ntilde;ol
                     </div>
                     <div class="button icon gray lang" ng-click="updateLanguage('en')">
                         <span class="icon en"></span> english
@@ -572,6 +720,7 @@
 
                 <div align="center" style="margin-bottom:2em;">
                     <p class="title-big">{{labels.alerts}}</p>
+
                     <div class="button gray" ng-click="updateNotifications('1')">
                         {{labels.yes}}
                     </div>
