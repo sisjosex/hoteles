@@ -269,7 +269,18 @@ popPage = function(page) {
 actionCall = function(phone) {
     //document.location.href = 'tel:' + phone;
 
-    window.plugins.phoneDialer.dial(phone);
+    phonedialer.dial(
+        phone,
+        function(err) {
+            if (err == "empty") {
+                alert("Unknown phone number");
+            }
+            else alert("Dialer Error:" + err);
+        },
+        function(success) {
+            //alert('Dialing succeeded');
+        }
+    );
 };
 
 showForm = function(session_id) {
