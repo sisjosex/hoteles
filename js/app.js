@@ -1548,6 +1548,8 @@ function initScroll(div) {
     if(!scrolls[div]) {
         scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
     } else {
-        scrolls[div].refresh();
+        scrolls[div].destroy();
+        //scrolls[div].refresh();
+        scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
     }
 }
