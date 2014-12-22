@@ -139,6 +139,8 @@ filterSessionDay = function(index, element) {
 
             loadIntoTemplate('#guest_list', lists.session, 'session_list', getLabels());
 
+            ons.compile($('#guest_list')[0]);
+
             new iScroll('guest_scroll', { hScrollbar: false, vScrollbar: false });
 
             redirectToSection(scopeGuestcontroller, 'session');
