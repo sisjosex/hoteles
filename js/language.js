@@ -104,7 +104,7 @@ var labels = {
         confirm: 'CONFIRM',
         sessions: 'Sessions:',
         open: 'Open:',
-        type: 'Type of kitchen:',
+        type: 'Food:',
         save: 'Save',
         in: ' in ',
         user_first_name_required: 'Name is required',
