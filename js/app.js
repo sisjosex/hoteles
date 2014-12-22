@@ -1148,7 +1148,7 @@ module.controller('ProfileController', function($scope) {
 
                 ons.compile($('#profile_list')[0]);
 
-                initScroll('life_scroll');
+                initScroll('profile_scroll');
             }
 
         }, function(){
