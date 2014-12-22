@@ -90,6 +90,9 @@
     
     <!-- BarcodeScanner -->
     <gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.2.0" />
+
+    <!-- PhoneDialer -->
+    <gap:plugin name="com.teamnemitoff.phonedialer" version="0.3.0" />
     
     <!-- access -->
     <access origin="*" browserOnly="true"/>

@@ -93,7 +93,7 @@ var labels = {
         club: 'Club:',
         address: 'Address:',
         hour: 'Schedule:',
-        metro: 'Metro:',
+        metro: 'Underground:',
         ambient: 'Ambient:',
         accept_card: 'Accept Card',
         fill_form: 'fill this few form, This process is only required once',

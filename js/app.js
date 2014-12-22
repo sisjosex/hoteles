@@ -267,7 +267,9 @@ popPage = function(page) {
 };
 
 actionCall = function(phone) {
-    document.location.href = 'tel:' + phone;
+    //document.location.href = 'tel:' + phone;
+
+    window.plugins.phoneDialer.dial(phone);
 };
 
 showForm = function(session_id) {
