@@ -119,7 +119,7 @@ var labels = {
         no_sessions: 'There is no sessions available',
         no_clubs: 'There is no clubs available',
         no_life: 'There is no life available',
-        no_promos: 'There is promos available',
+        no_promos: 'There is no promos available',
         hi: 'Hi',
         complete_nro_persons: 'Complete the n° of people who will attend',
         to_session: 'to session',

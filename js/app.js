@@ -141,7 +141,7 @@ filterSessionDay = function(index, element) {
 
             ons.compile($('#guest_list')[0]);
 
-            new iScroll('guest_scroll', { hScrollbar: false, vScrollbar: false });
+            initScroll('guest_scroll');
 
             redirectToSection(scopeGuestcontroller, 'session');
 
@@ -817,7 +817,7 @@ module.controller('ClubsController', function($scope) {
 
                 ons.compile($('#club_list')[0]);
 
-                new iScroll('club_scroll', { hScrollbar: false, vScrollbar: false });
+                initScroll('club_scroll');
 
                 redirectToSection(scopeClubsController, 'club');
             }
@@ -914,7 +914,7 @@ module.controller('LifeController', function($scope) {
 
                 ons.compile($('#life_list')[0]);
 
-                new iScroll('life_scroll', { hScrollbar: false, vScrollbar: false });
+                initScroll('life_scroll');
 
                 redirectToSection(scopeLifeController, 'life');
             }
@@ -1025,7 +1025,7 @@ module.controller('PromosController', function($scope) {
 
                 ons.compile($('#promo_list')[0]);
 
-                new iScroll('promo_scroll', { hScrollbar: false, vScrollbar: false });
+                initScroll('promo_scroll');
 
                 redirectToSection(scopePromosController, 'promo');
             }
@@ -1138,6 +1138,8 @@ module.controller('ProfileController', function($scope) {
 
                 loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
 
+                ons.compile($('#profile_list')[0]);
+
                 $('#profile_list .access_conditions .value').each(function(){
                     if( $(this).html() === '') {
                         $(this).parent().remove();
@@ -1146,7 +1148,7 @@ module.controller('ProfileController', function($scope) {
 
                 ons.compile($('#profile_list')[0]);
 
-                new iScroll('profile_scroll', { hScrollbar: false, vScrollbar: false });
+                initScroll('life_scroll');
             }
 
         }, function(){
@@ -1530,7 +1532,7 @@ function fixGuestListItem(height) {
         '<style type="text/css">'+
         '.guest_list_item {'+
         'position:relative;'+
-        'height:'+height+'px;'+
+        'height:'+(height)+'px;'+
         '}'+
         '</style>'
     );
@@ -1538,4 +1540,14 @@ function fixGuestListItem(height) {
 
 function fixModalBottomHeight(height){
     $('body').append('<style type="text/css">.bottom-dialog .dialog {min-height: ' + height + ';}</style>');
+}
+
+var scrolls = {};
+function initScroll(div) {
+    //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
+    if(!scrolls[div]) {
+        scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+    } else {
+        scrolls[div].refresh();
+    }
 }
