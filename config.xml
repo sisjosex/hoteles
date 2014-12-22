@@ -93,6 +93,9 @@
 
     <!-- PhoneDialer -->
     <gap:plugin name="com.teamnemitoff.phonedialer" version="0.3.0" />
+
+    <!-- DisableDataDetectors -->
+    <gap:plugin name="fr.spirotron.cordova.disabledatadetectors" version="0.1.0" />
     
     <!-- access -->
     <access origin="*" browserOnly="true"/>
