@@ -37,7 +37,7 @@ window.fadeIn = function(obj) {
 
     setTimeout(function(){
         finalImage.addClass('fadein');
-    }, 50);
+    }, 10);
 };
 
 window.onresize = function(){
@@ -450,10 +450,7 @@ module.controller('GuestController', function($scope) {
             }
 
             if( selectedIndex !== -1 ) {
-                setTimeout(function(){
-                    filterSessionDay(selectedIndex);
-                }, 200);
-
+                filterSessionDay(selectedIndex);
             }
 
             $scope.labels = getLabels();
@@ -472,6 +469,9 @@ module.controller('GuestController', function($scope) {
             if(current_page === 'guest.html') {
 
                 scopeGuestcontroller.init(false);
+            } else {
+
+                currentDate = moment().add(0, 'days').format("YYYY-M-D");
             }
 
         });
@@ -800,9 +800,9 @@ module.controller('ClubsController', function($scope) {
 
         fixGuestListItem(height);
 
-        setTimeout(function(){
+        //setTimeout(function(){
             loadIntoTemplateSingle('#club_list', {}, 'no_club', getLabels());
-        }, 200);
+        //}, 1);
 
 
         getJsonP(api_url + 'getClubs/', function(data){
@@ -825,7 +825,7 @@ module.controller('ClubsController', function($scope) {
 
         }, function(){
 
-            scopeClubsController.error = true;
+
 
         }, {});
 
@@ -897,9 +897,9 @@ module.controller('LifeController', function($scope) {
 
         fixGuestListItem(height);
 
-        setTimeout(function(){
+        //setTimeout(function(){
             loadIntoTemplateSingle('#life_list', {}, 'no_life', getLabels());
-        }, 200);
+        //}, 200);
 
 
         getJsonP(api_url + 'getLifes/', function(data){
@@ -1008,9 +1008,9 @@ module.controller('PromosController', function($scope) {
 
         fixGuestListItem(height);
 
-        setTimeout(function(){
+        //setTimeout(function(){
             loadIntoTemplateSingle('#promo_list', {}, 'no_promo', getLabels());
-        }, 200);
+        //}, 200);
 
 
         getJsonP(api_url + 'getPromos/', function(data){
@@ -1112,9 +1112,9 @@ module.controller('ProfileController', function($scope) {
 
         fixGuestListItem(height);
 
-        setTimeout(function(){
+        //setTimeout(function(){
             loadIntoTemplateSingle('#profile_list', {}, 'no_profile', getLabels());
-        }, 200);
+        //}, 200);
 
         translateImages();
 

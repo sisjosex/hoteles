@@ -1,4 +1,5 @@
 var api_url = 'http://golden-vip.com/api/';
+//var api_url = 'http://10.0.0.5/hoteles_admin/hoteles/api/';
 var thumb_url = 'http://golden-vip.com/helpers/timthumb.php?w=%width%&h=%height%&src=';
 
 var applicationLanguage = '';
