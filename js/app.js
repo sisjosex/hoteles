@@ -1544,12 +1544,24 @@ function fixModalBottomHeight(height){
 
 var scrolls = {};
 function initScroll(div) {
+
     //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
+
     if(!scrolls[div]) {
-        scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+
+        containerElement = document.getElementById(div);
+
+        scrolls[div] = new FTScroller(containerElement, {
+            scrollbars: false,
+            scrollingX: false,
+            bouncing: true
+        });
+
+        //scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+
     } else {
-        scrolls[div].destroy();
-        //scrolls[div].refresh();
-        scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+
+        //scrolls[div].destroy();
+        //scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
     }
 }
