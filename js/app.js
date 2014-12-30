@@ -293,7 +293,7 @@ closeForm = function() {
 
     isShowingForm = false;
 
-    $('#conditions').remove();
+    //$('#conditions').remove();
     try{
         guestFormDialog.hide();
     } catch (error) {}
@@ -721,11 +721,11 @@ module.controller('GuestListFormController', function($scope) {
 
                 alert(getLabel('user_phone_required'));
 
-            } else if($scope.userData.conditions === undefined || $scope.userData.conditions === false) {
+            }/* else if($scope.userData.conditions === undefined || $scope.userData.conditions === false) {
 
                 alert(getLabel('user_conditions_required'));
 
-            } else {
+            } */else {
 
                 if(userData && userData.id !== undefined && userData.id !== '') {
                     $scope.userData.id = userData.id;
@@ -800,9 +800,9 @@ module.controller('ClubsController', function($scope) {
 
         fixGuestListItem(height);
 
-        //setTimeout(function(){
+        setTimeout(function(){
             loadIntoTemplateSingle('#club_list', {}, 'no_club', getLabels());
-        //}, 1);
+        }, 1);
 
 
         getJsonP(api_url + 'getClubs/', function(data){
@@ -897,9 +897,9 @@ module.controller('LifeController', function($scope) {
 
         fixGuestListItem(height);
 
-        //setTimeout(function(){
+        setTimeout(function(){
             loadIntoTemplateSingle('#life_list', {}, 'no_life', getLabels());
-        //}, 200);
+        }, 1);
 
 
         getJsonP(api_url + 'getLifes/', function(data){
@@ -1008,9 +1008,9 @@ module.controller('PromosController', function($scope) {
 
         fixGuestListItem(height);
 
-        //setTimeout(function(){
+        setTimeout(function(){
             loadIntoTemplateSingle('#promo_list', {}, 'no_promo', getLabels());
-        //}, 200);
+        }, 1);
 
 
         getJsonP(api_url + 'getPromos/', function(data){
@@ -1112,9 +1112,9 @@ module.controller('ProfileController', function($scope) {
 
         fixGuestListItem(height);
 
-        //setTimeout(function(){
+        setTimeout(function(){
             loadIntoTemplateSingle('#profile_list', {}, 'no_profile', getLabels());
-        //}, 200);
+        }, 1);
 
         translateImages();
 

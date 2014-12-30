@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b009447-3627-4ed9-ba59-25b69a784ca9" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\Projects\hoteles\.idea\workspace.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/constants.js" afterPath="$PROJECT_DIR$/js/constants.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/templates.js" afterPath="$PROJECT_DIR$/js/templates.js" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,6 +25,7 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="hoteles" />
   </component>
@@ -30,14 +34,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="11340">
-              <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+            <state vertical-scroll-proportion="33.346153" vertical-offset="867" max-vertical-offset="12869">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -50,8 +50,7 @@
                 <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -91,9 +90,13 @@
       <file leaf-file-name="templates.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/templates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="3855">
-              <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="4369">
+              <caret line="126" column="14" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="14" />
+              <folding>
+                <marker date="1419937702987" expanded="true" signature="793:848" placeholder="..." />
+                <marker date="1419937702987" expanded="true" signature="3647:3702" placeholder="..." />
+                <marker date="1419937702987" expanded="true" signature="4034:4106" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,8 +104,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8145286" vertical-offset="22933" max-vertical-offset="23580">
-              <caret line="1564" column="8" selection-start-line="1564" selection-start-column="8" selection-end-line="1564" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.63724136" vertical-offset="8548" max-vertical-offset="26724">
+              <caret line="530" column="34" selection-start-line="530" selection-start-column="34" selection-end-line="530" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -111,11 +114,9 @@
       <file leaf-file-name="iscroll.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/iscroll.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="12705" max-vertical-offset="30240">
+            <state vertical-scroll-proportion="0.0" vertical-offset="14399" max-vertical-offset="34272">
               <caret line="847" column="19" selection-start-line="847" selection-start-column="19" selection-end-line="847" selection-end-column="19" />
-              <folding>
-                <marker date="1419335440000" expanded="false" signature="0:3" placeholder="/*...*/" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,7 +124,7 @@
       <file leaf-file-name="notifications.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/notifications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3152" max-vertical-offset="3975">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3689" max-vertical-offset="4505">
               <caret line="217" column="26" selection-start-line="217" selection-start-column="9" selection-end-line="217" selection-end-column="26" />
               <folding />
             </state>
@@ -133,8 +134,8 @@
       <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="615">
-              <caret line="25" column="65" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,7 +144,7 @@
       <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="14085">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2380" max-vertical-offset="15963">
               <caret line="140" column="1" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
               <folding />
             </state>
@@ -161,21 +162,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="changedFiles">
+    <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/sizeof.min.js" />
-        <option value="$PROJECT_DIR$/lib/moment.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/js/ng-quick-repeat.js" />
-        <option value="$PROJECT_DIR$/js/util.js" />
-        <option value="$PROJECT_DIR$/lib/onsen/css/onsenui.css" />
-        <option value="$PROJECT_DIR$/js/language.js" />
-        <option value="$PROJECT_DIR$/js/templates.js" />
-        <option value="$PROJECT_DIR$/styles/app.css" />
-        <option value="$PROJECT_DIR$/js/constants.js" />
-        <option value="$PROJECT_DIR$/lib/iscroll.js" />
-        <option value="$PROJECT_DIR$/js/notifications.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/constants.js" />
+        <option value="$PROJECT_DIR$/js/templates.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
@@ -188,12 +179,15 @@
     </gruntfiles>
     <initial>false</initial>
   </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="428" />
-    <option name="y" value="120" />
-    <option name="width" value="1309" />
-    <option name="height" value="754" />
+    <option name="x" value="465" />
+    <option name="y" value="180" />
+    <option name="width" value="1456" />
+    <option name="height" value="871" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -324,7 +318,7 @@
       <node-options />
       <gulpfile />
       <tasks />
-      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
@@ -347,7 +341,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="428" y="120" width="1309" height="754" extended-state="0" />
+    <frame x="465" y="180" width="1456" height="871" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -357,19 +351,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28887135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2786533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -443,7 +437,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1305" max-vertical-offset="3840">
           <caret line="87" column="24" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-          <folding />
+          <folding>
+            <marker date="1419937702987" expanded="true" signature="793:848" placeholder="..." />
+            <marker date="1419937702987" expanded="true" signature="3647:3702" placeholder="..." />
+            <marker date="1419937702987" expanded="true" signature="4034:4106" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -460,10 +458,6 @@
           <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -476,8 +470,7 @@
             <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -556,10 +549,6 @@
           <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -572,8 +561,7 @@
             <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -703,10 +691,6 @@
           <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -719,8 +703,7 @@
             <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -795,10 +778,6 @@
           <caret line="610" column="112" selection-start-line="610" selection-start-column="112" selection-end-line="610" selection-end-column="125" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -811,8 +790,7 @@
             <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -927,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53315294" vertical-offset="8411" max-vertical-offset="9150">
           <caret line="587" column="16" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,16 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="12705" max-vertical-offset="30240">
           <caret line="847" column="19" selection-start-line="847" selection-start-column="19" selection-end-line="847" selection-end-column="19" />
-          <folding>
-            <marker date="1419335440000" expanded="false" signature="0:3" placeholder="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="615">
-          <caret line="25" column="65" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -986,24 +953,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="471" max-vertical-offset="3855">
-          <caret line="48" column="46" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="11340">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        <state vertical-scroll-proportion="33.346153" vertical-offset="867" max-vertical-offset="12869">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-navigator#0;n#ons-template#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-carousel#0;n#div#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#ons-template#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1016,8 +971,7 @@
             <element signature="n#style#0;n#ons-scroller#0;n#ons-page#0;n#ons-template#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#2;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#ons-page#0;n#ons-dialog#0;n#ons-template#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1053,14 +1007,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/templates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1938" max-vertical-offset="4369">
+          <caret line="126" column="14" selection-start-line="126" selection-start-column="4" selection-end-line="126" selection-end-column="14" />
+          <folding>
+            <marker date="1419937702987" expanded="true" signature="793:848" placeholder="..." />
+            <marker date="1419937702987" expanded="true" signature="3647:3702" placeholder="..." />
+            <marker date="1419937702987" expanded="true" signature="4034:4106" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8145286" vertical-offset="22933" max-vertical-offset="23580">
-          <caret line="1564" column="8" selection-start-line="1564" selection-start-column="8" selection-end-line="1564" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.63724136" vertical-offset="8548" max-vertical-offset="26724">
+          <caret line="530" column="34" selection-start-line="530" selection-start-column="34" selection-end-line="530" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
   </component>
 </project>
-

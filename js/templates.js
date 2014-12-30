@@ -89,7 +89,7 @@ var templates = {
         '</ons-list-item>',
 
     no_guests: '' +
-        '<div class="guest_list_item" ng-show="no_data">'+
+        '<div class="guest_list_item">'+
             '<div class="guesto-list-verlay overlay">'+
                 '<div align="center" class="guest-list-item-content">'+
                     '<p class="title-normal block">{no_sessions}</p>'+
@@ -98,7 +98,7 @@ var templates = {
         '</div>',
 
     no_club: '' +
-        '<div class="guest_list_item" ng-show="no_data">'+
+        '<div class="guest_list_item">'+
             '<div class="guesto-list-verlay overlay">'+
                 '<div align="center" class="guest-list-item-content">'+
                     '<p class="title-normal block">{no_clubs}</p>'+
@@ -107,7 +107,7 @@ var templates = {
         '</div>',
 
     no_life: '' +
-    '<ons-list-item class="guest_list_item" ng-show="no_data">'+
+    '<ons-list-item class="guest_list_item">'+
         '<div class="guesto-list-verlay overlay">'+
             '<div align="center" class="guest-list-item-content">'+
                 '<p class="title-normal block">{no_life}</p>'+
