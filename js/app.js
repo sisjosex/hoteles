@@ -26,6 +26,7 @@ var applicationParams = '';
 
 var currentSessionFromNotification = null;
 
+var offline_data = undefined;
 
 window.fadeIn = function(obj) {
 
@@ -73,6 +74,17 @@ function loadApplicationParams() {
     }, function(){
 
     }, {});
+}
+
+function loadOfflineData() {
+
+    getJsonPBackground(api_url + 'getOffline/', function(data){
+
+        offline_data = data;
+
+    }, function(){
+
+    }, { user_id: userData.id });
 }
 
 
@@ -363,9 +375,11 @@ module.controller('LanguageController', function($scope) {
             StatusBar.hide();
         }catch(error){}
 
+        loadApplicationParams();
+
         if(applicationLanguage !== '' && (applicationLanguage === 'es' || applicationLanguage === 'en')) {
 
-            loadApplicationParams();
+            createUserAndRegisterNotifications();
 
             splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
 
@@ -659,7 +673,7 @@ module.controller('GuestListFormController', function($scope) {
 
         } else {
 
-            console.log('There is user');
+            //console.log('There is user');
 
             $scope.userData = {
                 first_name: userData.first_name,
@@ -749,6 +763,7 @@ module.controller('GuestListFormController', function($scope) {
                     localStorage.setItem("user", JSON.stringify(userData));
 
                     storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');
+                    registerNotifications();
 
                     fixModalBottomHeight('13.2em');
 
@@ -1269,6 +1284,7 @@ module.controller('ProfileDetailController', function($scope) {
                         localStorage.setItem("user", JSON.stringify(userData));
 
                         storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');
+                        registerNotifications();
 
                     }, function(){
 

@@ -1,7 +1,7 @@
 
 function registerNotifications() {
 
-    console.log('registerNotifications');
+    //console.log('registerNotifications');
 
     if(window.plugins && window.plugins.pushNotification) {
 
@@ -14,7 +14,7 @@ function registerNotifications() {
                 "ecb": "onNotificationGCM"
             });
 
-            console.log('Android');
+            //console.log('Android');
 
         } else {
 
@@ -25,9 +25,11 @@ function registerNotifications() {
                 "ecb": "onNotificationAPN"
             });
 
-            console.log('IPhone');
+            //console.log('IPhone');
         }
     }
+
+    loadOfflineData();
 }
 
 function successHandler() {}
@@ -38,13 +40,13 @@ function tokenHandler(result) {
     //if(TOKEN_PUSH_NOTIFICATION === 0){
         storeToken(device.uuid, result, 'iphone');
 
-        console.log('tokenHandler ' + result);
+        //console.log('tokenHandler ' + result);
     //}
 }
 
 function onNotificationGCM(e) {
 
-    console.log('onNotificationGCM');
+    //console.log('onNotificationGCM');
 
     switch( e.event )
     {
@@ -197,7 +199,7 @@ function storeToken(uuid, token, device) {
     TOKEN_PUSH_NOTIFICATION = token;
     DEVICE_UUID = uuid;
 
-    console.log('uuid: ' + uuid + ' token: ' + token + ' device: ' + device);
+    //console.log('uuid: ' + uuid + ' token: ' + token + ' device: ' + device);
 
     getJsonPBackground(api_url + 'updateUUID/', storePushInfoInMobile, onError, {
         user_id: userData.id,
@@ -209,7 +211,7 @@ function storeToken(uuid, token, device) {
 
 function storePushInfoInMobile(data) {
 
-    console.log(data);
+    //console.log(data);
 
     localStorage.setItem("push_token", TOKEN_PUSH_NOTIFICATION);
     localStorage.setItem("uuid", DEVICE_UUID);
@@ -217,9 +219,9 @@ function storePushInfoInMobile(data) {
 
 function redirectToSection(scope, section) {
 
-    console.log('redirectToSection');
+    //console.log('redirectToSection');
 
-    console.log(current_seccion_id);
+    //console.log(current_seccion_id);
 
     if(current_seccion_id !== '') {
 
@@ -227,10 +229,10 @@ function redirectToSection(scope, section) {
 
         list = lists[section];
 
-        console.log(list);
+        //console.log(list);
 
         if(list.length > 0) {
-            console.log('searching');
+            //console.log('searching');
 
             for(var i in list) {
                 if(list[i].id === current_seccion_id) {
