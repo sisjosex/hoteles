@@ -26,7 +26,35 @@ var applicationParams = '';
 
 var currentSessionFromNotification = null;
 
-var offline_data = undefined;
+function initApp() {
+
+    try {
+
+        window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
+
+    } catch(error) {}
+}
+
+function gotFS(fileSystem) {
+    var path = "readme.txt";
+    fileSystem.root.getFile(path, {create: true, exclusive: false}, gotFileEntry, fail);
+
+}
+
+function gotFileEntry(fileEntry) {
+
+    fileEntry.createWriter(gotFileWriter, fail);
+}
+
+function gotFileWriter(writer) {
+
+    writer.onwrite = function (evt) {
+        console.log("write success");
+    };
+
+    writer.write("some sample text");
+}
+
 
 window.fadeIn = function(obj) {
 
@@ -80,7 +108,12 @@ function loadOfflineData() {
 
     getJsonPBackground(api_url + 'getOffline/', function(data){
 
-        offline_data = data;
+        if(data.status === 'success') {
+
+            offline_data = data;
+
+            localStorage.setItem("offline_data", JSON.stringify(offline_data));
+        }
 
     }, function(){
 
@@ -145,30 +178,21 @@ filterSessionDay = function(index, element) {
 
             try { navigator.splashscreen.hide(); } catch(error){}
 
+            if(offline_data !== undefined) {
+
+                if(offline_data.sessions) {
+
+                    lists.session = data.list;
+
+                    renderSessions();
+                }
+            }
+
         } else {
 
             lists.session = data.list;
 
-            loadIntoTemplate('#guest_list', lists.session, 'session_list', getLabels());
-
-            ons.compile($('#guest_list')[0]);
-
-            initScroll('guest_scroll');
-
-            redirectToSection(scopeGuestcontroller, 'session');
-
-            try { navigator.splashscreen.hide(); } catch(error){}
-
-            /*$('.show_guest_info').unbind('click').bind('click', function(event){
-
-                event.preventDefault();
-
-                showGuestInfo( parseInt($(this).attr('rel')), event );
-
-                return false;
-            });*/
-
-            //ons.compile($('#carouselSession')[0]);
+            renderSessions();
         }
 
         currentDate = moment().add(0, 'days').format("YYYY-M-D");
@@ -177,9 +201,22 @@ filterSessionDay = function(index, element) {
     }, {
         date: selectedItem.date
     });
-
-
 };
+
+function renderSessions() {
+
+    loadIntoTemplate('#guest_list', lists.session, 'session_list', getLabels());
+
+    ons.compile($('#guest_list')[0]);
+
+    initScroll('guest_scroll');
+
+    redirectToSection(scopeGuestcontroller, 'session');
+
+    try { navigator.splashscreen.hide(); } catch(error){}
+
+    loadOfflineData();
+}
 
 showClubInfo = function(index) {
 
@@ -367,6 +404,8 @@ function translateImages() {
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
 
+        initApp();
+
         /*$scope.$on("$destroy",function( event ) {
             //$timeout.cancel( timer );
         });*/
@@ -378,8 +417,6 @@ module.controller('LanguageController', function($scope) {
         loadApplicationParams();
 
         if(applicationLanguage !== '' && (applicationLanguage === 'es' || applicationLanguage === 'en')) {
-
-            createUserAndRegisterNotifications();
 
             splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
 
@@ -828,21 +865,33 @@ module.controller('ClubsController', function($scope) {
 
             } else {
 
-                loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
-
-                ons.compile($('#club_list')[0]);
-
-                initScroll('club_scroll');
-
-                redirectToSection(scopeClubsController, 'club');
+                scopeClubsController.render();
             }
 
 
+            loadOfflineData();
+
         }, function(){
 
+            if(offline_data !== undefined) {
 
+                lists.club = offline_data.clubs;
+
+                scopeClubsController.render();
+            }
 
         }, {});
+
+        $scope.render = function() {
+
+            loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
+
+            ons.compile($('#club_list')[0]);
+
+            initScroll('club_scroll');
+
+            redirectToSection(scopeClubsController, 'club');
+        };
 
         $scope.labels = getLabels();
 
@@ -925,18 +974,32 @@ module.controller('LifeController', function($scope) {
 
             } else {
 
-                loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
-
-                ons.compile($('#life_list')[0]);
-
-                initScroll('life_scroll');
-
-                redirectToSection(scopeLifeController, 'life');
+                scopeLifeController.render();
             }
+
+            loadOfflineData();
 
         }, function(){
 
+            if(offline_data !== undefined) {
+
+                lists.life = offline_data.life;
+
+                scopeLifeController.render();
+            }
+
         }, {});
+
+        $scope.render = function() {
+
+            loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
+
+            ons.compile($('#life_list')[0]);
+
+            initScroll('life_scroll');
+
+            redirectToSection(scopeLifeController, 'life');
+        };
 
         $scope.labels = getLabels();
 
@@ -1036,19 +1099,32 @@ module.controller('PromosController', function($scope) {
 
             } else {
 
-                loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
-
-                ons.compile($('#promo_list')[0]);
-
-                initScroll('promo_scroll');
-
-                redirectToSection(scopePromosController, 'promo');
+                scopePromosController.render();
             }
+
+            loadOfflineData();
 
         }, function(){
 
+            if(offline_data !== undefined) {
+
+                lists.promo = offline_data.promos;
+
+                scopePromosController.render();
+            }
 
         }, {});
+
+        $scope.render = function() {
+
+            loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
+
+            ons.compile($('#promo_list')[0]);
+
+            initScroll('promo_scroll');
+
+            redirectToSection(scopePromosController, 'promo');
+        };
 
         $scope.labels = getLabels();
 
@@ -1143,35 +1219,48 @@ module.controller('ProfileController', function($scope) {
 
             } else {
 
-                for(var i in lists.profile) {
-                    for(var j in lists.profile[i]) {
-                        if(j == 'date') {
-                            lists.profile[i][j] = moment(lists.profile[i][j], "YYYY-MM-DD").format("D MMMM dddd");
-                        }
-                    }
-                }
-
-                loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
-
-                ons.compile($('#profile_list')[0]);
-
-                $('#profile_list .access_conditions .value').each(function(){
-                    if( $(this).html() === '') {
-                        $(this).parent().remove();
-                    }
-                });
-
-                ons.compile($('#profile_list')[0]);
-
-                initScroll('profile_scroll');
+                scopeProfileController.render();
             }
+
+            loadOfflineData();
 
         }, function(){
 
+            if(offline_data !== undefined) {
+
+                lists.profile = data.list;
+
+                scopeProfileController.render();
+            }
 
         }, {
             user_id: (userData && userData.id) ? userData.id : ''
         });
+
+        $scope.render = function() {
+
+            for(var i in lists.profile) {
+                for(var j in lists.profile[i]) {
+                    if(j == 'date') {
+                        lists.profile[i][j] = moment(lists.profile[i][j], "YYYY-MM-DD").format("D MMMM dddd");
+                    }
+                }
+            }
+
+            loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
+
+            ons.compile($('#profile_list')[0]);
+
+            $('#profile_list .access_conditions .value').each(function(){
+                if( $(this).html() === '') {
+                    $(this).parent().remove();
+                }
+            });
+
+            ons.compile($('#profile_list')[0]);
+
+            initScroll('profile_scroll');
+        };
 
         $scope.labels = getLabels();
 
@@ -1476,7 +1565,7 @@ function getJsonP(url, callback_success, callback_error, data) {
         url: url,
         data: data,
         dataType: 'JSONp',
-        timeout: 30000,
+        timeout: 2000,
         async:true,
         success: function(data) {
 
@@ -1510,7 +1599,7 @@ function getJsonPBackground(url, callback_success, callback_error, data) {
         url: url,
         data: data,
         dataType: 'JSONp',
-        timeout: 30000,
+        timeout: 2000,
         async:true,
         success: function(data) {
 
