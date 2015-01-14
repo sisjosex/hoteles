@@ -269,6 +269,7 @@ filterSessionDay = function(index, element) {
         currentDate = moment().add(0, 'days').format("YYYY-M-D");
 
     }, function () {
+        try { navigator.splashscreen.hide(); } catch(error){}
     }, {
         date: selectedItem.date
     });
