@@ -1,4 +1,5 @@
 var module = ons.bootstrap();
+var module = ons.bootstrap();
 
 angular.module('MyApp', ['QuickList']);
 
@@ -94,7 +95,7 @@ function readText() {
     return false;
 }
 
-function gotFileEntry(fileEntry) {
+/*function gotFileEntry(fileEntry) {
 
     fileEntry.createWriter(gotFileWriter, fail);
 }
@@ -106,7 +107,7 @@ function gotFileWriter(writer) {
     };
 
     writer.write("some sample text");
-}
+}*/
 
 
 window.fadeIn = function(obj) {
@@ -227,9 +228,9 @@ filterSessionDay = function(index, element) {
 
     getJsonP(api_url + 'getSessions/', function (data) {
 
-        if (data.status === 'fail') {
+        try { navigator.splashscreen.hide(); } catch(error){}
 
-            try { navigator.splashscreen.hide(); } catch(error){}
+        if (data.status === 'fail') {
 
             if(offline_data !== undefined) {
 
