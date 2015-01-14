@@ -45,3 +45,5 @@ try {
 } catch(error) {
     offline_data = undefined;
 }
+
+var fileSystem;

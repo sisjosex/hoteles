@@ -35,10 +35,63 @@ function initApp() {
     } catch(error) {}
 }
 
-function gotFS(fileSystem) {
-    var path = "readme.txt";
-    fileSystem.root.getFile(path, {create: true, exclusive: false}, gotFileEntry, fail);
+function read(path, success){
+    fileSystem.root.getFile(path, {create: true, exclusive: false}, function(entry){var file = {entry: entry};
+        file.entry.file(function (dbFile) {
+            var dbEntries = [];
+            var reader = new FileReader();
+            reader.onloadend = function (evt) {
+                var textArray = evt.target.result.split("\n");
 
+                dbEntries = textArray.concat(dbEntries);
+
+                success(dbEntries.join());
+            }
+            reader.readAsText(dbFile);
+        }, fail);
+    }, fail);
+}
+
+function write(path, content){
+    fileSystem.root.getFile(path, {create: true, exclusive: false}, function(entry){var file = {entry: entry};
+        file.entry.createWriter(function(writer){
+            writer.onwrite = function (evt) {
+
+            };
+
+            writer.write(content);
+        }, fail);
+    }, fail);
+}
+
+function gotFS(fs) {
+
+    fileSystem = fs;
+
+    //var path = "readme.txt";
+    //fileSystem.root.getFile(path, {create: true, exclusive: false}, gotFileEntry, fail);
+}
+
+function fail() {
+
+}
+
+function readText() {
+    if (file.entry) {
+        file.entry.file(function (dbFile) {
+            var reader = new FileReader();
+            reader.onloadend = function (evt) {
+                var textArray = evt.target.result.split("\n");
+
+                dbEntries = textArray.concat(dbEntries);
+
+                $('definitions').innerHTML = dbEntries.join('');
+            }
+            reader.readAsText(dbFile);
+        }, failCB("FileReader"));
+    }
+
+    return false;
 }
 
 function gotFileEntry(fileEntry) {
