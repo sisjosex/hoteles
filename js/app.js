@@ -57,7 +57,7 @@ function write(path, content){
     fileSystem.root.getFile(path, {create: true, exclusive: false}, function(entry){var file = {entry: entry};
         file.entry.createWriter(function(writer){
             writer.onwrite = function (evt) {
-
+                console.log('writed');
             };
 
             writer.write(content);
