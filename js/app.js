@@ -27,6 +27,43 @@ var applicationParams = '';
 
 var currentSessionFromNotification = null;
 
+function storeImages(data) {
+
+    if(data !== undefined) {
+
+        for(var i in data) {
+
+            var section = data[i];
+
+            if(section && section.length > 0) {
+
+                for(var k in section) {
+
+                    var section_row = section[k];
+
+                    if(section_row.images) {
+
+                        for(var j in section_row.images) {
+                            var url = section_row.images[j];
+
+                            convertImgToBase64(url, function(content, img, url2){
+
+                                var filename = url2.split("/")[url2.split("/").length-1];
+
+                                console.log(filename);
+
+                                write(filename, content);
+
+                            });
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
 function initApp() {
 
     try {
@@ -75,7 +112,7 @@ function convertImgToBase64(url, callback, outputFormat){
         canvas.width = img.width;
         ctx.drawImage(img,0,0);
         var dataURL = canvas.toDataURL(outputFormat || 'image/png');
-        callback.call(this, dataURL);
+        callback.call(this, dataURL, img, url);
         // Clean up
         canvas = null;
     };
@@ -184,6 +221,8 @@ function loadOfflineData() {
             offline_data = data;
 
             localStorage.setItem("offline_data", JSON.stringify(offline_data));
+
+            storeImages(offline_data);
         }
 
     }, function(){
