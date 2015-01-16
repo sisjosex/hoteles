@@ -149,27 +149,12 @@ function readText() {
     return false;
 }
 
-/*function gotFileEntry(fileEntry) {
-
-    fileEntry.createWriter(gotFileWriter, fail);
-}
-
-function gotFileWriter(writer) {
-
-    writer.onwrite = function (evt) {
-        console.log("write success");
-    };
-
-    writer.write("some sample text");
-}*/
-
 
 window.fadeIn = function(obj) {
 
     var finalImage = $('<div class="item-bg-final"></div>');
 
     finalImage.css('background-image', "url('" + $(obj).attr('src') + "')");
-    //finalImage.addClass('fadein');
 
     $(obj).parent().html(finalImage);
 
@@ -282,7 +267,7 @@ function createUserAndRegisterNotifications() {
 
         }, function(){
 
-            //userData = null;
+
 
         }, userData);
 
@@ -294,7 +279,6 @@ function createUserAndRegisterNotifications() {
     }
 }
 
-//filterSessions(lists.calendar[1])
 filterSessions = function(selectedCalendar) {
 
     moment.locale('en');
@@ -584,8 +568,11 @@ function translateImages() {
 }
 
 
+var scopeLanguageController;
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
+
+        scopeLanguageController = $scope;
 
         initApp();
 
@@ -618,8 +605,11 @@ module.controller('LanguageController', function($scope) {
     });
 });
 
+var scopeMainMenuController;
 module.controller('MainMenuController', function($scope) {
     ons.ready(function() {
+
+        scopeMainMenuController = $scope;
 
         splash.getCurrentPage().options;
 

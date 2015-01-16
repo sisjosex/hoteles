@@ -56,21 +56,18 @@
 <ons-template id="tab_bar.html" var="languagePage">
     <ons-page ng-controller="MainMenuController" var="mainPage">
         <ons-tabbar var="mainTabBar">
-            <ons-tab page="guest.html" label="{{labels.guest_list}}" class="tabicon icon-guest" icon="square"
-                     active="true"></ons-tab>
-            <ons-tab page="clubs.html" label="{{labels.tab_clubs}}" class="tabicon icon-clubs" icon="square"></ons-tab>
-            <ons-tab page="life.html" label="{{labels.tab_life}}" class="tabicon icon-life" icon="square"></ons-tab>
-            <ons-tab page="promos.html" label="{{labels.tab_promos}}" class="tabicon icon-promos"
-                     icon="square"></ons-tab>
-            <ons-tab page="profile.html" label="{{labels.tab_profile}}" class="tabicon icon-profile"
-                     icon="square"></ons-tab>
+            <ons-tab page="guest.html" label="GUEST LIST" class="tabicon icon-guest" icon="square" active="true"></ons-tab>
+            <ons-tab page="clubs.html" label="CLUBS" class="tabicon icon-clubs" icon="square"></ons-tab>
+            <ons-tab page="life.html" label="LIFE" class="tabicon icon-life" icon="square"></ons-tab>
+            <ons-tab page="promos.html" label="PROMOS" class="tabicon icon-promos" icon="square"></ons-tab>
+            <ons-tab page="profile.html" label="MY PROFILE" class="tabicon icon-profile" icon="square"></ons-tab>
         </ons-tabbar>
     </ons-page>
 </ons-template>
 
 <ons-template id="guest.html">
     <ons-navigator animation="slide" var="guestNavigator">
-        <ons-page class="guestpage carousel" ng-controller="GuestController" var="guestPage">
+        <ons-page class="guestpage carousel" ng-controller="GuestController">
             <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;height:86px;position:relative;">
 
                 <div class="center header-title" style="background:#000;">
