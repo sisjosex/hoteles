@@ -214,9 +214,28 @@ function loadApplicationParams() {
 
 function loadOfflineData(callback) {
 
-    getJsonPBackground(api_url + 'getOffline/', function(data){
+    var reservations = [];
 
-        if(data.status === 'success') {
+    if(offline_data != undefined && userData != undefined && userData != null) {
+
+        if(offline_data.user_sessions && offline_data.user_sessions.length > 0) {
+
+            for(var i in offline_data.user_sessions) {
+
+                if(offline_data.user_sessions[i].users_session_id === 0) {
+                    reservations.push({
+                        persons: offline_data.user_sessions[i].persons,
+                        date: offline_data.user_sessions[i].date,
+                        session_id: offline_data.user_sessions[i].id
+                    });
+                }
+            }
+        }
+    }
+
+    getJsonPBackground(api_url + 'getOffline/', function (data) {
+
+        if (data.status === 'success') {
 
             offline_data = data;
 
@@ -229,13 +248,13 @@ function loadOfflineData(callback) {
             isonline = true;
         }
 
-    }, function(){
+    }, function () {
 
         isonline = false;
 
         callback ? callback() : '';
 
-    }, { user_id: userData.id });
+    }, {user_id: userData ? userData.id : '', user: userData, reservations: reservations, language: applicationLanguage});
 }
 
 
@@ -944,6 +963,32 @@ module.controller('GuestListFormController', function($scope) {
             } */else {
 
                 if(userData && userData.id !== undefined && userData.id !== '') {
+
+                    if(isonline) {
+                        storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');
+                        registerNotifications();
+                    }
+
+                } else {
+
+                    userData = {
+                        first_name: $scope.userData.first_name,
+                        last_name: $scope.userData.last_name,
+                        email: $scope.userData.email,
+                        phone: $scope.userData.phone
+                    };
+
+                    localStorage.setItem("user", JSON.stringify(userData));
+                }
+
+                storeSessionReservation($scope.userData.persons);
+
+                $('.reservation_complete').show();
+                $('.reservation_inprogress').hide();
+
+                fixModalBottomHeight('13.2em');
+
+                /*if(userData && userData.id !== undefined && userData.id !== '') {
                     $scope.userData.id = userData.id;
                 }
 
@@ -971,16 +1016,50 @@ module.controller('GuestListFormController', function($scope) {
 
                 }, function(data){
 
-                    userData = null;
-
-                }, $scope.userData);
+                }, $scope.userData);*/
             }
         };
 
     });
-
-
 });
+
+
+
+var storeSessionReservation = function(nro) {
+
+    console.log('saving');
+
+    if(!offline_data.user_sessions) {
+        offline_data.user_sessions = [];
+    }
+
+    var session = currentSession;
+    var date = moment().format("YYYY-M-D");
+
+    var obj = {
+        id: session.id,
+        persons: nro,
+        users_session_id: 0,
+        guest_list: session.guest_list,
+        club: session.club,
+        address: session.address,
+        hour: session.hour,
+        metro: session.metro,
+        ambient: session.ambient,
+        accept_card: session.accept_card,
+        age: session.age,
+        dress_code: session.dress_code,
+        music: session.music,
+        access_conditions: session.access_conditions,
+        content: session.content,
+        date: date,
+        images: session.images
+    };
+
+    offline_data.user_sessions.push(obj);
+
+    localStorage.setItem("offline_data", JSON.stringify(offline_data));
+};
 
 
 

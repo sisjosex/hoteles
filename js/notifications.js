@@ -29,7 +29,7 @@ function registerNotifications() {
         }
     }
 
-    loadOfflineData();
+    //loadOfflineData();
 }
 
 function successHandler() {}

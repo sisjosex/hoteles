@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1b009447-3627-4ed9-ba59-25b69a784ca9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/notifications.js" afterPath="$PROJECT_DIR$/js/notifications.js" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,8 +93,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34526855" vertical-offset="22110" max-vertical-offset="28620">
-              <caret line="1492" column="44" selection-start-line="1492" selection-start-column="44" selection-end-line="1492" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.9040921" vertical-offset="29008" max-vertical-offset="29805">
+              <caret line="1981" column="1" selection-start-line="1981" selection-start-column="1" selection-end-line="1981" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -122,12 +123,9 @@
       <file leaf-file-name="notifications.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/notifications.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="4005">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <marker date="1421233688000" expanded="true" signature="140:813" placeholder="{...}" />
-                <marker date="1421233688000" expanded="true" signature="519:816" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="3000" max-vertical-offset="4005">
+              <caret line="253" column="30" selection-start-line="253" selection-start-column="30" selection-end-line="253" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -166,6 +164,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/js/constants.js" />
+        <option value="$PROJECT_DIR$/js/notifications.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
@@ -477,10 +476,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2703" max-vertical-offset="4029">
           <caret line="159" column="53" selection-start-line="159" selection-start-column="53" selection-end-line="159" selection-end-column="53" />
-          <folding>
-            <marker date="1421233688000" expanded="true" signature="140:813" placeholder="{...}" />
-            <marker date="1421233688000" expanded="true" signature="519:816" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -570,10 +566,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2703" max-vertical-offset="4029">
           <caret line="159" column="53" selection-start-line="159" selection-start-column="53" selection-end-line="159" selection-end-column="53" />
-          <folding>
-            <marker date="1421233688000" expanded="true" signature="140:813" placeholder="{...}" />
-            <marker date="1421233688000" expanded="true" signature="519:816" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -617,10 +610,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="3555">
           <caret line="159" column="53" selection-start-line="159" selection-start-column="53" selection-end-line="159" selection-end-column="53" />
-          <folding>
-            <marker date="1421233688000" expanded="true" signature="140:813" placeholder="{...}" />
-            <marker date="1421233688000" expanded="true" signature="519:816" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -867,17 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/notifications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="4005">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <marker date="1421233688000" expanded="true" signature="140:813" placeholder="{...}" />
-            <marker date="1421233688000" expanded="true" signature="519:816" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="618" max-vertical-offset="1785">
@@ -952,10 +931,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/notifications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3000" max-vertical-offset="4005">
+          <caret line="253" column="30" selection-start-line="253" selection-start-column="30" selection-end-line="253" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34526855" vertical-offset="22110" max-vertical-offset="28620">
-          <caret line="1492" column="44" selection-start-line="1492" selection-start-column="44" selection-end-line="1492" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.9040921" vertical-offset="29008" max-vertical-offset="29805">
+          <caret line="1981" column="1" selection-start-line="1981" selection-start-column="1" selection-end-line="1981" selection-end-column="1" />
           <folding />
         </state>
       </provider>
