@@ -351,13 +351,14 @@ loadSessions = function(selectedCalendar) {
         loadIntoTemplateSingle('#guest_list', {}, 'no_guests', getLabels());
     }
 
-    currentDate = moment().add(0, 'days').format("YYYY-M-D");
+    //currentDate = moment().add(0, 'days').format("YYYY-M-D");
 
     try { navigator.splashscreen.hide(); } catch(error){}
 };
 
 
 var selectedSession;
+var selectedItem;
 filterSessionDay = function(index, element) {
 
     modal.show();
@@ -365,7 +366,7 @@ filterSessionDay = function(index, element) {
     $('.session_day').removeClass('selected');
     $('#carouselSession > ons-carousel-item:nth-child(' + (parseInt(index) + 1) + ') .session_day').addClass('selected');
 
-    var selectedItem = lists.calendar[index];
+    selectedItem = lists.calendar[index];
 
     $('div.page__content.ons-page-inner').scrollTop(0);
 
@@ -981,7 +982,8 @@ module.controller('GuestListFormController', function($scope) {
                     localStorage.setItem("user", JSON.stringify(userData));
                 }
 
-                storeSessionReservation($scope.userData.persons);
+
+                storeSessionReservation($scope.userData.persons, selectedItem.date);
 
                 $('.reservation_complete').show();
                 $('.reservation_inprogress').hide();
@@ -1025,16 +1027,26 @@ module.controller('GuestListFormController', function($scope) {
 
 
 
-var storeSessionReservation = function(nro) {
+var storeSessionReservation = function(nro, date) {
 
     console.log('saving');
 
     if(!offline_data.user_sessions) {
+
         offline_data.user_sessions = [];
+
+    } else {
+
+        for(var i in offline_data.user_sessions) {
+            if(offline_data.user_sessions[i].date === date) {
+
+                offline_data.user_sessions[i].persons = nro;
+                return;
+            }
+        }
     }
 
     var session = currentSession;
-    var date = moment().format("YYYY-M-D");
 
     var obj = {
         id: session.id,
