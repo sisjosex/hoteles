@@ -47,3 +47,5 @@ try {
 }
 
 var fileSystem;
+
+var isonline = false;

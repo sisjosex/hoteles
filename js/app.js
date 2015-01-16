@@ -212,7 +212,7 @@ function loadApplicationParams() {
     }, {});
 }
 
-function loadOfflineData() {
+function loadOfflineData(callback) {
 
     getJsonPBackground(api_url + 'getOffline/', function(data){
 
@@ -222,10 +222,18 @@ function loadOfflineData() {
 
             localStorage.setItem("offline_data", JSON.stringify(offline_data));
 
-            storeImages(offline_data);
+            callback ? callback() : '';
+
+            //storeImages(offline_data);
+
+            isonline = true;
         }
 
     }, function(){
+
+        isonline = false;
+
+        callback ? callback() : '';
 
     }, { user_id: userData.id });
 }
@@ -267,7 +275,72 @@ function createUserAndRegisterNotifications() {
 }
 
 
+filterSessions = function(selectedCalendar) {
 
+    moment.locale('en');
+
+    var sessions_array = [];
+    var currentDate = moment().add(0, 'days');
+    var calendarDate = moment(selectedCalendar.date);
+
+
+    if(offline_data && offline_data.sessions) {
+
+        for(var i in offline_data.sessions) {
+
+            var session = offline_data.sessions[i];
+
+            if(session.type == 'fijo') {
+
+                if(session.days.search(calendarDate.format('dddd')) !== -1) {
+
+                    console.log(session.days + ' ' + calendarDate.format('dddd'));
+
+                    sessions_array.push(session);
+                }
+
+            } else if (session.type == 'programado') {
+
+                if(calendarDate.format('D') === session.day
+                    && calendarDate.format('M') === session.month
+                    && calendarDate.format('YYYY') === session.year ) {
+
+                    sessions_array.push(session);
+                }
+            }
+        }
+    }
+
+    if(sessions_array.length > 0) {
+        return sessions_array;
+    }
+
+    return false;
+};
+
+
+loadSessions = function(selectedCalendar) {
+
+    var sessions = filterSessions(selectedCalendar);
+
+    if(sessions) {
+
+        lists.session = sessions;
+
+        renderSessions();
+
+    } else {
+
+        loadIntoTemplateSingle('#guest_list', {}, 'no_guests', getLabels());
+    }
+
+    currentDate = moment().add(0, 'days').format("YYYY-M-D");
+
+    try { navigator.splashscreen.hide(); } catch(error){}
+};
+
+
+var selectedSession;
 filterSessionDay = function(index, element) {
 
     $('.session_day').removeClass('selected');
@@ -278,40 +351,17 @@ filterSessionDay = function(index, element) {
     $('div.page__content.ons-page-inner').scrollTop(0);
 
     selectedItem.selected = 'selected';
-    selectedDate = selectedItem.date;
 
     loadIntoTemplateSingle('#guest_list', {}, 'no_guests', getLabels());
 
-    getJsonP(api_url + 'getSessions/', function (data) {
+    if(!offline_data) {
 
-        try { navigator.splashscreen.hide(); } catch(error){}
+        loadOfflineData( function(){ loadSessions(selectedItem); } );
 
-        if (data.status === 'fail') {
+    } else {
 
-            if(offline_data !== undefined) {
-
-                if(offline_data.sessions) {
-
-                    lists.session = data.list;
-
-                    renderSessions();
-                }
-            }
-
-        } else {
-
-            lists.session = data.list;
-
-            renderSessions();
-        }
-
-        currentDate = moment().add(0, 'days').format("YYYY-M-D");
-
-    }, function () {
-        try { navigator.splashscreen.hide(); } catch(error){}
-    }, {
-        date: selectedItem.date
-    });
+        loadSessions(selectedItem);
+    }
 };
 
 function renderSessions() {
@@ -326,7 +376,7 @@ function renderSessions() {
 
     try { navigator.splashscreen.hide(); } catch(error){}
 
-    loadOfflineData();
+    //loadOfflineData();
 }
 
 showClubInfo = function(index) {
@@ -529,7 +579,10 @@ module.controller('LanguageController', function($scope) {
 
         if(applicationLanguage !== '' && (applicationLanguage === 'es' || applicationLanguage === 'en')) {
 
-            splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
+            loadOfflineData(function(){
+
+                splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
+            });
 
         } else {
 
@@ -963,46 +1016,61 @@ module.controller('ClubsController', function($scope) {
 
         fixGuestListItem(height);
 
-        setTimeout(function(){
-            loadIntoTemplateSingle('#club_list', {}, 'no_club', getLabels());
-        }, 1);
 
 
-        getJsonP(api_url + 'getClubs/', function(data){
+        //setTimeout(function(){
+            //loadIntoTemplateSingle('#club_list', {}, 'no_club', getLabels());
+        //}, 0);
 
-            lists.club = data.list;
+        $scope.render = function() {
 
-            if(data.status === 'fail') {
+            if(lists.club) {
+
+                loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
+
+                ons.compile($('#club_list')[0]);
+
+                initScroll('club_scroll');
 
             } else {
 
-                scopeClubsController.render();
+                loadIntoTemplateSingle('#club_list', {}, 'no_club', getLabels());
             }
 
+            redirectToSection(scopeClubsController, 'club');
+        };
 
-            loadOfflineData();
+        $scope.$on("$destroy",function( event ) {
 
-        }, function(){
+            if(current_page === 'clubs.html') {
 
-            if(offline_data !== undefined) {
+                scopeClubsController.init(false);
+
+            } else {
+
+
+            }
+
+        });
+
+        $scope.init = function() {
+
+            if(offline_data === undefined) {
+                loadOfflineData(function(){
+
+                    lists.club = offline_data.clubs;
+
+                    scopeClubsController.render();
+                });
+            } else {
 
                 lists.club = offline_data.clubs;
 
                 scopeClubsController.render();
             }
-
-        }, {});
-
-        $scope.render = function() {
-
-            loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
-
-            ons.compile($('#club_list')[0]);
-
-            initScroll('club_scroll');
-
-            redirectToSection(scopeClubsController, 'club');
         };
+
+
 
         $scope.labels = getLabels();
 
@@ -1011,6 +1079,8 @@ module.controller('ClubsController', function($scope) {
             splash.pushPage('club_info.html', {index:index});
         };
 
+
+        $scope.init();
     });
 });
 
@@ -1072,44 +1142,29 @@ module.controller('LifeController', function($scope) {
 
         fixGuestListItem(height);
 
-        setTimeout(function(){
-            loadIntoTemplateSingle('#life_list', {}, 'no_life', getLabels());
-        }, 1);
-
-
-        getJsonP(api_url + 'getLifes/', function(data){
-
-            lists.life = data.list;
-
-            if(data.status === 'fail') {
-
-            } else {
-
-                scopeLifeController.render();
-            }
-
-            loadOfflineData();
-
-        }, function(){
-
-            if(offline_data !== undefined) {
-
-                lists.life = offline_data.life;
-
-                scopeLifeController.render();
-            }
-
-        }, {});
+        //setTimeout(function(){
+            //loadIntoTemplateSingle('#life_list', {}, 'no_life', getLabels());
+        //}, 1);
 
         $scope.render = function() {
 
-            loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
+            if(lists.life) {
 
-            ons.compile($('#life_list')[0]);
+                loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
 
-            initScroll('life_scroll');
+                ons.compile($('#life_list')[0]);
+
+                initScroll('life_scroll');
+
+
+
+            } else {
+
+                loadIntoTemplateSingle('#life_list', {}, 'no_life', getLabels());
+            }
 
             redirectToSection(scopeLifeController, 'life');
+
         };
 
         $scope.labels = getLabels();
@@ -1123,6 +1178,36 @@ module.controller('LifeController', function($scope) {
 
             splash.pushPage('life_info.html', {index:index});
         };
+
+        $scope.$on("$destroy",function( event ) {
+
+            if(current_page === 'life.html') {
+
+                scopeLifeController.init(false);
+
+            } else {
+
+
+            }
+        });
+
+        $scope.init = function() {
+            if(offline_data === undefined) {
+                loadOfflineData(function(){
+
+                    llists.life = offline_data.life;
+
+                    scopeLifeController.render();
+                });
+            } else {
+
+                lists.life = offline_data.life;
+
+                scopeLifeController.render();
+            }
+        }
+
+        $scope.init();
 
     });
 });
@@ -1197,42 +1282,26 @@ module.controller('PromosController', function($scope) {
 
         fixGuestListItem(height);
 
-        setTimeout(function(){
-            loadIntoTemplateSingle('#promo_list', {}, 'no_promo', getLabels());
-        }, 1);
+        //setTimeout(function(){
+            //loadIntoTemplateSingle('#promo_list', {}, 'no_promo', getLabels());
+        //}, 1);
 
-
-        getJsonP(api_url + 'getPromos/', function(data){
-
-            lists.promo = data.list;
-
-            if(data.status === 'fail') {
-
-            } else {
-
-                scopePromosController.render();
-            }
-
-            loadOfflineData();
-
-        }, function(){
-
-            if(offline_data !== undefined) {
-
-                lists.promo = offline_data.promos;
-
-                scopePromosController.render();
-            }
-
-        }, {});
 
         $scope.render = function() {
 
-            loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
+            if(lists.promo) {
 
-            ons.compile($('#promo_list')[0]);
+                loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
 
-            initScroll('promo_scroll');
+                ons.compile($('#promo_list')[0]);
+
+                initScroll('promo_scroll');
+
+
+            } else {
+
+                loadIntoTemplateSingle('#promo_list', {}, 'no_promo', getLabels());
+            }
 
             redirectToSection(scopePromosController, 'promo');
         };
@@ -1249,9 +1318,35 @@ module.controller('PromosController', function($scope) {
             splash.pushPage('promo_info.html', {index:index});
         };
 
-        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });*/
+        $scope.$on("$destroy",function( event ) {
+
+            if(current_page === 'promos.html') {
+
+                scopePromosController.init(false);
+
+            } else {
+
+
+            }
+        });
+
+        $scope.init = function() {
+            if(offline_data === undefined) {
+                loadOfflineData(function(){
+
+                    lists.promo = offline_data.promos;
+
+                    scopePromosController.render();
+                });
+            } else {
+
+                lists.promo = offline_data.promos;
+
+                scopePromosController.render();
+            }
+        };
+
+        $scope.init();
 
     });
 });
@@ -1314,63 +1409,40 @@ module.controller('ProfileController', function($scope) {
 
         fixGuestListItem(height);
 
-        setTimeout(function(){
-            loadIntoTemplateSingle('#profile_list', {}, 'no_profile', getLabels());
-        }, 1);
-
-        translateImages();
-
-        getJsonP(api_url + 'getUserSessions/', function(data){
-
-
-            lists.profile = data.list;
-
-            if(data.status === 'fail') {
-
-
-            } else {
-
-                scopeProfileController.render();
-            }
-
-            loadOfflineData();
-
-        }, function(){
-
-            if(offline_data !== undefined) {
-
-                lists.profile = data.list;
-
-                scopeProfileController.render();
-            }
-
-        }, {
-            user_id: (userData && userData.id) ? userData.id : ''
-        });
+        //setTimeout(function(){
+            //loadIntoTemplateSingle('#profile_list', {}, 'no_profile', getLabels());
+        //}, 1);
 
         $scope.render = function() {
 
-            for(var i in lists.profile) {
-                for(var j in lists.profile[i]) {
-                    if(j == 'date') {
-                        lists.profile[i][j] = moment(lists.profile[i][j], "YYYY-MM-DD").format("D MMMM dddd");
+            if(lists.profile) {
+
+                for (var i in lists.profile) {
+                    for (var j in lists.profile[i]) {
+                        if (j == 'date') {
+                            lists.profile[i][j] = moment(lists.profile[i][j], "YYYY-MM-DD").format("D MMMM dddd");
+                        }
                     }
                 }
+
+                loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
+
+                ons.compile($('#profile_list')[0]);
+
+                $('#profile_list .access_conditions .value').each(function () {
+                    if ($(this).html() === '') {
+                        $(this).parent().remove();
+                    }
+                });
+
+                ons.compile($('#profile_list')[0]);
+
+                initScroll('profile_scroll');
+
+            } else {
+
+                loadIntoTemplateSingle('#profile_list', {}, 'no_profile', getLabels());
             }
-
-            loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
-
-            ons.compile($('#profile_list')[0]);
-
-            $('#profile_list .access_conditions .value').each(function(){
-                if( $(this).html() === '') {
-                    $(this).parent().remove();
-                }
-            });
-
-            ons.compile($('#profile_list')[0]);
-
-            initScroll('profile_scroll');
         };
 
         $scope.labels = getLabels();
@@ -1388,9 +1460,38 @@ module.controller('ProfileController', function($scope) {
             }, {user_id: (userData && userData.id) ? userData.id : '', users_session_id: user_session.users_session_id});
         };
 
-        /*$('div.page__content.ons-page-inner').scroll(function(evt1,evt2){
-            $('.guesto-list-verlay.overlay').css('opacity', 1);
-        });*/
+        $scope.$on("$destroy",function( event ) {
+
+            if(current_page === 'profile.html') {
+
+                scopeProfileController.init(false);
+
+            } else {
+
+
+            }
+        });
+
+        $scope.init = function() {
+
+            translateImages();
+
+            if(offline_data === undefined) {
+                loadOfflineData(function(){
+
+                    lists.profile = offline_data.user_sessions;
+
+                    scopeProfileController.render();
+                });
+            } else {
+
+                lists.profile = offline_data.user_sessions;
+
+                scopeProfileController.render();
+            }
+        }
+
+        $scope.init();
 
     });
 });
