@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b009447-3627-4ed9-ba59-25b69a784ca9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/onsen/js/onsenui.js" afterPath="$PROJECT_DIR$/lib/onsen/js/onsenui.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="1b009447-3627-4ed9-ba59-25b69a784ca9" name="Default" comment="" />
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -97,8 +92,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.30016053" vertical-offset="18632" max-vertical-offset="33830">
-              <caret line="1085" column="25" selection-start-line="1085" selection-start-column="25" selection-end-line="1085" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.62760836" vertical-offset="18734" max-vertical-offset="33830">
+              <caret line="1125" column="49" selection-start-line="1125" selection-start-column="49" selection-end-line="1125" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -117,15 +112,20 @@
       <file leaf-file-name="onsenui.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/onsen/js/onsenui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.689655" vertical-offset="73276" max-vertical-offset="284223">
-              <caret line="4332" column="23" selection-start-line="4332" selection-start-column="23" selection-end-line="4332" selection-end-column="23" />
+            <state vertical-scroll-proportion="-12.689655" vertical-offset="73259" max-vertical-offset="284223">
+              <caret line="4331" column="23" selection-start-line="4331" selection-start-column="23" selection-end-line="4331" selection-end-column="23" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1421421313248" expanded="true" signature="118474:118544" placeholder="..." />
-                <marker date="1421421313248" expanded="true" signature="118619:118811" placeholder="..." />
-                <marker date="1421421313248" expanded="true" signature="118830:118906" placeholder="..." />
-                <marker date="1421421313248" expanded="true" signature="122852:122865" placeholder="..." />
-                <marker date="1421421313248" expanded="true" signature="426879:426935" placeholder="..." />
+                <marker date="1421425401356" expanded="true" signature="118474:118544" placeholder="..." />
+                <marker date="1421425401356" expanded="true" signature="118619:118811" placeholder="..." />
+                <marker date="1421425401356" expanded="true" signature="118830:118906" placeholder="..." />
+                <marker date="1421425401356" expanded="true" signature="122852:122865" placeholder="..." />
+                <marker date="1421425401356" expanded="true" signature="126968:142803" placeholder="{...}" />
+                <marker date="1421425401356" expanded="true" signature="130516:142785" placeholder="{...}" />
+                <marker date="1421425401356" expanded="true" signature="130500:142772" placeholder="{&quot;_onsenService&quot;: null...}" />
+                <marker date="1421425401356" expanded="true" signature="130908:131639" placeholder="{...}" />
+                <marker date="1421425401356" expanded="true" signature="131479:131511" placeholder="{...}" />
+                <marker date="1421425401356" expanded="true" signature="426878:426934" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1064,23 +1064,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/onsen/js/onsenui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.689655" vertical-offset="73276" max-vertical-offset="284223">
-          <caret line="4332" column="23" selection-start-line="4332" selection-start-column="23" selection-end-line="4332" selection-end-column="23" />
+        <state vertical-scroll-proportion="-12.689655" vertical-offset="73259" max-vertical-offset="284223">
+          <caret line="4331" column="23" selection-start-line="4331" selection-start-column="23" selection-end-line="4331" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1421421313248" expanded="true" signature="118474:118544" placeholder="..." />
-            <marker date="1421421313248" expanded="true" signature="118619:118811" placeholder="..." />
-            <marker date="1421421313248" expanded="true" signature="118830:118906" placeholder="..." />
-            <marker date="1421421313248" expanded="true" signature="122852:122865" placeholder="..." />
-            <marker date="1421421313248" expanded="true" signature="426879:426935" placeholder="..." />
+            <marker date="1421425401356" expanded="true" signature="118474:118544" placeholder="..." />
+            <marker date="1421425401356" expanded="true" signature="118619:118811" placeholder="..." />
+            <marker date="1421425401356" expanded="true" signature="118830:118906" placeholder="..." />
+            <marker date="1421425401356" expanded="true" signature="122852:122865" placeholder="..." />
+            <marker date="1421425401356" expanded="true" signature="126968:142803" placeholder="{...}" />
+            <marker date="1421425401356" expanded="true" signature="130516:142785" placeholder="{...}" />
+            <marker date="1421425401356" expanded="true" signature="130500:142772" placeholder="{&quot;_onsenService&quot;: null...}" />
+            <marker date="1421425401356" expanded="true" signature="130908:131639" placeholder="{...}" />
+            <marker date="1421425401356" expanded="true" signature="131479:131511" placeholder="{...}" />
+            <marker date="1421425401356" expanded="true" signature="426878:426934" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.30016053" vertical-offset="18632" max-vertical-offset="33830">
-          <caret line="1085" column="25" selection-start-line="1085" selection-start-column="25" selection-end-line="1085" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.62760836" vertical-offset="18734" max-vertical-offset="33830">
+          <caret line="1125" column="49" selection-start-line="1125" selection-start-column="49" selection-end-line="1125" selection-end-column="49" />
           <folding />
         </state>
       </provider>
