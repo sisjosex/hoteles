@@ -169,12 +169,13 @@ window.fadeIn = function(obj) {
     var finalImage = $('<div class="item-bg-final"></div>');
 
     finalImage.css('background-image', "url('" + $(obj).attr('src') + "')");
+    finalImage.addClass('fadein');
 
     $(obj).parent().html(finalImage);
 
-    setTimeout(function(){
+    /*setTimeout(function(){
         finalImage.addClass('fadein');
-    }, 10);
+    }, 10);*/
 };
 
 window.onresize = function(){
