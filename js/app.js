@@ -50,7 +50,7 @@ function storeImages(data) {
 
                                 var filename = url2.split("/")[url2.split("/").length-1];
 
-                                console.log(filename);
+                                //console.log(filename);
 
                                 write(filename, content);
 
@@ -94,7 +94,7 @@ function write(path, content){
     fileSystem.root.getFile(path, {create: true, exclusive: false}, function(entry){var file = {entry: entry};
         file.entry.createWriter(function(writer){
             writer.onwrite = function (evt) {
-                console.log('writed');
+                //console.log('writed');
             };
 
             writer.write(content);
@@ -274,14 +274,14 @@ function createUserAndRegisterNotifications() {
     }
 }
 
-
+//filterSessions(lists.calendar[1])
 filterSessions = function(selectedCalendar) {
 
     moment.locale('en');
 
     var sessions_array = [];
     var currentDate = moment().add(0, 'days');
-    var calendarDate = moment(selectedCalendar.date);
+    var calendarDate = moment(selectedCalendar.date, "YYYY-MM-DD");
 
 
     if(offline_data && offline_data.sessions) {
@@ -293,8 +293,6 @@ filterSessions = function(selectedCalendar) {
             if(session.type == 'fijo') {
 
                 if(session.days.search(calendarDate.format('dddd')) !== -1) {
-
-                    console.log(session.days + ' ' + calendarDate.format('dddd'));
 
                     sessions_array.push(session);
                 }
@@ -343,6 +341,8 @@ loadSessions = function(selectedCalendar) {
 var selectedSession;
 filterSessionDay = function(index, element) {
 
+    modal.show();
+
     $('.session_day').removeClass('selected');
     $('#carouselSession > ons-carousel-item:nth-child(' + (parseInt(index) + 1) + ') .session_day').addClass('selected');
 
@@ -356,11 +356,12 @@ filterSessionDay = function(index, element) {
 
     if(!offline_data) {
 
-        loadOfflineData( function(){ loadSessions(selectedItem); } );
+        loadOfflineData( function(){ loadSessions(selectedItem); modal.hide(); } );
 
     } else {
 
         loadSessions(selectedItem);
+        modal.hide();
     }
 };
 
@@ -1056,11 +1057,14 @@ module.controller('ClubsController', function($scope) {
         $scope.init = function() {
 
             if(offline_data === undefined) {
+                modal.show();
                 loadOfflineData(function(){
 
                     lists.club = offline_data.clubs;
 
                     scopeClubsController.render();
+
+                    modal.hide();
                 });
             } else {
 
@@ -1193,11 +1197,16 @@ module.controller('LifeController', function($scope) {
 
         $scope.init = function() {
             if(offline_data === undefined) {
+
+                modal.show();
+
                 loadOfflineData(function(){
 
                     llists.life = offline_data.life;
 
                     scopeLifeController.render();
+
+                    modal.hide();
                 });
             } else {
 
@@ -1332,11 +1341,16 @@ module.controller('PromosController', function($scope) {
 
         $scope.init = function() {
             if(offline_data === undefined) {
+
+                modal.show();
+
                 loadOfflineData(function(){
 
                     lists.promo = offline_data.promos;
 
                     scopePromosController.render();
+
+                    modal.hide();
                 });
             } else {
 
@@ -1477,11 +1491,16 @@ module.controller('ProfileController', function($scope) {
             translateImages();
 
             if(offline_data === undefined) {
+
+                modal.show();
+
                 loadOfflineData(function(){
 
                     lists.profile = offline_data.user_sessions;
 
                     scopeProfileController.render();
+
+                    modal.hide();
                 });
             } else {
 
