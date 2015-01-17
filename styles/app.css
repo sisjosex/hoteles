@@ -167,10 +167,10 @@ input[type=checkbox] {
     left: 0;
     bottom: 0;
     right: 0;
-    background-size: 4em auto;
-    background-image: url('../img/loading.png');
+    background-size: 100% auto;
+    background-image: url('../img/offline.jpg');
     background-color: #fff;
-    background-position: center 5%;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -201,7 +201,7 @@ input[type=checkbox] {
     background-color: #fff;
     background-position: center 5%;
     background-repeat: no-repeat;
-    -webkit-transition-property: all;
+    /*-webkit-transition-property: all;
     -moz-transition-property: all;
     -o-transition-property: all;
     transition-property: all;
@@ -213,7 +213,7 @@ input[type=checkbox] {
     -moz-transition-timing-function: ease-out;
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
-    opacity: 0;
+    opacity: 0;*/
 }
 
 .item-bg.list .item-bg-final {

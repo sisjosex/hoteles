@@ -154,13 +154,15 @@ window.fadeIn = function(obj) {
 
     var finalImage = $('<div class="item-bg-final"></div>');
 
-    finalImage.css('background-image', "url('" + $(obj).attr('src') + "')");
+    $(obj).parent().css('background-image', 'none');
 
     $(obj).parent().html(finalImage);
 
-    setTimeout(function(){
-        finalImage.addClass('fadein');
-    }, 10);
+    finalImage.css('background-image', "url('" + $(obj).attr('src') + "')");
+
+    //setTimeout(function(){
+        //finalImage.addClass('fadein');
+    //}, 10);
 };
 
 window.onresize = function(){
@@ -1967,19 +1969,14 @@ function initScroll(div) {
 
     if(!scrolls[div]) {
 
-        /*containerElement = document.getElementById(div);
-
-        scrolls[div] = new FTScroller(containerElement, {
-            scrollbars: false,
-            scrollingX: false,
-            bouncing: true
-        });*/
-
         scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
 
     } else {
 
-        scrolls[div].destroy();
-        scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+        scrolls[div].destroy();scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
     }
+}
+
+function updateContent (el, data) {
+    el.innerHTML = data;
 }
