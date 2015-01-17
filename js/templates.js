@@ -165,7 +165,7 @@ var templates = {
 
 
 
-function loadIntoTemplate(div, data, template, labels) {
+function loadIntoTemplate(div, data, template, labels, height) {
 
     var container = $(div);
     var content = '', cal = '', str = '';
@@ -189,7 +189,15 @@ function loadIntoTemplate(div, data, template, labels) {
         }
 
         if(data[i].images && data[i].images.length > 0) {
-            str = str.replaceAll('%first_image%', data[i].images[0]);
+
+            if(height !== undefined) {
+
+                str = str.replaceAll('%first_image%', thumb_url.replaceAll('%width%', $(window).width()).replaceAll('%height%', height) + data[i].images[0]);
+
+            } else {
+
+                str = str.replaceAll('%first_image%', data[i].images[0]);
+            }
         }
 
         content = content + " " + str;

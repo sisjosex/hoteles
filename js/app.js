@@ -152,13 +152,18 @@ function readText() {
 
 window.fadeIn = function(obj) {
 
-    var finalImage = $('<div class="item-bg-final"></div>');
+    //$(obj).find('*').remove();
 
-    $(obj).parent().css('background-image', 'none');
+    //var finalImage = $('<div class="item-bg-final"></div>');
 
-    $(obj).parent().html(finalImage);
+    $(obj).parent().css('background-image', "url('" + $(obj).attr('src') + "')");
+    $(obj).parent().css('background-size', "auto 100%");
 
-    finalImage.css('background-image', "url('" + $(obj).attr('src') + "')");
+    $(obj).parent().find('*').remove();
+
+    //$(obj).parent().html(finalImage);
+
+    //finalImage.css('background-image', "url('" + $(obj).attr('src') + "')");
 
     //setTimeout(function(){
         //finalImage.addClass('fadein');
@@ -374,7 +379,15 @@ filterSessionDay = function(index, element) {
 
 function renderSessions() {
 
-    loadIntoTemplate('#guest_list', lists.session, 'session_list', getLabels());
+    var height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
+
+    height = parseInt(height/2);
+
+    if(height < 150) {
+        height = 150;
+    }
+
+    loadIntoTemplate('#guest_list', lists.session, 'session_list', getLabels(), height);
 
     ons.compile($('#guest_list')[0]);
 
@@ -665,7 +678,7 @@ module.controller('GuestController', function($scope) {
                 lists.calendar = generateCalendar(selectedDate);
             }
 
-            loadIntoTemplate('#carouselSession', lists.calendar, 'calendar');
+            loadIntoTemplate('#carouselSession', lists.calendar, 'calendar', {}, height);
 
             var selectedIndex = -1;
 
@@ -1111,7 +1124,7 @@ module.controller('ClubsController', function($scope) {
 
             if(lists.club) {
 
-                loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels());
+                loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels(), height);
 
                 ons.compile($('#club_list')[0]);
 
@@ -1238,7 +1251,7 @@ module.controller('LifeController', function($scope) {
 
             if(lists.life) {
 
-                loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels());
+                loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels(), height);
 
                 ons.compile($('#life_list')[0]);
 
@@ -1384,7 +1397,7 @@ module.controller('PromosController', function($scope) {
 
             if(lists.promo) {
 
-                loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels());
+                loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels(), height);
 
                 ons.compile($('#promo_list')[0]);
 
@@ -1523,7 +1536,7 @@ module.controller('ProfileController', function($scope) {
                     }
                 }
 
-                loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels());
+                loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels(), height);
 
                 ons.compile($('#profile_list')[0]);
 
