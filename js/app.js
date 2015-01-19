@@ -1035,7 +1035,7 @@ module.controller('GuestListFormController', function($scope) {
 
 var storeSessionReservation = function(nro, date) {
 
-    console.log('saving');
+    //console.log('saving' + date);
 
     if(!offline_data.user_sessions) {
 
@@ -1045,7 +1045,7 @@ var storeSessionReservation = function(nro, date) {
 
         for(var i in offline_data.user_sessions) {
             if(offline_data.user_sessions[i].date === date) {
-
+                //console.log()
                 offline_data.user_sessions[i].persons = nro;
                 return;
             }
@@ -1071,6 +1071,7 @@ var storeSessionReservation = function(nro, date) {
         access_conditions: session.access_conditions,
         content: session.content,
         date: date,
+        session_date: date,
         images: session.images
     };
 
@@ -1530,8 +1531,12 @@ module.controller('ProfileController', function($scope) {
 
                 for (var i in lists.profile) {
                     for (var j in lists.profile[i]) {
-                        if (j == 'date') {
+                        //console.log(lists.profile[i]['parsed']);
+                        if (j == 'session_date' && lists.profile[i]['parsed'] == undefined) {
                             lists.profile[i][j] = moment(lists.profile[i][j], "YYYY-MM-DD").format("D MMMM dddd");
+                            lists.profile[i]['parsed'] = true;
+
+                            offline_data.user_sessions[i]['parsed'] = true;
                         }
                     }
                 }
