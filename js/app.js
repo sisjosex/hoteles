@@ -1987,14 +1987,14 @@ function initScroll(div) {
 
     //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
 
-    /*if(!scrolls[div]) {
+    if(!scrolls[div]) {
 
         scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
 
     } else {
 
         scrolls[div].destroy();scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
-    }*/
+    }
 }
 
 function updateContent (el, data) {
