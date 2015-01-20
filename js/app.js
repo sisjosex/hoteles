@@ -535,34 +535,39 @@ goToProfile = function() {
 
     closeForm();
 
-    if(current_page === 'guest_list.html') {
+    setTimeout(function(){
 
-        splash.popPage(current_page);
+        if(currentSessionFromNotification != null) {
+            console.log('hide detail');
+            closeDetailSession();
+            //splash.popPage('guest_detail.html');
+        }
 
-    } else if(current_page === 'club_info.html') {
+        if(current_page === 'guest_list.html') {
 
-        splash.popPage(current_page);
+            splash.popPage(current_page);
 
-    } else if(current_page === 'life_info.html') {
+        } else if(current_page === 'club_info.html') {
 
-        splash.popPage(current_page);
+            splash.popPage(current_page);
 
-    } else if(current_page === 'promo_info.html') {
+        } else if(current_page === 'life_info.html') {
 
-        splash.popPage(current_page);
+            splash.popPage(current_page);
 
-    } else if(current_page === 'profile_detail.html') {
+        } else if(current_page === 'promo_info.html') {
 
-        profileNavigator.popPage(current_page);
+            splash.popPage(current_page);
 
-    }
+        } else if(current_page === 'profile_detail.html') {
 
-    if(currentSessionFromNotification != null) {
-        closeDetailSession();
-        //splash.popPage('guest_detail.html');
-    }
+            profileNavigator.popPage(current_page);
 
-    mainTabBar.setActiveTab(4);
+        }
+
+        mainTabBar.setActiveTab(4);
+
+    }, 500);
 };
 
 function translateImages() {
@@ -970,14 +975,17 @@ module.controller('GuestListFormController', function($scope) {
 
                 } else {
 
-                    userData = {
-                        first_name: $scope.userData.first_name,
-                        last_name: $scope.userData.last_name,
-                        email: $scope.userData.email,
-                        phone: $scope.userData.phone
-                    };
+                    if( (userData === undefined || userData === null) || (userData !== null && (userData.email === '' || userData.email === undefined)) ) {
 
-                    localStorage.setItem("user", JSON.stringify(userData));
+                        userData = {
+                            first_name: $scope.userData.first_name,
+                            last_name: $scope.userData.last_name,
+                            email: $scope.userData.email,
+                            phone: $scope.userData.phone
+                        };
+
+                        localStorage.setItem("user", JSON.stringify(userData));
+                    }
                 }
 
 
@@ -986,7 +994,7 @@ module.controller('GuestListFormController', function($scope) {
                 $('.reservation_complete').show();
                 $('.reservation_inprogress').hide();
 
-                fixModalBottomHeight('13.2em');
+                //fixModalBottomHeight('13.2em');
 
                 /*if(userData && userData.id !== undefined && userData.id !== '') {
                     $scope.userData.id = userData.id;
@@ -1761,19 +1769,39 @@ function getLabel(key) {
 }
 
 function generateCalendar() {
-    calendar = [];
 
-    var currentDay = parseInt( moment().format("D") );
+    if(calendar === undefined) {
 
-    calendar.push({day: moment().subtract(2, 'days').format("D"), month: moment().subtract(2, 'days').format("MMM"), selected: '', date: moment().subtract(2, 'days').format("YYYY-M-D") });
-    calendar.push({day: moment().subtract(1, 'days').format("D"), month: moment().subtract(1, 'days').format("MMM"), selected: '', date: moment().subtract(1, 'days').format("YYYY-M-D") });
+        calendar = [];
+
+        var currentDay = parseInt(moment().format("D"));
+
+        calendar.push({
+            day: moment().subtract(2, 'days').format("D"),
+            month: moment().subtract(2, 'days').format("MMM"),
+            selected: '',
+            date: moment().subtract(2, 'days').format("YYYY-M-D")
+        });
+        calendar.push({
+            day: moment().subtract(1, 'days').format("D"),
+            month: moment().subtract(1, 'days').format("MMM"),
+            selected: '',
+            date: moment().subtract(1, 'days').format("YYYY-M-D")
+        });
 
 
-    for (i = 0; i <= 30; i ++) {
-        /*if(i === 0) {
-         calendar.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("YYYY-M-D") });
-        } else */{
-            calendar.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: '', date: moment().add(i, 'days').format("YYYY-M-D") });
+        for (i = 0; i <= 30; i++) {
+            /*if(i === 0) {
+             calendar.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("YYYY-M-D") });
+             } else */
+            {
+                calendar.push({
+                    day: moment().add(i, 'days').format("D"),
+                    month: moment().add(i, 'days').format("MMM"),
+                    selected: '',
+                    date: moment().add(i, 'days').format("YYYY-M-D")
+                });
+            }
         }
     }
 
@@ -1959,14 +1987,14 @@ function initScroll(div) {
 
     //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
 
-    if(!scrolls[div]) {
+    /*if(!scrolls[div]) {
 
         scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
 
     } else {
 
         scrolls[div].destroy();scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
-    }
+    }*/
 }
 
 function updateContent (el, data) {

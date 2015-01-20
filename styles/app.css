@@ -896,10 +896,10 @@ label.checkbox {
     padding-left:0;
 }
 
-.page__content.ons-page-inner {
-    /*overflow: auto;
-    -webkit-overflow-scrolling: none;*/
-}
+/*.page__content.ons-page-inner {
+    overflow: auto;
+    -webkit-overflow-scrolling: none;
+}*/
 
 .scrollable {
     position: absolute;
