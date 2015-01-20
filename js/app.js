@@ -3,15 +3,6 @@ var module = ons.bootstrap();
 
 angular.module('MyApp', ['QuickList']);
 
-var lists = {
-    session: [],
-    club: [],
-    life: [],
-    promo: [],
-    profile: [],
-    calendar: []
-};
-
 var calendar;
 
 var currentDate = '';
@@ -205,9 +196,10 @@ function loadApplicationParams() {
     }, {});
 }
 
+var reservations;
 function loadOfflineData(callback) {
 
-    var reservations = [];
+    reservations = [];
 
     if(offline_data != undefined && userData != undefined && userData != null) {
 
@@ -290,7 +282,7 @@ filterSessions = function(selectedCalendar) {
 
     moment.locale('en');
 
-    var sessions_array = [];
+    currentSessions = [];
     var currentDate = moment().add(0, 'days');
     var calendarDate = moment(selectedCalendar.date, "YYYY-MM-DD");
 
@@ -299,42 +291,40 @@ filterSessions = function(selectedCalendar) {
 
         for(var i in offline_data.sessions) {
 
-            var session = offline_data.sessions[i];
+            if(offline_data.sessions[i].type == 'fijo') {
 
-            if(session.type == 'fijo') {
+                if(offline_data.sessions[i].days.search(calendarDate.format('dddd')) !== -1) {
 
-                if(session.days.search(calendarDate.format('dddd')) !== -1) {
-
-                    sessions_array.push(session);
+                    currentSessions.push(offline_data.sessions[i]);
                 }
 
-            } else if (session.type == 'programado') {
+            } else if (offline_data.sessions[i].type == 'programado') {
 
-                if(calendarDate.format('D') === session.day
-                    && calendarDate.format('M') === session.month
-                    && calendarDate.format('YYYY') === session.year ) {
+                if(calendarDate.format('D') === offline_data.sessions[i].day
+                    && calendarDate.format('M') === offline_data.sessions[i].month
+                    && calendarDate.format('YYYY') === offline_data.sessions[i].year ) {
 
-                    sessions_array.push(session);
+                    currentSessions.push(offline_data.sessions[i]);
                 }
             }
         }
     }
 
-    if(sessions_array.length > 0) {
-        return sessions_array;
+    if(currentSessions.length > 0) {
+        return currentSessions;
+    } else {
+        currentSessions = false;
     }
 
     return false;
 };
 
-
+var currentSessions;
 loadSessions = function(selectedCalendar) {
 
-    var sessions = filterSessions(selectedCalendar);
+    currentSessions = filterSessions(selectedCalendar);
 
-    if(sessions) {
-
-        lists.session = sessions;
+    if(currentSessions) {
 
         renderSessions();
 
@@ -358,7 +348,7 @@ filterSessionDay = function(index, element) {
     $('.session_day').removeClass('selected');
     $('#carouselSession > ons-carousel-item:nth-child(' + (parseInt(index) + 1) + ') .session_day').addClass('selected');
 
-    selectedItem = lists.calendar[index];
+    selectedItem = calendar[index];
 
     $('div.page__content.ons-page-inner').scrollTop(0);
 
@@ -377,9 +367,10 @@ filterSessionDay = function(index, element) {
     }
 };
 
+var height;
 function renderSessions() {
 
-    var height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
+    height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
 
     height = parseInt(height/2);
 
@@ -387,7 +378,7 @@ function renderSessions() {
         height = 150;
     }
 
-    loadIntoTemplate('#guest_list', lists.session, 'session_list', getLabels(), height);
+    loadIntoTemplate('#guest_list', currentSessions, 'session_list', getLabels(), height);
 
     ons.compile($('#guest_list')[0]);
 
@@ -417,7 +408,7 @@ showPromoInfo = function(index) {
 
 showGuestList = function(index) {
 
-    currentSession = lists.session[index];
+    currentSession = currentSessions[index];
 
     if(!isShowingForm) {
         ons.createDialog('guest_list_form.html').then(function (dialog) {
@@ -436,7 +427,7 @@ showGuestInfo = function(index, event) {
 
         current_page = 'guest_list.html';
 
-        currentSession = lists.session[index];
+        currentSession = currentSessions[index];
 
         splash.pushPage('guest_list.html', {index:index});
     }
@@ -640,6 +631,7 @@ module.controller('MainMenuController', function($scope) {
 
 var scopeGuestcontroller;
 var scopeGuestcontrollerFirstTime = true;
+var calendar;
 module.controller('GuestController', function($scope) {
     ons.ready(function() {
 
@@ -653,7 +645,7 @@ module.controller('GuestController', function($scope) {
 
         scopeGuestcontroller = $scope;
 
-        var height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
+        height = window.innerHeight - (angular.element('.guestpage ons-toolbar').innerHeight()+angular.element('ons-tab').innerHeight());
 
         height = parseInt(height/2);
 
@@ -675,16 +667,16 @@ module.controller('GuestController', function($scope) {
 
             if (reset === undefined) {
 
-                lists.calendar = generateCalendar(selectedDate);
+                calendar = generateCalendar(selectedDate);
             }
 
-            loadIntoTemplate('#carouselSession', lists.calendar, 'calendar', {}, height);
+            loadIntoTemplate('#carouselSession', calendar, 'calendar', {}, height);
 
             var selectedIndex = -1;
 
-            for(var i in lists.calendar) {
+            for(var i in calendar) {
 
-                if(lists.calendar[i].date === selectedDate) {
+                if(calendar[i].date === selectedDate) {
 
                     selectedIndex = i;
                     break;
@@ -700,7 +692,7 @@ module.controller('GuestController', function($scope) {
 
         $scope.gotoDetailFromNotification = function(index) {
 
-            currentSession = lists.session[index];
+            currentSession = currentSessions[index];
 
             splash.pushPage('guest_list.html', {index:index});
         };
@@ -735,12 +727,12 @@ module.controller('GuestListCardController', function($scope) {
 
         resizeCardCarousel();
 
-        pictures = getArrayAsObjects(lists.session[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        pictures = getArrayAsObjects(currentSessions[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
         loadIntoTemplate('#guest_images', pictures, 'guest_images');
         loadIntoTemplate('#guest_paginator', pictures, 'guest_paginator');
 
-        $scope.detail = lists.session[splash.getCurrentPage().options.index];
+        $scope.detail = currentSessions[splash.getCurrentPage().options.index];
 
         if($scope.detail.dress_code === '' || $scope.detail.dress_code === undefined) {
 
@@ -1052,27 +1044,25 @@ var storeSessionReservation = function(nro, date) {
         }
     }
 
-    var session = currentSession;
-
     var obj = {
-        id: session.id,
+        id: currentSession.id,
         persons: nro,
         users_session_id: 0,
-        guest_list: session.guest_list,
-        club: session.club,
-        address: session.address,
-        hour: session.hour,
-        metro: session.metro,
-        ambient: session.ambient,
-        accept_card: session.accept_card,
-        age: session.age,
-        dress_code: session.dress_code,
-        music: session.music,
-        access_conditions: session.access_conditions,
-        content: session.content,
+        guest_list: currentSession.guest_list,
+        club: currentSession.club,
+        address: currentSession.address,
+        hour: currentSession.hour,
+        metro: currentSession.metro,
+        ambient: currentSession.ambient,
+        accept_card: currentSession.accept_card,
+        age: currentSession.age,
+        dress_code: currentSession.dress_code,
+        music: currentSession.music,
+        access_conditions: currentSession.access_conditions,
+        content: currentSession.content,
         date: date,
         session_date: date,
-        images: session.images
+        images: currentSession.images
     };
 
     offline_data.user_sessions.push(obj);
@@ -1105,7 +1095,7 @@ module.controller('ClubsController', function($scope) {
 
         scopeClubsController = $scope;
 
-        var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
+        height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
         height = parseInt(height/2);
 
@@ -1123,9 +1113,9 @@ module.controller('ClubsController', function($scope) {
 
         $scope.render = function() {
 
-            if(lists.club) {
+            if(offline_data && offline_data.clubs) {
 
-                loadIntoTemplate('#club_list', lists.club, 'club_list', getLabels(), height);
+                loadIntoTemplate('#club_list', offline_data.clubs, 'club_list', getLabels(), height);
 
                 ons.compile($('#club_list')[0]);
 
@@ -1158,15 +1148,11 @@ module.controller('ClubsController', function($scope) {
                 modal.show();
                 loadOfflineData(function(){
 
-                    lists.club = offline_data.clubs;
-
                     scopeClubsController.render();
 
                     modal.hide();
                 });
             } else {
-
-                lists.club = offline_data.clubs;
 
                 scopeClubsController.render();
             }
@@ -1196,9 +1182,9 @@ module.controller('ClubInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        pictures = getArrayAsObjects(lists.club[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        pictures = getArrayAsObjects(offline_data.clubs[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = lists.club[splash.getCurrentPage().options.index];
+        $scope.detail = offline_data.clubs[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
@@ -1234,7 +1220,7 @@ module.controller('LifeController', function($scope) {
 
         scopeLifeController = $scope;
 
-        var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
+        height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
         height = parseInt(height/2);
 
@@ -1250,9 +1236,9 @@ module.controller('LifeController', function($scope) {
 
         $scope.render = function() {
 
-            if(lists.life) {
+            if(offline_data && offline_data.life) {
 
-                loadIntoTemplate('#life_list', lists.life, 'life_list', getLabels(), height);
+                loadIntoTemplate('#life_list', offline_data.life, 'life_list', getLabels(), height);
 
                 ons.compile($('#life_list')[0]);
 
@@ -1300,15 +1286,11 @@ module.controller('LifeController', function($scope) {
 
                 loadOfflineData(function(){
 
-                    llists.life = offline_data.life;
-
                     scopeLifeController.render();
 
                     modal.hide();
                 });
             } else {
-
-                lists.life = offline_data.life;
 
                 scopeLifeController.render();
             }
@@ -1329,9 +1311,9 @@ module.controller('LifeInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        pictures = getArrayAsObjects(lists.life[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        pictures = getArrayAsObjects(offline_data.life[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = lists.life[splash.getCurrentPage().options.index];
+        $scope.detail = offline_data.life[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
@@ -1379,7 +1361,7 @@ module.controller('PromosController', function($scope) {
 
         scopePromosController = $scope;
 
-        var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
+        height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
         height = parseInt(height/2);
 
@@ -1396,9 +1378,9 @@ module.controller('PromosController', function($scope) {
 
         $scope.render = function() {
 
-            if(lists.promo) {
+            if(offline_data && offline_data.promos) {
 
-                loadIntoTemplate('#promo_list', lists.promo, 'promo_list', getLabels(), height);
+                loadIntoTemplate('#promo_list', offline_data.promos, 'promo_list', getLabels(), height);
 
                 ons.compile($('#promo_list')[0]);
 
@@ -1444,15 +1426,11 @@ module.controller('PromosController', function($scope) {
 
                 loadOfflineData(function(){
 
-                    lists.promo = offline_data.promos;
-
                     scopePromosController.render();
 
                     modal.hide();
                 });
             } else {
-
-                lists.promo = offline_data.promos;
 
                 scopePromosController.render();
             }
@@ -1473,9 +1451,9 @@ module.controller('PromoInfoController', function($scope) {
 
         resizeCardCarousel();
 
-        pictures = getArrayAsObjects(lists.promo[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
+        pictures = getArrayAsObjects(offline_data.promos[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = lists.promo[splash.getCurrentPage().options.index];
+        $scope.detail = offline_data.promos[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
@@ -1507,11 +1485,13 @@ var scopeProfileController;
 module.controller('ProfileController', function($scope) {
     ons.ready(function() {
 
+        moment.locale(applicationLanguage);
+
         current_page = 'profile.html';
 
         scopeProfileController = $scope;
 
-        var height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
+        height = window.innerHeight - (angular.element('.header-title').innerHeight()+angular.element('ons-tab').innerHeight());
 
         height = parseInt(height/2);
 
@@ -1527,21 +1507,19 @@ module.controller('ProfileController', function($scope) {
 
         $scope.render = function() {
 
-            if(lists.profile) {
+            if(offline_data && offline_data.user_sessions) {
 
-                for (var i in lists.profile) {
-                    for (var j in lists.profile[i]) {
-                        //console.log(lists.profile[i]['parsed']);
-                        if (j == 'session_date' && lists.profile[i]['parsed'] == undefined) {
-                            lists.profile[i][j] = moment(lists.profile[i][j], "YYYY-MM-DD").format("D MMMM dddd");
-                            lists.profile[i]['parsed'] = true;
-
-                            offline_data.user_sessions[i]['parsed'] = true;
+                for (var i in offline_data.user_sessions) {
+                    for (var j in offline_data.user_sessions[i]) {
+                        //if (j == 'session_date' && offline_data.user_sessions[i]['parsed'] == undefined) {
+                        if (j == 'session_date') {
+                            offline_data.user_sessions[i][j] = moment(offline_data.user_sessions[i]['date'], "YYYY-MM-DD").format("D MMMM dddd");
+                            //offline_data.user_sessions[i]['parsed'] = true;
                         }
                     }
                 }
 
-                loadIntoTemplate('#profile_list', lists.profile, 'profile_list', getLabels(), height);
+                loadIntoTemplate('#profile_list', offline_data.user_sessions, 'profile_list', getLabels(), height);
 
                 ons.compile($('#profile_list')[0]);
 
@@ -1565,7 +1543,7 @@ module.controller('ProfileController', function($scope) {
 
         $scope.validate = function(index) {
 
-            user_session = lists.profile[index];
+            user_session = offline_data.user_sessions[index];
 
             getJsonP(api_url + 'validateByAdmin/', function(data){
 
@@ -1598,15 +1576,11 @@ module.controller('ProfileController', function($scope) {
 
                 loadOfflineData(function(){
 
-                    lists.profile = offline_data.user_sessions;
-
                     scopeProfileController.render();
 
                     modal.hide();
                 });
             } else {
-
-                lists.profile = offline_data.user_sessions;
 
                 scopeProfileController.render();
             }
@@ -1787,23 +1761,23 @@ function getLabel(key) {
 }
 
 function generateCalendar() {
-    var items = [];
+    calendar = [];
 
     var currentDay = parseInt( moment().format("D") );
 
-    items.push({day: moment().subtract(2, 'days').format("D"), month: moment().subtract(2, 'days').format("MMM"), selected: '', date: moment().subtract(2, 'days').format("YYYY-M-D") });
-    items.push({day: moment().subtract(1, 'days').format("D"), month: moment().subtract(1, 'days').format("MMM"), selected: '', date: moment().subtract(1, 'days').format("YYYY-M-D") });
+    calendar.push({day: moment().subtract(2, 'days').format("D"), month: moment().subtract(2, 'days').format("MMM"), selected: '', date: moment().subtract(2, 'days').format("YYYY-M-D") });
+    calendar.push({day: moment().subtract(1, 'days').format("D"), month: moment().subtract(1, 'days').format("MMM"), selected: '', date: moment().subtract(1, 'days').format("YYYY-M-D") });
 
 
     for (i = 0; i <= 30; i ++) {
         /*if(i === 0) {
-            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("YYYY-M-D") });
+         calendar.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: 'selected', date: moment().add(i, 'days').format("YYYY-M-D") });
         } else */{
-            items.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: '', date: moment().add(i, 'days').format("YYYY-M-D") });
+            calendar.push({day: moment().add(i, 'days').format("D"), month: moment().add(i, 'days').format("MMM"), selected: '', date: moment().add(i, 'days').format("YYYY-M-D") });
         }
     }
 
-    return items;
+    return calendar;
 }
 
 // result json
