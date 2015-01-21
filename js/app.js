@@ -408,6 +408,8 @@ showPromoInfo = function(index) {
 
 showGuestList = function(index) {
 
+    $('ons-dialog').remove();
+
     currentSession = currentSessions[index];
 
     if(!isShowingForm) {
@@ -567,7 +569,7 @@ goToProfile = function() {
 
         mainTabBar.setActiveTab(4);
 
-    }, 500);
+    }, 250);
 };
 
 function translateImages() {
@@ -672,9 +674,10 @@ module.controller('GuestController', function($scope) {
 
             if (reset === undefined) {
 
-                calendar = generateCalendar(selectedDate);
+                generateCalendar(selectedDate);
             }
 
+            //$('#guest_list').find('*').remove();
             loadIntoTemplate('#carouselSession', calendar, 'calendar', {}, height);
 
             var selectedIndex = -1;
@@ -1968,8 +1971,11 @@ function alert(message) {
 
 
 function fixGuestListItem(height) {
+
+    $('#styleguest').remove();
+
     $('body').append(
-        '<style type="text/css">'+
+        '<style id="styleguest" type="text/css">'+
         '.guest_list_item {'+
         'position:relative;'+
         'height:'+(height)+'px;'+
@@ -1979,7 +1985,10 @@ function fixGuestListItem(height) {
 }
 
 function fixModalBottomHeight(height){
-    $('body').append('<style type="text/css">.bottom-dialog .dialog {min-height: ' + height + ';}</style>');
+
+    $('#stylemodal').remove();
+
+    $('body').append('<style id="stylemodal" type="text/css">.bottom-dialog .dialog {min-height: ' + height + ';}</style>');
 }
 
 var scrolls = {};
@@ -1993,7 +2002,8 @@ function initScroll(div) {
 
     } else {
 
-        scrolls[div].destroy();scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+        scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+        //scrolls[div].destroy();scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
     }
 }
 
