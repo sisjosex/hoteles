@@ -1994,17 +1994,21 @@ function fixModalBottomHeight(height){
 var scrolls = {};
 function initScroll(div) {
 
-    //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
-
     if(!scrolls[div]) {
 
+        //scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
         scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
 
     } else {
 
         //scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
-        scrolls[div].destroy();scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+
+        setTimeout(function(){ scrolls[div].destroy();scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false}); }, 0)
+        //scrolls[div].refresh();
+        //scrolls[div].destroy();scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
     }
+
+    //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
 }
 
 function updateContent (el, data) {
