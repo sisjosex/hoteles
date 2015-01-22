@@ -901,25 +901,24 @@ label.checkbox {
     -webkit-overflow-scrolling: none;
 }*/
 
-.scrollable {
-    position: absolute;
+/*.scrollable {
+    position: relative;
     z-index: 1;
-    top: 0px;
-    bottom: 0px;
-    left: 0;
     width: 100%;
     background: #fff;
     overflow: auto;
-    height: auto;
-}
+    height:100%;
+}*/
 
+/*
 .scroll-content {
-    position:absolute; z-index:1;
-    /*	-webkit-touch-callout:none;*/
+    position:absolute;
+    z-index:1;
+    height:600px;
     -webkit-tap-highlight-color:rgba(0,0,0,0);
     width:100%;
     padding:0;
-}
+}*/
 
 /*
 .scroll-content {

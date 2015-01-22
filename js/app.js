@@ -1,5 +1,4 @@
 var module = ons.bootstrap();
-var module = ons.bootstrap();
 
 angular.module('MyApp', ['QuickList']);
 
@@ -223,6 +222,8 @@ function loadOfflineData(callback) {
         if (data.status === 'success') {
 
             offline_data = data;
+
+            //console.log(offline_data);
 
             localStorage.setItem("offline_data", JSON.stringify(offline_data));
 
@@ -540,7 +541,7 @@ goToProfile = function() {
     setTimeout(function(){
 
         if(currentSessionFromNotification != null) {
-            console.log('hide detail');
+            //console.log('hide detail');
             closeDetailSession();
             //splash.popPage('guest_detail.html');
         }
@@ -1997,13 +1998,13 @@ function initScroll(div) {
     if(!scrolls[div]) {
 
         //scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
-        scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
+        scrolls[div] = new iScroll(div, {momentum:false, hScrollbar:false, vScrollbar:false});
 
     } else {
 
         //scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
-
-        setTimeout(function(){ scrolls[div].destroy();scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false}); }, 0)
+        scrolls['guest_scroll'].scrollTo(0,0);
+        setTimeout(function(){ scrolls[div].destroy();scrolls[div] = new iScroll(div, {momentum:false, hScrollbar:false, vScrollbar:false}); }, 10);
         //scrolls[div].refresh();
         //scrolls[div].destroy();scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
     }
