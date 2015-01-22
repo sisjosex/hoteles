@@ -1998,13 +1998,13 @@ function initScroll(div) {
     if(!scrolls[div]) {
 
         //scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
-        scrolls[div] = new iScroll(div, {momentum:false, hScrollbar:false, vScrollbar:false});
+        scrolls[div] = new iScroll(div, {momentum:true, hScrollbar:false, vScrollbar:false});
 
     } else {
 
         //scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
         scrolls['guest_scroll'].scrollTo(0,0);
-        setTimeout(function(){ scrolls[div].destroy();scrolls[div] = new iScroll(div, {momentum:false, hScrollbar:false, vScrollbar:false}); }, 10);
+        setTimeout(function(){ scrolls[div].destroy();scrolls[div] = new iScroll(div, {momentum:true, hScrollbar:false, vScrollbar:false}); }, 10);
         //scrolls[div].refresh();
         //scrolls[div].destroy();scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
     }
