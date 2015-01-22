@@ -17,7 +17,7 @@ var templates = {
                 '<p class="title-normal block" style="color: #fff;text-decoration: none;pointer-events: none;">%hour%</p>'+
             '</div>'+
             '<div align="center" class="buttons">'+
-                '<div class="button purple" onclick="showGuestList(%index%)">GUEST LIST</div>'+
+                '<div class="button purple" onclick="showGuestList(%index%, event)">GUEST LIST</div>'+
                 '<div class="button" rel="%index%" onclick="showGuestInfo(%index%, event)">+ INFO</div>'+
             '</div>'+
         '</div>'+
@@ -34,7 +34,7 @@ var templates = {
             '<p class="title-normal block">%days%</p>'+
         '</div>'+
         '<div align="center" class="buttons">'+
-            '<div class="button" onclick="showClubInfo(%index%)">+ INFO</div>' +
+            '<div class="button" onclick="showClubInfo(%index%, event)">+ INFO</div>' +
         '</div>'+
         '</div>'+
     '</div>',
@@ -50,7 +50,7 @@ var templates = {
             '<p class="title-normal block">%cut_content%</p>'+
             '</div>'+
             '<div align="center" class="buttons">'+
-                '<div class="button" onclick="showLifeInfo(%index%)">+ INFO</div>'+
+                '<div class="button" onclick="showLifeInfo(%index%, event)">+ INFO</div>'+
             '</div>'+
         '</div>'+
     '</ons-list-item>',
@@ -66,7 +66,7 @@ var templates = {
                     '<p class="title-normal block">%cut_content%</p>'+
                 '</div>'+
                     '<div align="center" class="buttons">'+
-                    '<div class="button" onclick="showPromoInfo(%index%)">+ INFO</div>'+
+                    '<div class="button" onclick="showPromoInfo(%index%, event)">+ INFO</div>'+
                 '</div>'+
             '</div>'+
         '</ons-list-item>',

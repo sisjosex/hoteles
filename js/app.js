@@ -407,7 +407,8 @@ showPromoInfo = function(index) {
     splash.pushPage('promo_info.html', {index:index});
 };
 
-showGuestList = function(index) {
+showGuestList = function(index, event) {
+    console.log('test');
 
     $('ons-dialog').remove();
 
@@ -1998,16 +1999,18 @@ function initScroll(div) {
     if(!scrolls[div]) {
 
         //scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
-        scrolls[div] = new iScroll(div, {momentum:true, hScrollbar:false, vScrollbar:false});
+        scrolls[div] = new iScroll(div, {momentum:true, hScrollbar:false, vScrollbar:false, click: true, checkDOMChanges: true});
 
     } else {
 
         //scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
         scrolls['guest_scroll'].scrollTo(0,0);
-        setTimeout(function(){ scrolls[div].destroy();scrolls[div] = new iScroll(div, {momentum:true, hScrollbar:false, vScrollbar:false}); }, 10);
+        setTimeout(function(){ scrolls[div].destroy();scrolls[div] = new iScroll(div, {momentum:true, hScrollbar:false, vScrollbar:false, click: true, checkDOMChanges: true}); }, 10);
         //scrolls[div].refresh();
         //scrolls[div].destroy();scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
     }
+
+    $('.button').on('touchstart',function(event){event.preventDefault();})
 
     //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
 }
