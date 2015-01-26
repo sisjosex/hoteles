@@ -83,7 +83,7 @@ var templates = {
                     '<p class="title-normal block access_conditions"><span class="rosa">{access_conditions}</span> <span class="value">%access_conditions%</span></p>'+
                 '</div>'+
                 '<div align="center" class="buttons">'+
-                    '<div class="button transparent" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{ask_golden}</div>'+
+                    '<div class="transparent" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{ask_golden}</div>'+
                 '</div>'+
             '</div>'+
         '</ons-list-item>',

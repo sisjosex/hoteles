@@ -408,7 +408,7 @@ showPromoInfo = function(index) {
 };
 
 showGuestList = function(index, event) {
-    console.log('test');
+    //console.log('test');
 
     $('ons-dialog').remove();
 
@@ -1037,10 +1037,14 @@ module.controller('GuestListFormController', function($scope) {
 });
 
 
+function compare(a,b) {
+    if (parseInt(moment(a.date, "YYYY-MM-DD").format("x")) > parseInt(moment(b.date, "YYYY-MM-DD").format("x")))
+        return 1;
+    return 0;
+}
+
 
 var storeSessionReservation = function(nro, date) {
-
-    //console.log('saving' + date);
 
     if(!offline_data.user_sessions) {
 
@@ -1049,7 +1053,8 @@ var storeSessionReservation = function(nro, date) {
     } else {
 
         for(var i in offline_data.user_sessions) {
-            if(offline_data.user_sessions[i].date === date) {
+
+            if(moment(offline_data.user_sessions[i].date, "YYYY-MM-DD").format("YYYY-M-D") === date && offline_data.user_sessions[i].id === currentSession.id) {
                 //console.log()
                 offline_data.user_sessions[i].persons = nro;
                 return;
@@ -1081,6 +1086,8 @@ var storeSessionReservation = function(nro, date) {
     offline_data.user_sessions.push(obj);
 
     localStorage.setItem("offline_data", JSON.stringify(offline_data));
+
+    offline_data.user_sessions.sort(compare);
 };
 
 
@@ -2004,8 +2011,11 @@ function initScroll(div) {
     } else {
 
         //scrolls[div] = new iScroll(div, {hScrollbar: false, vScrollbar: false});
-        scrolls['guest_scroll'].scrollTo(0,0);
-        setTimeout(function(){ scrolls[div].destroy();scrolls[div] = new iScroll(div, {momentum:true, hScrollbar:false, vScrollbar:false, click: true, checkDOMChanges: true}); }, 10);
+        scrolls[div].scrollTo(0,0);
+        setTimeout(function(){
+            scrolls[div].destroy();
+            scrolls[div] = new iScroll(div, {momentum:true, hScrollbar:false, vScrollbar:false, click: true, checkDOMChanges: true});
+        }, 10);
         //scrolls[div].refresh();
         //scrolls[div].destroy();scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
     }
