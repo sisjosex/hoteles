@@ -44,7 +44,7 @@ function storeImages(data) {
 
                             });
 
-                            return;
+                            continue;
                         }
                     }
                 }
