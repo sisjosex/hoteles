@@ -64,6 +64,7 @@ function initApp() {
 }
 
 function read(path, success){
+    console.log('reading ' + path);
     fileSystem.root.getFile(path, {create: true, exclusive: false}, function(entry){var file = {entry: entry};
         file.entry.file(function (dbFile) {
             var dbEntries = [];
@@ -84,7 +85,7 @@ function write(path, content){
     fileSystem.root.getFile(path, {create: true, exclusive: false}, function(entry){var file = {entry: entry};
         file.entry.createWriter(function(writer){
             writer.onwrite = function (evt) {
-                //console.log('writed');
+                console.log('writed ' + path);
             };
 
             writer.write(content);
@@ -167,7 +168,7 @@ window.fadeIn = function(obj) {
 
 window.onfailImage = function(element) {
 
-    var url2 = $(obj).attr('src');
+    var url2 = $(element).attr('src');
 
     var filename = url2.split("/")[url2.split("/").length-1];
 
