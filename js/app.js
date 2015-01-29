@@ -250,7 +250,7 @@ function loadOfflineData(callback) {
 
             callback ? callback() : '';
 
-            storeImages(offline_data);
+            //storeImages(offline_data);
 
             isonline = true;
         }
@@ -378,7 +378,9 @@ filterSessionDay = function(index, element) {
 
     loadIntoTemplateSingle('#guest_list', {}, 'no_guests', getLabels());
 
-    if(!offline_data) {
+    loadOfflineData( function(){ loadSessions(selectedItem); modal.hide(); } );
+
+    /*if(!offline_data) {
 
         loadOfflineData( function(){ loadSessions(selectedItem); modal.hide(); } );
 
@@ -386,7 +388,7 @@ filterSessionDay = function(index, element) {
 
         loadSessions(selectedItem);
         modal.hide();
-    }
+    }*/
 };
 
 var height;
@@ -1197,7 +1199,15 @@ module.controller('ClubsController', function($scope) {
 
         $scope.init = function() {
 
-            if(offline_data === undefined) {
+            modal.show();
+            loadOfflineData(function(){
+
+                scopeClubsController.render();
+
+                modal.hide();
+            });
+
+            /*if(offline_data === undefined) {
                 modal.show();
                 loadOfflineData(function(){
 
@@ -1208,7 +1218,7 @@ module.controller('ClubsController', function($scope) {
             } else {
 
                 scopeClubsController.render();
-            }
+            }*/
         };
 
 
@@ -1333,7 +1343,17 @@ module.controller('LifeController', function($scope) {
         });
 
         $scope.init = function() {
-            if(offline_data === undefined) {
+
+            modal.show();
+
+            loadOfflineData(function(){
+
+                scopeLifeController.render();
+
+                modal.hide();
+            });
+
+            /*if(offline_data === undefined) {
 
                 modal.show();
 
@@ -1346,7 +1366,7 @@ module.controller('LifeController', function($scope) {
             } else {
 
                 scopeLifeController.render();
-            }
+            }*/
         }
 
         $scope.init();
@@ -1473,7 +1493,17 @@ module.controller('PromosController', function($scope) {
         });
 
         $scope.init = function() {
-            if(offline_data === undefined) {
+
+            modal.show();
+
+            loadOfflineData(function(){
+
+                scopePromosController.render();
+
+                modal.hide();
+            });
+
+            /*if(offline_data === undefined) {
 
                 modal.show();
 
@@ -1486,7 +1516,7 @@ module.controller('PromosController', function($scope) {
             } else {
 
                 scopePromosController.render();
-            }
+            }*/
         };
 
         $scope.init();
@@ -1623,7 +1653,16 @@ module.controller('ProfileController', function($scope) {
 
             translateImages();
 
-            if(offline_data === undefined) {
+            modal.show();
+
+            loadOfflineData(function(){
+
+                scopeProfileController.render();
+
+                modal.hide();
+            });
+
+            /*if(offline_data === undefined) {
 
                 modal.show();
 
@@ -1636,7 +1675,7 @@ module.controller('ProfileController', function($scope) {
             } else {
 
                 scopeProfileController.render();
-            }
+            }*/
         }
 
         $scope.init();
