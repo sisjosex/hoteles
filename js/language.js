@@ -70,7 +70,8 @@ var labels = {
         age: 'Edad:',
         dress_code: 'Dress Code:',
         ask_golden: 'PREGUNTA POR GOLDEN VIP LIST<br>O MUESTRA ESTA PANTALLA',
-        music: 'Música:'
+        music: 'Música:',
+        date: 'Fecha:'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -143,6 +144,7 @@ var labels = {
         age: 'Age:',
         dress_code: 'Dress Code:',
         ask_golden: 'ASK FOR GOLDEN VIP LIST <br>OR SAMPLE THIS SCREEN',
-        music: 'Music:'
+        music: 'Music:',
+        date: 'Date:'
     }
 };

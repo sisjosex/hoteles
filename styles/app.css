@@ -129,8 +129,13 @@ input[type=checkbox] {
     color: #fff;
 }
 
+.session_reservation_detail .title-normal .rosa, .session_reservation_detail .title-normal .value {
+    font-size: 1.2em !important;
+    line-height: 18px !important;
+}
+
 .title-normal.access_conditions {
-    font-size: 1em !important;
+    /*font-size: 1em;*/
 }
 
 .title-normal {

@@ -40,11 +40,11 @@ function storeImages(data) {
 
                                 var filename = url2.split("/")[url2.split("/").length-1];
 
-                                //console.log(filename);
-
                                 write(filename, content);
 
                             });
+
+                            return;
                         }
                     }
                 }
@@ -229,7 +229,7 @@ function loadOfflineData(callback) {
 
             callback ? callback() : '';
 
-            //storeImages(offline_data);
+            storeImages(offline_data);
 
             isonline = true;
         }
@@ -972,6 +972,18 @@ module.controller('GuestListFormController', function($scope) {
             } */else {
 
                 if(userData && userData.id !== undefined && userData.id !== '') {
+
+                    if(userData !== null && (userData.email === '' || userData.email === undefined)) {
+
+                        userData = {
+                            first_name: $scope.userData.first_name,
+                            last_name: $scope.userData.last_name,
+                            email: $scope.userData.email,
+                            phone: $scope.userData.phone
+                        };
+
+                        localStorage.setItem("user", JSON.stringify(userData));
+                    }
 
                     if(isonline) {
                         storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');

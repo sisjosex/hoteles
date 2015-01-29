@@ -77,10 +77,13 @@ var templates = {
                 '<img onload="fadeIn(this)" src="%first_image%" />'+
             '</div>'+
             '<div class="guesto-list-verlay overlay">'+
-                '<div align="center" class="guest-list-item-content">'+
+                '<div align="center" class="guest-list-item-content session_reservation_detail">'+
                     '<span class="title-big">%guest_list%</span> <span class="title-medium">{in} %club%</span>'+
-                    '<p class="title-normal block" style="color: #fff;text-decoration: none;pointer-events: none;">%session_date% %hour%</p>'+
+                    '<!--<p class="title-normal block" style="color: #fff;text-decoration: none;pointer-events: none;">%session_date% %hour%</p>-->'+
                     '<p class="title-normal block access_conditions"><span class="rosa">{access_conditions}</span> <span class="value">%access_conditions%</span></p>'+
+                    '<p class="title-normal block"><span class="rosa">{date}</span> <span class="value">%session_date% %hour%</span></p>'+
+                    '<p class="title-normal block"><span class="rosa">{address}</span> <span class="value">%address%</span></p>'+
+                    '<p class="title-normal block"><span class="rosa">{metro}</span> <span class="value">%metro%</span></p>'+
                 '</div>'+
                 '<div align="center" class="buttons">'+
                     '<div class="transparent" style="font-size: 0.8em;height: 2.2em;padding-left: 0.4em;padding-right: 0.4em;">{ask_golden}</div>'+
