@@ -9,7 +9,7 @@ var templates = {
     session_list:
     '<div class="guest_list_item">'+
         '<div class="item-bg list">'+
-            '<img onload="fadeIn(this)" src="%first_image%" />'+
+            '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%first_image%" />'+
         '</div>'+
         '<div class="guesto-list-verlay overlay">'+
             '<div align="center" class="guest-list-item-content">'+
@@ -26,7 +26,7 @@ var templates = {
     club_list: '' +
     '<div class="guest_list_item">'+
         '<div class="item-bg list">'+
-            '<img onload="fadeIn(this)" src="%first_image%" />'+
+            '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%first_image%" />'+
         '</div>'+
             '<div class="guesto-list-verlay overlay">'+
         '<div align="center" class="guest-list-item-content">'+
@@ -42,7 +42,7 @@ var templates = {
     life_list: '' +
     '<ons-list-item class="guest_list_item">'+
         '<div class="item-bg list">'+
-            '<img onload="fadeIn(this)" src="%first_image%" />'+
+            '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%first_image%" />'+
         '</div>'+
         '<div class="guesto-list-verlay overlay">'+
         '<div align="center" class="guest-list-item-content">'+
@@ -58,7 +58,7 @@ var templates = {
     promo_list: '' +
         '<ons-list-item class="guest_list_item">'+
             '<div class="item-bg list">'+
-                '<img onload="fadeIn(this)" src="%first_image%" />'+
+                '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%first_image%" />'+
             '</div>'+
             '<div class="guesto-list-verlay overlay">'+
                 '<div align="center" class="guest-list-item-content">'+
@@ -74,7 +74,7 @@ var templates = {
     profile_list: '' +
         '<ons-list-item class="guest_list_item">'+
             '<div class="item-bg list">'+
-                '<img onload="fadeIn(this)" src="%first_image%" />'+
+                '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%first_image%" />'+
             '</div>'+
             '<div class="guesto-list-verlay overlay">'+
                 '<div align="center" class="guest-list-item-content session_reservation_detail">'+
@@ -138,22 +138,22 @@ var templates = {
 
     guest_images: '' +
         '<ons-carousel-item class="item-bg detail session-item">'+
-            '<img onload="fadeIn(this)" src="%list_image%" />'+
+            '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%list_image%" />'+
         '</ons-carousel-item>',
 
     club_images: '' +
         '<ons-carousel-item class="item-bg detail session-item">'+
-            '<img onload="fadeIn(this)" src="%list_image%" />'+
+            '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%list_image%" />'+
         '</ons-carousel-item>',
 
     life_images: '' +
         '<ons-carousel-item class="item-bg detail session-item">'+
-            '<img onload="fadeIn(this)" src="%list_image%" />'+
+            '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%list_image%" />'+
         '</ons-carousel-item>',
 
     promo_images: '' +
         '<ons-carousel-item class="item-bg detail session-item">'+
-            '<img onload="fadeIn(this)" src="%list_image%" />'+
+            '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%list_image%" />'+
         '</ons-carousel-item>',
 
     guest_paginator: '<li class="carousel-page %selected%"></li>',

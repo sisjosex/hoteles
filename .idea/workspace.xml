@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b009447-3627-4ed9-ba59-25b69a784ca9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/templates.js" afterPath="$PROJECT_DIR$/js/templates.js" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27144536" vertical-offset="601" max-vertical-offset="1696">
+            <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1696">
               <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
               <folding />
             </state>
@@ -64,12 +65,12 @@
       <file leaf-file-name="templates.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/templates.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="4288">
-              <caret line="85" column="43" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="43" />
+            <state vertical-scroll-proportion="-9.448276" vertical-offset="174" max-vertical-offset="4288">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="32" />
               <folding>
-                <marker date="1422496191630" expanded="true" signature="793:848" placeholder="..." />
-                <marker date="1422496191630" expanded="true" signature="3706:3761" placeholder="..." />
-                <marker date="1422496191630" expanded="true" signature="4492:4564" placeholder="..." />
+                <marker date="1422529974009" expanded="true" signature="821:876" placeholder="..." />
+                <marker date="1422529974009" expanded="true" signature="3846:3901" placeholder="..." />
+                <marker date="1422529974009" expanded="true" signature="4632:4704" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -85,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1301" max-vertical-offset="32864">
-              <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.3560517" vertical-offset="2369" max-vertical-offset="33072">
+              <caret line="167" column="40" selection-start-line="167" selection-start-column="40" selection-end-line="167" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -113,10 +114,10 @@
         <option value="$PROJECT_DIR$/lib/iscroll/iscroll.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/language.js" />
-        <option value="$PROJECT_DIR$/js/templates.js" />
         <option value="$PROJECT_DIR$/styles/app.css" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/js/templates.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
       </list>
     </option>
   </component>
@@ -753,18 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="4288">
-          <caret line="85" column="43" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="43" />
-          <folding>
-            <marker date="1422496191630" expanded="true" signature="793:848" placeholder="..." />
-            <marker date="1422496191630" expanded="true" signature="3706:3761" placeholder="..." />
-            <marker date="1422496191630" expanded="true" signature="4492:4564" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/language.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1616" max-vertical-offset="2480">
@@ -773,18 +762,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1301" max-vertical-offset="32864">
-          <caret line="110" column="38" selection-start-line="110" selection-start-column="38" selection-end-line="110" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1696">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/js/templates.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27144536" vertical-offset="601" max-vertical-offset="1696">
-          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+        <state vertical-scroll-proportion="-9.448276" vertical-offset="174" max-vertical-offset="4288">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <marker date="1422529974009" expanded="true" signature="821:876" placeholder="..." />
+            <marker date="1422529974009" expanded="true" signature="3846:3901" placeholder="..." />
+            <marker date="1422529974009" expanded="true" signature="4632:4704" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3560517" vertical-offset="2369" max-vertical-offset="33072">
+          <caret line="167" column="40" selection-start-line="167" selection-start-column="40" selection-end-line="167" selection-end-column="40" />
           <folding />
         </state>
       </provider>

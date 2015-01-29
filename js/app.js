@@ -40,8 +40,6 @@ function storeImages(data) {
 
                                 var filename = url2.split("/")[url2.split("/").length-1];
 
-                                console.log(content);
-
                                 write(filename, content);
 
                             });
@@ -165,6 +163,21 @@ window.fadeIn = function(obj) {
     //setTimeout(function(){
         //finalImage.addClass('fadein');
     //}, 10);
+};
+
+window.onfailImage = function(element) {
+
+    var url2 = $(obj).attr('src');
+
+    var filename = url2.split("/")[url2.split("/").length-1];
+
+    read(filename, function(content){
+
+        var extension = 'image/' + filename.split('.')[filename.split('.').length-1];
+
+        $(element).attr('src', "data:image/"+extension+";base64," + content);
+
+    });
 };
 
 window.onresize = function(){
