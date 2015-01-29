@@ -40,6 +40,8 @@ function storeImages(data) {
 
                                 var filename = url2.split("/")[url2.split("/").length-1];
 
+                                console.log(content);
+
                                 write(filename, content);
 
                             });
@@ -96,12 +98,17 @@ function convertImgToBase64(url, callback, outputFormat){
     var canvas = document.createElement('CANVAS');
     var ctx = canvas.getContext('2d');
     var img = new Image;
-    img.crossOrigin = 'Anonymous';
+    //img.crossOrigin = 'Anonymous';
     img.onload = function(){
         canvas.height = img.height;
         canvas.width = img.width;
         ctx.drawImage(img,0,0);
-        var dataURL = canvas.toDataURL(outputFormat || 'image/png');
+
+        var filename = url.split("/")[url.split("/").length-1];
+
+        //console.log( filename.split('.')[filename.split('.').length-1] );
+
+        var dataURL = canvas.toDataURL(outputFormat || 'image/' + filename.split('.')[filename.split('.').length-1]);
         callback.call(this, dataURL, img, url);
         // Clean up
         canvas = null;
