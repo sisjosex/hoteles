@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1b009447-3627-4ed9-ba59-25b69a784ca9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/iscroll/iscroll.js" afterPath="$PROJECT_DIR$/lib/iscroll/iscroll.js" />
     </list>
     <ignored path="hoteles.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7555817" vertical-offset="32861" max-vertical-offset="33712">
-              <caret line="2094" column="6" selection-start-line="2094" selection-start-column="6" selection-end-line="2094" selection-end-column="6" />
+              <caret line="2094" column="4" selection-start-line="2094" selection-start-column="4" selection-end-line="2094" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -785,7 +784,7 @@
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7555817" vertical-offset="32861" max-vertical-offset="33712">
-          <caret line="2094" column="6" selection-start-line="2094" selection-start-column="6" selection-end-line="2094" selection-end-column="6" />
+          <caret line="2094" column="4" selection-start-line="2094" selection-start-column="4" selection-end-line="2094" selection-end-column="4" />
           <folding />
         </state>
       </provider>

@@ -2092,7 +2092,7 @@ function initScroll(div) {
         //scrolls[div].destroy();scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
     }
 
-    //$('.button').on('touchstart',function(event){event.preventDefault();})
+    $('.button').on('touchstart',function(event){event.preventDefault();})
 
     //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
 }
