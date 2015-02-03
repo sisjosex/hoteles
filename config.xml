@@ -54,7 +54,7 @@
     <!--<gap:plugin name="org.apache.cordova.geolocation" />-->
     <!--<gap:plugin name="org.apache.cordova.network-information" />-->
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.4" />
+    <!--<gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.4" />-->
     <!--<gap:plugin name="org.li8.inappbrowser" version="0.1" />-->
     <!-- StatusBar -->
     <gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
