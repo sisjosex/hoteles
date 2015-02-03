@@ -49,3 +49,7 @@ try {
 var fileSystem;
 
 var isonline = false;
+
+$(document).ready(function() {
+    document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
+});
