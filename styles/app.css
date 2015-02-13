@@ -172,7 +172,7 @@ input[type=checkbox] {
     left: 0;
     bottom: 0;
     right: 0;
-    background-size: 100% auto;
+    background-size: auto 100%;
     background-image: url('../img/offline.jpg');
     background-color: #fff;
     background-position: center center;
