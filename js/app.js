@@ -64,7 +64,7 @@ function initApp() {
 }
 
 function read(path, success){
-    console.log('reading ' + path);
+
     fileSystem.root.getFile(path, {create: true, exclusive: false}, function(entry){var file = {entry: entry};
         file.entry.file(function (dbFile) {
             var dbEntries = [];
@@ -85,7 +85,7 @@ function write(path, content){
     fileSystem.root.getFile(path, {create: true, exclusive: false}, function(entry){var file = {entry: entry};
         file.entry.createWriter(function(writer){
             writer.onwrite = function (evt) {
-                console.log('writed ' + path);
+
             };
 
             writer.write(content);
@@ -104,8 +104,6 @@ function convertImgToBase64(url, callback, outputFormat){
         ctx.drawImage(img,0,0);
 
         var filename = url.split("/")[url.split("/").length-1];
-
-        //console.log( filename.split('.')[filename.split('.').length-1] );
 
         var dataURL = canvas.toDataURL(outputFormat || 'image/' + filename.split('.')[filename.split('.').length-1]);
         callback.call(this, dataURL, img, url);
@@ -243,8 +241,6 @@ function loadOfflineData(callback) {
         if (data.status === 'success') {
 
             offline_data = data;
-
-            //console.log(offline_data);
 
             localStorage.setItem("offline_data", JSON.stringify(offline_data));
 
@@ -431,7 +427,6 @@ showPromoInfo = function(index) {
 };
 
 showGuestList = function(index, event) {
-    //console.log('test');
 
     $('ons-dialog').remove();
 
@@ -565,7 +560,7 @@ goToProfile = function() {
     setTimeout(function(){
 
         if(currentSessionFromNotification != null) {
-            //console.log('hide detail');
+
             closeDetailSession();
             //splash.popPage('guest_detail.html');
         }
@@ -818,6 +813,11 @@ module.controller('GuestListCardController', function($scope) {
 
         }, 1000);
 
+        setTimeout(function(){
+            ons.compile($('#guest_list_scroll')[0]);
+            initScroll('guest_list_scroll');
+        }, 200);
+
     });
 });
 
@@ -891,6 +891,11 @@ module.controller('GuestListDetailController', function($scope) {
 
         }, 1000);
 
+        setTimeout(function(){
+            ons.compile($('#guest_detail_scroll')[0]);
+            initScroll('guest_detail_scroll');
+        }, 200);
+
     });
 });
 
@@ -925,8 +930,6 @@ module.controller('GuestListFormController', function($scope) {
             fixModalBottomHeight('21.2em');
 
         } else {
-
-            //console.log('There is user');
 
             $scope.userData = {
                 first_name: userData.first_name,
@@ -1090,7 +1093,6 @@ var storeSessionReservation = function(nro, date) {
         for(var i in offline_data.user_sessions) {
 
             if(moment(offline_data.user_sessions[i].date, "YYYY-MM-DD").format("YYYY-M-D") === date && offline_data.user_sessions[i].id === currentSession.id) {
-                //console.log()
                 offline_data.user_sessions[i].persons = nro;
                 return;
             }
@@ -1266,6 +1268,11 @@ module.controller('ClubInfoController', function($scope) {
 
         }, 1000);
 
+        setTimeout(function(){
+            ons.compile($('#club_detail_scroll')[0]);
+            initScroll('club_detail_scroll');
+        }, 200);
+
     });
 
 
@@ -1415,6 +1422,11 @@ module.controller('LifeInfoController', function($scope) {
             });
         };
 
+        setTimeout(function(){
+            ons.compile($('#life_detail_scroll')[0]);
+            initScroll('life_detail_scroll');
+        }, 200);
+
     });
 
 
@@ -1554,6 +1566,11 @@ module.controller('PromoInfoController', function($scope) {
             promoListCarousel.on('postchange', $scope.carouselPostChange);
 
         }, 1000);
+
+        setTimeout(function(){
+            ons.compile($('#promo_detail_scroll')[0]);
+            initScroll('promo_detail_scroll');
+        }, 200);
 
     });
 
@@ -1724,6 +1741,11 @@ module.controller('ProfileDetailController', function($scope) {
 
                 $scope.label_edit = getLabel('save');
 
+                setTimeout(function(){
+                    //ons.compile($('#profile_detail_scroll')[0]);
+                    initScroll('profile_detail_scroll');
+                }, 200);
+
             } else {
 
                 if($scope.userData.first_name === undefined || $scope.userData.first_name === '') {
@@ -1774,7 +1796,13 @@ module.controller('ProfileDetailController', function($scope) {
                         storeToken(DEVICE_UUID, TOKEN_PUSH_NOTIFICATION, ons.platform.isIOS() ? 'iphone' : 'android');
                         registerNotifications();
 
+                        setTimeout(function(){
+                            //ons.compile($('#profile_detail_scroll')[0]);
+                            initScroll('profile_detail_scroll');
+                        }, 200);
+
                     }, function(){
+
 
 
                     }, $scope.userData);
@@ -1837,6 +1865,11 @@ module.controller('ProfileDetailController', function($scope) {
         /*$scope.$on("$destroy",function( event ) {
             $timeout.cancel( timer );
         });*/
+
+        setTimeout(function(){
+            //ons.compile($('#profile_detail_scroll')[0]);
+            initScroll('profile_detail_scroll');
+        }, 200);
 
     });
 });
@@ -2045,7 +2078,6 @@ function alert(message) {
         animation: 'default', // or 'none'
         // modifier: 'optional-modifier'
         callback: function() {
-            // Alert button is closed!
         }
     });
 }
@@ -2092,7 +2124,8 @@ function initScroll(div) {
         //scrolls[div].destroy();scrolls[div] = new IScroll('#' + div, {hScrollbar: false, vScrollbar: false});
     }
 
-    $('.button').on('touchstart',function(event){event.preventDefault();})
+    //$('.button').on('touchstart',function(event){event.preventDefault();})
+    //$('input').on('touchstart',function(event){event.preventDefault();})
 
     //new IScroll('#' + div, { hScrollbar: false, vScrollbar: false });
 }

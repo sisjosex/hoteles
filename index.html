@@ -118,9 +118,11 @@
             </div>
 
         </ons-toolbar>
-        <ons-scroller style="height:100%">
-            <div>
-                <div class="card-content">
+
+        <div id="guest_list_scroll" class="scrollable vertical">
+            <div class="scroll-content">
+
+                <div class="card-content scrollfix">
                     <p class="access_conditions">
                         <label>{{labels.access_conditions}}</label>
                         <span>{{detail.access_conditions}}</span>
@@ -167,7 +169,7 @@
                     </p>
                 </div>
             </div>
-        </ons-scroller>
+        </div>
     </ons-page>
 </ons-template>
 
@@ -201,56 +203,60 @@
             </div>
 
         </ons-toolbar>
-        <ons-scroller style="height:100%">
-            <div>
-                <div class="card-content">
-                    <p class="access_conditions">
-                        <label>{{labels.access_conditions}}</label>
-                        <span>{{detail.access_conditions}}</span>
-                    </p>
 
-                    <p>
-                        <!--<span class="age">
-                            <label ng-show="detail.age!=''">{{labels.age}}</label>
-                            <span ng-show="detail.age!=''">{{detail.age}}</span>
-                        </span>-->
+        <div id="guest_detail_scroll" class="scrollable vertical">
+            <div class="scroll-content">
 
-                        <span class="dress_code">
-                            <label ng-show="detail.dress_code!=''">{{labels.dress_code}}</label>
-                            <span ng-show="detail.dress_code!=''">{{detail.dress_code}}</span>
-                        </span>
-                    </p>
+            <div class="card-content scrollfix">
+                <p class="access_conditions">
+                    <label>{{labels.access_conditions}}</label>
+                    <span>{{detail.access_conditions}}</span>
+                </p>
 
-                    <p>
-                        <label>{{labels.music}}</label>
-                        <span>{{detail.music}}</span>
-                    </p>
+                <p>
+                    <!--<span class="age">
+                        <label ng-show="detail.age!=''">{{labels.age}}</label>
+                        <span ng-show="detail.age!=''">{{detail.age}}</span>
+                    </span>-->
 
-                    <p>
-                        <label>{{labels.address}}</label>
-                        <span>{{detail.address}}</span>
-                    </p>
+                    <span class="dress_code">
+                        <label ng-show="detail.dress_code!=''">{{labels.dress_code}}</label>
+                        <span ng-show="detail.dress_code!=''">{{detail.dress_code}}</span>
+                    </span>
+                </p>
 
-                    <p>
-                        <label>{{labels.hour}}</label>
-                        <span>{{detail.hour}}</span>
-                        <label>{{labels.metro}}</label>
-                        <span>{{detail.metro}}</span>
-                    </p>
+                <p>
+                    <label>{{labels.music}}</label>
+                    <span>{{detail.music}}</span>
+                </p>
 
-                    <p>
-                        <label>{{labels.ambient}}</label>
-                        <span>{{detail.ambient}}</span>
-                        <label>{{labels.accept_card}}</label>
-                        <span>{{detail.accept_card}}</span>
-                    </p>
+                <p>
+                    <label>{{labels.address}}</label>
+                    <span>{{detail.address}}</span>
+                </p>
 
-                    <p class="content">
-                        {{detail.content}}
-                    </p>
-                </div>
+                <p>
+                    <label>{{labels.hour}}</label>
+                    <span>{{detail.hour}}</span>
+                    <label>{{labels.metro}}</label>
+                    <span>{{detail.metro}}</span>
+                </p>
+
+                <p>
+                    <label>{{labels.ambient}}</label>
+                    <span>{{detail.ambient}}</span>
+                    <label>{{labels.accept_card}}</label>
+                    <span>{{detail.accept_card}}</span>
+                </p>
+
+                <p class="content">
+                    {{detail.content}}
+                </p>
             </div>
-        </ons-scroller>
+
+            </div>
+        </div>
+
     </ons-page>
 </ons-template>
 
@@ -416,11 +422,10 @@
             </div>
         </ons-toolbar>
 
-        <ons-scroller style="height:100%">
-            <div>
+        <div id="club_detail_scroll" class="scrollable vertical">
+            <div class="scroll-content">
 
-
-                <div class="card-content">
+                <div class="card-content scrollfix">
                     <p>
                         <label>{{labels.sessions}}</label>
                         <span>{{detail.sessions}}</span>
@@ -450,7 +455,7 @@
                     </p>
                 </div>
             </div>
-        </ons-scroller>
+        </div>
     </ons-page>
 </ons-template>
 
@@ -500,11 +505,10 @@
             </div>
         </ons-toolbar>
 
-        <ons-scroller style="height:100%">
-            <div>
+        <div id="life_detail_scroll" class="scrollable vertical">
+            <div class="scroll-content">
 
-
-                <div class="card-content">
+                <div class="card-content scrollfix">
                     <p>
                         <label>{{labels.open}}</label>
                         <span>{{detail.days}}</span>
@@ -539,7 +543,7 @@
                     </p>
                 </div>
             </div>
-        </ons-scroller>
+        </div>
     </ons-page>
 </ons-template>
 
@@ -587,10 +591,10 @@
             </div>
         </ons-toolbar>
 
-        <ons-scroller style="height:100%">
-            <div>
+        <div id="promo_detail_scroll" class="scrollable vertical">
+            <div class="scroll-content">
 
-                <div class="card-content">
+                <div class="card-content scrollfix">
                     <p>
                         <label>{{labels.open}}</label>
                         <span>{{detail.days}}</span>
@@ -625,7 +629,7 @@
                     </p>
                 </div>
             </div>
-        </ons-scroller>
+        </div>
     </ons-page>
 </ons-template>
 
@@ -649,7 +653,7 @@
 
 
 <ons-template id="profile_detail.html">
-    <ons-page ng-controller="ProfileDetailController" class="normal-page">
+    <ons-page ng-controller="ProfileDetailController" class="normal-page profile">
         <ons-toolbar class="toolbar" style="border-bottom:0.1em solid #fa00c2;">
             <div class="center header-title"
                  style="font-family: 'FuturaStd-Medium';font-size: 1em;position:relative;background:#000;">
@@ -658,8 +662,10 @@
             </div>
         </ons-toolbar>
 
-        <ons-scroller style="height:100%">
-            <div class="profile-sections">
+        <div id="profile_detail_scroll" class="scrollable vertical">
+            <div class="scroll-content">
+
+                <div class="profile-sections scrollfix">
 
                 <div align="center">
                     <p class="title-big">{{labels.my_data}}</p>
@@ -700,7 +706,7 @@
 
                             <p>
                                 <label class="editable">{{labels.email}}</label>
-                                <input type="email" ng-model="userData.email" required/>
+                                <input type="text" ng-model="userData.email" required/>
                             </p>
 
                             <p>
@@ -743,7 +749,8 @@
                     </div>
                 </div>
             </div>
-        </ons-scroller>
+            </div>
+        </div>
     </ons-page>
 </ons-template>
 

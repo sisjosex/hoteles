@@ -922,8 +922,8 @@ label.checkbox {
     padding-left:0;
 }
 
-/*.page__content.ons-page-inner {
-    overflow: auto;
+/*.profile .page__content.ons-page-inner {
+    overflow: scroll;
     -webkit-overflow-scrolling: none;
 }*/
 
@@ -958,3 +958,11 @@ label.checkbox {
     -webkit-overflow-scrolling: none;
 }*/
 
+.scrollfix {
+    padding-bottom:20px;
+}
+
+/*#profile_detail_scroll {
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+}*/
