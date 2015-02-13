@@ -179,6 +179,10 @@ input[type=checkbox] {
     background-repeat: no-repeat;
 }
 
+.guestpage .guest_list_item .item-bg {
+    background-size: 100% auto;
+}
+
 .item-bg img {
     -webkit-transition-property: all;
     -moz-transition-property: all;
