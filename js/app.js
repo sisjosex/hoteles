@@ -511,6 +511,7 @@ popPage = function(page) {
 };
 
 actionCall = function(phone) {
+    console.log(phone);
     //document.location.href = 'tel:' + phone;
 
     phonedialer.dial(
@@ -1383,9 +1384,12 @@ module.controller('LifeController', function($scope) {
 
 
 
-
+var scopeLifeInfoController;
+var current_detail;
 module.controller('LifeInfoController', function($scope) {
     ons.ready(function() {
+
+        scopeLifeInfoController = this;
 
         current_page = 'life_info.html';
 
@@ -1393,7 +1397,7 @@ module.controller('LifeInfoController', function($scope) {
 
         pictures = getArrayAsObjects(offline_data.life[splash.getCurrentPage().options.index].images, $scope.thumb_width, $scope.thumb_height);
 
-        $scope.detail = offline_data.life[splash.getCurrentPage().options.index];
+        $scope.detail = current_detail = offline_data.life[splash.getCurrentPage().options.index];
 
         $scope.labels = getLabels();
 
@@ -1426,6 +1430,10 @@ module.controller('LifeInfoController', function($scope) {
             ons.compile($('#life_detail_scroll')[0]);
             initScroll('life_detail_scroll');
         }, 200);
+
+        $('#button_call').on('click', function(){
+            actionCall(current_detail.phone);
+        });
 
     });
 
