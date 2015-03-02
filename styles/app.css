@@ -932,6 +932,27 @@ label.checkbox {
     padding-left:0;
 }
 
+.offline-container {
+    background: #f0cc2e;
+    z-index: 1000;
+    position: absolute;
+    top: -1px;
+}
+
+.offline-message {
+    font-family: 'FuturaStd-Medium';
+    color: #fff;
+    padding-left: 40px;
+    background: url('../img/icon_offline.png') 0 0 no-repeat transparent;
+    background-size: 25px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    background-position: 22px center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 /*.profile .page__content.ons-page-inner {
     overflow: scroll;
     -webkit-overflow-scrolling: none;

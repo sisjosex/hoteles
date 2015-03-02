@@ -217,6 +217,8 @@ function loadApplicationParams() {
 var reservations;
 function loadOfflineData(callback) {
 
+    console.log(offline_data);
+
     reservations = [];
 
     if(offline_data != undefined && userData != undefined && userData != null) {
@@ -251,7 +253,11 @@ function loadOfflineData(callback) {
             isonline = true;
         }
 
+        $('.offline-container').hide();
+
     }, function () {
+
+        $('.offline-container').show();
 
         isonline = false;
 
@@ -618,14 +624,14 @@ module.controller('LanguageController', function($scope) {
             StatusBar.hide();
         }catch(error){}
 
-        loadApplicationParams();
-
         if(applicationLanguage !== '' && (applicationLanguage === 'es' || applicationLanguage === 'en')) {
 
-            loadOfflineData(function(){
+            /*loadOfflineData(function(){
 
                 splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
-            });
+            });*/
+
+            splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
 
         } else {
 
@@ -642,6 +648,8 @@ module.controller('LanguageController', function($scope) {
 var scopeMainMenuController;
 module.controller('MainMenuController', function($scope) {
     ons.ready(function() {
+
+        loadApplicationParams();
 
         scopeMainMenuController = $scope;
 
