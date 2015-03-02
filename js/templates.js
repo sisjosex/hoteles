@@ -41,7 +41,7 @@ var templates = {
 
     life_list: '' +
     '<ons-list-item class="guest_list_item">'+
-        '<div class="item-bg list">'+
+        '<div class="item-bg list life">'+
             '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%first_image%" />'+
         '</div>'+
         '<div class="guesto-list-verlay overlay">'+
@@ -57,7 +57,7 @@ var templates = {
 
     promo_list: '' +
         '<ons-list-item class="guest_list_item">'+
-            '<div class="item-bg list">'+
+            '<div class="item-bg list promo">'+
                 '<img onload="fadeIn(this)" onerror="onfailImage(this)" src="%first_image%" />'+
             '</div>'+
             '<div class="guesto-list-verlay overlay">'+

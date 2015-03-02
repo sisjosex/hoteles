@@ -17,7 +17,7 @@ body {
 .splash .page__background {
     background-size:100% auto;
     background-color: #000;
-    background-image: url('../img/splash.jpg');
+    background-image: url('../splash.png');
     background-repeat:no-repeat;
     background-position: 0 0;
     background-size: 100% auto;
@@ -177,6 +177,12 @@ input[type=checkbox] {
     background-color: #fff;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.item-bg.life, .item-bg.promo {
+    background-image: url('../img/offline_life_promo.jpg');
+    background-size: 100% auto;
+    background-position: center center;
 }
 
 .guestpage .guest_list_item .item-bg {
