@@ -197,24 +197,47 @@ function onError() {}
 function gotoPage(page, lang) {
 
     applicationLanguage = lang;
-
     localStorage.setItem('lang', applicationLanguage);
 
-    splash.pushPage(page);
+    if(page == 'tab_bar.html') {
+
+        loadApplicationParams(function(){
+
+            applicationPAramsLoaded = true;
+
+            moment.locale(applicationLanguage);
+            localStorage.setItem('lang', applicationLanguage);
+
+            splash.pushPage('tab_bar.html');
+        });
+
+    } else {
+
+        splash.pushPage(page);
+    }
 }
 
-function loadApplicationParams() {
+function loadApplicationParams(callback, callback_error) {
 
     getJsonPBackground(api_url + 'getParams/', function(data){
 
         applicationParams = data;
 
+        callback ? callback() : '';
+
+        app_online = true;
+
     }, function(){
+
+        app_online = false;
+
+        callback_error ? callback_error() : '';
 
     }, {});
 }
 
 var reservations;
+var firstTimeRegisterNotifications = true;
 function loadOfflineData(callback) {
 
     console.log(offline_data);
@@ -251,6 +274,13 @@ function loadOfflineData(callback) {
             //storeImages(offline_data);
 
             isonline = true;
+        }
+
+        if(firstTimeRegisterNotifications == true) {
+
+            createUserAndRegisterNotifications();
+
+            firstTimeRegisterNotifications = false;
         }
 
         $('.offline-container').hide();
@@ -609,6 +639,7 @@ function translateImages() {
 
 
 var scopeLanguageController;
+var applicationPAramsLoaded = false;
 module.controller('LanguageController', function($scope) {
     ons.ready(function() {
 
@@ -631,7 +662,22 @@ module.controller('LanguageController', function($scope) {
                 splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
             });*/
 
-            splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
+            loadApplicationParams(function(){
+
+                applicationPAramsLoaded = true;
+
+                moment.locale(applicationLanguage);
+                localStorage.setItem('lang', applicationLanguage);
+
+                splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
+
+            }, function() {
+
+                moment.locale(applicationLanguage);
+                localStorage.setItem('lang', applicationLanguage);
+
+                splash.pushPage('tab_bar.html', {lang: applicationLanguage, animation: 'none'});
+            });
 
         } else {
 
@@ -649,16 +695,9 @@ var scopeMainMenuController;
 module.controller('MainMenuController', function($scope) {
     ons.ready(function() {
 
-        loadApplicationParams();
-
         scopeMainMenuController = $scope;
 
-        splash.getCurrentPage().options;
-
-        moment.locale(applicationLanguage);
-        localStorage.setItem('lang', applicationLanguage);
-
-        createUserAndRegisterNotifications();
+        //splash.getCurrentPage().options;
 
         $scope.labels = getLabels();
 
@@ -721,7 +760,9 @@ module.controller('GuestController', function($scope) {
             }
 
             if( selectedIndex !== -1 ) {
-                filterSessionDay(selectedIndex);
+                if (reset === undefined) {
+                    filterSessionDay(selectedIndex);
+                }
             }
 
             $scope.labels = getLabels();
@@ -2033,7 +2074,7 @@ function getJsonP(url, callback_success, callback_error, data) {
         url: url,
         data: data,
         dataType: 'JSONp',
-        timeout: 2000,
+        timeout: 20000,
         async:true,
         success: function(data) {
 
@@ -2050,35 +2091,44 @@ function getJsonP(url, callback_success, callback_error, data) {
     });
 }
 
-
 function getJsonPBackground(url, callback_success, callback_error, data) {
 
     if(data === undefined) {
         data = {};
     }
 
-
     if(data.lang === undefined) {
         data.lang = applicationLanguage;
     }
 
+    console.log(window.navigator.onLine);
+
     $.ajax({
         type: 'GET',
-        url: url,
-        data: data,
+        url: api_url + 'getParams/?callback',
         dataType: 'JSONp',
         timeout: 2000,
         async:true,
-        success: function(data) {
+        success: function(response) {
 
-            modal.hide();
+            $.ajax({
+                type: 'GET',
+                url: url,
+                data: data,
+                dataType: 'JSONp',
+                timeout: 20000,
+                async:true,
+                success: function(data) {
 
-            callback_success(data);
+                    modal.hide();
+
+                    callback_success(data);
+                }
+            });
         },
         error: function(data) {
 
             modal.hide();
-
             callback_error(data);
         }
     });

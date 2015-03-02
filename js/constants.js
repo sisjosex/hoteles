@@ -53,3 +53,5 @@ var isonline = false;
 $(document).ready(function() {
     document.addEventListener('touchmove', function(e) { e.preventDefault(); }, false);
 });
+
+var app_online = false;
