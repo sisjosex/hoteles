@@ -1,7 +1,7 @@
 
 function registerNotifications() {
 
-    //console.log('registerNotifications');
+    console.log('registerNotifications');
 
     if(window.plugins && window.plugins.pushNotification) {
 

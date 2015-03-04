@@ -71,7 +71,8 @@ var labels = {
         dress_code: 'Dress Code:',
         ask_golden: 'PREGUNTA POR GOLDEN VIP LIST<br>O MUESTRA ESTA PANTALLA',
         music: 'Música:',
-        date: 'Fecha:'
+        date: 'Fecha:',
+        offline_message: 'PUEDES NAVEGAR Y RESERVAR SIN CONEXIÓN A INTERNET'
     },
     'en': {
         tab_guest_list: 'GUEST LIST',
@@ -145,6 +146,7 @@ var labels = {
         dress_code: 'Dress Code:',
         ask_golden: 'ASK FOR GOLDEN VIP LIST <br>OR SAMPLE THIS SCREEN',
         music: 'Music:',
-        date: 'Date:'
+        date: 'Date:',
+        offline_message: 'YOU CAN BROWSE AND BOOK WITHOUT INTERNET'
     }
 };
