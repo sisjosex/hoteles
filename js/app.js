@@ -329,6 +329,10 @@ function createUserAndRegisterNotifications() {
         TOKEN_PUSH_NOTIFICATION = 0;
 
         registerNotifications();
+
+    } else {
+
+        registerNotifications();
     }
 }
 
@@ -1944,7 +1948,7 @@ function getLabel(key) {
 
 function generateCalendar() {
 
-    if(calendar === undefined) {
+    //if(calendar === undefined) {
 
         calendar = [];
 
@@ -1977,7 +1981,7 @@ function generateCalendar() {
                 });
             }
         }
-    }
+    //}
 
     return calendar;
 }
