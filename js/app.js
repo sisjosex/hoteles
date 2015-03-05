@@ -744,6 +744,12 @@ module.controller('GuestController', function($scope) {
 
         $scope.init = function(reset) {
 
+            moment.locale(applicationLanguage);
+
+            selectedDate = moment().format("YYYY-M-D");
+
+            console.log(selectedDate);
+
             if (reset === undefined) {
 
                 generateCalendar(selectedDate);
@@ -1953,6 +1959,8 @@ function generateCalendar() {
         calendar = [];
 
         var currentDay = parseInt(moment().format("D"));
+        currentDate = moment().format("YYYY-M-D");
+        selectedDate = currentDate;
 
         calendar.push({
             day: moment().subtract(2, 'days').format("D"),
