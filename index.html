@@ -58,7 +58,8 @@
 <ons-template id="tab_bar.html" var="languagePage">
     <ons-page ng-controller="MainMenuController" var="mainPage">
         <ons-tabbar var="mainTabBar">
-            <ons-tab page="guest.html" label="GUEST LIST" class="tabicon icon-guest" icon="square" active="true"></ons-tab>
+            <ons-tab page="guest.html" label="GUEST LIST" class="tabicon icon-guest" icon="square"
+                     active="true"></ons-tab>
             <ons-tab page="clubs.html" label="CLUBS" class="tabicon icon-clubs" icon="square"></ons-tab>
             <ons-tab page="life.html" label="LIFE" class="tabicon icon-life" icon="square"></ons-tab>
             <ons-tab page="promos.html" label="PROMOS" class="tabicon icon-promos" icon="square"></ons-tab>
@@ -211,52 +212,52 @@
         <div id="guest_detail_scroll" class="scrollable vertical">
             <div class="scroll-content">
 
-            <div class="card-content scrollfix">
-                <p class="access_conditions">
-                    <label>{{labels.access_conditions}}</label>
-                    <span>{{detail.access_conditions}}</span>
-                </p>
+                <div class="card-content scrollfix">
+                    <p class="access_conditions">
+                        <label>{{labels.access_conditions}}</label>
+                        <span>{{detail.access_conditions}}</span>
+                    </p>
 
-                <p>
-                    <!--<span class="age">
-                        <label ng-show="detail.age!=''">{{labels.age}}</label>
-                        <span ng-show="detail.age!=''">{{detail.age}}</span>
-                    </span>-->
+                    <p>
+                        <!--<span class="age">
+                            <label ng-show="detail.age!=''">{{labels.age}}</label>
+                            <span ng-show="detail.age!=''">{{detail.age}}</span>
+                        </span>-->
 
                     <span class="dress_code">
                         <label ng-show="detail.dress_code!=''">{{labels.dress_code}}</label>
                         <span ng-show="detail.dress_code!=''">{{detail.dress_code}}</span>
                     </span>
-                </p>
+                    </p>
 
-                <p>
-                    <label>{{labels.music}}</label>
-                    <span>{{detail.music}}</span>
-                </p>
+                    <p>
+                        <label>{{labels.music}}</label>
+                        <span>{{detail.music}}</span>
+                    </p>
 
-                <p>
-                    <label>{{labels.address}}</label>
-                    <span>{{detail.address}}</span>
-                </p>
+                    <p>
+                        <label>{{labels.address}}</label>
+                        <span>{{detail.address}}</span>
+                    </p>
 
-                <p>
-                    <label>{{labels.hour}}</label>
-                    <span>{{detail.hour}}</span>
-                    <label>{{labels.metro}}</label>
-                    <span>{{detail.metro}}</span>
-                </p>
+                    <p>
+                        <label>{{labels.hour}}</label>
+                        <span>{{detail.hour}}</span>
+                        <label>{{labels.metro}}</label>
+                        <span>{{detail.metro}}</span>
+                    </p>
 
-                <p>
-                    <label>{{labels.ambient}}</label>
-                    <span>{{detail.ambient}}</span>
-                    <label>{{labels.accept_card}}</label>
-                    <span>{{detail.accept_card}}</span>
-                </p>
+                    <p>
+                        <label>{{labels.ambient}}</label>
+                        <span>{{detail.ambient}}</span>
+                        <label>{{labels.accept_card}}</label>
+                        <span>{{detail.accept_card}}</span>
+                    </p>
 
-                <p class="content">
-                    {{detail.content}}
-                </p>
-            </div>
+                    <p class="content">
+                        {{detail.content}}
+                    </p>
+                </div>
 
             </div>
         </div>
@@ -269,99 +270,106 @@
                 ng-controller="GuestListFormController">
         <ons-page>
 
-            <form class="card-content" style="text-align: center;position:relative;">
-                <div class="button close" onclick="closeForm()">X</div>
+            <div id="guest_form_scroll" class="scrollable vertical">
+                <div class="scroll-content">
 
-                <div class="reservation_inprogress">
-                    <div class="user_data form_visible" style="">
-                        <p>
-                            <label></label>
-                            <span>{{labels.fill_form}}</span>
-                        </p>
+                    <div class="scrollfix">
+                        <form class="card-content" style="text-align: center;position:relative;">
+                            <div class="button close" onclick="closeForm()">X</div>
 
-                        <p>
-                            <label>{{labels.first_name}}</label>
-                            <input class="" ng-model="userData.first_name" type="text"/>
-                        </p>
+                            <div class="reservation_inprogress">
+                                <div class="user_data form_visible" style="">
+                                    <p>
+                                        <label></label>
+                                        <span>{{labels.fill_form}}</span>
+                                    </p>
 
-                        <p>
-                            <label>{{labels.last_name}}</label>
-                            <input class="" ng-model="userData.last_name" type="text"/>
-                        </p>
+                                    <p>
+                                        <label>{{labels.first_name}}</label>
+                                        <input class="" ng-model="userData.first_name" type="text"/>
+                                    </p>
 
-                        <p>
-                            <label>{{labels.email}}</label>
-                            <input class="" ng-model="userData.email" type="email"/>
-                        </p>
+                                    <p>
+                                        <label>{{labels.last_name}}</label>
+                                        <input class="" ng-model="userData.last_name" type="text"/>
+                                    </p>
 
-                        <p>
-                            <label>{{labels.phone}}</label>
-                            <input class="" ng-model="userData.phone" type="phone"/>
-                        </p>
+                                    <p>
+                                        <label>{{labels.email}}</label>
+                                        <input class="" ng-model="userData.email" type="email"/>
+                                    </p>
+
+                                    <p>
+                                        <label>{{labels.phone}}</label>
+                                        <input class="" ng-model="userData.phone" type="phone"/>
+                                    </p>
+                                </div>
+
+                                <div class="user_data detail_visible">
+                                    <p>
+                                        <span>{{labels.hi}} </span><span
+                                            class="rosa">{{userData.first_name}} {{userData.last_name}}</span></span>
+                                        <br/>
+                                        <span>{{labels.complete_nro_persons}}</span>
+                                        <br/>
+                                        <span>{{labels.to_session}} {{detail.guest_list}} {{session.to_day}} {{detail.hour}}</span>
+                                        <br/>
+                                        <br/>
+                                    </p>
+                                </div>
+
+
+                                <p>
+                                    <label>{{labels.persons}}</label>
+                                    <label class="spinner">{{userData.persons}}</label>
+                                    <a class="button spinner" ng-click="increasePersons()">+</a>
+                                    <a class="button spinner" ng-click="decreasePersons()">-</a>
+                                </p>
+
+                                <!--
+                                <p>
+                                    <label>&nbsp;</label>
+                                        <span style="display:inline-block;">
+                                            <input id="conditions" ng-model="userData.conditions" type="checkbox" name="check"
+                                                   value="check1">
+                                            <label class="checkbox" for="conditions">{{labels.conditions}}</label>
+                                        </span>
+                                </p>-->
+
+                                <p style="display:block;text-align:center;">
+                                    <a class="button" ng-click="confirm()">{{labels.confirm}}</a>
+                                </p>
+                            </div>
+
+                            <div class="reservation_complete">
+                                <div class="user_data visible">
+                                    <p>
+                                        <span>{{labels.perfect}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span>
+                                        <br/>
+                                        <span>{{labels.you_are_in_guest_list}} <span class="rosa">{{detail.club}}</span></span>
+                                        <br/>
+                                        <span>{{labels.for_session}} <span class="rosa">{{detail.guest_list}}</span> {{session.to_day}} {{detail.hour}}</span>
+                                        <br/>
+                                        <br/>
+                                        <span>{{labels.present_invitation}}</span>
+                                        <br/>
+                                        <span>{{labels.in_seccion}} <span class="rosa">{{labels.profile}}</span> {{labels.this_app}}</span>
+                                        <br/>
+                                        <span>{{labels.club_door}}</span>
+                                        <br/>
+                                        <br/>
+                                    </p>
+                                </div>
+
+                                <p style="display:block;text-align:center;">
+                                    <a class="button" onclick="goToProfile()">{{labels.my_profile}}</a>
+                                </p>
+                            </div>
+
+                        </form>
                     </div>
-
-                    <div class="user_data detail_visible">
-                        <p>
-                            <span>{{labels.hi}} </span><span
-                                class="rosa">{{userData.first_name}} {{userData.last_name}}</span></span>
-                            <br/>
-                            <span>{{labels.complete_nro_persons}}</span>
-                            <br/>
-                            <span>{{labels.to_session}} {{detail.guest_list}} {{session.to_day}} {{detail.hour}}</span>
-                            <br/>
-                            <br/>
-                        </p>
-                    </div>
-
-
-                    <p>
-                        <label>{{labels.persons}}</label>
-                        <label class="spinner">{{userData.persons}}</label>
-                        <a class="button spinner" ng-click="increasePersons()">+</a>
-                        <a class="button spinner" ng-click="decreasePersons()">-</a>
-                    </p>
-
-                    <!--
-                    <p>
-                        <label>&nbsp;</label>
-                            <span style="display:inline-block;">
-                                <input id="conditions" ng-model="userData.conditions" type="checkbox" name="check"
-                                       value="check1">
-                                <label class="checkbox" for="conditions">{{labels.conditions}}</label>
-                            </span>
-                    </p>-->
-
-                    <p style="display:block;text-align:center;">
-                        <a class="button" ng-click="confirm()">{{labels.confirm}}</a>
-                    </p>
                 </div>
-
-                <div class="reservation_complete">
-                    <div class="user_data visible">
-                        <p>
-                            <span>{{labels.perfect}} </span><span class="rosa">{{userData.first_name}} {{userData.last_name}}</span>
-                            <br/>
-                            <span>{{labels.you_are_in_guest_list}} <span class="rosa">{{detail.club}}</span></span>
-                            <br/>
-                            <span>{{labels.for_session}} <span class="rosa">{{detail.guest_list}}</span> {{session.to_day}} {{detail.hour}}</span>
-                            <br/>
-                            <br/>
-                            <span>{{labels.present_invitation}}</span>
-                            <br/>
-                            <span>{{labels.in_seccion}} <span class="rosa">{{labels.profile}}</span> {{labels.this_app}}</span>
-                            <br/>
-                            <span>{{labels.club_door}}</span>
-                            <br/>
-                            <br/>
-                        </p>
-                    </div>
-
-                    <p style="display:block;text-align:center;">
-                        <a class="button" onclick="goToProfile()">{{labels.my_profile}}</a>
-                    </p>
-                </div>
-
-            </form>
+            </div>
         </ons-page>
     </ons-dialog>
 </ons-template>
@@ -671,88 +679,88 @@
 
                 <div class="profile-sections scrollfix">
 
-                <div align="center">
-                    <p class="title-big">{{labels.my_data}}</p>
+                    <div align="center">
+                        <p class="title-big">{{labels.my_data}}</p>
 
-                    <div class="">
-                        <div class="form card-content user_data {{detail_visible}}">
-                            <p>
-                                <label>{{labels.first_name}}</label>
-                                <span>{{userData.first_name}}</span>
-                            </p>
+                        <div class="">
+                            <div class="form card-content user_data {{detail_visible}}">
+                                <p>
+                                    <label>{{labels.first_name}}</label>
+                                    <span>{{userData.first_name}}</span>
+                                </p>
 
-                            <p>
-                                <label>{{labels.last_name}}</label>
-                                <span>{{userData.last_name}}</span>
-                            </p>
+                                <p>
+                                    <label>{{labels.last_name}}</label>
+                                    <span>{{userData.last_name}}</span>
+                                </p>
 
-                            <p>
-                                <label>{{labels.email}}</label>
-                                <span>{{userData.email}}</span>
-                            </p>
+                                <p>
+                                    <label>{{labels.email}}</label>
+                                    <span>{{userData.email}}</span>
+                                </p>
 
-                            <p>
-                                <label>{{labels.phone}}</label>
-                                <span>{{userData.phone}}</span>
-                            </p>
-                        </div>
+                                <p>
+                                    <label>{{labels.phone}}</label>
+                                    <span>{{userData.phone}}</span>
+                                </p>
+                            </div>
 
-                        <div class="form card-content user_data {{form_visible}}">
-                            <p>
-                                <label class="editable">{{labels.first_name}}</label>
-                                <input type="text" ng-model="userData.first_name" required/>
-                            </p>
+                            <div class="form card-content user_data {{form_visible}}">
+                                <p>
+                                    <label class="editable">{{labels.first_name}}</label>
+                                    <input type="text" ng-model="userData.first_name" required/>
+                                </p>
 
-                            <p>
-                                <label class="editable">{{labels.last_name}}</label>
-                                <input type="text" ng-model="userData.last_name" required/>
-                            </p>
+                                <p>
+                                    <label class="editable">{{labels.last_name}}</label>
+                                    <input type="text" ng-model="userData.last_name" required/>
+                                </p>
 
-                            <p>
-                                <label class="editable">{{labels.email}}</label>
-                                <input type="text" ng-model="userData.email" required/>
-                            </p>
+                                <p>
+                                    <label class="editable">{{labels.email}}</label>
+                                    <input type="text" ng-model="userData.email" required/>
+                                </p>
 
-                            <p>
-                                <label class="editable">{{labels.phone}}</label>
-                                <input type="phone" ng-model="userData.phone" required/>
-                            </p>
-                        </div>
+                                <p>
+                                    <label class="editable">{{labels.phone}}</label>
+                                    <input type="phone" ng-model="userData.phone" required/>
+                                </p>
+                            </div>
 
-                        <div class="form card-content">
-                            <div class="button" ng-click="actionForm()"
-                                 style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;padding-bottom: 2.3em;display: inline-block;">
-                                {{label_edit}}
+                            <div class="form card-content">
+                                <div class="button" ng-click="actionForm()"
+                                     style="font-size: 0.8em;height: 2em;padding-left: 0.4em;padding-right: 0.4em;padding-bottom: 2.3em;display: inline-block;">
+                                    {{label_edit}}
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
+
+                    <div align="center">
+                        <p class="title-big">{{labels.idiom}}</p>
+
+                        <div class="button icon gray lang" ng-click="updateLanguage('es')">
+                            <span class="icon sp"></span> espa&ntilde;ol
+                        </div>
+                        <div class="button icon gray lang" ng-click="updateLanguage('en')">
+                            <span class="icon en"></span> english
+                        </div>
+                    </div>
+
+
+                    <div align="center" style="margin-bottom:2em;">
+                        <p class="title-big">{{labels.alerts}}</p>
+
+                        <div class="button gray" ng-click="updateNotifications('1')">
+                            {{labels.yes}}
+                        </div>
+                        <div class="button gray" ng-click="updateNotifications('0')">
+                            {{labels.no}}
+                        </div>
+                    </div>
                 </div>
-
-
-                <div align="center">
-                    <p class="title-big">{{labels.idiom}}</p>
-
-                    <div class="button icon gray lang" ng-click="updateLanguage('es')">
-                        <span class="icon sp"></span> espa&ntilde;ol
-                    </div>
-                    <div class="button icon gray lang" ng-click="updateLanguage('en')">
-                        <span class="icon en"></span> english
-                    </div>
-                </div>
-
-
-                <div align="center" style="margin-bottom:2em;">
-                    <p class="title-big">{{labels.alerts}}</p>
-
-                    <div class="button gray" ng-click="updateNotifications('1')">
-                        {{labels.yes}}
-                    </div>
-                    <div class="button gray" ng-click="updateNotifications('0')">
-                        {{labels.no}}
-                    </div>
-                </div>
-            </div>
             </div>
         </div>
     </ons-page>

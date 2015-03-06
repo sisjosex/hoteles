@@ -181,6 +181,10 @@ window.onfailImage = function(element) {
 
 window.onresize = function(){
     resizeCardCarousel();
+
+    try {
+        scrolls.guest_form_scroll.refresh();
+    }catch(error){}
 };
 
 function resizeCardCarousel() {
@@ -1013,6 +1017,10 @@ module.controller('GuestListFormController', function($scope) {
             fixModalBottomHeight('13.2em');
         }
 
+        setTimeout(function(){
+            initScroll('guest_form_scroll');
+        }, 50);
+
 
 
         $scope.detail = currentSession;
@@ -1096,6 +1104,8 @@ module.controller('GuestListFormController', function($scope) {
 
                 $('.reservation_complete').show();
                 $('.reservation_inprogress').hide();
+
+                fixModalBottomHeight('13.2em');
 
                 //fixModalBottomHeight('13.2em');
 
@@ -2179,7 +2189,7 @@ function fixModalBottomHeight(height){
 
     $('#stylemodal').remove();
 
-    $('body').append('<style id="stylemodal" type="text/css">.bottom-dialog .dialog {min-height: ' + height + ';}</style>');
+    $('body').append('<style id="stylemodal" type="text/css">.bottom-dialog .dialog {min-height: ' + height + ' !important;}</style>');
 }
 
 var scrolls = {};
