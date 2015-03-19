@@ -994,7 +994,7 @@ label.checkbox {
 }*/
 
 
-@media all and (max-height: 370px) {
+@media all and (max-height: 400px) {
     .bottom-dialog .dialog, .info-dialog .dialog {
 
         min-height: 100% !important;
