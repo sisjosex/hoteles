@@ -2189,7 +2189,7 @@ function fixModalBottomHeight(height){
 
     $('#stylemodal').remove();
 
-    $('body').append('<style id="stylemodal" type="text/css">.bottom-dialog .dialog {min-height: ' + height + ' !important;}</style>');
+    $('body').append('<style id="stylemodal" type="text/css">.bottom-dialog .dialog {min-height: ' + height + ';}</style>');
 }
 
 var scrolls = {};
