@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns		= "http://www.w3.org/ns/widgets"
-	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	id		    = "com.goldenvip"
-    versionCode = "12"
-	version 	= "1.2">
+        xmlns:gap	= "http://phonegap.com/ns/1.0"
+        id		    = "com.goldenvip"
+        versionCode = "12"
+        version 	= "1.2">
 
-	<name>GoldenVip</name>
+    <name>GoldenVip</name>
 
-	<description>
-		Aplicacion mobile - GoldenVip?
-	</description>
+    <description>
+        Aplicacion mobile - GoldenVip?
+    </description>
 
-	<author href="http://golden-vip.com"
-		email="sisjosex@gmail.com">
-		arrobacreativa
-	</author>
-    
+    <author href="http://golden-vip.com"
+            email="sisjosex@gmail.com">
+        arrobacreativa
+    </author>
+
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
         <string>1.2</string>
     </gap:config-file>
-    
+
     <!--
     If you do not want any permissions to be added to your app, add the
     following tag to your config.xml; you will still have the INTERNET
@@ -46,7 +46,7 @@
     <preference name="StatusBarOverlaysWebView" value="false"/>
     <preference name="StatusBarBackgroundColor" value="#FFFFFF"/>
     <preference name="StatusBarStyle" value="default" />
-    
+
     <!-- Core plugins -->
     <gap:plugin name="org.apache.cordova.device" />
     <!--<gap:plugin name="org.apache.cordova.dialogs" />-->
@@ -60,7 +60,7 @@
     <gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
 
     <!-- Define app icon for each platform. -->
-    
+
     <icon src="res/icon/android/icon-50.png"        gap:platform="android"    width="47" height="47" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
@@ -72,7 +72,7 @@
     <icon src="res/icon/ios/icon-60@2x.png"         gap:platform="ios"        width="120" height="120" />
     <icon src="res/icon/ios/icon-72@2x.png"         gap:platform="ios"        width="144" height="144" />
     <icon src="res/icon/ios/icon-76@2x.png"         gap:platform="ios"        width="152" height="152" />
-    
+
     <!-- Define app splash screen for each platform. -->
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
@@ -83,19 +83,27 @@
     <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
-    
+    <gap:splash src="splash.png" />
     <!-- childbrowser -->
     <!--<gap:plugin name="com.phonegap.plugins.childbrowser" version="5.0.0" />-->
-    
+
     <!-- pushNotification -->
     <gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1" />
-    
+
     <!-- BarcodeScanner -->
     <!--<gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.2.0" />-->
 
     <!-- PhoneDialer -->
     <gap:plugin name="com.teamnemitoff.phonedialer" version="0.3.0" />
-    
+
+    <plugins>
+        <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+    </plugins>
+
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+
     <!-- access -->
     <access origin="*" browserOnly="true"/>
 
