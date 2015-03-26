@@ -541,7 +541,7 @@ span.block {
 }
 
 .setup_my_data_title {
-    background: url('../img/my_guest_list_header.png') 0 0 no-repeat transparent;
+    background: url('../img/GoldenVipList.jpg') 0 0 no-repeat transparent;
     background-repeat: no-repeat;
     background-size: 65% auto;
     height: 3em;
@@ -567,7 +567,7 @@ span.block {
 }
 
 .setup_my_data_title.es {
-    background-image: url('../img/my_guest_list_header.png');
+    background-image: url('../img/GoldenVipList.jpg');
     background-size: 65% auto;
     background-position: center 8px;
 }
