@@ -306,9 +306,9 @@ function createUserAndRegisterNotifications() {
 
         userData = {
             first_name: '',
-            last_name: '',
+            //last_name: '',
             email: '',
-            phone: '',
+            //phone: '',
             persons: '',
             session_id: '',
             language: applicationLanguage
@@ -997,9 +997,9 @@ module.controller('GuestListFormController', function($scope) {
 
             $scope.userData = {
                 first_name: userData.first_name,
-                last_name: userData.last_name,
-                email: userData.email,
-                phone: userData.phone
+                //last_name: userData.last_name,
+                email: userData.email
+                //phone: userData.phone
             };
 
             $scope.userData = userData;
@@ -1043,11 +1043,11 @@ module.controller('GuestListFormController', function($scope) {
 
                 alert(getLabel('user_first_name_required'));
 
-            } else if($scope.userData.last_name === undefined || $scope.userData.last_name === '') {
+            } /*else if($scope.userData.last_name === undefined || $scope.userData.last_name === '') {
 
                 alert(getLabel('user_last_name_required'));
 
-            } else if($scope.userData.email === undefined || $scope.userData.email === '') {
+            }*/ else if($scope.userData.email === undefined || $scope.userData.email === '') {
 
                 alert(getLabel('user_email_required'));
 
@@ -1055,11 +1055,11 @@ module.controller('GuestListFormController', function($scope) {
 
                 alert(getLabel('user_email_invalid'));
 
-            } else if($scope.userData.phone === undefined || $scope.userData.phone === '') {
+            } /*else if($scope.userData.phone === undefined || $scope.userData.phone === '') {
 
                 alert(getLabel('user_phone_required'));
 
-            }/* else if($scope.userData.conditions === undefined || $scope.userData.conditions === false) {
+            }*//* else if($scope.userData.conditions === undefined || $scope.userData.conditions === false) {
 
                 alert(getLabel('user_conditions_required'));
 
@@ -1071,9 +1071,9 @@ module.controller('GuestListFormController', function($scope) {
 
                         userData = {
                             first_name: $scope.userData.first_name,
-                            last_name: $scope.userData.last_name,
-                            email: $scope.userData.email,
-                            phone: $scope.userData.phone
+                            //last_name: $scope.userData.last_name,
+                            email: $scope.userData.email
+                            //phone: $scope.userData.phone
                         };
 
                         localStorage.setItem("user", JSON.stringify(userData));
@@ -1090,9 +1090,9 @@ module.controller('GuestListFormController', function($scope) {
 
                         userData = {
                             first_name: $scope.userData.first_name,
-                            last_name: $scope.userData.last_name,
-                            email: $scope.userData.email,
-                            phone: $scope.userData.phone
+                            //last_name: $scope.userData.last_name,
+                            email: $scope.userData.email
+                            //phone: $scope.userData.phone
                         };
 
                         localStorage.setItem("user", JSON.stringify(userData));
@@ -1829,11 +1829,11 @@ module.controller('ProfileDetailController', function($scope) {
 
                     alert(getLabel('user_first_name_required'));
 
-                } else if($scope.userData.last_name === undefined || $scope.userData.last_name === '') {
+                }/* else if($scope.userData.last_name === undefined || $scope.userData.last_name === '') {
 
                     alert(getLabel('user_last_name_required'));
 
-                } else if($scope.userData.email === undefined || $scope.userData.email === '') {
+                }*/ else if($scope.userData.email === undefined || $scope.userData.email === '') {
 
                     alert(getLabel('user_email_required'));
 
@@ -1841,11 +1841,11 @@ module.controller('ProfileDetailController', function($scope) {
 
                     alert(getLabel('user_email_invalid'));
 
-                } else if($scope.userData.phone === undefined || $scope.userData.phone === '') {
+                } /*else if($scope.userData.phone === undefined || $scope.userData.phone === '') {
 
                     alert(getLabel('user_phone_required'));
 
-                } else {
+                } */else {
 
                     if(userData && userData.id !== undefined && userData.id !== '') {
                         $scope.userData.id = userData.id;
@@ -1856,9 +1856,9 @@ module.controller('ProfileDetailController', function($scope) {
                         $scope.userData = userData = {
                             id: data.user.id,
                             first_name: data.user.first_name,
-                            last_name: data.user.last_name,
-                            email: data.user.email,
-                            phone: data.user.phone
+                            //last_name: data.user.last_name,
+                            email: data.user.email
+                            //phone: data.user.phone
                         };
 
                         $scope.detail_visible = 'visible';
